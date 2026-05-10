@@ -20,6 +20,10 @@ These skills are small, portable instruction files for Claude/Codex-style workfl
 | Demo Animation V2 | [`skills/demo-animation-v2.md`](skills/demo-animation-v2.md) | Build richer demo walkthroughs with stronger structure. |
 | Demo Animation V2 Template | [`skills/demo-animation-v2-template.html`](skills/demo-animation-v2-template.html) | Starter HTML template for demo animation work. |
 
+## Why This Matters
+
+The skills repo is the technical credibility layer behind the client-facing systems. It shows how JQ AI SYSTEMS packages repeatable AI workflows into reusable instructions, review steps, and safety checks instead of relying on one-off prompts.
+
 ## Installation
 
 For Claude Code-style local skills:
@@ -44,3 +48,5 @@ Only install skills you understand. Review the instructions before using them on
 Released under the [MIT License](LICENSE).
 
 More systems and case studies: [ai.joaoqueiros.com/systems](https://www.ai.joaoqueiros.com/systems)
+
+Want a custom workflow built around your team? Start here: [ai.joaoqueiros.com/contact](https://www.ai.joaoqueiros.com/contact)
