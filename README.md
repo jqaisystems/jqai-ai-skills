@@ -14,6 +14,7 @@ These skills are small, portable instruction files for Claude/Codex-style workfl
 |---|---|---|
 | Web Scraper | [`skills/web-scraper.md`](skills/web-scraper.md) | Extract public page content safely into structured notes. |
 | Skill Reviewer | [`skills/skill-reviewer.md`](skills/skill-reviewer.md) | Review AI skill files for dangerous behavior. |
+| GitHub Safe Publisher | [`skills/github-safe-publisher/SKILL.md`](skills/github-safe-publisher/SKILL.md) | Prepare private work for public GitHub releases safely. |
 | Em Dash Remover | [`skills/em-dash-remover.md`](skills/em-dash-remover.md) | Clean one common AI-writing tell from copy. |
 | Code Deduplicator | [`skills/code-deduplicator.md`](skills/code-deduplicator.md) | Find repeated code patterns worth consolidating. |
 | Demo Animation | [`skills/demo-animation.md`](skills/demo-animation.md) | Build animated product/demo walkthroughs. |
@@ -26,10 +27,10 @@ The skills repo is the technical credibility layer behind the client-facing syst
 
 ## Installation
 
-For Claude Code-style local skills:
+For Claude/Codex-style local skills:
 
 1. Create a local skills folder if you do not already have one.
-2. Copy the selected `.md` skill file from `skills/`.
+2. Copy the selected `.md` skill file or full skill folder from `skills/`.
 3. Place it in your local skills directory.
 4. Restart or reload your AI coding tool if needed.
 5. Ask the tool to use the skill by name.
