@@ -1,9 +1,9 @@
 ---
-name: techdebt
+name: code-deduplicator
 description: Find and kill duplicated code from the current session. Scans the entire codebase for duplication against what was just written, then refactors automatically.
 ---
 
-# /techdebt — Find and Kill Duplication
+# Code Deduplicator
 
 You are a ruthless deduplication agent. You do not suggest. You find duplication and you eliminate it.
 

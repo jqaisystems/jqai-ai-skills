@@ -1,9 +1,9 @@
 ---
-name: humanizer
+name: em-dash-remover
 description: Scan files for em dashes and replace them with natural alternatives. Removes one of the most common AI writing tells from any copy.
 ---
 
-# /humanizer — Em Dash Remover
+# Em Dash Remover
 
 You are a copy editor focused on one task: finding and replacing em dashes.
 

@@ -2,7 +2,7 @@
 
 Reusable AI skills by JQ AI SYSTEMS.
 
-These skills are small, portable instruction files for Claude/Codex-style workflows. They are published under the MIT License so you can adapt them for your own local setup.
+These skills are small, portable instruction folders for Claude/Codex-style workflows. They are published under the MIT License so you can adapt them for your own local setup.
 
 [![Website](https://img.shields.io/badge/Website-ai.joaoqueiros.com-111827?style=for-the-badge)](https://www.ai.joaoqueiros.com)
 [![License](https://img.shields.io/badge/License-MIT-059669?style=for-the-badge)](LICENSE)
@@ -12,14 +12,13 @@ These skills are small, portable instruction files for Claude/Codex-style workfl
 
 | Skill | File | Use |
 |---|---|---|
-| Web Scraper | [`skills/web-scraper.md`](skills/web-scraper.md) | Extract public page content safely into structured notes. |
-| Skill Reviewer | [`skills/skill-reviewer.md`](skills/skill-reviewer.md) | Review AI skill files for dangerous behavior. |
 | GitHub Safe Publisher | [`skills/github-safe-publisher/SKILL.md`](skills/github-safe-publisher/SKILL.md) | Prepare private work for public GitHub releases safely. |
-| Em Dash Remover | [`skills/em-dash-remover.md`](skills/em-dash-remover.md) | Clean one common AI-writing tell from copy. |
-| Code Deduplicator | [`skills/code-deduplicator.md`](skills/code-deduplicator.md) | Find repeated code patterns worth consolidating. |
-| Demo Animation | [`skills/demo-animation.md`](skills/demo-animation.md) | Build animated product/demo walkthroughs. |
-| Demo Animation V2 | [`skills/demo-animation-v2.md`](skills/demo-animation-v2.md) | Build richer demo walkthroughs with stronger structure. |
-| Demo Animation V2 Template | [`skills/demo-animation-v2-template.html`](skills/demo-animation-v2-template.html) | Starter HTML template for demo animation work. |
+| Web Scraper | [`skills/web-scraper/SKILL.md`](skills/web-scraper/SKILL.md) | Extract public page content safely into structured notes. |
+| Skill Reviewer | [`skills/skill-reviewer/SKILL.md`](skills/skill-reviewer/SKILL.md) | Review AI skill files for dangerous behavior. |
+| Em Dash Remover | [`skills/em-dash-remover/SKILL.md`](skills/em-dash-remover/SKILL.md) | Clean one common AI-writing tell from copy. |
+| Code Deduplicator | [`skills/code-deduplicator/SKILL.md`](skills/code-deduplicator/SKILL.md) | Find repeated code patterns worth consolidating. |
+| Demo Animation | [`skills/demo-animation/SKILL.md`](skills/demo-animation/SKILL.md) | Build animated product/demo walkthroughs. |
+| Demo Animation V2 | [`skills/demo-animation-v2/SKILL.md`](skills/demo-animation-v2/SKILL.md) | Build richer demo walkthroughs with stronger structure. Includes [`assets/template.html`](skills/demo-animation-v2/assets/template.html). |
 
 ## Why This Matters
 
@@ -27,11 +26,11 @@ The skills repo is the technical credibility layer behind the client-facing syst
 
 ## Installation
 
-For Claude/Codex-style local skills:
+For Claude Code/Codex-style local skills:
 
 1. Create a local skills folder if you do not already have one.
-2. Copy the selected `.md` skill file or full skill folder from `skills/`.
-3. Place it in your local skills directory.
+2. Copy the selected skill folder from `skills/`.
+3. Place the whole folder in your local skills directory.
 4. Restart or reload your AI coding tool if needed.
 5. Ask the tool to use the skill by name.
 
