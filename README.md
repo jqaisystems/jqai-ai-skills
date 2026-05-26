@@ -16,6 +16,36 @@ These skills are small, portable instruction folders for Claude/Codex-style work
 
 ![Skill packaging demo](assets/skill-packaging-demo.gif)
 
+## Quick Start
+
+1. Pick a skill folder from `skills/`.
+2. Copy the whole folder into your local skills directory.
+3. Restart or reload your AI coding tool.
+4. Invoke the skill by name in your prompt.
+
+Example prompts:
+
+```text
+Use $github-safe-publisher to prepare this repo for a public release.
+Use $skill-reviewer to audit this downloaded skill before installing it.
+Use $em-dash-remover to clean this landing page copy.
+Use $demo-animation-v2 to create a responsive animated walkthrough.
+```
+
+## Skill Folder Structure
+
+Each skill is packaged as a self-contained folder:
+
+```text
+skill-name/
+  SKILL.md
+  agents/
+    openai.yaml
+  assets/       optional templates, images, or reusable files
+  references/   optional supporting docs
+  scripts/      optional helper scripts
+```
+
 ## Skills Included
 
 | Skill | File | Use |
