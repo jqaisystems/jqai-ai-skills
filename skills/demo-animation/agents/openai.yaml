@@ -1,0 +1,4 @@
+interface:
+  display_name: "Demo Animation"
+  short_description: "Generate animated product walkthroughs"
+  default_prompt: "Use $demo-animation to create a self-playing product demo for this project."

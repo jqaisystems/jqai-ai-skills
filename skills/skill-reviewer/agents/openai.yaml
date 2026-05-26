@@ -1,0 +1,4 @@
+interface:
+  display_name: "Skill Reviewer"
+  short_description: "Audit AI skills before installing"
+  default_prompt: "Use $skill-reviewer to audit this skill file before I install it."

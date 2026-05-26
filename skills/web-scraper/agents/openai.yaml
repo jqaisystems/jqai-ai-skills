@@ -1,0 +1,4 @@
+interface:
+  display_name: "Web Scraper"
+  short_description: "Generate paginated scraping scripts"
+  default_prompt: "Use $web-scraper to build a browser console scraper for this paginated website."

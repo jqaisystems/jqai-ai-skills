@@ -1,0 +1,4 @@
+interface:
+  display_name: "Code Deduplicator"
+  short_description: "Find duplicate code worth consolidating"
+  default_prompt: "Use $code-deduplicator to scan this project for duplicated code and consolidate what is safe to refactor."

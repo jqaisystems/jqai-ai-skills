@@ -1,0 +1,4 @@
+interface:
+  display_name: "Em Dash Remover"
+  short_description: "Replace em dashes with natural punctuation"
+  default_prompt: "Use $em-dash-remover to remove em dashes from this copy without changing its meaning."
