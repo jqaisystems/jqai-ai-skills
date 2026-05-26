@@ -36,5 +36,6 @@ Search for all instances of:
 
 - Never introduce new em dashes
 - Do not change any other punctuation or wording
+- Skip code blocks, commands, URLs, frontmatter, and generated lock files unless the user explicitly asks to edit them
 - If unsure which replacement fits, default to a comma
 - Preserve the original sentence meaning exactly

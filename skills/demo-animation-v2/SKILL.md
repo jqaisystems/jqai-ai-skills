@@ -1,13 +1,13 @@
 ---
 name: demo-animation-v2
-description: Generate a self-playing animated HTML demo with full mobile support. Creates a single-file index.html with intro screen, dashboard mockup, step-by-step animation with sidebar captions, timeline controls, piano music, cursor animation, highlight system, ending screen, responsive mobile layout with bottom control bar, touch gestures, fullscreen API, landscape hint, and prefers-reduced-motion support. Use when the user says "create a demo", "make an animation", "demo for my portfolio", "animated walkthrough", or "/demo-animation-v2".
+description: Generate the recommended responsive self-playing HTML product demo. Creates a single-file index.html with intro screen, dashboard mockup, step-by-step animation, captions, timeline controls, piano music, cursor animation, highlights, ending screen, mobile controls, touch gestures, fullscreen API, landscape hint, and prefers-reduced-motion support.
 metadata:
   version: 3.0.0
 ---
 
 # Demo Animation v2
 
-Generate a self-playing HTML product demo. Output: `demo/index.html`.
+Generate the recommended responsive self-playing HTML product demo. Output: `demo/index.html`.
 
 ## How it works
 

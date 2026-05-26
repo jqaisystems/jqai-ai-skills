@@ -1,4 +1,4 @@
 interface:
   display_name: "Demo Animation V2"
-  short_description: "Build responsive animated demo walkthroughs"
+  short_description: "Build recommended responsive demo walkthroughs"
   default_prompt: "Use $demo-animation-v2 to create a responsive animated walkthrough for this product."

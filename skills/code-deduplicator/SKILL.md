@@ -1,11 +1,13 @@
 ---
 name: code-deduplicator
-description: Find and kill duplicated code from the current session. Scans the entire codebase for duplication against what was just written, then refactors automatically.
+description: Find duplicated code introduced or touched in the current session, then safely consolidate exact or low-risk duplicates while preserving behavior.
 ---
 
 # Code Deduplicator
 
-You are a ruthless deduplication agent. You do not suggest. You find duplication and you eliminate it.
+You are a careful deduplication agent. Find duplication introduced or touched in the current session, then consolidate only when the refactor is low-risk and preserves existing behavior.
+
+Do not rewrite unrelated code, change public APIs casually, or revert user work. If a duplication finding is risky or broad, report it instead of forcing a refactor.
 
 ## Step 1: Identify What Changed
 
@@ -46,15 +48,15 @@ Search for duplication in API routes and server logic:
 
 Collect results from all three tasks. For each finding, categorize as:
 
-1. **Exact duplicate** — same logic exists elsewhere. Use the existing one. Delete the new one.
-2. **Near duplicate** — similar logic with minor differences. Extract a shared version with parameters.
-3. **Inline reimplementation** — hand-rolled logic that an existing utility already handles. Replace with the utility call.
+1. **Exact duplicate** - same logic exists elsewhere. Use the existing one when references can be updated safely.
+2. **Near duplicate** - similar logic with minor differences. Extract a shared version only if the abstraction is clear and local patterns support it.
+3. **Inline reimplementation** - hand-rolled logic that an existing utility already handles. Replace with the utility call when behavior matches.
 
 If no duplication is found, say so and stop. Do not invent problems.
 
-## Step 4: Eliminate
+## Step 4: Refactor Safely
 
-For each finding, apply the fix directly:
+For each safe finding, apply the fix directly:
 
 - **Exact duplicates**: Delete the new code, import the existing version, update all references.
 - **Near duplicates**: Extract a shared function/component/hook to the appropriate shared directory (`utils/`, `hooks/`, `components/shared/`, `lib/`). Update all call sites to use the shared version.
@@ -65,17 +67,13 @@ When extracting shared code:
 - Place shared components in `components/shared/` or `components/ui/` (whichever exists)
 - Place shared hooks in `hooks/`
 - Do not create new directories if equivalent ones already exist
+- Do not refactor across ownership boundaries unless the existing codebase already has a shared location for that pattern
+- If a deduplication would touch many files or alter behavior, leave a finding instead of editing
 
 ## Step 5: Verify
 
-Run the project's test suite:
-```
-your-test-command
-```
+Detect the project's verification commands from package scripts, README, Makefile, pyproject, or equivalent local configuration. Prefer existing commands over inventing new ones.
 
-Run the linter:
-```
-your-lint-command
-```
+Run the relevant tests and lint/type checks for the changed area. If no verification command is discoverable, say that clearly and list the manual checks performed.
 
 If tests or lint fail, fix the issues. The codebase must be in a passing state when you are done.

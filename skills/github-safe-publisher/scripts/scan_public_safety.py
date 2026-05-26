@@ -60,7 +60,7 @@ RISKY_FILENAMES = {
 
 CONTENT_PATTERNS: list[tuple[str, re.Pattern[str], str]] = [
     ("private key block", re.compile(r"-----BEGIN [A-Z ]*PRIVATE KEY-----"), "block"),
-    ("token-like secret", re.compile(r"\b(?:sk|ghp|github_pat|xoxb|xoxp|AIza)[A-Za-z0-9_\-]{16,}\b"), "block"),
+    ("token-like secret", re.compile(r"\b(?:sk-[A-Za-z0-9_\-]{16,}|ghp_[A-Za-z0-9_]{20,}|github_pat_[A-Za-z0-9_]{20,}|xox[bp]-[A-Za-z0-9\-]{20,}|AIza[A-Za-z0-9_\-]{20,})\b"), "block"),
     ("jwt-like token", re.compile(r"\beyJ[A-Za-z0-9_\-]{20,}\.[A-Za-z0-9_\-]{20,}\.[A-Za-z0-9_\-]{10,}\b"), "block"),
     ("credential keyword", re.compile(r"(?i)\b(api[_-]?key|secret|password|passwd|token|bearer|cookie|smtp|private[_-]?key)\b"), "review"),
     ("local user path", re.compile(r"(?i)(?:[A-Z]:[\\/](?:Users|Documents and Settings)[\\/]|/(?:Users|home)/[^/\s]+/)"), "review"),

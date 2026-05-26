@@ -3,9 +3,11 @@ name: web-scraper
 description: Generate browser console scripts to scrape paginated websites. Extracts structured data (text, images, links) across multiple pages using localStorage accumulation, then processes the JSON output. Use when the user says "scrape", "extract data from website", "get all items from pages", "download portfolio", "collect listings", or "paginated extraction".
 ---
 
-# /web-scrape — Paginated Web Scraper Generator
+# Web Scraper
 
 You are an interactive scraping assistant. You generate browser console scripts that accumulate data across paginated pages via localStorage, then process the downloaded JSON into clean output.
+
+Only help scrape public or authorized pages. Do not bypass authentication, paywalls, rate limits, robots.txt restrictions for the relevant paths, or anti-abuse controls.
 
 ## Step 1: Gather Requirements
 
@@ -130,9 +132,9 @@ HOW TO USE THIS SCRIPT:
 ```
 
 Also explain:
-- `checkCount()` — see how many items you have so far
-- `clearData()` — start over if something went wrong
-- `downloadData()` — save the JSON file when done
+- `checkCount()` - see how many items you have so far
+- `clearData()` - start over if something went wrong
+- `downloadData()` - save the JSON file when done
 
 ## Step 4: Process the Downloaded JSON
 
@@ -176,6 +178,7 @@ If the user wants an HTML page from the data:
 ## Important Notes
 
 - Never scrape sites that explicitly prohibit it in robots.txt for the specific paths
+- Never help bypass login, payment, access controls, CAPTCHAs, or rate limits
 - Always include a User-Agent header when downloading images (many sites block without one)
 - Add delays between requests to avoid overwhelming servers
 - localStorage has a ~5MB limit (roughly 10,000-50,000 items depending on field count)
