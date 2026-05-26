@@ -6,7 +6,7 @@ These skills are small, portable instruction folders for Claude/Codex-style work
 
 [![Website](https://img.shields.io/badge/Website-ai.joaoqueiros.com-111827?style=for-the-badge)](https://www.ai.joaoqueiros.com)
 [![License](https://img.shields.io/badge/License-MIT-059669?style=for-the-badge)](LICENSE)
-[![Release](https://img.shields.io/badge/Release-v0.2.1-2563eb?style=for-the-badge)](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.2.1)
+[![Release](https://img.shields.io/badge/Release-v0.2.2-2563eb?style=for-the-badge)](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.2.2)
 
 ## Preview
 
@@ -46,6 +46,8 @@ skill-name/
   scripts/      optional helper scripts
 ```
 
+To create a new skill, copy [`skills/_template/`](skills/_template/) and replace the placeholder names, descriptions, and prompts.
+
 ## Skills Included
 
 | Skill | File | Use |
@@ -73,6 +75,10 @@ For Claude Code/Codex-style local skills:
 5. Ask the tool to use the skill by name.
 
 Only install skills you understand. Review the instructions before using them on private projects.
+
+## Contributing
+
+Use [`CONTRIBUTING.md`](CONTRIBUTING.md) for the expected folder format, metadata requirements, safety rules, and pre-submission checklist.
 
 ## Safety Notes
 
