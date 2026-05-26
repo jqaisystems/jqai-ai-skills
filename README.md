@@ -6,7 +6,7 @@ These skills are small, portable instruction folders for Claude/Codex-style work
 
 [![Website](https://img.shields.io/badge/Website-ai.joaoqueiros.com-111827?style=for-the-badge)](https://www.ai.joaoqueiros.com)
 [![License](https://img.shields.io/badge/License-MIT-059669?style=for-the-badge)](LICENSE)
-[![Release](https://img.shields.io/badge/Release-v0.2.3-2563eb?style=for-the-badge)](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.2.3)
+[![Release](https://img.shields.io/badge/Release-v0.2.4-2563eb?style=for-the-badge)](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.2.4)
 
 ## Preview
 
@@ -75,6 +75,30 @@ For Claude Code/Codex-style local skills:
 5. Ask the tool to use the skill by name.
 
 Only install skills you understand. Review the instructions before using them on private projects.
+
+## Codex Install
+
+Copy a whole skill folder into your Codex skills directory, then restart Codex so the skill list reloads.
+
+Windows PowerShell:
+
+```powershell
+New-Item -ItemType Directory -Force "$env:USERPROFILE\.codex\skills" | Out-Null
+Copy-Item -Recurse -Force ".\skills\web-scraper" "$env:USERPROFILE\.codex\skills\web-scraper"
+```
+
+macOS/Linux:
+
+```bash
+mkdir -p ~/.codex/skills
+cp -R ./skills/web-scraper ~/.codex/skills/web-scraper
+```
+
+Then invoke it by name:
+
+```text
+Use $web-scraper to build a browser console scraper for this public paginated website.
+```
 
 ## Contributing
 
