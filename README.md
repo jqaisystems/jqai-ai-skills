@@ -6,7 +6,15 @@ These skills are small, portable instruction folders for Claude/Codex-style work
 
 [![Website](https://img.shields.io/badge/Website-ai.joaoqueiros.com-111827?style=for-the-badge)](https://www.ai.joaoqueiros.com)
 [![License](https://img.shields.io/badge/License-MIT-059669?style=for-the-badge)](LICENSE)
-[![Release](https://img.shields.io/badge/Release-v0.1.0-2563eb?style=for-the-badge)](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.1.0)
+[![Release](https://img.shields.io/badge/Release-v0.2.0-2563eb?style=for-the-badge)](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.2.0)
+
+## Preview
+
+![JQ AI Skills overview](assets/skill-library-overview.png)
+
+![Skill folder structure](assets/skill-folder-structure.png)
+
+![Skill packaging demo](assets/skill-packaging-demo.gif)
 
 ## Skills Included
 
