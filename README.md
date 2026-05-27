@@ -16,6 +16,8 @@ These skills are small, portable instruction folders for Claude/Codex-style work
 
 ![Skill packaging demo](assets/skill-packaging-demo.gif)
 
+![Skill install demo](assets/skill-install-demo.gif)
+
 ## Quick Start
 
 1. Pick a skill folder from `skills/`.
