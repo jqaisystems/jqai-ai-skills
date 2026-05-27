@@ -6,7 +6,7 @@ These skills are small, portable instruction folders for Claude/Codex-style work
 
 [![Website](https://img.shields.io/badge/Website-ai.joaoqueiros.com-111827?style=for-the-badge)](https://www.ai.joaoqueiros.com)
 [![License](https://img.shields.io/badge/License-MIT-059669?style=for-the-badge)](LICENSE)
-[![Release](https://img.shields.io/badge/Release-v0.2.5-2563eb?style=for-the-badge)](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.2.5)
+[![Release](https://img.shields.io/badge/Release-v0.2.6-2563eb?style=for-the-badge)](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.2.6)
 
 ## Preview
 
@@ -27,6 +27,7 @@ Example prompts:
 
 ```text
 Use $github-safe-publisher to prepare this repo for a public release.
+Use $case-study-writer to turn this private project summary into a public-safe case study.
 Use $skill-reviewer to audit this downloaded skill before installing it.
 Use $em-dash-remover to clean this landing page copy.
 Use $demo-animation-v2 to create a responsive animated walkthrough.
@@ -54,6 +55,7 @@ To create a new skill, copy [`skills/_template/`](skills/_template/) and replace
 | Skill | File | Use |
 |---|---|---|
 | GitHub Safe Publisher | [`skills/github-safe-publisher/SKILL.md`](skills/github-safe-publisher/SKILL.md) | Prepare private work for public GitHub releases safely. |
+| Case Study Writer | [`skills/case-study-writer/SKILL.md`](skills/case-study-writer/SKILL.md) | Turn private project work into public-safe case studies. |
 | Web Scraper | [`skills/web-scraper/SKILL.md`](skills/web-scraper/SKILL.md) | Extract public page content safely into structured notes. |
 | Skill Reviewer | [`skills/skill-reviewer/SKILL.md`](skills/skill-reviewer/SKILL.md) | Review AI skill files or folders for dangerous behavior. |
 | Em Dash Remover | [`skills/em-dash-remover/SKILL.md`](skills/em-dash-remover/SKILL.md) | Clean one common AI-writing tell from copy. |

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Case Study Writer"
+  short_description: "Write public-safe automation case studies"
+  default_prompt: "Use $case-study-writer to turn this private project summary into a public-safe case study."
