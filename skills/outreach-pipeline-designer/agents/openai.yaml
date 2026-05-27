@@ -1,0 +1,4 @@
+interface:
+  display_name: "Outreach Pipeline Designer"
+  short_description: "Design review-first outreach pipelines"
+  default_prompt: "Use $outreach-pipeline-designer to design a safe human-reviewed prospecting and outreach workflow."
