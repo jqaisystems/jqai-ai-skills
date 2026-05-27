@@ -1,0 +1,4 @@
+interface:
+  display_name: "Etsy Listing Optimizer"
+  short_description: "Optimize marketplace listings safely"
+  default_prompt: "Use $etsy-listing-optimizer to audit and rewrite this marketplace listing with public-safe fake data."
