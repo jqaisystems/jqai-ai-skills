@@ -1,0 +1,38 @@
+name: Validate skills
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Validate skill folders and README links
+        run: python tools/validate_skills.py
+
+      - name: Check public safety scanner for blocking findings
+        run: python tools/check_public_safety.py
+
+      - name: List skills with installer
+        shell: pwsh
+        run: ./install.ps1 -List
+
+      - name: Smoke-test one skill install
+        shell: pwsh
+        run: |
+          $target = Join-Path $env:RUNNER_TEMP "jqai-skills"
+          ./install.ps1 release-announcement-writer -Target $target
+          if (-not (Test-Path (Join-Path $target "release-announcement-writer/SKILL.md"))) {
+            throw "release-announcement-writer did not install correctly"
+          }
