@@ -1,0 +1,4 @@
+interface:
+  display_name: "Release Announcement Writer"
+  short_description: "Write release notes and launch posts"
+  default_prompt: "Use $release-announcement-writer to turn this changelog into release notes, website copy, and a short launch post."

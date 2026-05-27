@@ -6,7 +6,7 @@ These skills are small, portable instruction folders for Claude/Codex-style work
 
 [![Website](https://img.shields.io/badge/Website-ai.joaoqueiros.com-111827?style=for-the-badge)](https://www.ai.joaoqueiros.com)
 [![License](https://img.shields.io/badge/License-MIT-059669?style=for-the-badge)](LICENSE)
-[![Release](https://img.shields.io/badge/Release-v0.2.4-2563eb?style=for-the-badge)](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.2.4)
+[![Release](https://img.shields.io/badge/Release-v0.2.5-2563eb?style=for-the-badge)](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.2.5)
 
 ## Preview
 
@@ -30,6 +30,7 @@ Use $github-safe-publisher to prepare this repo for a public release.
 Use $skill-reviewer to audit this downloaded skill before installing it.
 Use $em-dash-remover to clean this landing page copy.
 Use $demo-animation-v2 to create a responsive animated walkthrough.
+Use $release-announcement-writer to turn this changelog into release notes and a launch post.
 ```
 
 ## Skill Folder Structure
@@ -59,6 +60,7 @@ To create a new skill, copy [`skills/_template/`](skills/_template/) and replace
 | Code Deduplicator | [`skills/code-deduplicator/SKILL.md`](skills/code-deduplicator/SKILL.md) | Safely consolidate repeated code patterns. |
 | Demo Animation | [`skills/demo-animation/SKILL.md`](skills/demo-animation/SKILL.md) | Build legacy desktop-oriented product/demo walkthroughs. |
 | Demo Animation V2 | [`skills/demo-animation-v2/SKILL.md`](skills/demo-animation-v2/SKILL.md) | Build recommended responsive demo walkthroughs. Includes [`assets/template.html`](skills/demo-animation-v2/assets/template.html). |
+| Release Announcement Writer | [`skills/release-announcement-writer/SKILL.md`](skills/release-announcement-writer/SKILL.md) | Turn changelogs and shipped changes into release notes, website blurbs, and launch posts. |
 
 ## Why This Matters
 
@@ -79,6 +81,37 @@ Only install skills you understand. Review the instructions before using them on
 ## Codex Install
 
 Copy a whole skill folder into your Codex skills directory, then restart Codex so the skill list reloads.
+
+Fast install from this repo:
+
+Windows PowerShell:
+
+```powershell
+.\install.ps1 web-scraper
+.\install.ps1 release-announcement-writer
+.\install.ps1 -All
+```
+
+macOS/Linux:
+
+```bash
+chmod +x ./install.sh
+./install.sh web-scraper
+./install.sh release-announcement-writer
+./install.sh --all
+```
+
+List available skills:
+
+```powershell
+.\install.ps1 -List
+```
+
+```bash
+./install.sh --list
+```
+
+Manual install:
 
 Windows PowerShell:
 
