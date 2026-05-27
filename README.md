@@ -6,7 +6,7 @@ These skills are small, portable instruction folders for Claude/Codex-style work
 
 [![Website](https://img.shields.io/badge/Website-ai.joaoqueiros.com-111827?style=for-the-badge)](https://www.ai.joaoqueiros.com)
 [![License](https://img.shields.io/badge/License-MIT-059669?style=for-the-badge)](LICENSE)
-[![Release](https://img.shields.io/badge/Release-v0.2.8-2563eb?style=for-the-badge)](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.2.8)
+[![Release](https://img.shields.io/badge/Release-v0.2.9-2563eb?style=for-the-badge)](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.2.9)
 
 ## Preview
 
@@ -30,10 +30,10 @@ Use $github-safe-publisher to prepare this repo for a public release.
 Use $case-study-writer to turn this private project summary into a public-safe case study.
 Use $outreach-pipeline-designer to design a safe human-reviewed prospecting workflow.
 Use $etsy-listing-optimizer to audit and rewrite a marketplace listing safely.
+Use $release-announcement-writer to turn this changelog into release notes and a launch post.
 Use $skill-reviewer to audit this downloaded skill before installing it.
 Use $em-dash-remover to clean this landing page copy.
 Use $demo-animation-v2 to create a responsive animated walkthrough.
-Use $release-announcement-writer to turn this changelog into release notes and a launch post.
 ```
 
 ## Skill Folder Structure
@@ -54,19 +54,61 @@ To create a new skill, copy [`skills/_template/`](skills/_template/) and replace
 
 ## Skills Included
 
+### Safety & Publishing
+
 | Skill | File | Use |
 |---|---|---|
 | GitHub Safe Publisher | [`skills/github-safe-publisher/SKILL.md`](skills/github-safe-publisher/SKILL.md) | Prepare private work for public GitHub releases safely. |
+| Skill Reviewer | [`skills/skill-reviewer/SKILL.md`](skills/skill-reviewer/SKILL.md) | Review AI skill files or folders for dangerous behavior. |
+
+### Public Proof
+
+| Skill | File | Use |
+|---|---|---|
 | Case Study Writer | [`skills/case-study-writer/SKILL.md`](skills/case-study-writer/SKILL.md) | Turn private project work into public-safe case studies. |
+| Release Announcement Writer | [`skills/release-announcement-writer/SKILL.md`](skills/release-announcement-writer/SKILL.md) | Turn changelogs and shipped changes into release notes, website blurbs, and launch posts. |
+
+### Growth & Outreach
+
+| Skill | File | Use |
+|---|---|---|
 | Outreach Pipeline Designer | [`skills/outreach-pipeline-designer/SKILL.md`](skills/outreach-pipeline-designer/SKILL.md) | Design safe human-reviewed prospecting and outreach workflows. |
 | Etsy Listing Optimizer | [`skills/etsy-listing-optimizer/SKILL.md`](skills/etsy-listing-optimizer/SKILL.md) | Audit, rewrite, batch, and monitor marketplace listings. |
+
+### Content & Research
+
+| Skill | File | Use |
+|---|---|---|
 | Web Scraper | [`skills/web-scraper/SKILL.md`](skills/web-scraper/SKILL.md) | Extract public page content safely into structured notes. |
-| Skill Reviewer | [`skills/skill-reviewer/SKILL.md`](skills/skill-reviewer/SKILL.md) | Review AI skill files or folders for dangerous behavior. |
 | Em Dash Remover | [`skills/em-dash-remover/SKILL.md`](skills/em-dash-remover/SKILL.md) | Clean one common AI-writing tell from copy. |
+
+### Dev Workflow
+
+| Skill | File | Use |
+|---|---|---|
 | Code Deduplicator | [`skills/code-deduplicator/SKILL.md`](skills/code-deduplicator/SKILL.md) | Safely consolidate repeated code patterns. |
+
+### Demo & Presentation
+
+| Skill | File | Use |
+|---|---|---|
 | Demo Animation | [`skills/demo-animation/SKILL.md`](skills/demo-animation/SKILL.md) | Build legacy desktop-oriented product/demo walkthroughs. |
 | Demo Animation V2 | [`skills/demo-animation-v2/SKILL.md`](skills/demo-animation-v2/SKILL.md) | Build recommended responsive demo walkthroughs. Includes [`assets/template.html`](skills/demo-animation-v2/assets/template.html). |
-| Release Announcement Writer | [`skills/release-announcement-writer/SKILL.md`](skills/release-announcement-writer/SKILL.md) | Turn changelogs and shipped changes into release notes, website blurbs, and launch posts. |
+
+## Which Skill Should I Use?
+
+| If you want to... | Start with |
+|---|---|
+| Publish private work without leaking secrets | [`github-safe-publisher`](skills/github-safe-publisher/SKILL.md) |
+| Turn internal work into client-readable proof | [`case-study-writer`](skills/case-study-writer/SKILL.md) |
+| Design a review-first sales or prospecting workflow | [`outreach-pipeline-designer`](skills/outreach-pipeline-designer/SKILL.md) |
+| Improve a marketplace listing safely | [`etsy-listing-optimizer`](skills/etsy-listing-optimizer/SKILL.md) |
+| Package release notes or a launch post | [`release-announcement-writer`](skills/release-announcement-writer/SKILL.md) |
+| Review a downloaded skill before installing it | [`skill-reviewer`](skills/skill-reviewer/SKILL.md) |
+| Extract structured data from public pages | [`web-scraper`](skills/web-scraper/SKILL.md) |
+| Clean AI-ish punctuation from copy | [`em-dash-remover`](skills/em-dash-remover/SKILL.md) |
+| Reduce repeated code patterns | [`code-deduplicator`](skills/code-deduplicator/SKILL.md) |
+| Build a responsive walkthrough demo | [`demo-animation-v2`](skills/demo-animation-v2/SKILL.md) |
 
 ## Why This Matters
 
@@ -93,8 +135,10 @@ Fast install from this repo:
 Windows PowerShell:
 
 ```powershell
-.\install.ps1 web-scraper
-.\install.ps1 release-announcement-writer
+.\install.ps1 github-safe-publisher
+.\install.ps1 case-study-writer
+.\install.ps1 outreach-pipeline-designer
+.\install.ps1 etsy-listing-optimizer
 .\install.ps1 -All
 ```
 
@@ -102,8 +146,10 @@ macOS/Linux:
 
 ```bash
 chmod +x ./install.sh
-./install.sh web-scraper
-./install.sh release-announcement-writer
+./install.sh github-safe-publisher
+./install.sh case-study-writer
+./install.sh outreach-pipeline-designer
+./install.sh etsy-listing-optimizer
 ./install.sh --all
 ```
 
