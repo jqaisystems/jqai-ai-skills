@@ -21,11 +21,11 @@ These skills are small, portable instruction folders for Claude/Codex-style work
 
 ### Launch Video
 
-![JQ AI Skills v0.3.0 launch motion preview](assets/jq-ai-skills-v0.3.0-launch-preview.gif)
+![JQ AI Skills launch motion preview](assets/jq-ai-skills-launch-preview.gif)
 
-[Watch the 30-second launch video with music](assets/jq-ai-skills-v0.3.0-launch-video-with-music.mp4).
+[Watch the 30-second launch video with music](assets/jq-ai-skills-launch-video-with-music.mp4).
 
-The launch video is a promotional preview of the v0.3.0 release. Skill installation does not require these media assets.
+The launch video is a promotional preview of the public skill library. Skill installation does not require these media assets.
 
 ## Quick Start
 
