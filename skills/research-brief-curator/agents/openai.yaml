@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Brief Curator"
+  short_description: "Curate public-source research briefs safely"
+  default_prompt: "Use $research-brief-curator to turn public links or notes into a safe, human-reviewed research brief."

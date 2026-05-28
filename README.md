@@ -33,6 +33,7 @@ Use $github-safe-publisher to prepare this repo for a public release.
 Use $case-study-writer to turn this private project summary into a public-safe case study.
 Use $outreach-pipeline-designer to design a safe human-reviewed prospecting workflow.
 Use $etsy-listing-optimizer to audit and rewrite a marketplace listing safely.
+Use $research-brief-curator to turn public links into a safe weekly research brief.
 Use $release-announcement-writer to turn this changelog into release notes and a launch post.
 Use $skill-reviewer to audit this downloaded skill before installing it.
 Use $em-dash-remover to clean this landing page copy.
@@ -82,6 +83,7 @@ To create a new skill, copy [`skills/_template/`](skills/_template/) and replace
 
 | Skill | File | Use |
 |---|---|---|
+| Research Brief Curator | [`skills/research-brief-curator/SKILL.md`](skills/research-brief-curator/SKILL.md) | Turn public links and notes into source-aware research briefs with review gates. |
 | Web Scraper | [`skills/web-scraper/SKILL.md`](skills/web-scraper/SKILL.md) | Extract public page content safely into structured notes. |
 | Em Dash Remover | [`skills/em-dash-remover/SKILL.md`](skills/em-dash-remover/SKILL.md) | Clean one common AI-writing tell from copy. |
 
@@ -106,6 +108,7 @@ To create a new skill, copy [`skills/_template/`](skills/_template/) and replace
 | Turn internal work into client-readable proof | [`case-study-writer`](skills/case-study-writer/SKILL.md) |
 | Design a review-first sales or prospecting workflow | [`outreach-pipeline-designer`](skills/outreach-pipeline-designer/SKILL.md) |
 | Improve a marketplace listing safely | [`etsy-listing-optimizer`](skills/etsy-listing-optimizer/SKILL.md) |
+| Turn public links into a reviewed research brief | [`research-brief-curator`](skills/research-brief-curator/SKILL.md) |
 | Package release notes or a launch post | [`release-announcement-writer`](skills/release-announcement-writer/SKILL.md) |
 | Review a downloaded skill before installing it | [`skill-reviewer`](skills/skill-reviewer/SKILL.md) |
 | Extract structured data from public pages | [`web-scraper`](skills/web-scraper/SKILL.md) |
