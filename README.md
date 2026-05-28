@@ -48,6 +48,10 @@ Use $em-dash-remover to clean this landing page copy.
 Use $demo-animation-v2 to create a responsive animated walkthrough.
 ```
 
+## Example Artifacts
+
+- [`docs/examples/research-brief-curator-sample.md`](docs/examples/research-brief-curator-sample.md) shows the `research-brief-curator` output shape using fake public sources and review labels.
+
 ## Skill Folder Structure
 
 Each skill is packaged as a self-contained folder:

@@ -1,0 +1,48 @@
+[
+  {
+    "title": "Review-first agent workflow pattern",
+    "source": "Example AI Notes",
+    "url": "https://example.com/research/review-first-agent-workflow",
+    "date": "2026-05-28",
+    "topic": "AI workflow design",
+    "visibility": "public_ready",
+    "summary": "A short public article describes how review queues help teams keep AI-drafted work accountable before it reaches customers or public channels.",
+    "why_it_matters": "The pattern maps directly to safer publishing, research, and outreach systems because the model drafts while a human approves the final action.",
+    "next_action": "Adapt as a public checklist for review-gated AI workflows."
+  },
+  {
+    "title": "Source trail checklist for weekly briefs",
+    "source": "Public Studio Handbook",
+    "url": "https://example.org/handbook/source-trail-checklist",
+    "date": "2026-05-27",
+    "topic": "Research operations",
+    "visibility": "public_ready",
+    "summary": "A lightweight checklist shows how to keep titles, URLs, dates, visibility labels, and decisions attached to each research item.",
+    "why_it_matters": "Clear source trails make weekly briefs easier to audit and safer to reuse in public summaries.",
+    "next_action": "Use the schema as a fake-data example for public documentation."
+  },
+  {
+    "title": "Unverified model release discussion",
+    "source": "Example Forum Thread",
+    "url": "https://community.example.com/thread/model-release-rumor",
+    "date": "2026-05-26",
+    "topic": "Model updates",
+    "visibility": "needs_review",
+    "summary": "A public discussion mentions a possible model release, but the claim is not confirmed by an official source.",
+    "why_it_matters": "Research briefs should separate useful signals from unverified claims so readers do not mistake rumors for facts.",
+    "next_action": "Hold until an official release note or documentation page confirms the claim.",
+    "review_note": "Needs source verification before public reuse."
+  },
+  {
+    "title": "Duplicate background note",
+    "source": "Example Archive",
+    "url": "https://example.net/archive/review-queue-background",
+    "date": "2026-05-20",
+    "topic": "Archive",
+    "visibility": "archive",
+    "summary": "Older background note covering the same review queue concept as a newer source.",
+    "why_it_matters": "Duplicates can be archived so the brief stays short and decision-ready.",
+    "next_action": "Archive.",
+    "review_note": "Duplicate of newer public-ready material."
+  }
+]
