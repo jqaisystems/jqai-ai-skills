@@ -6,7 +6,7 @@ These skills are small, portable instruction folders for Claude/Codex-style work
 
 [![Website](https://img.shields.io/badge/Website-ai.joaoqueiros.com-111827?style=for-the-badge)](https://www.ai.joaoqueiros.com)
 [![License](https://img.shields.io/badge/License-MIT-059669?style=for-the-badge)](LICENSE)
-[![Release](https://img.shields.io/badge/Release-v0.3.0-2563eb?style=for-the-badge)](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.3.0)
+[![Release](https://img.shields.io/badge/Release-v0.3.1-2563eb?style=for-the-badge)](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.3.1)
 [![Validate skills](https://github.com/jqaisystems/jqai-ai-skills/actions/workflows/validate.yml/badge.svg)](https://github.com/jqaisystems/jqai-ai-skills/actions/workflows/validate.yml)
 
 ## Preview
@@ -153,6 +153,7 @@ Windows PowerShell:
 .\install.ps1 case-study-writer
 .\install.ps1 outreach-pipeline-designer
 .\install.ps1 etsy-listing-optimizer
+.\install.ps1 research-brief-curator
 .\install.ps1 -All
 ```
 
@@ -164,6 +165,7 @@ chmod +x ./install.sh
 ./install.sh case-study-writer
 ./install.sh outreach-pipeline-designer
 ./install.sh etsy-listing-optimizer
+./install.sh research-brief-curator
 ./install.sh --all
 ```
 
