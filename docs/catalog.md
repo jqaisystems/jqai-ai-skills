@@ -23,6 +23,8 @@ For a shorter first-choice guide, start with [`docs/guides/skill-selection.md`](
 
 ## Recommended Bundles
 
+For a fuller walkthrough of how these bundles work in practice, see [`docs/examples/workflow-bundles.md`](examples/workflow-bundles.md).
+
 ### Public GitHub Publishing
 
 Use this bundle when your main job is turning private work into public-safe proof.

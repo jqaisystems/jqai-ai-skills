@@ -23,6 +23,8 @@ For the complete skill list with recommended bundles and safe install defaults, 
 
 ## Recommended Starter Sets
 
+For practical multi-skill examples, see [`docs/examples/workflow-bundles.md`](../examples/workflow-bundles.md).
+
 ### Public GitHub Publishing
 
 Install:
