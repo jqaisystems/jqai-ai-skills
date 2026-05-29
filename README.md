@@ -38,7 +38,7 @@ If you are new here, start with one skill rather than installing everything:
 | Announcing shipped work | [`release-announcement-writer`](skills/release-announcement-writer/SKILL.md) | Turns changelogs and diffs into release notes, website blurbs, and launch posts. |
 | Reviewing third-party skills | [`skill-reviewer`](skills/skill-reviewer/SKILL.md) | Audits skill instructions before you install them locally. |
 
-For a fuller decision guide, use [`docs/guides/skill-selection.md`](docs/guides/skill-selection.md).
+For a fuller decision guide, use [`docs/guides/skill-selection.md`](docs/guides/skill-selection.md). For the complete public catalog, use [`docs/catalog.md`](docs/catalog.md).
 
 Install flow:
 
@@ -63,6 +63,7 @@ Use $demo-animation-v2 to create a responsive animated walkthrough.
 
 ## Example Artifacts
 
+- [`docs/catalog.md`](docs/catalog.md) is the complete public catalog of all installable skills, recommended bundles, and safe install defaults.
 - [`docs/examples/github-safe-publisher-sample-review.md`](docs/examples/github-safe-publisher-sample-review.md) shows the `github-safe-publisher` safety verdict, scanner summary, and manual review gate using fake files.
 - [`docs/examples/case-study-writer-sample.md`](docs/examples/case-study-writer-sample.md) shows the `case-study-writer` case study shape using a fictional review queue workflow.
 - [`docs/examples/research-brief-curator-sample.md`](docs/examples/research-brief-curator-sample.md) shows the `research-brief-curator` output shape using fake public sources and review labels.
@@ -129,7 +130,7 @@ To create a new skill, copy [`skills/_template/`](skills/_template/) and replace
 
 ## Which Skill Should I Use?
 
-For the detailed visitor guide, see [`docs/guides/skill-selection.md`](docs/guides/skill-selection.md).
+For the detailed visitor guide, see [`docs/guides/skill-selection.md`](docs/guides/skill-selection.md). For the complete catalog, see [`docs/catalog.md`](docs/catalog.md).
 
 | If you want to... | Start with |
 |---|---|

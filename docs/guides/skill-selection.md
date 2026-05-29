@@ -2,6 +2,8 @@
 
 Use this guide when you want to install one useful skill first instead of browsing every folder.
 
+For the complete skill list with recommended bundles and safe install defaults, see [`docs/catalog.md`](../catalog.md).
+
 ## Start With Your Job
 
 | Job | Best first skill | Use it when |
