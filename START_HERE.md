@@ -46,6 +46,9 @@ Use $github-safe-publisher to review this README and docs folder before public r
 | Review release history | [`CHANGELOG.md`](CHANGELOG.md) |
 | Publish a release safely | [`RELEASE_CHECKLIST.md`](RELEASE_CHECKLIST.md) |
 | Understand security and responsible use | [`SECURITY.md`](SECURITY.md) |
+| See the public roadmap | [`ROADMAP.md`](ROADMAP.md) |
+| Get help or report an issue | [`SUPPORT.md`](SUPPORT.md) |
+| Compare skill maturity | [`docs/skill-quality-matrix.md`](docs/skill-quality-matrix.md) |
 | Understand first-run output | [`docs/examples/first-run-github-safe-publisher.md`](docs/examples/first-run-github-safe-publisher.md) |
 | Choose the right first skill | [`docs/guides/skill-selection.md`](docs/guides/skill-selection.md) |
 | Browse every skill | [`docs/catalog.md`](docs/catalog.md) |
@@ -80,6 +83,9 @@ Once the first skill makes sense:
 - Use [`CHANGELOG.md`](CHANGELOG.md) to see what changed across public releases.
 - Use [`RELEASE_CHECKLIST.md`](RELEASE_CHECKLIST.md) before publishing a new public release.
 - Use [`SECURITY.md`](SECURITY.md) before using skills on sensitive or client-facing work.
+- Use [`ROADMAP.md`](ROADMAP.md) to see where the public library is going next.
+- Use [`SUPPORT.md`](SUPPORT.md) when you need install help, want to report a problem, or have a public-safe question.
+- Use [`docs/skill-quality-matrix.md`](docs/skill-quality-matrix.md) to compare maturity, examples, and safety sensitivity.
 - Use [`skills/_template/`](skills/_template/) if you want to create a new skill folder.
 - Use [`CONTRIBUTING.md`](CONTRIBUTING.md) before proposing changes.
 
@@ -90,14 +96,19 @@ skills/                 installable skill folders
 docs/guides/            first-use and selection guides
 docs/examples/          sample outputs and workflow examples
 docs/announcements/     release notes
+docs/skill-quality-matrix.md  maturity and safety comparison
 CHANGELOG.md            public release history
 RELEASE_CHECKLIST.md    safe public release routine
 SECURITY.md             security and responsible-use policy
+ROADMAP.md              public-safe direction of travel
+SUPPORT.md              help, issue, and sensitive-reporting guidance
+.github/ISSUE_TEMPLATE/ public issue forms
+.github/PULL_REQUEST_TEMPLATE.md
 assets/                 public visual and demo assets
 ```
 
 The public onboarding path is now:
 
 ```text
-START_HERE -> choose -> INSTALL -> troubleshoot if needed -> SECURITY if sensitive -> run -> understand output -> release checklist if publishing -> use bundles or catalog
+START_HERE -> choose -> INSTALL -> troubleshoot or support if needed -> SECURITY if sensitive -> run -> understand output -> release checklist if publishing -> use bundles, catalog, or quality matrix
 ```

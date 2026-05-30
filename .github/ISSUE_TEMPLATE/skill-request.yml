@@ -1,0 +1,48 @@
+name: Skill request
+description: Suggest a new public-safe skill for the library.
+title: "[Skill request]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a skill. Please keep examples fictional or generalized. Do not include credentials, client data, private links, account details, raw prompts, logs, exports, screenshots with private UI, or local machine paths.
+  - type: input
+    id: skill-name
+    attributes:
+      label: Proposed skill name
+      description: Use a short kebab-case name if you have one.
+      placeholder: example-skill-name
+    validations:
+      required: true
+  - type: textarea
+    id: workflow
+    attributes:
+      label: Workflow
+      description: What repeatable job should this skill help with?
+      placeholder: Describe the public-safe workflow.
+    validations:
+      required: true
+  - type: textarea
+    id: inputs
+    attributes:
+      label: Public-safe inputs
+      description: What kind of safe input would the skill use?
+      placeholder: Public URLs, fictional examples, approved notes, or sanitized docs.
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Desired output
+      description: What should the skill produce?
+      placeholder: A review, brief, checklist, rewrite, template, or other artifact.
+    validations:
+      required: true
+  - type: textarea
+    id: safety
+    attributes:
+      label: Safety boundaries
+      description: What should this skill avoid or require human review for?
+      placeholder: Avoid credentials, private data, unapproved publishing, or unattended sending.
+    validations:
+      required: true

@@ -1,0 +1,29 @@
+name: Docs feedback
+description: Report unclear docs, broken links, typos, or missing public-safe guidance.
+title: "[Docs]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please keep feedback public-safe. Do not include private project material, credentials, client data, logs, screenshots with private UI, or local machine paths.
+  - type: input
+    id: page
+    attributes:
+      label: Page or file
+      placeholder: README.md, INSTALL.md, docs/catalog.md
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: What is unclear or incorrect?
+      placeholder: Describe the docs problem.
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested improvement
+      placeholder: Optional public-safe wording or structure suggestion.
+    validations:
+      required: false

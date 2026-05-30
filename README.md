@@ -6,10 +6,10 @@ These skills are small, portable instruction folders for Claude/Codex-style work
 
 [![Website](https://img.shields.io/badge/Website-ai.joaoqueiros.com-111827?style=for-the-badge)](https://www.ai.joaoqueiros.com)
 [![License](https://img.shields.io/badge/License-MIT-059669?style=for-the-badge)](LICENSE)
-[![Release](https://img.shields.io/badge/Release-v0.4.5-2563eb?style=for-the-badge)](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.4.5)
+[![Release](https://img.shields.io/badge/Release-v0.5.0-2563eb?style=for-the-badge)](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.5.0)
 [![Validate skills](https://github.com/jqaisystems/jqai-ai-skills/actions/workflows/validate.yml/badge.svg)](https://github.com/jqaisystems/jqai-ai-skills/actions/workflows/validate.yml)
 
-New here? Start with [`START_HERE.md`](START_HERE.md) for the shortest path from overview to first skill run. Ready to install? Use [`INSTALL.md`](INSTALL.md). Something not loading? Use [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md). Want release history? Use [`CHANGELOG.md`](CHANGELOG.md). Publishing a release? Use [`RELEASE_CHECKLIST.md`](RELEASE_CHECKLIST.md). Need safety policy? Use [`SECURITY.md`](SECURITY.md).
+New here? Start with [`START_HERE.md`](START_HERE.md) for the shortest path from overview to first skill run. Ready to install? Use [`INSTALL.md`](INSTALL.md). Something not loading? Use [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md). Want release history? Use [`CHANGELOG.md`](CHANGELOG.md). Publishing a release? Use [`RELEASE_CHECKLIST.md`](RELEASE_CHECKLIST.md). Need safety policy? Use [`SECURITY.md`](SECURITY.md). Planning adoption? Use [`ROADMAP.md`](ROADMAP.md), [`SUPPORT.md`](SUPPORT.md), and the [`skill quality matrix`](docs/skill-quality-matrix.md).
 
 ## Preview
 
@@ -40,7 +40,7 @@ If you are new here, start with one skill rather than installing everything:
 | Announcing shipped work | [`release-announcement-writer`](skills/release-announcement-writer/SKILL.md) | Turns changelogs and diffs into release notes, website blurbs, and launch posts. |
 | Reviewing third-party skills | [`skill-reviewer`](skills/skill-reviewer/SKILL.md) | Audits skill instructions before you install them locally. |
 
-For install commands, use [`INSTALL.md`](INSTALL.md). If a skill does not appear after install, use [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md). For a guided first install, use [`docs/guides/one-minute-install.md`](docs/guides/one-minute-install.md). For a fuller decision guide, use [`docs/guides/skill-selection.md`](docs/guides/skill-selection.md). For the complete public catalog, use [`docs/catalog.md`](docs/catalog.md).
+For install commands, use [`INSTALL.md`](INSTALL.md). If a skill does not appear after install, use [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md). For a guided first install, use [`docs/guides/one-minute-install.md`](docs/guides/one-minute-install.md). For a fuller decision guide, use [`docs/guides/skill-selection.md`](docs/guides/skill-selection.md). For the complete public catalog, use [`docs/catalog.md`](docs/catalog.md). For maturity, examples, and safety notes by skill, use [`docs/skill-quality-matrix.md`](docs/skill-quality-matrix.md).
 
 Install flow:
 
@@ -71,6 +71,9 @@ Use $demo-animation-v2 to create a responsive animated walkthrough.
 - [`CHANGELOG.md`](CHANGELOG.md) tracks public releases and top-level repo changes.
 - [`RELEASE_CHECKLIST.md`](RELEASE_CHECKLIST.md) documents the safe release routine for validation, scanning, tagging, profile updates, website handoff, and live verification.
 - [`SECURITY.md`](SECURITY.md) explains responsible use, sensitive issue reporting, install safety, and public publishing boundaries.
+- [`ROADMAP.md`](ROADMAP.md) shows the public-safe direction for near-term skill library work.
+- [`SUPPORT.md`](SUPPORT.md) explains where to ask for help and what not to post publicly.
+- [`docs/skill-quality-matrix.md`](docs/skill-quality-matrix.md) summarizes skill maturity, example coverage, and safety sensitivity.
 - [`docs/catalog.md`](docs/catalog.md) is the complete public catalog of all installable skills, recommended bundles, and safe install defaults.
 - [`docs/guides/one-minute-install.md`](docs/guides/one-minute-install.md) shows the fastest path to install one skill, reload your tool, and run a first prompt.
 - [`docs/examples/first-run-github-safe-publisher.md`](docs/examples/first-run-github-safe-publisher.md) shows the expected first-run output shape for `github-safe-publisher` using fake files.
