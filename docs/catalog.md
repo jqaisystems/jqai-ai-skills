@@ -2,7 +2,7 @@
 
 This catalog gives a public, client-readable view of the skills in this repo: what each skill does, who it helps, when to use it, and how to install it.
 
-For a guided first install, start with [`docs/guides/one-minute-install.md`](guides/one-minute-install.md). For a shorter first-choice guide, use [`docs/guides/skill-selection.md`](guides/skill-selection.md).
+If you are new to the repo, start with [`START_HERE.md`](../START_HERE.md). For a guided first install, use [`docs/guides/one-minute-install.md`](guides/one-minute-install.md). For a shorter first-choice guide, use [`docs/guides/skill-selection.md`](guides/skill-selection.md).
 
 ## At A Glance
 

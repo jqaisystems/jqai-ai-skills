@@ -1,0 +1,91 @@
+# Start Here
+
+Use this page if you are opening JQ AI Skills for the first time and want the shortest path from overview to first useful run.
+
+## What This Repo Is
+
+JQ AI Skills is a public MIT-licensed library of reusable skill folders for Codex, Claude Code, and similar agentic coding tools.
+
+Each skill packages a repeatable AI workflow as a folder with instructions, metadata, and optional references, scripts, examples, or assets. The goal is simple: turn useful AI work into something inspectable, installable, and reusable.
+
+## Who It Is For
+
+This repo is useful if you:
+
+- publish GitHub proof from real project work and need a safety review habit;
+- turn internal work into public-safe case studies or release notes;
+- collect public sources into research briefs;
+- design human-reviewed outreach, marketplace, demo, or copy workflows;
+- want reusable agent routines instead of one-off prompts.
+
+## The Fast Path
+
+Follow this path if you want to try one skill before reading the whole repo.
+
+1. Pick the safest first skill: [`github-safe-publisher`](skills/github-safe-publisher/SKILL.md).
+2. Install it with the [`one-minute install guide`](docs/guides/one-minute-install.md).
+3. Reload your AI coding tool.
+4. Run the first prompt:
+
+```text
+Use $github-safe-publisher to review this README and docs folder before public release.
+```
+
+5. Compare the result with the [`first-run sample`](docs/examples/first-run-github-safe-publisher.md).
+6. Use the [`skill selection guide`](docs/guides/skill-selection.md) if your first job is not public GitHub publishing.
+7. Use the [`catalog`](docs/catalog.md) when you want the full list.
+
+## What To Read First
+
+| Need | Start with |
+|---|---|
+| Try one skill fast | [`docs/guides/one-minute-install.md`](docs/guides/one-minute-install.md) |
+| Understand first-run output | [`docs/examples/first-run-github-safe-publisher.md`](docs/examples/first-run-github-safe-publisher.md) |
+| Choose the right first skill | [`docs/guides/skill-selection.md`](docs/guides/skill-selection.md) |
+| Browse every skill | [`docs/catalog.md`](docs/catalog.md) |
+| Combine skills into a workflow | [`docs/examples/workflow-bundles.md`](docs/examples/workflow-bundles.md) |
+
+## Recommended First Skill
+
+Start with `github-safe-publisher` if you are unsure.
+
+It teaches the core review pattern used across this library:
+
+```text
+inspect candidate -> scan for common risks -> review diff -> publish only after approval
+```
+
+That pattern matters because reusable AI workflows should not just be clever. They should be reviewable.
+
+## Safe First-Run Rules
+
+- Start with one skill.
+- Read `SKILL.md` before using a skill on sensitive work.
+- Use a test folder first.
+- Do not paste credentials, tokens, account data, logs, exports, or unpublished prompt notes into a tool unless you understand where they will go.
+- Review diffs before committing public artifacts.
+
+## After The First Run
+
+Once the first skill makes sense:
+
+- Use [`docs/examples/workflow-bundles.md`](docs/examples/workflow-bundles.md) for multi-skill paths.
+- Use [`docs/catalog.md`](docs/catalog.md) to browse the full library.
+- Use [`skills/_template/`](skills/_template/) if you want to create a new skill folder.
+- Use [`CONTRIBUTING.md`](CONTRIBUTING.md) before proposing changes.
+
+## Repo Map
+
+```text
+skills/                 installable skill folders
+docs/guides/            first-use and selection guides
+docs/examples/          sample outputs and workflow examples
+docs/announcements/     release notes
+assets/                 public visual and demo assets
+```
+
+The public onboarding path is now:
+
+```text
+START_HERE -> choose -> install -> run -> understand output -> use bundles or catalog
+```

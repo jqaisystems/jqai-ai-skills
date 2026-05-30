@@ -2,6 +2,8 @@
 
 Use this guide when you want to try one JQ AI Skill quickly instead of browsing the full catalog first.
 
+For the full visitor path, start with [`START_HERE.md`](../../START_HERE.md).
+
 The safest first install is `github-safe-publisher` because it teaches the review habit this library is built around: inspect the public artifact, scan for common risks, review the diff, then publish only when the result is safe.
 
 ## Before You Start
