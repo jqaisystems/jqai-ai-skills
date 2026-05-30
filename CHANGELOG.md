@@ -4,6 +4,18 @@ Public release history for JQ AI Skills.
 
 The social preview image is intentionally stable for 2026 and is not updated for every release.
 
+## [v0.5.1](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.5.1) - 2026-05-30
+
+Added more fake-data examples for public skill evaluation.
+
+- Added a `release-announcement-writer` sample that turns a fake changelog into release notes, website copy, and a compact post.
+- Added an `outreach-pipeline-designer` sample for a human-reviewed outreach workflow with fake prospects and approval gates.
+- Added an `etsy-listing-optimizer` sample for a fictional listing audit with title, tags, description, and review notes.
+- Linked the new samples from the README and catalog.
+- Updated the skill quality matrix to reflect the stronger example coverage.
+- Added a v0.5.1 release announcement.
+- Kept the stable 2026 social preview unchanged.
+
 ## [v0.5.0](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.5.0) - 2026-05-30
 
 Added the adoption layer for visitors who want to evaluate, request, or contribute to the skill library.

@@ -6,7 +6,7 @@ These skills are small, portable instruction folders for Claude/Codex-style work
 
 [![Website](https://img.shields.io/badge/Website-ai.joaoqueiros.com-111827?style=for-the-badge)](https://www.ai.joaoqueiros.com)
 [![License](https://img.shields.io/badge/License-MIT-059669?style=for-the-badge)](LICENSE)
-[![Release](https://img.shields.io/badge/Release-v0.5.0-2563eb?style=for-the-badge)](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.5.0)
+[![Release](https://img.shields.io/badge/Release-v0.5.1-2563eb?style=for-the-badge)](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.5.1)
 [![Validate skills](https://github.com/jqaisystems/jqai-ai-skills/actions/workflows/validate.yml/badge.svg)](https://github.com/jqaisystems/jqai-ai-skills/actions/workflows/validate.yml)
 
 New here? Start with [`START_HERE.md`](START_HERE.md) for the shortest path from overview to first skill run. Ready to install? Use [`INSTALL.md`](INSTALL.md). Something not loading? Use [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md). Want release history? Use [`CHANGELOG.md`](CHANGELOG.md). Publishing a release? Use [`RELEASE_CHECKLIST.md`](RELEASE_CHECKLIST.md). Need safety policy? Use [`SECURITY.md`](SECURITY.md). Planning adoption? Use [`ROADMAP.md`](ROADMAP.md), [`SUPPORT.md`](SUPPORT.md), and the [`skill quality matrix`](docs/skill-quality-matrix.md).
@@ -81,6 +81,9 @@ Use $demo-animation-v2 to create a responsive animated walkthrough.
 - [`docs/examples/github-safe-publisher-sample-review.md`](docs/examples/github-safe-publisher-sample-review.md) shows the `github-safe-publisher` safety verdict, scanner summary, and manual review gate using fake files.
 - [`docs/examples/case-study-writer-sample.md`](docs/examples/case-study-writer-sample.md) shows the `case-study-writer` case study shape using a fictional review queue workflow.
 - [`docs/examples/research-brief-curator-sample.md`](docs/examples/research-brief-curator-sample.md) shows the `research-brief-curator` output shape using fake public sources and review labels.
+- [`docs/examples/release-announcement-writer-sample.md`](docs/examples/release-announcement-writer-sample.md) shows release notes, website copy, and a compact post from a fake changelog.
+- [`docs/examples/outreach-pipeline-designer-sample.md`](docs/examples/outreach-pipeline-designer-sample.md) shows a human-reviewed outreach workflow with fake prospects and approval gates.
+- [`docs/examples/etsy-listing-optimizer-sample.md`](docs/examples/etsy-listing-optimizer-sample.md) shows a fictional marketplace listing audit with title, tag, description, and safety notes.
 
 ## Skill Folder Structure
 

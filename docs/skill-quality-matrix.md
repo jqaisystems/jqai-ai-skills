@@ -1,6 +1,6 @@
 # Skill Quality Matrix
 
-Current as of v0.5.0.
+Current as of v0.5.1.
 
 Use this matrix to compare the public skills by maturity, example coverage, safety sensitivity, and install notes. It is a practical adoption guide, not a certification.
 
@@ -10,10 +10,10 @@ Use this matrix to compare the public skills by maturity, example coverage, safe
 |---|---|---|---|---|---|
 | [`github-safe-publisher`](../skills/github-safe-publisher/SKILL.md) | Safety and publishing | Core public skill | First-run sample and fake-file review example | High | Recommended first install for public release work. |
 | [`case-study-writer`](../skills/case-study-writer/SKILL.md) | Public proof | Core public skill | Public-safe case study sample | High | Use fictional or approved source material only. |
-| [`release-announcement-writer`](../skills/release-announcement-writer/SKILL.md) | Public proof | Core public skill | Release notes archive and template reference | Medium | Pair with changelog and release checklist. |
+| [`release-announcement-writer`](../skills/release-announcement-writer/SKILL.md) | Public proof | Core public skill | Release notes archive, template reference, and fake changelog sample | Medium | Pair with changelog and release checklist. |
 | [`research-brief-curator`](../skills/research-brief-curator/SKILL.md) | Content and research | Core public skill | Sample brief and sample items | Medium | Use public sources or approved notes only. |
-| [`outreach-pipeline-designer`](../skills/outreach-pipeline-designer/SKILL.md) | Growth and outreach | Core public skill | Reference workflow and scoring rubric | High | Human review is required before outreach use. |
-| [`etsy-listing-optimizer`](../skills/etsy-listing-optimizer/SKILL.md) | Growth and marketplace | Core public skill | Constraint, keyword, and batch references | Medium | Remove shop exports and private metrics before use. |
+| [`outreach-pipeline-designer`](../skills/outreach-pipeline-designer/SKILL.md) | Growth and outreach | Core public skill | Reference workflow, scoring rubric, and fake review-gated pipeline sample | High | Human review is required before outreach use. |
+| [`etsy-listing-optimizer`](../skills/etsy-listing-optimizer/SKILL.md) | Growth and marketplace | Core public skill | Constraint, keyword, batch references, and fictional listing audit sample | Medium | Remove shop exports and private metrics before use. |
 | [`skill-reviewer`](../skills/skill-reviewer/SKILL.md) | Safety and publishing | Utility skill | README guidance and catalog entry | High | Use before installing third-party or untrusted skills. |
 | [`web-scraper`](../skills/web-scraper/SKILL.md) | Content and research | Utility skill | README prompts and catalog entry | Medium | Use on public pages and respect site rules. |
 | [`em-dash-remover`](../skills/em-dash-remover/SKILL.md) | Content and copy | Utility skill | README prompts and catalog entry | Low | Lightweight copy cleanup skill. |

@@ -125,6 +125,8 @@ Typical output:
 
 **Typical output:** GitHub release notes, website copy, social post variants, and assumptions or open checks.
 
+**Sample:** [`docs/examples/release-announcement-writer-sample.md`](examples/release-announcement-writer-sample.md)
+
 **Install:**
 
 ```powershell
@@ -139,6 +141,8 @@ Typical output:
 
 **Typical output:** human-reviewed pipeline design with gates for data use, drafting, approval, and system-of-record changes.
 
+**Sample:** [`docs/examples/outreach-pipeline-designer-sample.md`](examples/outreach-pipeline-designer-sample.md)
+
 **Install:**
 
 ```powershell
@@ -152,6 +156,8 @@ Typical output:
 **Who it helps:** sellers and operators who need better marketplace copy while keeping shop exports, private metrics, customer data, credentials, raw CSVs, and live shop configuration private.
 
 **Typical output:** prioritized listing recommendations, revised titles/tags/descriptions, and review notes.
+
+**Sample:** [`docs/examples/etsy-listing-optimizer-sample.md`](examples/etsy-listing-optimizer-sample.md)
 
 **Install:**
 
