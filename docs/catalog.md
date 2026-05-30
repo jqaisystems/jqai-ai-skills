@@ -2,7 +2,7 @@
 
 This catalog gives a public, client-readable view of the skills in this repo: what each skill does, who it helps, when to use it, and how to install it.
 
-For a shorter first-choice guide, start with [`docs/guides/skill-selection.md`](guides/skill-selection.md).
+For a guided first install, start with [`docs/guides/one-minute-install.md`](guides/one-minute-install.md). For a shorter first-choice guide, use [`docs/guides/skill-selection.md`](guides/skill-selection.md).
 
 ## At A Glance
 
@@ -244,6 +244,7 @@ Typical output:
 ## Safe Install Defaults
 
 - Start with one skill if you are evaluating the library.
+- Use the [`one-minute install guide`](guides/one-minute-install.md) if you want the shortest verified path.
 - Review a skill before installing it into a private workspace.
 - Use `github-safe-publisher` before publishing any artifact derived from private work.
 - Use `demo-animation-v2` for new demos unless you specifically need the legacy desktop style.

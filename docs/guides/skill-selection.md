@@ -2,7 +2,7 @@
 
 Use this guide when you want to install one useful skill first instead of browsing every folder.
 
-For the complete skill list with recommended bundles and safe install defaults, see [`docs/catalog.md`](../catalog.md).
+For the fastest guided install, see [`docs/guides/one-minute-install.md`](one-minute-install.md). For the complete skill list with recommended bundles and safe install defaults, see [`docs/catalog.md`](../catalog.md).
 
 ## Start With Your Job
 
@@ -68,6 +68,12 @@ Use this set when you need to show a workflow and then announce it clearly.
 - Use `demo-animation-v2` for new demos unless you specifically need the legacy desktop style.
 
 ## List Or Install
+
+One-minute install path:
+
+```powershell
+.\install.ps1 github-safe-publisher
+```
 
 List available skills:
 
