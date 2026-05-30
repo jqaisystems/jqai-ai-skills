@@ -23,7 +23,7 @@ This repo is useful if you:
 Follow this path if you want to try one skill before reading the whole repo.
 
 1. Pick the safest first skill: [`github-safe-publisher`](skills/github-safe-publisher/SKILL.md).
-2. Install it with the [`one-minute install guide`](docs/guides/one-minute-install.md).
+2. Install it with [`INSTALL.md`](INSTALL.md) or the [`one-minute install guide`](docs/guides/one-minute-install.md).
 3. Reload your AI coding tool.
 4. Run the first prompt:
 
@@ -40,6 +40,7 @@ Use $github-safe-publisher to review this README and docs folder before public r
 | Need | Start with |
 |---|---|
 | Try one skill fast | [`docs/guides/one-minute-install.md`](docs/guides/one-minute-install.md) |
+| Install command reference | [`INSTALL.md`](INSTALL.md) |
 | Understand first-run output | [`docs/examples/first-run-github-safe-publisher.md`](docs/examples/first-run-github-safe-publisher.md) |
 | Choose the right first skill | [`docs/guides/skill-selection.md`](docs/guides/skill-selection.md) |
 | Browse every skill | [`docs/catalog.md`](docs/catalog.md) |
@@ -87,5 +88,5 @@ assets/                 public visual and demo assets
 The public onboarding path is now:
 
 ```text
-START_HERE -> choose -> install -> run -> understand output -> use bundles or catalog
+START_HERE -> choose -> INSTALL -> run -> understand output -> use bundles or catalog
 ```
