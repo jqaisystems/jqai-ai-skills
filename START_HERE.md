@@ -44,6 +44,7 @@ Use $github-safe-publisher to review this README and docs folder before public r
 | Install command reference | [`INSTALL.md`](INSTALL.md) |
 | Fix install or reload issues | [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md) |
 | Review release history | [`CHANGELOG.md`](CHANGELOG.md) |
+| Publish a release safely | [`RELEASE_CHECKLIST.md`](RELEASE_CHECKLIST.md) |
 | Understand first-run output | [`docs/examples/first-run-github-safe-publisher.md`](docs/examples/first-run-github-safe-publisher.md) |
 | Choose the right first skill | [`docs/guides/skill-selection.md`](docs/guides/skill-selection.md) |
 | Browse every skill | [`docs/catalog.md`](docs/catalog.md) |
@@ -76,6 +77,7 @@ Once the first skill makes sense:
 - Use [`docs/examples/workflow-bundles.md`](docs/examples/workflow-bundles.md) for multi-skill paths.
 - Use [`docs/catalog.md`](docs/catalog.md) to browse the full library.
 - Use [`CHANGELOG.md`](CHANGELOG.md) to see what changed across public releases.
+- Use [`RELEASE_CHECKLIST.md`](RELEASE_CHECKLIST.md) before publishing a new public release.
 - Use [`skills/_template/`](skills/_template/) if you want to create a new skill folder.
 - Use [`CONTRIBUTING.md`](CONTRIBUTING.md) before proposing changes.
 
@@ -87,11 +89,12 @@ docs/guides/            first-use and selection guides
 docs/examples/          sample outputs and workflow examples
 docs/announcements/     release notes
 CHANGELOG.md            public release history
+RELEASE_CHECKLIST.md    safe public release routine
 assets/                 public visual and demo assets
 ```
 
 The public onboarding path is now:
 
 ```text
-START_HERE -> choose -> INSTALL -> troubleshoot if needed -> run -> understand output -> use bundles or catalog
+START_HERE -> choose -> INSTALL -> troubleshoot if needed -> run -> understand output -> release checklist if publishing -> use bundles or catalog
 ```
