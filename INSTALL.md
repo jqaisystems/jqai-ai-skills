@@ -2,7 +2,7 @@
 
 Use this page when you already know which skill you want to install and need the commands.
 
-New to the repo? Start with [`START_HERE.md`](START_HERE.md). Want a guided first run? Use [`docs/guides/one-minute-install.md`](docs/guides/one-minute-install.md).
+New to the repo? Start with [`START_HERE.md`](START_HERE.md). Want a guided first run? Use [`docs/guides/one-minute-install.md`](docs/guides/one-minute-install.md). If a skill does not appear after install, use [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md).
 
 ## Before You Start
 
@@ -102,6 +102,8 @@ Use $github-safe-publisher to review this README and docs folder before public r
 
 Compare the expected output shape with [`docs/examples/first-run-github-safe-publisher.md`](docs/examples/first-run-github-safe-publisher.md).
 
+If the skill does not appear after reload, use [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md).
+
 ## Manual Install
 
 If you do not want to use the scripts, copy the whole skill folder into your local skills folder.
@@ -131,5 +133,6 @@ cp -R ./skills/github-safe-publisher ~/.codex/skills/github-safe-publisher
 ## Next Steps
 
 - Choose the right first skill with [`docs/guides/skill-selection.md`](docs/guides/skill-selection.md).
+- Fix install or reload issues with [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md).
 - Browse every skill in [`docs/catalog.md`](docs/catalog.md).
 - Try multi-skill paths in [`docs/examples/workflow-bundles.md`](docs/examples/workflow-bundles.md).

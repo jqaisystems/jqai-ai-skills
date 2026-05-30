@@ -2,7 +2,7 @@
 
 Use this guide when you want to try one JQ AI Skill quickly instead of browsing the full catalog first.
 
-For the full visitor path, start with [`START_HERE.md`](../../START_HERE.md). For the short command reference, use [`INSTALL.md`](../../INSTALL.md).
+For the full visitor path, start with [`START_HERE.md`](../../START_HERE.md). For the short command reference, use [`INSTALL.md`](../../INSTALL.md). If the skill does not appear after install, use [`TROUBLESHOOTING.md`](../../TROUBLESHOOTING.md).
 
 The safest first install is `github-safe-publisher` because it teaches the review habit this library is built around: inspect the public artifact, scan for common risks, review the diff, then publish only when the result is safe.
 
@@ -113,5 +113,6 @@ Open `SKILL.md` before using the skill on sensitive work. These files are public
 ## Next Steps
 
 - Pick a different first skill with the [`skill selection guide`](skill-selection.md).
+- Fix install or reload issues with [`TROUBLESHOOTING.md`](../../TROUBLESHOOTING.md).
 - Browse all skills in the [`public catalog`](../catalog.md).
 - Try multi-skill flows in [`workflow bundles`](../examples/workflow-bundles.md).

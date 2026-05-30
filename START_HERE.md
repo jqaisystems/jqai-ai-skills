@@ -32,8 +32,9 @@ Use $github-safe-publisher to review this README and docs folder before public r
 ```
 
 5. Compare the result with the [`first-run sample`](docs/examples/first-run-github-safe-publisher.md).
-6. Use the [`skill selection guide`](docs/guides/skill-selection.md) if your first job is not public GitHub publishing.
-7. Use the [`catalog`](docs/catalog.md) when you want the full list.
+6. Use [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md) if the skill does not appear after install.
+7. Use the [`skill selection guide`](docs/guides/skill-selection.md) if your first job is not public GitHub publishing.
+8. Use the [`catalog`](docs/catalog.md) when you want the full list.
 
 ## What To Read First
 
@@ -41,6 +42,7 @@ Use $github-safe-publisher to review this README and docs folder before public r
 |---|---|
 | Try one skill fast | [`docs/guides/one-minute-install.md`](docs/guides/one-minute-install.md) |
 | Install command reference | [`INSTALL.md`](INSTALL.md) |
+| Fix install or reload issues | [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md) |
 | Understand first-run output | [`docs/examples/first-run-github-safe-publisher.md`](docs/examples/first-run-github-safe-publisher.md) |
 | Choose the right first skill | [`docs/guides/skill-selection.md`](docs/guides/skill-selection.md) |
 | Browse every skill | [`docs/catalog.md`](docs/catalog.md) |
@@ -88,5 +90,5 @@ assets/                 public visual and demo assets
 The public onboarding path is now:
 
 ```text
-START_HERE -> choose -> INSTALL -> run -> understand output -> use bundles or catalog
+START_HERE -> choose -> INSTALL -> troubleshoot if needed -> run -> understand output -> use bundles or catalog
 ```
