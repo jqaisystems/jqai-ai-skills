@@ -2,7 +2,7 @@
 
 This catalog gives a public, client-readable view of the skills in this repo: what each skill does, who it helps, when to use it, and how to install it.
 
-If you are new to the repo, start with [`START_HERE.md`](../START_HERE.md). For install commands, use [`INSTALL.md`](../INSTALL.md). For install or reload issues, use [`TROUBLESHOOTING.md`](../TROUBLESHOOTING.md). For a guided first install, use [`docs/guides/one-minute-install.md`](guides/one-minute-install.md). For a shorter first-choice guide, use [`docs/guides/skill-selection.md`](guides/skill-selection.md). To understand the folder contract, use [`docs/guides/skill-anatomy.md`](guides/skill-anatomy.md). For public-safe output examples, including a safe skill request shape, use [`docs/examples/README.md`](examples/README.md).
+If you are new to the repo, start with [`START_HERE.md`](../START_HERE.md). For install commands, use [`INSTALL.md`](../INSTALL.md). To confirm a copied folder, reload, and first prompt, use [`docs/guides/install-verification.md`](guides/install-verification.md). For install or reload issues, use [`TROUBLESHOOTING.md`](../TROUBLESHOOTING.md). For a guided first install, use [`docs/guides/one-minute-install.md`](guides/one-minute-install.md). For a shorter first-choice guide, use [`docs/guides/skill-selection.md`](guides/skill-selection.md). To understand the folder contract, use [`docs/guides/skill-anatomy.md`](guides/skill-anatomy.md). For public-safe output examples, including a safe skill request shape, use [`docs/examples/README.md`](examples/README.md).
 
 ## At A Glance
 
@@ -253,6 +253,7 @@ Typical output:
 
 - Start with one skill if you are evaluating the library.
 - Use [`INSTALL.md`](../INSTALL.md) when you need the short command reference.
+- Use the [`install verification guide`](guides/install-verification.md) to confirm the target folder, copied files, reload, and first prompt.
 - Use [`TROUBLESHOOTING.md`](../TROUBLESHOOTING.md) if a skill does not appear after install.
 - Use the [`one-minute install guide`](guides/one-minute-install.md) if you want the shortest verified path.
 - Review a skill before installing it into a private workspace.

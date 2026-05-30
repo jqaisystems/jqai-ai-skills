@@ -2,7 +2,7 @@
 
 Use this page when you already know which skill you want to install and need the commands.
 
-New to the repo? Start with [`START_HERE.md`](START_HERE.md). Want a guided first run? Use [`docs/guides/one-minute-install.md`](docs/guides/one-minute-install.md). If a skill does not appear after install, use [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md).
+New to the repo? Start with [`START_HERE.md`](START_HERE.md). Want a guided first run? Use [`docs/guides/one-minute-install.md`](docs/guides/one-minute-install.md). Want to confirm the install worked? Use [`docs/guides/install-verification.md`](docs/guides/install-verification.md). If a skill does not appear after install, use [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md).
 
 ## Before You Start
 
@@ -94,6 +94,8 @@ Use a custom target when testing:
 
 After installing, restart Codex or reload your AI coding tool so the skill list refreshes.
 
+For a step-by-step verification pass, use [`docs/guides/install-verification.md`](docs/guides/install-verification.md).
+
 Then run a first prompt:
 
 ```text
@@ -133,6 +135,7 @@ cp -R ./skills/github-safe-publisher ~/.codex/skills/github-safe-publisher
 ## Next Steps
 
 - Choose the right first skill with [`docs/guides/skill-selection.md`](docs/guides/skill-selection.md).
+- Verify the copied folder, reload, and first prompt with [`docs/guides/install-verification.md`](docs/guides/install-verification.md).
 - Fix install or reload issues with [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md).
 - Browse every skill in [`docs/catalog.md`](docs/catalog.md).
 - Try multi-skill paths in [`docs/examples/workflow-bundles.md`](docs/examples/workflow-bundles.md).
