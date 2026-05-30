@@ -50,6 +50,7 @@ Use $github-safe-publisher to review this README and docs folder before public r
 | Get help or report an issue | [`SUPPORT.md`](SUPPORT.md) |
 | Compare skill maturity | [`docs/skill-quality-matrix.md`](docs/skill-quality-matrix.md) |
 | Understand first-run output | [`docs/examples/first-run-github-safe-publisher.md`](docs/examples/first-run-github-safe-publisher.md) |
+| Browse public-safe examples | [`docs/examples/README.md`](docs/examples/README.md) |
 | Choose the right first skill | [`docs/guides/skill-selection.md`](docs/guides/skill-selection.md) |
 | Browse every skill | [`docs/catalog.md`](docs/catalog.md) |
 | Combine skills into a workflow | [`docs/examples/workflow-bundles.md`](docs/examples/workflow-bundles.md) |
@@ -79,6 +80,7 @@ That pattern matters because reusable AI workflows should not just be clever. Th
 Once the first skill makes sense:
 
 - Use [`docs/examples/workflow-bundles.md`](docs/examples/workflow-bundles.md) for multi-skill paths.
+- Use [`docs/examples/README.md`](docs/examples/README.md) to browse public-safe examples by job.
 - Use [`docs/catalog.md`](docs/catalog.md) to browse the full library.
 - Use [`CHANGELOG.md`](CHANGELOG.md) to see what changed across public releases.
 - Use [`RELEASE_CHECKLIST.md`](RELEASE_CHECKLIST.md) before publishing a new public release.
@@ -94,7 +96,7 @@ Once the first skill makes sense:
 ```text
 skills/                 installable skill folders
 docs/guides/            first-use and selection guides
-docs/examples/          sample outputs and workflow examples
+docs/examples/          sample outputs, examples index, and workflow examples
 docs/announcements/     release notes
 docs/skill-quality-matrix.md  maturity and safety comparison
 CHANGELOG.md            public release history

@@ -4,6 +4,16 @@ Public release history for JQ AI Skills.
 
 The social preview image is intentionally stable for 2026 and is not updated for every release.
 
+## [v0.5.2](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.5.2) - 2026-05-30
+
+Added a public-safe examples index.
+
+- Added `docs/examples/README.md` as the landing page for public-safe examples, workflow bundles, first-run samples, and sample data.
+- Linked the examples index from the README, `START_HERE.md`, catalog, and skill quality matrix.
+- Updated the skill quality matrix to `v0.5.2`.
+- Added a v0.5.2 release announcement.
+- Kept the stable 2026 social preview unchanged.
+
 ## [v0.5.1](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.5.1) - 2026-05-30
 
 Added more fake-data examples for public skill evaluation.

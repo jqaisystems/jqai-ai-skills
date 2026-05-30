@@ -1,8 +1,8 @@
 # Skill Quality Matrix
 
-Current as of v0.5.1.
+Current as of v0.5.2.
 
-Use this matrix to compare the public skills by maturity, example coverage, safety sensitivity, and install notes. It is a practical adoption guide, not a certification.
+Use this matrix to compare the public skills by maturity, example coverage, safety sensitivity, and install notes. It is a practical adoption guide, not a certification. For the browsable examples index, use [`docs/examples/README.md`](examples/README.md).
 
 ## Matrix
 
