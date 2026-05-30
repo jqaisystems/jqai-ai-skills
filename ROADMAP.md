@@ -31,7 +31,7 @@ Longer-term work can grow the library once the adoption path stays steady.
 
 - Add new public-safe skills when they solve a repeatable workflow.
 - Add more demo walkthroughs for skill bundles, not just individual skills.
-- Publish contribution examples that show how to propose a skill without exposing private material.
+- Add more contribution examples that show how to propose a skill without exposing private material.
 - Improve automated checks around skill metadata and public-safety review.
 
 ## Not Planned
@@ -45,4 +45,4 @@ These are outside the public direction of this repo.
 
 ## Request Something
 
-Use the skill request issue template when you want to propose a new public-safe skill. Keep examples fictional or generalized, and do not include credentials, client material, private links, or local machine paths.
+Use the skill request issue template when you want to propose a new public-safe skill. Keep examples fictional or generalized, and do not include credentials, client material, private links, or local machine paths. For a safe example, use [`docs/examples/skill-request-example.md`](docs/examples/skill-request-example.md).

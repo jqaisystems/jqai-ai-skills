@@ -4,6 +4,16 @@ Public release history for JQ AI Skills.
 
 The social preview image is intentionally stable for 2026 and is not updated for every release.
 
+## [v0.5.4](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.5.4) - 2026-05-30
+
+Added a public-safe skill request example.
+
+- Added `docs/examples/skill-request-example.md` to show how to propose a new skill with fictional, public-safe material.
+- Linked the example from the README, `CONTRIBUTING.md`, `SUPPORT.md`, `ROADMAP.md`, catalog, and examples index.
+- Clarified that skill request and pull request examples should use fictional, public, or approved material.
+- Added a v0.5.4 release announcement.
+- Kept the stable 2026 social preview unchanged.
+
 ## [v0.5.3](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.5.3) - 2026-05-30
 
 Added a skill anatomy guide.

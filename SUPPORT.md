@@ -49,6 +49,8 @@ For skill requests, include:
 - where human review should happen;
 - any safety boundaries the skill must respect.
 
+For a safe request shape, use [`docs/examples/skill-request-example.md`](docs/examples/skill-request-example.md).
+
 ## Business Contact
 
 For custom workflow work, start from the JQ AI SYSTEMS website contact page:

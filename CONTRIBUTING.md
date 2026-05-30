@@ -18,6 +18,8 @@ skills/skill-name/
 
 Use `skills/_template/` as the starting point for new skills.
 
+For a public-safe example of how to propose a new skill, see [`docs/examples/skill-request-example.md`](docs/examples/skill-request-example.md).
+
 ## Required Files
 
 Each skill must include:
@@ -50,3 +52,4 @@ Before opening a pull request or publishing a new skill:
 - Any bundled scripts are small, readable, and relevant.
 - Any bundled assets are safe to publish.
 - You have reviewed the skill with `skill-reviewer` or an equivalent safety pass.
+- Any issue or pull request examples use fictional, public, or approved material.

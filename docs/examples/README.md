@@ -15,6 +15,7 @@ Use this page when you want to inspect expected output before installing a skill
 | Turn fake changelog facts into release copy | [`release-announcement-writer-sample.md`](release-announcement-writer-sample.md) |
 | Design a human-reviewed outreach workflow | [`outreach-pipeline-designer-sample.md`](outreach-pipeline-designer-sample.md) |
 | Audit a fictional marketplace listing | [`etsy-listing-optimizer-sample.md`](etsy-listing-optimizer-sample.md) |
+| Propose a new skill safely | [`skill-request-example.md`](skill-request-example.md) |
 | Combine several skills into practical paths | [`workflow-bundles.md`](workflow-bundles.md) |
 
 ## Sample Data
@@ -27,10 +28,11 @@ Use this page when you want to inspect expected output before installing a skill
 
 1. Start with [`first-run-github-safe-publisher.md`](first-run-github-safe-publisher.md) if you are evaluating safety habits.
 2. Read [`workflow-bundles.md`](workflow-bundles.md) if you want to combine skills.
-3. Use the sample for the skill closest to your job.
-4. Use [`../guides/skill-anatomy.md`](../guides/skill-anatomy.md) if you want to understand what each skill folder file does.
-5. Use [`../skill-quality-matrix.md`](../skill-quality-matrix.md) to compare maturity, examples, and safety sensitivity.
-6. Use [`../../INSTALL.md`](../../INSTALL.md) when you are ready to install one skill.
+3. Use [`skill-request-example.md`](skill-request-example.md) if you want to propose a new skill.
+4. Use the sample for the skill closest to your job.
+5. Use [`../guides/skill-anatomy.md`](../guides/skill-anatomy.md) if you want to understand what each skill folder file does.
+6. Use [`../skill-quality-matrix.md`](../skill-quality-matrix.md) to compare maturity, examples, and safety sensitivity.
+7. Use [`../../INSTALL.md`](../../INSTALL.md) when you are ready to install one skill.
 
 ## Safety Boundary
 
