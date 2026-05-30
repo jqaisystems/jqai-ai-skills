@@ -6,10 +6,10 @@ These skills are small, portable instruction folders for Claude/Codex-style work
 
 [![Website](https://img.shields.io/badge/Website-ai.joaoqueiros.com-111827?style=for-the-badge)](https://www.ai.joaoqueiros.com)
 [![License](https://img.shields.io/badge/License-MIT-059669?style=for-the-badge)](LICENSE)
-[![Release](https://img.shields.io/badge/Release-v0.4.4-2563eb?style=for-the-badge)](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.4.4)
+[![Release](https://img.shields.io/badge/Release-v0.4.5-2563eb?style=for-the-badge)](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.4.5)
 [![Validate skills](https://github.com/jqaisystems/jqai-ai-skills/actions/workflows/validate.yml/badge.svg)](https://github.com/jqaisystems/jqai-ai-skills/actions/workflows/validate.yml)
 
-New here? Start with [`START_HERE.md`](START_HERE.md) for the shortest path from overview to first skill run. Ready to install? Use [`INSTALL.md`](INSTALL.md). Something not loading? Use [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md). Want release history? Use [`CHANGELOG.md`](CHANGELOG.md). Publishing a release? Use [`RELEASE_CHECKLIST.md`](RELEASE_CHECKLIST.md).
+New here? Start with [`START_HERE.md`](START_HERE.md) for the shortest path from overview to first skill run. Ready to install? Use [`INSTALL.md`](INSTALL.md). Something not loading? Use [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md). Want release history? Use [`CHANGELOG.md`](CHANGELOG.md). Publishing a release? Use [`RELEASE_CHECKLIST.md`](RELEASE_CHECKLIST.md). Need safety policy? Use [`SECURITY.md`](SECURITY.md).
 
 ## Preview
 
@@ -70,6 +70,7 @@ Use $demo-animation-v2 to create a responsive animated walkthrough.
 - [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md) helps fix install target, reload, shell, reinstall, and removal issues.
 - [`CHANGELOG.md`](CHANGELOG.md) tracks public releases and top-level repo changes.
 - [`RELEASE_CHECKLIST.md`](RELEASE_CHECKLIST.md) documents the safe release routine for validation, scanning, tagging, profile updates, website handoff, and live verification.
+- [`SECURITY.md`](SECURITY.md) explains responsible use, sensitive issue reporting, install safety, and public publishing boundaries.
 - [`docs/catalog.md`](docs/catalog.md) is the complete public catalog of all installable skills, recommended bundles, and safe install defaults.
 - [`docs/guides/one-minute-install.md`](docs/guides/one-minute-install.md) shows the fastest path to install one skill, reload your tool, and run a first prompt.
 - [`docs/examples/first-run-github-safe-publisher.md`](docs/examples/first-run-github-safe-publisher.md) shows the expected first-run output shape for `github-safe-publisher` using fake files.
@@ -244,6 +245,7 @@ Use [`CONTRIBUTING.md`](CONTRIBUTING.md) for the expected folder format, metadat
 
 - These files are instructions, not secrets.
 - Do not paste private API keys, passwords, tokens, client data, or credentials into prompts unless you fully understand where they will go.
+- Use [`SECURITY.md`](SECURITY.md) for responsible-use rules and sensitive issue reporting.
 - The `skill-reviewer` skill exists to help inspect third-party skill files before installing them.
 - Run new skills on a test folder before using them in production work.
 

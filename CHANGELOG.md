@@ -4,6 +4,15 @@ Public release history for JQ AI Skills.
 
 The social preview image is intentionally stable for 2026 and is not updated for every release.
 
+## [v0.4.5](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.4.5) - 2026-05-30
+
+Added a root security and responsible-use policy.
+
+- Added `SECURITY.md` with sensitive issue reporting, responsible-use rules, install safety, and public publishing boundaries.
+- Linked the policy from `README.md` and `START_HERE.md`.
+- Added a v0.4.5 release announcement.
+- Kept the stable 2026 social preview unchanged.
+
 ## [v0.4.4](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.4.4) - 2026-05-30
 
 Added a root release checklist so the public publishing routine is easier to inspect and repeat.
