@@ -34,7 +34,8 @@ Use $github-safe-publisher to review this README and docs folder before public r
 5. Compare the result with the [`first-run sample`](docs/examples/first-run-github-safe-publisher.md).
 6. Use [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md) if the skill does not appear after install.
 7. Use the [`skill selection guide`](docs/guides/skill-selection.md) if your first job is not public GitHub publishing.
-8. Use the [`catalog`](docs/catalog.md) when you want the full list.
+8. Use the [`skill anatomy guide`](docs/guides/skill-anatomy.md) when you want to understand what each folder file does.
+9. Use the [`catalog`](docs/catalog.md) when you want the full list.
 
 ## What To Read First
 
@@ -49,6 +50,7 @@ Use $github-safe-publisher to review this README and docs folder before public r
 | See the public roadmap | [`ROADMAP.md`](ROADMAP.md) |
 | Get help or report an issue | [`SUPPORT.md`](SUPPORT.md) |
 | Compare skill maturity | [`docs/skill-quality-matrix.md`](docs/skill-quality-matrix.md) |
+| Understand a skill folder | [`docs/guides/skill-anatomy.md`](docs/guides/skill-anatomy.md) |
 | Understand first-run output | [`docs/examples/first-run-github-safe-publisher.md`](docs/examples/first-run-github-safe-publisher.md) |
 | Browse public-safe examples | [`docs/examples/README.md`](docs/examples/README.md) |
 | Choose the right first skill | [`docs/guides/skill-selection.md`](docs/guides/skill-selection.md) |
@@ -82,6 +84,7 @@ Once the first skill makes sense:
 - Use [`docs/examples/workflow-bundles.md`](docs/examples/workflow-bundles.md) for multi-skill paths.
 - Use [`docs/examples/README.md`](docs/examples/README.md) to browse public-safe examples by job.
 - Use [`docs/catalog.md`](docs/catalog.md) to browse the full library.
+- Use [`docs/guides/skill-anatomy.md`](docs/guides/skill-anatomy.md) before adapting or creating a skill folder.
 - Use [`CHANGELOG.md`](CHANGELOG.md) to see what changed across public releases.
 - Use [`RELEASE_CHECKLIST.md`](RELEASE_CHECKLIST.md) before publishing a new public release.
 - Use [`SECURITY.md`](SECURITY.md) before using skills on sensitive or client-facing work.
@@ -112,5 +115,5 @@ assets/                 public visual and demo assets
 The public onboarding path is now:
 
 ```text
-START_HERE -> choose -> INSTALL -> troubleshoot or support if needed -> SECURITY if sensitive -> run -> understand output -> release checklist if publishing -> use bundles, catalog, or quality matrix
+START_HERE -> understand anatomy -> choose -> INSTALL -> troubleshoot or support if needed -> SECURITY if sensitive -> run -> understand output -> release checklist if publishing -> use bundles, catalog, or quality matrix
 ```

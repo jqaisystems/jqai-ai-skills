@@ -6,10 +6,10 @@ These skills are small, portable instruction folders for Claude/Codex-style work
 
 [![Website](https://img.shields.io/badge/Website-ai.joaoqueiros.com-111827?style=for-the-badge)](https://www.ai.joaoqueiros.com)
 [![License](https://img.shields.io/badge/License-MIT-059669?style=for-the-badge)](LICENSE)
-[![Release](https://img.shields.io/badge/Release-v0.5.2-2563eb?style=for-the-badge)](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.5.2)
+[![Release](https://img.shields.io/badge/Release-v0.5.3-2563eb?style=for-the-badge)](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.5.3)
 [![Validate skills](https://github.com/jqaisystems/jqai-ai-skills/actions/workflows/validate.yml/badge.svg)](https://github.com/jqaisystems/jqai-ai-skills/actions/workflows/validate.yml)
 
-New here? Start with [`START_HERE.md`](START_HERE.md) for the shortest path from overview to first skill run. Ready to install? Use [`INSTALL.md`](INSTALL.md). Something not loading? Use [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md). Want release history? Use [`CHANGELOG.md`](CHANGELOG.md). Publishing a release? Use [`RELEASE_CHECKLIST.md`](RELEASE_CHECKLIST.md). Need safety policy? Use [`SECURITY.md`](SECURITY.md). Planning adoption? Use [`ROADMAP.md`](ROADMAP.md), [`SUPPORT.md`](SUPPORT.md), and the [`skill quality matrix`](docs/skill-quality-matrix.md).
+New here? Start with [`START_HERE.md`](START_HERE.md) for the shortest path from overview to first skill run. Want to understand the folder contract? Use [`docs/guides/skill-anatomy.md`](docs/guides/skill-anatomy.md). Ready to install? Use [`INSTALL.md`](INSTALL.md). Something not loading? Use [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md). Want release history? Use [`CHANGELOG.md`](CHANGELOG.md). Publishing a release? Use [`RELEASE_CHECKLIST.md`](RELEASE_CHECKLIST.md). Need safety policy? Use [`SECURITY.md`](SECURITY.md). Planning adoption? Use [`ROADMAP.md`](ROADMAP.md), [`SUPPORT.md`](SUPPORT.md), and the [`skill quality matrix`](docs/skill-quality-matrix.md).
 
 ## Preview
 
@@ -74,6 +74,7 @@ Use $demo-animation-v2 to create a responsive animated walkthrough.
 - [`ROADMAP.md`](ROADMAP.md) shows the public-safe direction for near-term skill library work.
 - [`SUPPORT.md`](SUPPORT.md) explains where to ask for help and what not to post publicly.
 - [`docs/skill-quality-matrix.md`](docs/skill-quality-matrix.md) summarizes skill maturity, example coverage, and safety sensitivity.
+- [`docs/guides/skill-anatomy.md`](docs/guides/skill-anatomy.md) explains what each required and optional skill folder file does.
 - [`docs/catalog.md`](docs/catalog.md) is the complete public catalog of all installable skills, recommended bundles, and safe install defaults.
 - [`docs/guides/one-minute-install.md`](docs/guides/one-minute-install.md) shows the fastest path to install one skill, reload your tool, and run a first prompt.
 - [`docs/examples/README.md`](docs/examples/README.md) is the index for public-safe samples, workflow bundles, and first-run outputs.
@@ -100,7 +101,7 @@ skill-name/
   scripts/      optional helper scripts
 ```
 
-To create a new skill, copy [`skills/_template/`](skills/_template/) and replace the placeholder names, descriptions, and prompts.
+For a field-by-field walkthrough, use [`docs/guides/skill-anatomy.md`](docs/guides/skill-anatomy.md). To create a new skill, copy [`skills/_template/`](skills/_template/) and replace the placeholder names, descriptions, and prompts.
 
 ## Skills Included
 
@@ -148,7 +149,7 @@ To create a new skill, copy [`skills/_template/`](skills/_template/) and replace
 
 ## Which Skill Should I Use?
 
-For the fastest guided install, see [`docs/guides/one-minute-install.md`](docs/guides/one-minute-install.md). For the detailed visitor guide, see [`docs/guides/skill-selection.md`](docs/guides/skill-selection.md). For the complete catalog, see [`docs/catalog.md`](docs/catalog.md).
+For the fastest guided install, see [`docs/guides/one-minute-install.md`](docs/guides/one-minute-install.md). For the detailed visitor guide, see [`docs/guides/skill-selection.md`](docs/guides/skill-selection.md). To understand the folder contract, see [`docs/guides/skill-anatomy.md`](docs/guides/skill-anatomy.md). For the complete catalog, see [`docs/catalog.md`](docs/catalog.md).
 
 | If you want to... | Start with |
 |---|---|

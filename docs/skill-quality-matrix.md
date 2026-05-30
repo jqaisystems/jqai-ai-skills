@@ -1,8 +1,8 @@
 # Skill Quality Matrix
 
-Current as of v0.5.2.
+Current as of v0.5.3.
 
-Use this matrix to compare the public skills by maturity, example coverage, safety sensitivity, and install notes. It is a practical adoption guide, not a certification. For the browsable examples index, use [`docs/examples/README.md`](examples/README.md).
+Use this matrix to compare the public skills by maturity, example coverage, safety sensitivity, and install notes. It is a practical adoption guide, not a certification. For the browsable examples index, use [`docs/examples/README.md`](examples/README.md). For the folder contract behind every skill, use [`docs/guides/skill-anatomy.md`](guides/skill-anatomy.md).
 
 ## Matrix
 
@@ -35,3 +35,4 @@ Use this matrix to compare the public skills by maturity, example coverage, safe
 3. Use [`TROUBLESHOOTING.md`](../TROUBLESHOOTING.md) if it does not appear after reload.
 4. Use [`SECURITY.md`](../SECURITY.md) before working with sensitive or client-facing material.
 5. Use [`docs/examples/workflow-bundles.md`](examples/workflow-bundles.md) when you want a multi-skill path.
+6. Use [`docs/guides/skill-anatomy.md`](guides/skill-anatomy.md) before adapting or creating a skill folder.

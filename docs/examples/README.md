@@ -28,8 +28,9 @@ Use this page when you want to inspect expected output before installing a skill
 1. Start with [`first-run-github-safe-publisher.md`](first-run-github-safe-publisher.md) if you are evaluating safety habits.
 2. Read [`workflow-bundles.md`](workflow-bundles.md) if you want to combine skills.
 3. Use the sample for the skill closest to your job.
-4. Use [`../skill-quality-matrix.md`](../skill-quality-matrix.md) to compare maturity, examples, and safety sensitivity.
-5. Use [`../../INSTALL.md`](../../INSTALL.md) when you are ready to install one skill.
+4. Use [`../guides/skill-anatomy.md`](../guides/skill-anatomy.md) if you want to understand what each skill folder file does.
+5. Use [`../skill-quality-matrix.md`](../skill-quality-matrix.md) to compare maturity, examples, and safety sensitivity.
+6. Use [`../../INSTALL.md`](../../INSTALL.md) when you are ready to install one skill.
 
 ## Safety Boundary
 
