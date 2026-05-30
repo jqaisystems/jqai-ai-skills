@@ -81,6 +81,8 @@ Typical output:
 
 **Typical output:** `READY`, `REVIEW`, or `BLOCK` verdict; scanner summary; manual review checklist; exact next steps before publishing.
 
+**First-run sample:** [`docs/examples/first-run-github-safe-publisher.md`](examples/first-run-github-safe-publisher.md)
+
 **Install:**
 
 ```powershell

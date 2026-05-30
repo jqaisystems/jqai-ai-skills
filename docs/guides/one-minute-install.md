@@ -72,6 +72,8 @@ Then try this prompt in a test repo or draft folder:
 Use $github-safe-publisher to review this README and docs folder before public release.
 ```
 
+For a fake first-run output shape, see [`docs/examples/first-run-github-safe-publisher.md`](../examples/first-run-github-safe-publisher.md).
+
 For a content or release workflow, install a different first skill:
 
 ```powershell
