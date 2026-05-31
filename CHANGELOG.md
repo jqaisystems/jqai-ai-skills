@@ -4,6 +4,15 @@ Public release history for JQ AI Skills.
 
 The social preview image is intentionally stable for 2026 and is not updated for every release.
 
+## [v0.6.2](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.6.2) - 2026-05-31
+
+Added a visitor paths page.
+
+- Added `docs/examples/visitor-paths.md` to route visitors through evaluation, install, and public-proof publishing paths.
+- Linked the visitor paths page from the README, start page, quick reference, examples index, and catalog.
+- Added a v0.6.2 release announcement.
+- Kept the stable 2026 social preview unchanged.
+
 ## [v0.6.1](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.6.1) - 2026-05-31
 
 Added a quick reference walkthrough.

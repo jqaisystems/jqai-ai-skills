@@ -24,28 +24,30 @@ Follow this path if you want to try one skill before reading the whole repo.
 
 1. Pick the safest first skill: [`github-safe-publisher`](skills/github-safe-publisher/SKILL.md).
 2. Use [`QUICK_REFERENCE.md`](QUICK_REFERENCE.md) if you want the shortest command and link map.
-3. Follow the [`quick reference walkthrough`](docs/examples/quick-reference-walkthrough.md) if you want the clone-to-first-prompt route.
-4. Install it with [`INSTALL.md`](INSTALL.md) or the [`one-minute install guide`](docs/guides/one-minute-install.md).
-5. Use the [`install FAQ`](docs/guides/install-faq.md) if you are unsure about targets, reloads, first prompts, updates, or removal.
-6. Reload your AI coding tool.
-7. Verify the install with [`docs/guides/install-verification.md`](docs/guides/install-verification.md).
-8. Compare the temporary install check with the [`install smoke-test sample`](docs/examples/install-smoke-test-sample.md).
-9. Run the first prompt:
+3. Use [`visitor paths`](docs/examples/visitor-paths.md) if you want to choose between evaluation, install, and public-proof routes.
+4. Follow the [`quick reference walkthrough`](docs/examples/quick-reference-walkthrough.md) if you want the clone-to-first-prompt route.
+5. Install it with [`INSTALL.md`](INSTALL.md) or the [`one-minute install guide`](docs/guides/one-minute-install.md).
+6. Use the [`install FAQ`](docs/guides/install-faq.md) if you are unsure about targets, reloads, first prompts, updates, or removal.
+7. Reload your AI coding tool.
+8. Verify the install with [`docs/guides/install-verification.md`](docs/guides/install-verification.md).
+9. Compare the temporary install check with the [`install smoke-test sample`](docs/examples/install-smoke-test-sample.md).
+10. Run the first prompt:
 
 ```text
 Use $github-safe-publisher to review this README and docs folder before public release.
 ```
 
-10. Compare the result with the [`first-run sample`](docs/examples/first-run-github-safe-publisher.md).
-11. Use [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md) if the skill does not appear after install.
-12. Use the [`skill selection guide`](docs/guides/skill-selection.md) if your first job is not public GitHub publishing.
-13. Use the [`skill anatomy guide`](docs/guides/skill-anatomy.md) when you want to understand what each folder file does.
-14. Use the [`catalog`](docs/catalog.md) when you want the full list.
+11. Compare the result with the [`first-run sample`](docs/examples/first-run-github-safe-publisher.md).
+12. Use [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md) if the skill does not appear after install.
+13. Use the [`skill selection guide`](docs/guides/skill-selection.md) if your first job is not public GitHub publishing.
+14. Use the [`skill anatomy guide`](docs/guides/skill-anatomy.md) when you want to understand what each folder file does.
+15. Use the [`catalog`](docs/catalog.md) when you want the full list.
 
 ## What To Read First
 
 | Need | Start with |
 |---|---|
+| Choose a visitor route | [`docs/examples/visitor-paths.md`](docs/examples/visitor-paths.md) |
 | Scan commands and key links | [`QUICK_REFERENCE.md`](QUICK_REFERENCE.md) |
 | Walk from clone to first prompt | [`docs/examples/quick-reference-walkthrough.md`](docs/examples/quick-reference-walkthrough.md) |
 | Try one skill fast | [`docs/guides/one-minute-install.md`](docs/guides/one-minute-install.md) |
@@ -94,6 +96,7 @@ That pattern matters because reusable AI workflows should not just be clever. Th
 Once the first skill makes sense:
 
 - Use [`QUICK_REFERENCE.md`](QUICK_REFERENCE.md) when you want commands, links, and release helpers in one place.
+- Use [`docs/examples/visitor-paths.md`](docs/examples/visitor-paths.md) when you want to choose between evaluating, installing, or publishing public proof.
 - Use [`docs/examples/quick-reference-walkthrough.md`](docs/examples/quick-reference-walkthrough.md) when you want the quick reference as a step-by-step first-use route.
 - Use [`docs/examples/workflow-bundles.md`](docs/examples/workflow-bundles.md) for multi-skill paths.
 - Use [`docs/examples/README.md`](docs/examples/README.md) to browse public-safe examples by job.
@@ -132,5 +135,5 @@ assets/                 public visual and demo assets
 The public onboarding path is now:
 
 ```text
-START_HERE -> QUICK_REFERENCE if scanning -> quick reference walkthrough if you want steps -> understand anatomy -> choose -> review before install -> INSTALL -> install FAQ if unsure -> verify install -> troubleshoot or support if needed -> SECURITY if sensitive -> run -> understand output -> release checklist if publishing -> use bundles, catalog, or quality matrix
+START_HERE -> visitor paths if choosing a route -> QUICK_REFERENCE if scanning -> quick reference walkthrough if you want steps -> understand anatomy -> choose -> review before install -> INSTALL -> install FAQ if unsure -> verify install -> troubleshoot or support if needed -> SECURITY if sensitive -> run -> understand output -> release checklist if publishing -> use bundles, catalog, or quality matrix
 ```
