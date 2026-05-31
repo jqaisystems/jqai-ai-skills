@@ -256,6 +256,7 @@ Typical output:
 ## Safe Install Defaults
 
 - Start with one skill if you are evaluating the library.
+- Use [`QUICK_REFERENCE.md`](../QUICK_REFERENCE.md) when you want one short command and link map.
 - Use [`INSTALL.md`](../INSTALL.md) when you need the short command reference.
 - Use the [`install FAQ`](guides/install-faq.md) for first skill choice, install-all, target, reload, update, and removal questions.
 - Use the [`skill review checklist`](guides/skill-review-checklist.md) before installing unfamiliar or modified skill folders.

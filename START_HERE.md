@@ -23,27 +23,29 @@ This repo is useful if you:
 Follow this path if you want to try one skill before reading the whole repo.
 
 1. Pick the safest first skill: [`github-safe-publisher`](skills/github-safe-publisher/SKILL.md).
-2. Install it with [`INSTALL.md`](INSTALL.md) or the [`one-minute install guide`](docs/guides/one-minute-install.md).
-3. Use the [`install FAQ`](docs/guides/install-faq.md) if you are unsure about targets, reloads, first prompts, updates, or removal.
-4. Reload your AI coding tool.
-5. Verify the install with [`docs/guides/install-verification.md`](docs/guides/install-verification.md).
-6. Compare the temporary install check with the [`install smoke-test sample`](docs/examples/install-smoke-test-sample.md).
-7. Run the first prompt:
+2. Use [`QUICK_REFERENCE.md`](QUICK_REFERENCE.md) if you want the shortest command and link map.
+3. Install it with [`INSTALL.md`](INSTALL.md) or the [`one-minute install guide`](docs/guides/one-minute-install.md).
+4. Use the [`install FAQ`](docs/guides/install-faq.md) if you are unsure about targets, reloads, first prompts, updates, or removal.
+5. Reload your AI coding tool.
+6. Verify the install with [`docs/guides/install-verification.md`](docs/guides/install-verification.md).
+7. Compare the temporary install check with the [`install smoke-test sample`](docs/examples/install-smoke-test-sample.md).
+8. Run the first prompt:
 
 ```text
 Use $github-safe-publisher to review this README and docs folder before public release.
 ```
 
-8. Compare the result with the [`first-run sample`](docs/examples/first-run-github-safe-publisher.md).
-9. Use [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md) if the skill does not appear after install.
-10. Use the [`skill selection guide`](docs/guides/skill-selection.md) if your first job is not public GitHub publishing.
-11. Use the [`skill anatomy guide`](docs/guides/skill-anatomy.md) when you want to understand what each folder file does.
-12. Use the [`catalog`](docs/catalog.md) when you want the full list.
+9. Compare the result with the [`first-run sample`](docs/examples/first-run-github-safe-publisher.md).
+10. Use [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md) if the skill does not appear after install.
+11. Use the [`skill selection guide`](docs/guides/skill-selection.md) if your first job is not public GitHub publishing.
+12. Use the [`skill anatomy guide`](docs/guides/skill-anatomy.md) when you want to understand what each folder file does.
+13. Use the [`catalog`](docs/catalog.md) when you want the full list.
 
 ## What To Read First
 
 | Need | Start with |
 |---|---|
+| Scan commands and key links | [`QUICK_REFERENCE.md`](QUICK_REFERENCE.md) |
 | Try one skill fast | [`docs/guides/one-minute-install.md`](docs/guides/one-minute-install.md) |
 | Install command reference | [`INSTALL.md`](INSTALL.md) |
 | Answer install questions | [`docs/guides/install-faq.md`](docs/guides/install-faq.md) |
@@ -89,6 +91,7 @@ That pattern matters because reusable AI workflows should not just be clever. Th
 
 Once the first skill makes sense:
 
+- Use [`QUICK_REFERENCE.md`](QUICK_REFERENCE.md) when you want commands, links, and release helpers in one place.
 - Use [`docs/examples/workflow-bundles.md`](docs/examples/workflow-bundles.md) for multi-skill paths.
 - Use [`docs/examples/README.md`](docs/examples/README.md) to browse public-safe examples by job.
 - Use [`docs/guides/install-faq.md`](docs/guides/install-faq.md) when you have questions about first skill choice, targets, reloads, updates, or removal.
@@ -126,5 +129,5 @@ assets/                 public visual and demo assets
 The public onboarding path is now:
 
 ```text
-START_HERE -> understand anatomy -> choose -> review before install -> INSTALL -> install FAQ if unsure -> verify install -> troubleshoot or support if needed -> SECURITY if sensitive -> run -> understand output -> release checklist if publishing -> use bundles, catalog, or quality matrix
+START_HERE -> QUICK_REFERENCE if scanning -> understand anatomy -> choose -> review before install -> INSTALL -> install FAQ if unsure -> verify install -> troubleshoot or support if needed -> SECURITY if sensitive -> run -> understand output -> release checklist if publishing -> use bundles, catalog, or quality matrix
 ```

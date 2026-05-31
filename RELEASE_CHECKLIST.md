@@ -24,6 +24,7 @@ git log --oneline --decorate -5
 - Use fake data in examples.
 - Link the new artifact from the most relevant entry points.
 - Keep `README.md`, `START_HERE.md`, and `CHANGELOG.md` aligned when the change affects first-use or release history.
+- Keep [`QUICK_REFERENCE.md`](QUICK_REFERENCE.md) aligned when commands, first-use links, or release helper links change.
 - Add an announcement under `docs/announcements/` for versioned releases.
 
 ## 2. Review The Unstaged Diff

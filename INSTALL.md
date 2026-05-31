@@ -2,7 +2,7 @@
 
 Use this page when you already know which skill you want to install and need the commands.
 
-New to the repo? Start with [`START_HERE.md`](START_HERE.md). Want a guided first run? Use [`docs/guides/one-minute-install.md`](docs/guides/one-minute-install.md). Have install questions? Use [`docs/guides/install-faq.md`](docs/guides/install-faq.md). Reviewing an unfamiliar skill? Use [`docs/guides/skill-review-checklist.md`](docs/guides/skill-review-checklist.md). Want to confirm the install worked? Use [`docs/guides/install-verification.md`](docs/guides/install-verification.md). If a skill does not appear after install, use [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md).
+New to the repo? Start with [`START_HERE.md`](START_HERE.md). Need the short command map? Use [`QUICK_REFERENCE.md`](QUICK_REFERENCE.md). Want a guided first run? Use [`docs/guides/one-minute-install.md`](docs/guides/one-minute-install.md). Have install questions? Use [`docs/guides/install-faq.md`](docs/guides/install-faq.md). Reviewing an unfamiliar skill? Use [`docs/guides/skill-review-checklist.md`](docs/guides/skill-review-checklist.md). Want to confirm the install worked? Use [`docs/guides/install-verification.md`](docs/guides/install-verification.md). If a skill does not appear after install, use [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md).
 
 ## Before You Start
 
@@ -137,6 +137,7 @@ cp -R ./skills/github-safe-publisher ~/.codex/skills/github-safe-publisher
 ## Next Steps
 
 - Choose the right first skill with [`docs/guides/skill-selection.md`](docs/guides/skill-selection.md).
+- Keep the main commands and links close with [`QUICK_REFERENCE.md`](QUICK_REFERENCE.md).
 - Answer common install, update, target, reload, and removal questions with [`docs/guides/install-faq.md`](docs/guides/install-faq.md).
 - Review unfamiliar skill folders with [`docs/guides/skill-review-checklist.md`](docs/guides/skill-review-checklist.md).
 - Verify the copied folder, reload, and first prompt with [`docs/guides/install-verification.md`](docs/guides/install-verification.md).
