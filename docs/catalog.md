@@ -2,7 +2,7 @@
 
 This catalog gives a public, client-readable view of the skills in this repo: what each skill does, who it helps, when to use it, and how to install it.
 
-If you are new to the repo, start with [`START_HERE.md`](../START_HERE.md). For install commands, use [`INSTALL.md`](../INSTALL.md). To review a skill before install, use [`docs/guides/skill-review-checklist.md`](guides/skill-review-checklist.md). To confirm a copied folder, reload, and first prompt, use [`docs/guides/install-verification.md`](guides/install-verification.md). For install or reload issues, use [`TROUBLESHOOTING.md`](../TROUBLESHOOTING.md). For a guided first install, use [`docs/guides/one-minute-install.md`](guides/one-minute-install.md). For a shorter first-choice guide, use [`docs/guides/skill-selection.md`](guides/skill-selection.md). To understand the folder contract, use [`docs/guides/skill-anatomy.md`](guides/skill-anatomy.md). For public-safe output examples, including a safe skill request shape, use [`docs/examples/README.md`](examples/README.md).
+If you are new to the repo, start with [`START_HERE.md`](../START_HERE.md). For install commands, use [`INSTALL.md`](../INSTALL.md). To review a skill before install, use [`docs/guides/skill-review-checklist.md`](guides/skill-review-checklist.md). To confirm a copied folder, reload, and first prompt, use [`docs/guides/install-verification.md`](guides/install-verification.md). For install or reload issues, use [`TROUBLESHOOTING.md`](../TROUBLESHOOTING.md). For a guided first install, use [`docs/guides/one-minute-install.md`](guides/one-minute-install.md). For a clone-to-first-prompt route, use [`docs/examples/quick-reference-walkthrough.md`](examples/quick-reference-walkthrough.md). For a shorter first-choice guide, use [`docs/guides/skill-selection.md`](guides/skill-selection.md). To understand the folder contract, use [`docs/guides/skill-anatomy.md`](guides/skill-anatomy.md). For public-safe output examples, including a safe skill request shape, use [`docs/examples/README.md`](examples/README.md).
 
 ## At A Glance
 
@@ -257,6 +257,7 @@ Typical output:
 
 - Start with one skill if you are evaluating the library.
 - Use [`QUICK_REFERENCE.md`](../QUICK_REFERENCE.md) when you want one short command and link map.
+- Use the [`quick reference walkthrough`](examples/quick-reference-walkthrough.md) when you want clone-to-first-prompt steps.
 - Use [`INSTALL.md`](../INSTALL.md) when you need the short command reference.
 - Use the [`install FAQ`](guides/install-faq.md) for first skill choice, install-all, target, reload, update, and removal questions.
 - Use the [`skill review checklist`](guides/skill-review-checklist.md) before installing unfamiliar or modified skill folders.

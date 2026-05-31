@@ -8,6 +8,7 @@ Use this page when you want to inspect expected output before installing a skill
 
 | Need | Example |
 |---|---|
+| Walk from clone to first prompt | [`quick-reference-walkthrough.md`](quick-reference-walkthrough.md) |
 | Verify a temporary install result | [`install-smoke-test-sample.md`](install-smoke-test-sample.md) |
 | See the first-run shape for safety review | [`first-run-github-safe-publisher.md`](first-run-github-safe-publisher.md) |
 | Inspect a fake-file public safety review | [`github-safe-publisher-sample-review.md`](github-safe-publisher-sample-review.md) |
@@ -28,15 +29,16 @@ Use this page when you want to inspect expected output before installing a skill
 
 ## Recommended Reading Path
 
-1. Start with [`first-run-github-safe-publisher.md`](first-run-github-safe-publisher.md) if you are evaluating safety habits.
+1. Start with [`quick-reference-walkthrough.md`](quick-reference-walkthrough.md) if you want the clone-to-first-prompt path.
 2. Use [`install-smoke-test-sample.md`](install-smoke-test-sample.md) when you want to verify a disposable install before real use.
-3. Read [`skill-reviewer-sample.md`](skill-reviewer-sample.md) before installing unfamiliar skill folders.
-4. Read [`workflow-bundles.md`](workflow-bundles.md) if you want to combine skills.
-5. Use [`skill-request-example.md`](skill-request-example.md) if you want to propose a new skill.
-6. Use the sample for the skill closest to your job.
-7. Use [`../guides/skill-anatomy.md`](../guides/skill-anatomy.md) if you want to understand what each skill folder file does.
-8. Use [`../skill-quality-matrix.md`](../skill-quality-matrix.md) to compare maturity, examples, and safety sensitivity.
-9. Use [`../../INSTALL.md`](../../INSTALL.md) when you are ready to install one skill.
+3. Start with [`first-run-github-safe-publisher.md`](first-run-github-safe-publisher.md) if you are evaluating safety habits.
+4. Read [`skill-reviewer-sample.md`](skill-reviewer-sample.md) before installing unfamiliar skill folders.
+5. Read [`workflow-bundles.md`](workflow-bundles.md) if you want to combine skills.
+6. Use [`skill-request-example.md`](skill-request-example.md) if you want to propose a new skill.
+7. Use the sample for the skill closest to your job.
+8. Use [`../guides/skill-anatomy.md`](../guides/skill-anatomy.md) if you want to understand what each skill folder file does.
+9. Use [`../skill-quality-matrix.md`](../skill-quality-matrix.md) to compare maturity, examples, and safety sensitivity.
+10. Use [`../../INSTALL.md`](../../INSTALL.md) when you are ready to install one skill.
 
 ## Safety Boundary
 

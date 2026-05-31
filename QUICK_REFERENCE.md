@@ -61,6 +61,7 @@ Install all skills only after review:
 
 | Step | Link |
 |---|---|
+| Walk from clone to first prompt | [`docs/examples/quick-reference-walkthrough.md`](docs/examples/quick-reference-walkthrough.md) |
 | Answer install questions | [`docs/guides/install-faq.md`](docs/guides/install-faq.md) |
 | Verify folder, reload, and first prompt | [`docs/guides/install-verification.md`](docs/guides/install-verification.md) |
 | Compare expected terminal output | [`docs/examples/install-smoke-test-sample.md`](docs/examples/install-smoke-test-sample.md) |
@@ -119,6 +120,7 @@ git status --short
 | Need | Link |
 |---|---|
 | Start here | [`START_HERE.md`](START_HERE.md) |
+| Quick reference walkthrough | [`docs/examples/quick-reference-walkthrough.md`](docs/examples/quick-reference-walkthrough.md) |
 | Install commands | [`INSTALL.md`](INSTALL.md) |
 | Install FAQ | [`docs/guides/install-faq.md`](docs/guides/install-faq.md) |
 | Catalog | [`docs/catalog.md`](docs/catalog.md) |
