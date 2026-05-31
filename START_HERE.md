@@ -25,29 +25,31 @@ Follow this path if you want to try one skill before reading the whole repo.
 1. Pick the safest first skill: [`github-safe-publisher`](skills/github-safe-publisher/SKILL.md).
 2. Use [`QUICK_REFERENCE.md`](QUICK_REFERENCE.md) if you want the shortest command and link map.
 3. Use [`visitor paths`](docs/examples/visitor-paths.md) if you want to choose between evaluation, install, and public-proof routes.
-4. Follow the [`quick reference walkthrough`](docs/examples/quick-reference-walkthrough.md) if you want the clone-to-first-prompt route.
-5. Install it with [`INSTALL.md`](INSTALL.md) or the [`one-minute install guide`](docs/guides/one-minute-install.md).
-6. Use the [`install FAQ`](docs/guides/install-faq.md) if you are unsure about targets, reloads, first prompts, updates, or removal.
-7. Reload your AI coding tool.
-8. Verify the install with [`docs/guides/install-verification.md`](docs/guides/install-verification.md).
-9. Compare the temporary install check with the [`install smoke-test sample`](docs/examples/install-smoke-test-sample.md).
-10. Run the first prompt:
+4. Use the [`public proof index`](docs/examples/public-proof-index.md) if you want one page of install, safety, sample, system, and visual proof assets.
+5. Follow the [`quick reference walkthrough`](docs/examples/quick-reference-walkthrough.md) if you want the clone-to-first-prompt route.
+6. Install it with [`INSTALL.md`](INSTALL.md) or the [`one-minute install guide`](docs/guides/one-minute-install.md).
+7. Use the [`install FAQ`](docs/guides/install-faq.md) if you are unsure about targets, reloads, first prompts, updates, or removal.
+8. Reload your AI coding tool.
+9. Verify the install with [`docs/guides/install-verification.md`](docs/guides/install-verification.md).
+10. Compare the temporary install check with the [`install smoke-test sample`](docs/examples/install-smoke-test-sample.md).
+11. Run the first prompt:
 
 ```text
 Use $github-safe-publisher to review this README and docs folder before public release.
 ```
 
-11. Compare the result with the [`first-run sample`](docs/examples/first-run-github-safe-publisher.md).
-12. Use [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md) if the skill does not appear after install.
-13. Use the [`skill selection guide`](docs/guides/skill-selection.md) if your first job is not public GitHub publishing.
-14. Use the [`skill anatomy guide`](docs/guides/skill-anatomy.md) when you want to understand what each folder file does.
-15. Use the [`catalog`](docs/catalog.md) when you want the full list.
+12. Compare the result with the [`first-run sample`](docs/examples/first-run-github-safe-publisher.md).
+13. Use [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md) if the skill does not appear after install.
+14. Use the [`skill selection guide`](docs/guides/skill-selection.md) if your first job is not public GitHub publishing.
+15. Use the [`skill anatomy guide`](docs/guides/skill-anatomy.md) when you want to understand what each folder file does.
+16. Use the [`catalog`](docs/catalog.md) when you want the full list.
 
 ## What To Read First
 
 | Need | Start with |
 |---|---|
 | Choose a visitor route | [`docs/examples/visitor-paths.md`](docs/examples/visitor-paths.md) |
+| Inspect public proof assets | [`docs/examples/public-proof-index.md`](docs/examples/public-proof-index.md) |
 | Scan commands and key links | [`QUICK_REFERENCE.md`](QUICK_REFERENCE.md) |
 | Walk from clone to first prompt | [`docs/examples/quick-reference-walkthrough.md`](docs/examples/quick-reference-walkthrough.md) |
 | Try one skill fast | [`docs/guides/one-minute-install.md`](docs/guides/one-minute-install.md) |
@@ -98,6 +100,7 @@ Once the first skill makes sense:
 
 - Use [`QUICK_REFERENCE.md`](QUICK_REFERENCE.md) when you want commands, links, and release helpers in one place.
 - Use [`docs/examples/visitor-paths.md`](docs/examples/visitor-paths.md) when you want to choose between evaluating, installing, or publishing public proof.
+- Use [`docs/examples/public-proof-index.md`](docs/examples/public-proof-index.md) when you want one page of install, safety, sample, system, and visual proof assets.
 - Use [`docs/examples/quick-reference-walkthrough.md`](docs/examples/quick-reference-walkthrough.md) when you want the quick reference as a step-by-step first-use route.
 - Use [`docs/examples/workflow-bundles.md`](docs/examples/workflow-bundles.md) for multi-skill paths.
 - Use [`docs/examples/README.md`](docs/examples/README.md) to browse public-safe examples by job.

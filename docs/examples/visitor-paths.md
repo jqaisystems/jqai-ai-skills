@@ -6,9 +6,9 @@ The repo has three common visitor routes:
 
 | Visitor goal | Start here | Then use |
 |---|---|---|
-| Evaluate the library | [`../../START_HERE.md`](../../START_HERE.md) | [`../catalog.md`](../catalog.md), [`../skill-quality-matrix.md`](../skill-quality-matrix.md), [`README.md`](README.md) |
+| Evaluate the library | [`../../START_HERE.md`](../../START_HERE.md) | [`public-proof-index.md`](public-proof-index.md), [`../catalog.md`](../catalog.md), [`../skill-quality-matrix.md`](../skill-quality-matrix.md), [`README.md`](README.md) |
 | Install one skill | [`quick-reference-walkthrough.md`](quick-reference-walkthrough.md) | [`../../INSTALL.md`](../../INSTALL.md), [`../guides/install-verification.md`](../guides/install-verification.md), [`install-smoke-test-sample.md`](install-smoke-test-sample.md) |
-| Publish public proof safely | [`first-run-github-safe-publisher.md`](first-run-github-safe-publisher.md) | [`github-safe-publisher-sample-review.md`](github-safe-publisher-sample-review.md), [`../../SECURITY.md`](../../SECURITY.md), [`../../RELEASE_CHECKLIST.md`](../../RELEASE_CHECKLIST.md) |
+| Publish public proof safely | [`public-proof-index.md`](public-proof-index.md) | [`first-run-github-safe-publisher.md`](first-run-github-safe-publisher.md), [`github-safe-publisher-sample-review.md`](github-safe-publisher-sample-review.md), [`../../SECURITY.md`](../../SECURITY.md), [`../../RELEASE_CHECKLIST.md`](../../RELEASE_CHECKLIST.md) |
 
 ## Path 1: Evaluate The Library
 
@@ -16,9 +16,10 @@ Use this route if you are deciding whether the repo is useful before installing 
 
 1. Read [`../../START_HERE.md`](../../START_HERE.md) for the shortest overview.
 2. Scan [`../../QUICK_REFERENCE.md`](../../QUICK_REFERENCE.md) for commands and key links.
-3. Browse [`../catalog.md`](../catalog.md) to compare every skill by job.
-4. Check [`../skill-quality-matrix.md`](../skill-quality-matrix.md) for maturity, examples, and safety sensitivity.
-5. Open [`README.md`](README.md) to inspect public-safe example outputs.
+3. Open [`public-proof-index.md`](public-proof-index.md) for a one-page map of install, safety, sample, system, and visual proof assets.
+4. Browse [`../catalog.md`](../catalog.md) to compare every skill by job.
+5. Check [`../skill-quality-matrix.md`](../skill-quality-matrix.md) for maturity, examples, and safety sensitivity.
+6. Open [`README.md`](README.md) to inspect public-safe example outputs.
 
 Good stopping point: you can name the first skill you would try and the sample output you expect to compare against.
 
@@ -40,11 +41,12 @@ Good stopping point: the skill folder exists in the intended target and your AI 
 
 Use this route if you want to turn real work into a public-safe README update, example, case study, or release note.
 
-1. Start with [`first-run-github-safe-publisher.md`](first-run-github-safe-publisher.md) to understand the expected review shape.
-2. Compare with [`github-safe-publisher-sample-review.md`](github-safe-publisher-sample-review.md) for a complete fictional safety review.
-3. Use [`../../SECURITY.md`](../../SECURITY.md) to check the public boundary.
-4. Use [`../../RELEASE_CHECKLIST.md`](../../RELEASE_CHECKLIST.md) before committing, tagging, or publishing.
-5. Use [`../../CHANGELOG.md`](../../CHANGELOG.md) to keep release history easy to inspect.
+1. Start with [`public-proof-index.md`](public-proof-index.md) to see the public-safe proof assets already in the repo.
+2. Use [`first-run-github-safe-publisher.md`](first-run-github-safe-publisher.md) to understand the expected review shape.
+3. Compare with [`github-safe-publisher-sample-review.md`](github-safe-publisher-sample-review.md) for a complete fictional safety review.
+4. Use [`../../SECURITY.md`](../../SECURITY.md) to check the public boundary.
+5. Use [`../../RELEASE_CHECKLIST.md`](../../RELEASE_CHECKLIST.md) before committing, tagging, or publishing.
+6. Use [`../../CHANGELOG.md`](../../CHANGELOG.md) to keep release history easy to inspect.
 
 Good stopping point: the candidate has a clear `READY`, `REVIEW`, or `BLOCK` decision, changed files have been scanned, and the staged diff has been reviewed.
 
@@ -62,6 +64,7 @@ Good stopping point: the candidate has a clear `READY`, `REVIEW`, or `BLOCK` dec
 
 - [`../../START_HERE.md`](../../START_HERE.md)
 - [`../../QUICK_REFERENCE.md`](../../QUICK_REFERENCE.md)
+- [`public-proof-index.md`](public-proof-index.md)
 - [`quick-reference-walkthrough.md`](quick-reference-walkthrough.md)
 - [`../guides/update-installed-skills.md`](../guides/update-installed-skills.md)
 - [`../catalog.md`](../catalog.md)
