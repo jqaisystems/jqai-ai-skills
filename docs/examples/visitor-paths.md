@@ -30,8 +30,9 @@ Use this route if you want one verified install before using the wider library.
 2. Use [`../../INSTALL.md`](../../INSTALL.md) for exact install commands.
 3. Use [`../guides/install-faq.md`](../guides/install-faq.md) if a target, reload, update, or removal step is unclear.
 4. Confirm the copied folder with [`../guides/install-verification.md`](../guides/install-verification.md).
-5. Compare terminal output with [`install-smoke-test-sample.md`](install-smoke-test-sample.md).
-6. Use [`../../TROUBLESHOOTING.md`](../../TROUBLESHOOTING.md) if the skill does not appear after reload.
+5. Use [`../guides/update-installed-skills.md`](../guides/update-installed-skills.md) when you need to refresh a copied skill folder.
+6. Compare terminal output with [`install-smoke-test-sample.md`](install-smoke-test-sample.md).
+7. Use [`../../TROUBLESHOOTING.md`](../../TROUBLESHOOTING.md) if the skill does not appear after reload.
 
 Good stopping point: the skill folder exists in the intended target and your AI coding tool can see the skill name.
 
@@ -62,5 +63,6 @@ Good stopping point: the candidate has a clear `READY`, `REVIEW`, or `BLOCK` dec
 - [`../../START_HERE.md`](../../START_HERE.md)
 - [`../../QUICK_REFERENCE.md`](../../QUICK_REFERENCE.md)
 - [`quick-reference-walkthrough.md`](quick-reference-walkthrough.md)
+- [`../guides/update-installed-skills.md`](../guides/update-installed-skills.md)
 - [`../catalog.md`](../catalog.md)
 - [`workflow-bundles.md`](workflow-bundles.md)

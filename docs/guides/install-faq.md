@@ -2,7 +2,7 @@
 
 Use this FAQ when you are installing a JQ AI Skill for the first time, updating a skill after a pull, or checking why a skill did not appear after reload.
 
-For commands, use [`INSTALL.md`](../../INSTALL.md). For a full verification pass, use [`install-verification.md`](install-verification.md). For a sample temporary-target check, use [`install-smoke-test-sample.md`](../examples/install-smoke-test-sample.md). For install issues, use [`TROUBLESHOOTING.md`](../../TROUBLESHOOTING.md).
+For commands, use [`INSTALL.md`](../../INSTALL.md). For a full verification pass, use [`install-verification.md`](install-verification.md). For update steps, use [`update-installed-skills.md`](update-installed-skills.md). For a sample temporary-target check, use [`install-smoke-test-sample.md`](../examples/install-smoke-test-sample.md). For install issues, use [`TROUBLESHOOTING.md`](../../TROUBLESHOOTING.md).
 
 ## Quick Answers
 
@@ -13,6 +13,7 @@ For commands, use [`INSTALL.md`](../../INSTALL.md). For a full verification pass
 | Do I copy only `SKILL.md`? | No. Copy the whole skill folder. |
 | Where do skills install by default? | The scripts default to `~/.codex/skills`. |
 | Can I test without touching my real skills folder? | Yes. Use a temporary target such as `.tmp\skill-install-smoke`. |
+| How do I update later? | Pull the repo, test a temporary target, reinstall, then reload your tool. |
 | Why does the skill not appear? | Usually reload, wrong target, partial copy, misspelled skill name, or wrong repo folder. |
 | What should I use for the first prompt? | Use fake files, public docs, or a small test folder first. |
 
@@ -149,19 +150,19 @@ Use fake files or public docs until the install and output shape are clear.
 
 ## How Do I Update A Skill?
 
-Pull the latest repo changes, then reinstall the selected skill:
+Use [`update-installed-skills.md`](update-installed-skills.md) for the full update path.
+
+Short version: pull the latest repo changes, test a temporary target, reinstall the selected skill, then reload your tool.
 
 ```powershell
-git pull
+git pull --ff-only
 .\install.ps1 github-safe-publisher
 ```
 
 ```bash
-git pull
+git pull --ff-only
 ./install.sh github-safe-publisher
 ```
-
-Restart or reload your AI coding tool after reinstalling.
 
 ## How Do I Remove A Skill?
 

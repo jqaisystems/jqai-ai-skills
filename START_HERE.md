@@ -55,6 +55,7 @@ Use $github-safe-publisher to review this README and docs folder before public r
 | Answer install questions | [`docs/guides/install-faq.md`](docs/guides/install-faq.md) |
 | Review a skill before install | [`docs/guides/skill-review-checklist.md`](docs/guides/skill-review-checklist.md) |
 | Verify an install | [`docs/guides/install-verification.md`](docs/guides/install-verification.md) |
+| Update installed skills | [`docs/guides/update-installed-skills.md`](docs/guides/update-installed-skills.md) |
 | Inspect an install smoke test | [`docs/examples/install-smoke-test-sample.md`](docs/examples/install-smoke-test-sample.md) |
 | Fix install or reload issues | [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md) |
 | Review release history | [`CHANGELOG.md`](CHANGELOG.md) |
@@ -103,6 +104,7 @@ Once the first skill makes sense:
 - Use [`docs/guides/install-faq.md`](docs/guides/install-faq.md) when you have questions about first skill choice, targets, reloads, updates, or removal.
 - Use [`docs/guides/skill-review-checklist.md`](docs/guides/skill-review-checklist.md) before installing unfamiliar or modified skill folders.
 - Use [`docs/guides/install-verification.md`](docs/guides/install-verification.md) when you want to confirm an install target, copied folder, reload, and first prompt.
+- Use [`docs/guides/update-installed-skills.md`](docs/guides/update-installed-skills.md) when you want to refresh a skill after pulling repo updates.
 - Use [`docs/catalog.md`](docs/catalog.md) to browse the full library.
 - Use [`docs/guides/skill-anatomy.md`](docs/guides/skill-anatomy.md) before adapting or creating a skill folder.
 - Use [`CHANGELOG.md`](CHANGELOG.md) to see what changed across public releases.
@@ -135,5 +137,5 @@ assets/                 public visual and demo assets
 The public onboarding path is now:
 
 ```text
-START_HERE -> visitor paths if choosing a route -> QUICK_REFERENCE if scanning -> quick reference walkthrough if you want steps -> understand anatomy -> choose -> review before install -> INSTALL -> install FAQ if unsure -> verify install -> troubleshoot or support if needed -> SECURITY if sensitive -> run -> understand output -> release checklist if publishing -> use bundles, catalog, or quality matrix
+START_HERE -> visitor paths if choosing a route -> QUICK_REFERENCE if scanning -> quick reference walkthrough if you want steps -> understand anatomy -> choose -> review before install -> INSTALL -> install FAQ if unsure -> verify install -> update installed skills when needed -> troubleshoot or support if needed -> SECURITY if sensitive -> run -> understand output -> release checklist if publishing -> use bundles, catalog, or quality matrix
 ```

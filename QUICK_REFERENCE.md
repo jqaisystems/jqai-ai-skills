@@ -65,6 +65,7 @@ Install all skills only after review:
 | Walk from clone to first prompt | [`docs/examples/quick-reference-walkthrough.md`](docs/examples/quick-reference-walkthrough.md) |
 | Answer install questions | [`docs/guides/install-faq.md`](docs/guides/install-faq.md) |
 | Verify folder, reload, and first prompt | [`docs/guides/install-verification.md`](docs/guides/install-verification.md) |
+| Update installed skills | [`docs/guides/update-installed-skills.md`](docs/guides/update-installed-skills.md) |
 | Compare expected terminal output | [`docs/examples/install-smoke-test-sample.md`](docs/examples/install-smoke-test-sample.md) |
 | Fix install or reload issues | [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md) |
 | See a first-run output shape | [`docs/examples/first-run-github-safe-publisher.md`](docs/examples/first-run-github-safe-publisher.md) |
@@ -125,6 +126,7 @@ git status --short
 | Quick reference walkthrough | [`docs/examples/quick-reference-walkthrough.md`](docs/examples/quick-reference-walkthrough.md) |
 | Install commands | [`INSTALL.md`](INSTALL.md) |
 | Install FAQ | [`docs/guides/install-faq.md`](docs/guides/install-faq.md) |
+| Update installed skills | [`docs/guides/update-installed-skills.md`](docs/guides/update-installed-skills.md) |
 | Catalog | [`docs/catalog.md`](docs/catalog.md) |
 | Quality matrix | [`docs/skill-quality-matrix.md`](docs/skill-quality-matrix.md) |
 | Roadmap | [`ROADMAP.md`](ROADMAP.md) |
