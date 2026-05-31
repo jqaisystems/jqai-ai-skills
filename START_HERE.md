@@ -26,17 +26,18 @@ Follow this path if you want to try one skill before reading the whole repo.
 2. Install it with [`INSTALL.md`](INSTALL.md) or the [`one-minute install guide`](docs/guides/one-minute-install.md).
 3. Reload your AI coding tool.
 4. Verify the install with [`docs/guides/install-verification.md`](docs/guides/install-verification.md).
-5. Run the first prompt:
+5. Compare the temporary install check with the [`install smoke-test sample`](docs/examples/install-smoke-test-sample.md).
+6. Run the first prompt:
 
 ```text
 Use $github-safe-publisher to review this README and docs folder before public release.
 ```
 
-6. Compare the result with the [`first-run sample`](docs/examples/first-run-github-safe-publisher.md).
-7. Use [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md) if the skill does not appear after install.
-8. Use the [`skill selection guide`](docs/guides/skill-selection.md) if your first job is not public GitHub publishing.
-9. Use the [`skill anatomy guide`](docs/guides/skill-anatomy.md) when you want to understand what each folder file does.
-10. Use the [`catalog`](docs/catalog.md) when you want the full list.
+7. Compare the result with the [`first-run sample`](docs/examples/first-run-github-safe-publisher.md).
+8. Use [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md) if the skill does not appear after install.
+9. Use the [`skill selection guide`](docs/guides/skill-selection.md) if your first job is not public GitHub publishing.
+10. Use the [`skill anatomy guide`](docs/guides/skill-anatomy.md) when you want to understand what each folder file does.
+11. Use the [`catalog`](docs/catalog.md) when you want the full list.
 
 ## What To Read First
 
@@ -46,6 +47,7 @@ Use $github-safe-publisher to review this README and docs folder before public r
 | Install command reference | [`INSTALL.md`](INSTALL.md) |
 | Review a skill before install | [`docs/guides/skill-review-checklist.md`](docs/guides/skill-review-checklist.md) |
 | Verify an install | [`docs/guides/install-verification.md`](docs/guides/install-verification.md) |
+| Inspect an install smoke test | [`docs/examples/install-smoke-test-sample.md`](docs/examples/install-smoke-test-sample.md) |
 | Fix install or reload issues | [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md) |
 | Review release history | [`CHANGELOG.md`](CHANGELOG.md) |
 | Publish a release safely | [`RELEASE_CHECKLIST.md`](RELEASE_CHECKLIST.md) |

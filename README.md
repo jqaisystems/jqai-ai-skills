@@ -6,7 +6,7 @@ These skills are small, portable instruction folders for Claude/Codex-style work
 
 [![Website](https://img.shields.io/badge/Website-ai.joaoqueiros.com-111827?style=for-the-badge)](https://www.ai.joaoqueiros.com)
 [![License](https://img.shields.io/badge/License-MIT-059669?style=for-the-badge)](LICENSE)
-[![Release](https://img.shields.io/badge/Release-v0.5.7-2563eb?style=for-the-badge)](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.5.7)
+[![Release](https://img.shields.io/badge/Release-v0.5.8-2563eb?style=for-the-badge)](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.5.8)
 [![Validate skills](https://github.com/jqaisystems/jqai-ai-skills/actions/workflows/validate.yml/badge.svg)](https://github.com/jqaisystems/jqai-ai-skills/actions/workflows/validate.yml)
 
 New here? Start with [`START_HERE.md`](START_HERE.md) for the shortest path from overview to first skill run. Want to understand the folder contract? Use [`docs/guides/skill-anatomy.md`](docs/guides/skill-anatomy.md). Reviewing a skill before install? Use [`docs/guides/skill-review-checklist.md`](docs/guides/skill-review-checklist.md). Ready to install? Use [`INSTALL.md`](INSTALL.md). Want to confirm it worked? Use [`docs/guides/install-verification.md`](docs/guides/install-verification.md). Something not loading? Use [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md). Want release history? Use [`CHANGELOG.md`](CHANGELOG.md). Publishing a release? Use [`RELEASE_CHECKLIST.md`](RELEASE_CHECKLIST.md). Need safety policy? Use [`SECURITY.md`](SECURITY.md). Planning adoption? Use [`ROADMAP.md`](ROADMAP.md), [`SUPPORT.md`](SUPPORT.md), and the [`skill quality matrix`](docs/skill-quality-matrix.md).
@@ -69,6 +69,7 @@ Use $demo-animation-v2 to create a responsive animated walkthrough.
 - [`INSTALL.md`](INSTALL.md) is the short command reference for installing one skill, all skills, or a custom test target.
 - [`docs/guides/skill-review-checklist.md`](docs/guides/skill-review-checklist.md) helps review permissions, scripts, risky wording, and first-run safety before installing a skill.
 - [`docs/guides/install-verification.md`](docs/guides/install-verification.md) confirms an install target, copied folder, reload, and first prompt before real work.
+- [`docs/examples/install-smoke-test-sample.md`](docs/examples/install-smoke-test-sample.md) shows a disposable install smoke test with expected terminal checks.
 - [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md) helps fix install target, reload, shell, reinstall, and removal issues.
 - [`CHANGELOG.md`](CHANGELOG.md) tracks public releases and top-level repo changes.
 - [`RELEASE_CHECKLIST.md`](RELEASE_CHECKLIST.md) documents the safe release routine for validation, scanning, tagging, profile updates, website handoff, and live verification.
@@ -80,6 +81,7 @@ Use $demo-animation-v2 to create a responsive animated walkthrough.
 - [`docs/catalog.md`](docs/catalog.md) is the complete public catalog of all installable skills, recommended bundles, and safe install defaults.
 - [`docs/guides/one-minute-install.md`](docs/guides/one-minute-install.md) shows the fastest path to install one skill, reload your tool, and run a first prompt.
 - [`docs/examples/README.md`](docs/examples/README.md) is the index for public-safe samples, workflow bundles, and first-run outputs.
+- [`docs/examples/install-smoke-test-sample.md`](docs/examples/install-smoke-test-sample.md) shows the expected shape of a temporary install check before real use.
 - [`docs/examples/skill-request-example.md`](docs/examples/skill-request-example.md) shows how to propose a new skill with fictional, public-safe material.
 - [`docs/examples/first-run-github-safe-publisher.md`](docs/examples/first-run-github-safe-publisher.md) shows the expected first-run output shape for `github-safe-publisher` using fake files.
 - [`docs/examples/skill-reviewer-sample.md`](docs/examples/skill-reviewer-sample.md) shows `READY`, `REVIEW`, and `BLOCK` decisions for fictional skill folders.

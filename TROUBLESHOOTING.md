@@ -2,7 +2,7 @@
 
 Use this page when a skill was installed but does not appear, does not run, or landed in the wrong folder.
 
-If you have not installed a skill yet, start with [`INSTALL.md`](INSTALL.md). If you want to confirm an install step by step, use [`docs/guides/install-verification.md`](docs/guides/install-verification.md). If you are new to the repo, start with [`START_HERE.md`](START_HERE.md).
+If you have not installed a skill yet, start with [`INSTALL.md`](INSTALL.md). If you want to confirm an install step by step, use [`docs/guides/install-verification.md`](docs/guides/install-verification.md). If you want a sample temporary-target result, use [`docs/examples/install-smoke-test-sample.md`](docs/examples/install-smoke-test-sample.md). If you are new to the repo, start with [`START_HERE.md`](START_HERE.md).
 
 ## Quick Checks
 
@@ -44,7 +44,7 @@ github-safe-publisher/
 
 If you only see a single Markdown file, reinstall the whole folder.
 
-For a complete install check, use [`docs/guides/install-verification.md`](docs/guides/install-verification.md).
+For a complete install check, use [`docs/guides/install-verification.md`](docs/guides/install-verification.md). To compare your terminal output with a public-safe example, use [`docs/examples/install-smoke-test-sample.md`](docs/examples/install-smoke-test-sample.md).
 
 ## Wrong Install Target
 
@@ -200,7 +200,8 @@ Open these files in order:
 2. [`INSTALL.md`](INSTALL.md)
 3. [`docs/guides/one-minute-install.md`](docs/guides/one-minute-install.md)
 4. [`docs/guides/install-verification.md`](docs/guides/install-verification.md)
-5. The target skill's `SKILL.md`
+5. [`docs/examples/install-smoke-test-sample.md`](docs/examples/install-smoke-test-sample.md)
+6. The target skill's `SKILL.md`
 
 Then rerun the list command:
 

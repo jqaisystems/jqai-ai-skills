@@ -95,6 +95,7 @@ Use a custom target when testing:
 After installing, restart Codex or reload your AI coding tool so the skill list refreshes.
 
 For a step-by-step verification pass, use [`docs/guides/install-verification.md`](docs/guides/install-verification.md).
+For a sample temporary-target check, use [`docs/examples/install-smoke-test-sample.md`](docs/examples/install-smoke-test-sample.md).
 
 Then run a first prompt:
 

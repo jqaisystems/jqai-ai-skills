@@ -259,6 +259,7 @@ Typical output:
 - Use [`INSTALL.md`](../INSTALL.md) when you need the short command reference.
 - Use the [`skill review checklist`](guides/skill-review-checklist.md) before installing unfamiliar or modified skill folders.
 - Use the [`install verification guide`](guides/install-verification.md) to confirm the target folder, copied files, reload, and first prompt.
+- Compare with the [`install smoke-test sample`](examples/install-smoke-test-sample.md) when you want a disposable temporary-target example.
 - Use [`TROUBLESHOOTING.md`](../TROUBLESHOOTING.md) if a skill does not appear after install.
 - Use the [`one-minute install guide`](guides/one-minute-install.md) if you want the shortest verified path.
 - Review a skill before installing it into a private workspace.

@@ -4,6 +4,8 @@ Use this guide after installation to confirm that a skill copied correctly, your
 
 This guide uses `github-safe-publisher` because it is the safest first skill for public-release work. You can replace that folder name with any skill from [`docs/catalog.md`](../catalog.md).
 
+For a public-safe example of the full temporary-target check, see [`docs/examples/install-smoke-test-sample.md`](../examples/install-smoke-test-sample.md).
+
 ## What This Verifies
 
 - You are running commands from the repo root.
@@ -133,6 +135,8 @@ Good output should include:
 - Exact next commands only when they are safe and relevant.
 
 For a sample of the expected shape, see [`docs/examples/first-run-github-safe-publisher.md`](../examples/first-run-github-safe-publisher.md).
+
+For a sample terminal pass through the temporary target check, see [`docs/examples/install-smoke-test-sample.md`](../examples/install-smoke-test-sample.md).
 
 ## 8. Clean Up The Temporary Target
 
