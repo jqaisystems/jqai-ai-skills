@@ -44,6 +44,7 @@ Use $github-safe-publisher to review this README and docs folder before public r
 |---|---|
 | Try one skill fast | [`docs/guides/one-minute-install.md`](docs/guides/one-minute-install.md) |
 | Install command reference | [`INSTALL.md`](INSTALL.md) |
+| Review a skill before install | [`docs/guides/skill-review-checklist.md`](docs/guides/skill-review-checklist.md) |
 | Verify an install | [`docs/guides/install-verification.md`](docs/guides/install-verification.md) |
 | Fix install or reload issues | [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md) |
 | Review release history | [`CHANGELOG.md`](CHANGELOG.md) |
@@ -75,6 +76,7 @@ That pattern matters because reusable AI workflows should not just be clever. Th
 
 - Start with one skill.
 - Read `SKILL.md` before using a skill on sensitive work.
+- Use [`docs/guides/skill-review-checklist.md`](docs/guides/skill-review-checklist.md) before installing unfamiliar skill folders.
 - Use a test folder first.
 - Do not paste credentials, tokens, account data, logs, exports, or unpublished prompt notes into a tool unless you understand where they will go.
 - Review diffs before committing public artifacts.
@@ -85,6 +87,7 @@ Once the first skill makes sense:
 
 - Use [`docs/examples/workflow-bundles.md`](docs/examples/workflow-bundles.md) for multi-skill paths.
 - Use [`docs/examples/README.md`](docs/examples/README.md) to browse public-safe examples by job.
+- Use [`docs/guides/skill-review-checklist.md`](docs/guides/skill-review-checklist.md) before installing unfamiliar or modified skill folders.
 - Use [`docs/guides/install-verification.md`](docs/guides/install-verification.md) when you want to confirm an install target, copied folder, reload, and first prompt.
 - Use [`docs/catalog.md`](docs/catalog.md) to browse the full library.
 - Use [`docs/guides/skill-anatomy.md`](docs/guides/skill-anatomy.md) before adapting or creating a skill folder.
@@ -118,5 +121,5 @@ assets/                 public visual and demo assets
 The public onboarding path is now:
 
 ```text
-START_HERE -> understand anatomy -> choose -> INSTALL -> verify install -> troubleshoot or support if needed -> SECURITY if sensitive -> run -> understand output -> release checklist if publishing -> use bundles, catalog, or quality matrix
+START_HERE -> understand anatomy -> choose -> review before install -> INSTALL -> verify install -> troubleshoot or support if needed -> SECURITY if sensitive -> run -> understand output -> release checklist if publishing -> use bundles, catalog, or quality matrix
 ```

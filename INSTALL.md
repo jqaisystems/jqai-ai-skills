@@ -2,7 +2,7 @@
 
 Use this page when you already know which skill you want to install and need the commands.
 
-New to the repo? Start with [`START_HERE.md`](START_HERE.md). Want a guided first run? Use [`docs/guides/one-minute-install.md`](docs/guides/one-minute-install.md). Want to confirm the install worked? Use [`docs/guides/install-verification.md`](docs/guides/install-verification.md). If a skill does not appear after install, use [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md).
+New to the repo? Start with [`START_HERE.md`](START_HERE.md). Want a guided first run? Use [`docs/guides/one-minute-install.md`](docs/guides/one-minute-install.md). Reviewing an unfamiliar skill? Use [`docs/guides/skill-review-checklist.md`](docs/guides/skill-review-checklist.md). Want to confirm the install worked? Use [`docs/guides/install-verification.md`](docs/guides/install-verification.md). If a skill does not appear after install, use [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md).
 
 ## Before You Start
 
@@ -128,6 +128,7 @@ cp -R ./skills/github-safe-publisher ~/.codex/skills/github-safe-publisher
 
 - Start with one skill.
 - Read the skill's `SKILL.md` before using it on real work.
+- Use [`docs/guides/skill-review-checklist.md`](docs/guides/skill-review-checklist.md) before installing unfamiliar or modified skill folders.
 - Use a test folder for the first run.
 - Use [`skill-reviewer`](skills/skill-reviewer/SKILL.md) before installing skill folders from unknown sources.
 - Use [`github-safe-publisher`](skills/github-safe-publisher/SKILL.md) before publishing work derived from sensitive material.
@@ -135,6 +136,7 @@ cp -R ./skills/github-safe-publisher ~/.codex/skills/github-safe-publisher
 ## Next Steps
 
 - Choose the right first skill with [`docs/guides/skill-selection.md`](docs/guides/skill-selection.md).
+- Review unfamiliar skill folders with [`docs/guides/skill-review-checklist.md`](docs/guides/skill-review-checklist.md).
 - Verify the copied folder, reload, and first prompt with [`docs/guides/install-verification.md`](docs/guides/install-verification.md).
 - Fix install or reload issues with [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md).
 - Browse every skill in [`docs/catalog.md`](docs/catalog.md).

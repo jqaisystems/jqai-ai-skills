@@ -6,10 +6,10 @@ These skills are small, portable instruction folders for Claude/Codex-style work
 
 [![Website](https://img.shields.io/badge/Website-ai.joaoqueiros.com-111827?style=for-the-badge)](https://www.ai.joaoqueiros.com)
 [![License](https://img.shields.io/badge/License-MIT-059669?style=for-the-badge)](LICENSE)
-[![Release](https://img.shields.io/badge/Release-v0.5.5-2563eb?style=for-the-badge)](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.5.5)
+[![Release](https://img.shields.io/badge/Release-v0.5.6-2563eb?style=for-the-badge)](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.5.6)
 [![Validate skills](https://github.com/jqaisystems/jqai-ai-skills/actions/workflows/validate.yml/badge.svg)](https://github.com/jqaisystems/jqai-ai-skills/actions/workflows/validate.yml)
 
-New here? Start with [`START_HERE.md`](START_HERE.md) for the shortest path from overview to first skill run. Want to understand the folder contract? Use [`docs/guides/skill-anatomy.md`](docs/guides/skill-anatomy.md). Ready to install? Use [`INSTALL.md`](INSTALL.md). Want to confirm it worked? Use [`docs/guides/install-verification.md`](docs/guides/install-verification.md). Something not loading? Use [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md). Want release history? Use [`CHANGELOG.md`](CHANGELOG.md). Publishing a release? Use [`RELEASE_CHECKLIST.md`](RELEASE_CHECKLIST.md). Need safety policy? Use [`SECURITY.md`](SECURITY.md). Planning adoption? Use [`ROADMAP.md`](ROADMAP.md), [`SUPPORT.md`](SUPPORT.md), and the [`skill quality matrix`](docs/skill-quality-matrix.md).
+New here? Start with [`START_HERE.md`](START_HERE.md) for the shortest path from overview to first skill run. Want to understand the folder contract? Use [`docs/guides/skill-anatomy.md`](docs/guides/skill-anatomy.md). Reviewing a skill before install? Use [`docs/guides/skill-review-checklist.md`](docs/guides/skill-review-checklist.md). Ready to install? Use [`INSTALL.md`](INSTALL.md). Want to confirm it worked? Use [`docs/guides/install-verification.md`](docs/guides/install-verification.md). Something not loading? Use [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md). Want release history? Use [`CHANGELOG.md`](CHANGELOG.md). Publishing a release? Use [`RELEASE_CHECKLIST.md`](RELEASE_CHECKLIST.md). Need safety policy? Use [`SECURITY.md`](SECURITY.md). Planning adoption? Use [`ROADMAP.md`](ROADMAP.md), [`SUPPORT.md`](SUPPORT.md), and the [`skill quality matrix`](docs/skill-quality-matrix.md).
 
 ## Preview
 
@@ -40,7 +40,7 @@ If you are new here, start with one skill rather than installing everything:
 | Announcing shipped work | [`release-announcement-writer`](skills/release-announcement-writer/SKILL.md) | Turns changelogs and diffs into release notes, website blurbs, and launch posts. |
 | Reviewing third-party skills | [`skill-reviewer`](skills/skill-reviewer/SKILL.md) | Audits skill instructions before you install them locally. |
 
-For install commands, use [`INSTALL.md`](INSTALL.md). After installing, verify the folder, reload, and first prompt with [`docs/guides/install-verification.md`](docs/guides/install-verification.md). If a skill does not appear after install, use [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md). For a guided first install, use [`docs/guides/one-minute-install.md`](docs/guides/one-minute-install.md). For a fuller decision guide, use [`docs/guides/skill-selection.md`](docs/guides/skill-selection.md). For the complete public catalog, use [`docs/catalog.md`](docs/catalog.md). For maturity, examples, and safety notes by skill, use [`docs/skill-quality-matrix.md`](docs/skill-quality-matrix.md).
+For install commands, use [`INSTALL.md`](INSTALL.md). Before installing unfamiliar skills, use [`docs/guides/skill-review-checklist.md`](docs/guides/skill-review-checklist.md). After installing, verify the folder, reload, and first prompt with [`docs/guides/install-verification.md`](docs/guides/install-verification.md). If a skill does not appear after install, use [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md). For a guided first install, use [`docs/guides/one-minute-install.md`](docs/guides/one-minute-install.md). For a fuller decision guide, use [`docs/guides/skill-selection.md`](docs/guides/skill-selection.md). For the complete public catalog, use [`docs/catalog.md`](docs/catalog.md). For maturity, examples, and safety notes by skill, use [`docs/skill-quality-matrix.md`](docs/skill-quality-matrix.md).
 
 Install flow:
 
@@ -67,6 +67,7 @@ Use $demo-animation-v2 to create a responsive animated walkthrough.
 
 - [`START_HERE.md`](START_HERE.md) is the top-level onboarding path through the repo.
 - [`INSTALL.md`](INSTALL.md) is the short command reference for installing one skill, all skills, or a custom test target.
+- [`docs/guides/skill-review-checklist.md`](docs/guides/skill-review-checklist.md) helps review permissions, scripts, risky wording, and first-run safety before installing a skill.
 - [`docs/guides/install-verification.md`](docs/guides/install-verification.md) confirms an install target, copied folder, reload, and first prompt before real work.
 - [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md) helps fix install target, reload, shell, reinstall, and removal issues.
 - [`CHANGELOG.md`](CHANGELOG.md) tracks public releases and top-level repo changes.
@@ -151,7 +152,7 @@ For a field-by-field walkthrough, use [`docs/guides/skill-anatomy.md`](docs/guid
 
 ## Which Skill Should I Use?
 
-For the fastest guided install, see [`docs/guides/one-minute-install.md`](docs/guides/one-minute-install.md). For the detailed visitor guide, see [`docs/guides/skill-selection.md`](docs/guides/skill-selection.md). To understand the folder contract, see [`docs/guides/skill-anatomy.md`](docs/guides/skill-anatomy.md). For the complete catalog, see [`docs/catalog.md`](docs/catalog.md).
+For the fastest guided install, see [`docs/guides/one-minute-install.md`](docs/guides/one-minute-install.md). For the detailed visitor guide, see [`docs/guides/skill-selection.md`](docs/guides/skill-selection.md). To understand the folder contract, see [`docs/guides/skill-anatomy.md`](docs/guides/skill-anatomy.md). To review an unfamiliar skill before install, see [`docs/guides/skill-review-checklist.md`](docs/guides/skill-review-checklist.md). For the complete catalog, see [`docs/catalog.md`](docs/catalog.md).
 
 | If you want to... | Start with |
 |---|---|
@@ -257,6 +258,7 @@ Use [`CONTRIBUTING.md`](CONTRIBUTING.md) for the expected folder format, metadat
 - Do not paste private API keys, passwords, tokens, client data, or credentials into prompts unless you fully understand where they will go.
 - Use [`SECURITY.md`](SECURITY.md) for responsible-use rules and sensitive issue reporting.
 - The `skill-reviewer` skill exists to help inspect third-party skill files before installing them.
+- Use [`docs/guides/skill-review-checklist.md`](docs/guides/skill-review-checklist.md) before installing unfamiliar or modified skill folders.
 - Run new skills on a test folder before using them in production work.
 
 ## License
