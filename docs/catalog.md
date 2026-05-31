@@ -99,6 +99,8 @@ Typical output:
 
 **Review checklist:** [`docs/guides/skill-review-checklist.md`](guides/skill-review-checklist.md)
 
+**Sample:** [`docs/examples/skill-reviewer-sample.md`](examples/skill-reviewer-sample.md)
+
 **Install:**
 
 ```powershell

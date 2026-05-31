@@ -13,6 +13,7 @@ Use this page when you want to inspect expected output before installing a skill
 | Read a public-safe case study shape | [`case-study-writer-sample.md`](case-study-writer-sample.md) |
 | See a source-aware research brief | [`research-brief-curator-sample.md`](research-brief-curator-sample.md) |
 | Turn fake changelog facts into release copy | [`release-announcement-writer-sample.md`](release-announcement-writer-sample.md) |
+| Review a skill before installing it | [`skill-reviewer-sample.md`](skill-reviewer-sample.md) |
 | Design a human-reviewed outreach workflow | [`outreach-pipeline-designer-sample.md`](outreach-pipeline-designer-sample.md) |
 | Audit a fictional marketplace listing | [`etsy-listing-optimizer-sample.md`](etsy-listing-optimizer-sample.md) |
 | Propose a new skill safely | [`skill-request-example.md`](skill-request-example.md) |
@@ -27,12 +28,13 @@ Use this page when you want to inspect expected output before installing a skill
 ## Recommended Reading Path
 
 1. Start with [`first-run-github-safe-publisher.md`](first-run-github-safe-publisher.md) if you are evaluating safety habits.
-2. Read [`workflow-bundles.md`](workflow-bundles.md) if you want to combine skills.
-3. Use [`skill-request-example.md`](skill-request-example.md) if you want to propose a new skill.
-4. Use the sample for the skill closest to your job.
-5. Use [`../guides/skill-anatomy.md`](../guides/skill-anatomy.md) if you want to understand what each skill folder file does.
-6. Use [`../skill-quality-matrix.md`](../skill-quality-matrix.md) to compare maturity, examples, and safety sensitivity.
-7. Use [`../../INSTALL.md`](../../INSTALL.md) when you are ready to install one skill.
+2. Read [`skill-reviewer-sample.md`](skill-reviewer-sample.md) before installing unfamiliar skill folders.
+3. Read [`workflow-bundles.md`](workflow-bundles.md) if you want to combine skills.
+4. Use [`skill-request-example.md`](skill-request-example.md) if you want to propose a new skill.
+5. Use the sample for the skill closest to your job.
+6. Use [`../guides/skill-anatomy.md`](../guides/skill-anatomy.md) if you want to understand what each skill folder file does.
+7. Use [`../skill-quality-matrix.md`](../skill-quality-matrix.md) to compare maturity, examples, and safety sensitivity.
+8. Use [`../../INSTALL.md`](../../INSTALL.md) when you are ready to install one skill.
 
 ## Safety Boundary
 

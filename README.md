@@ -6,7 +6,7 @@ These skills are small, portable instruction folders for Claude/Codex-style work
 
 [![Website](https://img.shields.io/badge/Website-ai.joaoqueiros.com-111827?style=for-the-badge)](https://www.ai.joaoqueiros.com)
 [![License](https://img.shields.io/badge/License-MIT-059669?style=for-the-badge)](LICENSE)
-[![Release](https://img.shields.io/badge/Release-v0.5.6-2563eb?style=for-the-badge)](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.5.6)
+[![Release](https://img.shields.io/badge/Release-v0.5.7-2563eb?style=for-the-badge)](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.5.7)
 [![Validate skills](https://github.com/jqaisystems/jqai-ai-skills/actions/workflows/validate.yml/badge.svg)](https://github.com/jqaisystems/jqai-ai-skills/actions/workflows/validate.yml)
 
 New here? Start with [`START_HERE.md`](START_HERE.md) for the shortest path from overview to first skill run. Want to understand the folder contract? Use [`docs/guides/skill-anatomy.md`](docs/guides/skill-anatomy.md). Reviewing a skill before install? Use [`docs/guides/skill-review-checklist.md`](docs/guides/skill-review-checklist.md). Ready to install? Use [`INSTALL.md`](INSTALL.md). Want to confirm it worked? Use [`docs/guides/install-verification.md`](docs/guides/install-verification.md). Something not loading? Use [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md). Want release history? Use [`CHANGELOG.md`](CHANGELOG.md). Publishing a release? Use [`RELEASE_CHECKLIST.md`](RELEASE_CHECKLIST.md). Need safety policy? Use [`SECURITY.md`](SECURITY.md). Planning adoption? Use [`ROADMAP.md`](ROADMAP.md), [`SUPPORT.md`](SUPPORT.md), and the [`skill quality matrix`](docs/skill-quality-matrix.md).
@@ -82,6 +82,7 @@ Use $demo-animation-v2 to create a responsive animated walkthrough.
 - [`docs/examples/README.md`](docs/examples/README.md) is the index for public-safe samples, workflow bundles, and first-run outputs.
 - [`docs/examples/skill-request-example.md`](docs/examples/skill-request-example.md) shows how to propose a new skill with fictional, public-safe material.
 - [`docs/examples/first-run-github-safe-publisher.md`](docs/examples/first-run-github-safe-publisher.md) shows the expected first-run output shape for `github-safe-publisher` using fake files.
+- [`docs/examples/skill-reviewer-sample.md`](docs/examples/skill-reviewer-sample.md) shows `READY`, `REVIEW`, and `BLOCK` decisions for fictional skill folders.
 - [`docs/examples/workflow-bundles.md`](docs/examples/workflow-bundles.md) shows three practical multi-skill paths: public GitHub publishing, content and research, and demo launch.
 - [`docs/examples/github-safe-publisher-sample-review.md`](docs/examples/github-safe-publisher-sample-review.md) shows the `github-safe-publisher` safety verdict, scanner summary, and manual review gate using fake files.
 - [`docs/examples/case-study-writer-sample.md`](docs/examples/case-study-writer-sample.md) shows the `case-study-writer` case study shape using a fictional review queue workflow.

@@ -52,6 +52,7 @@ Before installing a skill:
 - Read `SKILL.md`.
 - Check any files in `scripts/`, `assets/`, or `references/`.
 - Use [`docs/guides/skill-review-checklist.md`](docs/guides/skill-review-checklist.md) to review purpose, permissions, scripts, metadata, sensitive material, and first-run safety.
+- Use [`docs/examples/skill-reviewer-sample.md`](docs/examples/skill-reviewer-sample.md) to see a public-safe review shape before installing unfamiliar skills.
 - Use [`skill-reviewer`](skills/skill-reviewer/SKILL.md) for third-party skills or unfamiliar instructions.
 - Prefer a test target before installing into your main local skills directory.
 

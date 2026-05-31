@@ -166,6 +166,7 @@ Use $skill-reviewer to review this skill folder before installation. Check SKILL
 
 ## Related Docs
 
+- [`docs/examples/skill-reviewer-sample.md`](../examples/skill-reviewer-sample.md)
 - [`INSTALL.md`](../../INSTALL.md)
 - [`docs/guides/install-verification.md`](install-verification.md)
 - [`docs/guides/skill-anatomy.md`](skill-anatomy.md)
