@@ -257,6 +257,7 @@ Typical output:
 
 - Start with one skill if you are evaluating the library.
 - Use [`INSTALL.md`](../INSTALL.md) when you need the short command reference.
+- Use the [`install FAQ`](guides/install-faq.md) for first skill choice, install-all, target, reload, update, and removal questions.
 - Use the [`skill review checklist`](guides/skill-review-checklist.md) before installing unfamiliar or modified skill folders.
 - Use the [`install verification guide`](guides/install-verification.md) to confirm the target folder, copied files, reload, and first prompt.
 - Compare with the [`install smoke-test sample`](examples/install-smoke-test-sample.md) when you want a disposable temporary-target example.

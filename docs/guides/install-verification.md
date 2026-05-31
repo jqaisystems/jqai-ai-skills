@@ -4,7 +4,7 @@ Use this guide after installation to confirm that a skill copied correctly, your
 
 This guide uses `github-safe-publisher` because it is the safest first skill for public-release work. You can replace that folder name with any skill from [`docs/catalog.md`](../catalog.md).
 
-For a public-safe example of the full temporary-target check, see [`docs/examples/install-smoke-test-sample.md`](../examples/install-smoke-test-sample.md).
+For common install questions, see [`install-faq.md`](install-faq.md). For a public-safe example of the full temporary-target check, see [`docs/examples/install-smoke-test-sample.md`](../examples/install-smoke-test-sample.md).
 
 ## What This Verifies
 
@@ -164,7 +164,7 @@ rm -rf .tmp/skill-install-smoke
 | The skill appears but output looks wrong | Confirm you invoked the exact folder name, such as `$github-safe-publisher`. |
 | The default target is wrong | Install again with `-Target` or `--target` for your tool's skills folder. |
 
-For deeper fixes, use [`TROUBLESHOOTING.md`](../../TROUBLESHOOTING.md).
+For common questions, use [`install-faq.md`](install-faq.md). For deeper fixes, use [`TROUBLESHOOTING.md`](../../TROUBLESHOOTING.md).
 
 ## Safety Boundary
 
