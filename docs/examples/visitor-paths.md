@@ -6,7 +6,7 @@ The repo has three common visitor routes:
 
 | Visitor goal | Start here | Then use |
 |---|---|---|
-| Evaluate the library | [`../../START_HERE.md`](../../START_HERE.md) | [`public-proof-index.md`](public-proof-index.md), [`../catalog.md`](../catalog.md), [`../skill-quality-matrix.md`](../skill-quality-matrix.md), [`README.md`](README.md) |
+| Evaluate the library | [`../../START_HERE.md`](../../START_HERE.md) | [`public-proof-index.md`](public-proof-index.md), [`../guides/evaluate-skill-library.md`](../guides/evaluate-skill-library.md), [`../catalog.md`](../catalog.md), [`../skill-quality-matrix.md`](../skill-quality-matrix.md), [`README.md`](README.md) |
 | Install one skill | [`quick-reference-walkthrough.md`](quick-reference-walkthrough.md) | [`../../INSTALL.md`](../../INSTALL.md), [`../guides/install-verification.md`](../guides/install-verification.md), [`install-smoke-test-sample.md`](install-smoke-test-sample.md) |
 | Publish public proof safely | [`public-proof-index.md`](public-proof-index.md) | [`first-run-github-safe-publisher.md`](first-run-github-safe-publisher.md), [`github-safe-publisher-sample-review.md`](github-safe-publisher-sample-review.md), [`../../SECURITY.md`](../../SECURITY.md), [`../../RELEASE_CHECKLIST.md`](../../RELEASE_CHECKLIST.md) |
 
@@ -17,9 +17,10 @@ Use this route if you are deciding whether the repo is useful before installing 
 1. Read [`../../START_HERE.md`](../../START_HERE.md) for the shortest overview.
 2. Scan [`../../QUICK_REFERENCE.md`](../../QUICK_REFERENCE.md) for commands and key links.
 3. Open [`public-proof-index.md`](public-proof-index.md) for a one-page map of install, safety, sample, system, and visual proof assets.
-4. Browse [`../catalog.md`](../catalog.md) to compare every skill by job.
-5. Check [`../skill-quality-matrix.md`](../skill-quality-matrix.md) for maturity, examples, and safety sensitivity.
-6. Open [`README.md`](README.md) to inspect public-safe example outputs.
+4. Use [`../guides/evaluate-skill-library.md`](../guides/evaluate-skill-library.md) to score trust and install readiness.
+5. Browse [`../catalog.md`](../catalog.md) to compare every skill by job.
+6. Check [`../skill-quality-matrix.md`](../skill-quality-matrix.md) for maturity, examples, and safety sensitivity.
+7. Open [`README.md`](README.md) to inspect public-safe example outputs.
 
 Good stopping point: you can name the first skill you would try and the sample output you expect to compare against.
 
@@ -65,6 +66,7 @@ Good stopping point: the candidate has a clear `READY`, `REVIEW`, or `BLOCK` dec
 - [`../../START_HERE.md`](../../START_HERE.md)
 - [`../../QUICK_REFERENCE.md`](../../QUICK_REFERENCE.md)
 - [`public-proof-index.md`](public-proof-index.md)
+- [`../guides/evaluate-skill-library.md`](../guides/evaluate-skill-library.md)
 - [`quick-reference-walkthrough.md`](quick-reference-walkthrough.md)
 - [`../guides/update-installed-skills.md`](../guides/update-installed-skills.md)
 - [`../catalog.md`](../catalog.md)
