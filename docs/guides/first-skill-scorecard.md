@@ -4,6 +4,8 @@ Use this worksheet when the repo looks useful but you are not sure which skill t
 
 The goal is to pick one safe, testable first skill. Do not install every skill just because the library looks interesting.
 
+After choosing the winner, use the [`first skill walkthrough`](../examples/first-skill-walkthrough.md) to run it with fake input before touching real work.
+
 ## Quick Rule
 
 If your work touches public GitHub, release notes, case studies, screenshots, examples, or anything derived from private project work, start with [`github-safe-publisher`](../../skills/github-safe-publisher/SKILL.md).
@@ -68,7 +70,7 @@ Use a temporary target first:
 
 Replace `github-safe-publisher` with the winning skill name.
 
-Then verify the copied folder with [`install-verification.md`](install-verification.md), compare output with a relevant sample from [`../examples/README.md`](../examples/README.md), and install into your real skill target only after the test is clear.
+Then verify the copied folder with [`install-verification.md`](install-verification.md), run the selected skill with fake input using [`../examples/first-skill-walkthrough.md`](../examples/first-skill-walkthrough.md), compare output with a relevant sample from [`../examples/README.md`](../examples/README.md), and install into your real skill target only after the test is clear.
 
 ## Stop Conditions
 

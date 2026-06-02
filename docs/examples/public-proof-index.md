@@ -15,6 +15,7 @@ All linked examples use fictional, public, or generalized material. They do not 
 | Which route fits me? | [`visitor-paths.md`](visitor-paths.md) |
 | How do I evaluate trust and install readiness? | [`../guides/evaluate-skill-library.md`](../guides/evaluate-skill-library.md) |
 | Which skill should I install first? | [`../guides/first-skill-scorecard.md`](../guides/first-skill-scorecard.md) |
+| How do I run the selected skill safely? | [`first-skill-walkthrough.md`](first-skill-walkthrough.md) |
 | What skills exist? | [`../catalog.md`](../catalog.md) |
 | How mature are the skills? | [`../skill-quality-matrix.md`](../skill-quality-matrix.md) |
 | How do I install safely? | [`../guides/one-minute-install.md`](../guides/one-minute-install.md) |
@@ -31,6 +32,7 @@ Good stopping point: after five minutes, a visitor should know what the repo con
 | [`../guides/install-verification.md`](../guides/install-verification.md) | Checks for repo root, skill list, copied folder, reload, and first prompt. |
 | [`../guides/update-installed-skills.md`](../guides/update-installed-skills.md) | Refresh one installed skill or a reviewed set of installed skills. |
 | [`quick-reference-walkthrough.md`](quick-reference-walkthrough.md) | Clone-to-first-prompt walkthrough using the quick reference. |
+| [`first-skill-walkthrough.md`](first-skill-walkthrough.md) | Complete fake-data first skill run after scoring `github-safe-publisher`. |
 | [`install-smoke-test-sample.md`](install-smoke-test-sample.md) | Expected output shape for a disposable temporary-target install check. |
 | [`first-run-github-safe-publisher.md`](first-run-github-safe-publisher.md) | First safe prompt and expected review shape for `github-safe-publisher`. |
 
@@ -63,6 +65,7 @@ Good stopping point: after five minutes, a visitor should know what the repo con
 | [`../catalog.md`](../catalog.md) | Every public skill has a job, target user, output shape, and install command. |
 | [`../guides/evaluate-skill-library.md`](../guides/evaluate-skill-library.md) | A checklist for identity, license, install path, folder shape, examples, safety boundaries, releases, and first-skill choice. |
 | [`../guides/first-skill-scorecard.md`](../guides/first-skill-scorecard.md) | A worksheet for choosing one safe, testable first skill instead of installing everything at once. |
+| [`first-skill-walkthrough.md`](first-skill-walkthrough.md) | A public-safe walkthrough for scoring, installing, prompting, and interpreting one first skill run. |
 | [`../skill-quality-matrix.md`](../skill-quality-matrix.md) | Skill maturity, examples, and safety sensitivity are visible instead of implied. |
 | [`../guides/skill-anatomy.md`](../guides/skill-anatomy.md) | The folder contract is documented for maintainers and reviewers. |
 | [`../../CHANGELOG.md`](../../CHANGELOG.md) | Release history is versioned and inspectable. |
@@ -96,6 +99,6 @@ Before adapting any sample to real work:
 
 If you are evaluating the repo, open [`visitor-paths.md`](visitor-paths.md), [`../guides/evaluate-skill-library.md`](../guides/evaluate-skill-library.md), and [`../guides/first-skill-scorecard.md`](../guides/first-skill-scorecard.md).
 
-If you are ready to try one skill, open [`quick-reference-walkthrough.md`](quick-reference-walkthrough.md).
+If you are ready to try one skill, open [`first-skill-walkthrough.md`](first-skill-walkthrough.md) or [`quick-reference-walkthrough.md`](quick-reference-walkthrough.md).
 
 If you are publishing a public artifact, open [`github-safe-publisher-sample-review.md`](github-safe-publisher-sample-review.md) and [`../../RELEASE_CHECKLIST.md`](../../RELEASE_CHECKLIST.md).

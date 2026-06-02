@@ -4,6 +4,15 @@ Public release history for JQ AI Skills.
 
 The social preview image is intentionally stable for 2026 and is not updated for every release.
 
+## [v0.6.7](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.6.7) - 2026-06-02
+
+Added a first skill walkthrough.
+
+- Added `docs/examples/first-skill-walkthrough.md` to show the complete fake-data path after choosing `github-safe-publisher` as a safe first skill.
+- Linked the walkthrough from the README, start page, quick reference, public proof index, visitor paths, examples index, evaluation checklist, first skill scorecard, skill selection guide, catalog, quick reference walkthrough, first-run sample, and changelog.
+- Added a v0.6.7 release announcement.
+- Kept the stable 2026 social preview unchanged.
+
 ## [v0.6.6](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.6.6) - 2026-06-02
 
 Added a first-skill scorecard.

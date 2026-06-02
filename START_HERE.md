@@ -28,23 +28,24 @@ Follow this path if you want to try one skill before reading the whole repo.
 4. Use the [`public proof index`](docs/examples/public-proof-index.md) if you want one page of install, safety, sample, system, and visual proof assets.
 5. Use the [`evaluation checklist`](docs/guides/evaluate-skill-library.md) if you want to decide whether the repo is ready for a test install.
 6. Use the [`first skill scorecard`](docs/guides/first-skill-scorecard.md) if you want to score one safe, testable first install.
-7. Follow the [`quick reference walkthrough`](docs/examples/quick-reference-walkthrough.md) if you want the clone-to-first-prompt route.
-8. Install it with [`INSTALL.md`](INSTALL.md) or the [`one-minute install guide`](docs/guides/one-minute-install.md).
-9. Use the [`install FAQ`](docs/guides/install-faq.md) if you are unsure about targets, reloads, first prompts, updates, or removal.
-10. Reload your AI coding tool.
-11. Verify the install with [`docs/guides/install-verification.md`](docs/guides/install-verification.md).
-12. Compare the temporary install check with the [`install smoke-test sample`](docs/examples/install-smoke-test-sample.md).
-13. Run the first prompt:
+7. Use the [`first skill walkthrough`](docs/examples/first-skill-walkthrough.md) if you want to run the selected skill with fake input.
+8. Follow the [`quick reference walkthrough`](docs/examples/quick-reference-walkthrough.md) if you want the clone-to-first-prompt route.
+9. Install it with [`INSTALL.md`](INSTALL.md) or the [`one-minute install guide`](docs/guides/one-minute-install.md).
+10. Use the [`install FAQ`](docs/guides/install-faq.md) if you are unsure about targets, reloads, first prompts, updates, or removal.
+11. Reload your AI coding tool.
+12. Verify the install with [`docs/guides/install-verification.md`](docs/guides/install-verification.md).
+13. Compare the temporary install check with the [`install smoke-test sample`](docs/examples/install-smoke-test-sample.md).
+14. Run the first prompt:
 
 ```text
 Use $github-safe-publisher to review this README and docs folder before public release.
 ```
 
-14. Compare the result with the [`first-run sample`](docs/examples/first-run-github-safe-publisher.md).
-15. Use [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md) if the skill does not appear after install.
-16. Use the [`skill selection guide`](docs/guides/skill-selection.md) if your first job is not public GitHub publishing.
-17. Use the [`skill anatomy guide`](docs/guides/skill-anatomy.md) when you want to understand what each folder file does.
-18. Use the [`catalog`](docs/catalog.md) when you want the full list.
+15. Compare the result with the [`first-run sample`](docs/examples/first-run-github-safe-publisher.md).
+16. Use [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md) if the skill does not appear after install.
+17. Use the [`skill selection guide`](docs/guides/skill-selection.md) if your first job is not public GitHub publishing.
+18. Use the [`skill anatomy guide`](docs/guides/skill-anatomy.md) when you want to understand what each folder file does.
+19. Use the [`catalog`](docs/catalog.md) when you want the full list.
 
 ## What To Read First
 
@@ -54,6 +55,7 @@ Use $github-safe-publisher to review this README and docs folder before public r
 | Inspect public proof assets | [`docs/examples/public-proof-index.md`](docs/examples/public-proof-index.md) |
 | Evaluate trust and install readiness | [`docs/guides/evaluate-skill-library.md`](docs/guides/evaluate-skill-library.md) |
 | Score the safest first install | [`docs/guides/first-skill-scorecard.md`](docs/guides/first-skill-scorecard.md) |
+| Run the selected skill with fake input | [`docs/examples/first-skill-walkthrough.md`](docs/examples/first-skill-walkthrough.md) |
 | Scan commands and key links | [`QUICK_REFERENCE.md`](QUICK_REFERENCE.md) |
 | Walk from clone to first prompt | [`docs/examples/quick-reference-walkthrough.md`](docs/examples/quick-reference-walkthrough.md) |
 | Try one skill fast | [`docs/guides/one-minute-install.md`](docs/guides/one-minute-install.md) |
@@ -107,6 +109,7 @@ Once the first skill makes sense:
 - Use [`docs/examples/public-proof-index.md`](docs/examples/public-proof-index.md) when you want one page of install, safety, sample, system, and visual proof assets.
 - Use [`docs/guides/evaluate-skill-library.md`](docs/guides/evaluate-skill-library.md) when you want a checklist for trust, install readiness, examples, and release discipline.
 - Use [`docs/guides/first-skill-scorecard.md`](docs/guides/first-skill-scorecard.md) when you want to score one safe, testable first install.
+- Use [`docs/examples/first-skill-walkthrough.md`](docs/examples/first-skill-walkthrough.md) when you want to run the selected skill with fake input before touching real work.
 - Use [`docs/examples/quick-reference-walkthrough.md`](docs/examples/quick-reference-walkthrough.md) when you want the quick reference as a step-by-step first-use route.
 - Use [`docs/examples/workflow-bundles.md`](docs/examples/workflow-bundles.md) for multi-skill paths.
 - Use [`docs/examples/README.md`](docs/examples/README.md) to browse public-safe examples by job.
@@ -146,5 +149,5 @@ assets/                 public visual and demo assets
 The public onboarding path is now:
 
 ```text
-START_HERE -> visitor paths if choosing a route -> QUICK_REFERENCE if scanning -> quick reference walkthrough if you want steps -> understand anatomy -> choose -> score first skill -> review before install -> INSTALL -> install FAQ if unsure -> verify install -> update installed skills when needed -> troubleshoot or support if needed -> SECURITY if sensitive -> run -> understand output -> release checklist if publishing -> use bundles, catalog, or quality matrix
+START_HERE -> visitor paths if choosing a route -> QUICK_REFERENCE if scanning -> quick reference walkthrough if you want steps -> understand anatomy -> choose -> score first skill -> run the first skill walkthrough with fake input -> review before install -> INSTALL -> install FAQ if unsure -> verify install -> update installed skills when needed -> troubleshoot or support if needed -> SECURITY if sensitive -> run -> understand output -> release checklist if publishing -> use bundles, catalog, or quality matrix
 ```

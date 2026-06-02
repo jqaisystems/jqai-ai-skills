@@ -2,7 +2,7 @@
 
 Use this guide when you want to install one useful skill first instead of browsing every folder.
 
-For the fastest guided install, see [`docs/guides/one-minute-install.md`](one-minute-install.md). If two or three skills look useful and you need to choose one first, use [`first-skill-scorecard.md`](first-skill-scorecard.md). For the complete skill list with recommended bundles and safe install defaults, see [`docs/catalog.md`](../catalog.md).
+For the fastest guided install, see [`docs/guides/one-minute-install.md`](one-minute-install.md). If two or three skills look useful and you need to choose one first, use [`first-skill-scorecard.md`](first-skill-scorecard.md). After choosing one, use [`../examples/first-skill-walkthrough.md`](../examples/first-skill-walkthrough.md) to run it with fake input. For the complete skill list with recommended bundles and safe install defaults, see [`docs/catalog.md`](../catalog.md).
 
 ## Start With Your Job
 
@@ -65,6 +65,7 @@ Use this set when you need to show a workflow and then announce it clearly.
 - Install one skill first if you are evaluating the repo.
 - Use `skill-reviewer` before installing skills from an unknown source.
 - Use [`first-skill-scorecard.md`](first-skill-scorecard.md) when several skills look useful and you want to pick one safe first test.
+- Use [`../examples/first-skill-walkthrough.md`](../examples/first-skill-walkthrough.md) when you want to run the selected skill with fake input.
 - Use `github-safe-publisher` before publishing any repo, example, case study, screenshot, or release note that came from private work.
 - Use `demo-animation-v2` for new demos unless you specifically need the legacy desktop style.
 

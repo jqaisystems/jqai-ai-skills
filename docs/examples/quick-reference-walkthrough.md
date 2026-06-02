@@ -108,6 +108,7 @@ A good first result should include:
 
 Use these examples to understand what a healthy result looks like:
 
+- [`first-skill-walkthrough.md`](first-skill-walkthrough.md)
 - [`install-smoke-test-sample.md`](install-smoke-test-sample.md)
 - [`first-run-github-safe-publisher.md`](first-run-github-safe-publisher.md)
 - [`github-safe-publisher-sample-review.md`](github-safe-publisher-sample-review.md)
@@ -139,6 +140,7 @@ rm -rf .tmp/skill-install-smoke
 ## Related Links
 
 - [`../../QUICK_REFERENCE.md`](../../QUICK_REFERENCE.md)
+- [`first-skill-walkthrough.md`](first-skill-walkthrough.md)
 - [`../../INSTALL.md`](../../INSTALL.md)
 - [`../guides/install-verification.md`](../guides/install-verification.md)
 - [`install-smoke-test-sample.md`](install-smoke-test-sample.md)
