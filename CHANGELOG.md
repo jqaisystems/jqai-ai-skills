@@ -4,6 +4,15 @@ Public release history for JQ AI Skills.
 
 The social preview image is intentionally stable for 2026 and is not updated for every release.
 
+## [v0.6.6](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.6.6) - 2026-06-02
+
+Added a first-skill scorecard.
+
+- Added `docs/guides/first-skill-scorecard.md` to help visitors score one safe, testable first install after evaluating the library.
+- Linked the scorecard from the README, start page, quick reference, public proof index, visitor paths, examples index, evaluation checklist, skill selection guide, catalog, and changelog.
+- Added a v0.6.6 release announcement.
+- Kept the stable 2026 social preview unchanged.
+
 ## [v0.6.5](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.6.5) - 2026-06-01
 
 Added a skill library evaluation checklist.

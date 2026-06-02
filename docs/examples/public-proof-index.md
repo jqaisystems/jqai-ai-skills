@@ -14,6 +14,7 @@ All linked examples use fictional, public, or generalized material. They do not 
 | What can I do quickly? | [`../../QUICK_REFERENCE.md`](../../QUICK_REFERENCE.md) |
 | Which route fits me? | [`visitor-paths.md`](visitor-paths.md) |
 | How do I evaluate trust and install readiness? | [`../guides/evaluate-skill-library.md`](../guides/evaluate-skill-library.md) |
+| Which skill should I install first? | [`../guides/first-skill-scorecard.md`](../guides/first-skill-scorecard.md) |
 | What skills exist? | [`../catalog.md`](../catalog.md) |
 | How mature are the skills? | [`../skill-quality-matrix.md`](../skill-quality-matrix.md) |
 | How do I install safely? | [`../guides/one-minute-install.md`](../guides/one-minute-install.md) |
@@ -61,6 +62,7 @@ Good stopping point: after five minutes, a visitor should know what the repo con
 |---|---|
 | [`../catalog.md`](../catalog.md) | Every public skill has a job, target user, output shape, and install command. |
 | [`../guides/evaluate-skill-library.md`](../guides/evaluate-skill-library.md) | A checklist for identity, license, install path, folder shape, examples, safety boundaries, releases, and first-skill choice. |
+| [`../guides/first-skill-scorecard.md`](../guides/first-skill-scorecard.md) | A worksheet for choosing one safe, testable first skill instead of installing everything at once. |
 | [`../skill-quality-matrix.md`](../skill-quality-matrix.md) | Skill maturity, examples, and safety sensitivity are visible instead of implied. |
 | [`../guides/skill-anatomy.md`](../guides/skill-anatomy.md) | The folder contract is documented for maintainers and reviewers. |
 | [`../../CHANGELOG.md`](../../CHANGELOG.md) | Release history is versioned and inspectable. |
@@ -92,7 +94,7 @@ Before adapting any sample to real work:
 
 ## Best Next Step
 
-If you are evaluating the repo, open [`visitor-paths.md`](visitor-paths.md) and [`../guides/evaluate-skill-library.md`](../guides/evaluate-skill-library.md).
+If you are evaluating the repo, open [`visitor-paths.md`](visitor-paths.md), [`../guides/evaluate-skill-library.md`](../guides/evaluate-skill-library.md), and [`../guides/first-skill-scorecard.md`](../guides/first-skill-scorecard.md).
 
 If you are ready to try one skill, open [`quick-reference-walkthrough.md`](quick-reference-walkthrough.md).
 

@@ -12,6 +12,7 @@ For the guided path, start with [`START_HERE.md`](START_HERE.md). For full insta
 | Choose a visitor route | [`docs/examples/visitor-paths.md`](docs/examples/visitor-paths.md) |
 | Inspect public proof assets | [`docs/examples/public-proof-index.md`](docs/examples/public-proof-index.md) |
 | Evaluate trust and install readiness | [`docs/guides/evaluate-skill-library.md`](docs/guides/evaluate-skill-library.md) |
+| Score one first skill | [`docs/guides/first-skill-scorecard.md`](docs/guides/first-skill-scorecard.md) |
 | Choose by job | [`docs/guides/skill-selection.md`](docs/guides/skill-selection.md) |
 | Browse every skill | [`docs/catalog.md`](docs/catalog.md) |
 | Understand folder shape | [`docs/guides/skill-anatomy.md`](docs/guides/skill-anatomy.md) |
@@ -110,6 +111,7 @@ Useful links:
 | Public examples | [`docs/examples/README.md`](docs/examples/README.md) |
 | Public proof index | [`docs/examples/public-proof-index.md`](docs/examples/public-proof-index.md) |
 | Evaluation checklist | [`docs/guides/evaluate-skill-library.md`](docs/guides/evaluate-skill-library.md) |
+| First skill scorecard | [`docs/guides/first-skill-scorecard.md`](docs/guides/first-skill-scorecard.md) |
 | Workflow bundles | [`docs/examples/workflow-bundles.md`](docs/examples/workflow-bundles.md) |
 
 Core checks:
@@ -129,6 +131,7 @@ git status --short
 | Visitor paths | [`docs/examples/visitor-paths.md`](docs/examples/visitor-paths.md) |
 | Public proof index | [`docs/examples/public-proof-index.md`](docs/examples/public-proof-index.md) |
 | Evaluation checklist | [`docs/guides/evaluate-skill-library.md`](docs/guides/evaluate-skill-library.md) |
+| First skill scorecard | [`docs/guides/first-skill-scorecard.md`](docs/guides/first-skill-scorecard.md) |
 | Quick reference walkthrough | [`docs/examples/quick-reference-walkthrough.md`](docs/examples/quick-reference-walkthrough.md) |
 | Install commands | [`INSTALL.md`](INSTALL.md) |
 | Install FAQ | [`docs/guides/install-faq.md`](docs/guides/install-faq.md) |

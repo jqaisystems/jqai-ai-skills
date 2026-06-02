@@ -131,6 +131,7 @@ Check:
 For this repo:
 
 - First skill route: [`../../START_HERE.md`](../../START_HERE.md)
+- First skill scorecard: [`first-skill-scorecard.md`](first-skill-scorecard.md)
 - Skill selection: [`skill-selection.md`](skill-selection.md)
 - Quick reference walkthrough: [`../examples/quick-reference-walkthrough.md`](../examples/quick-reference-walkthrough.md)
 
@@ -178,3 +179,5 @@ If the library looks `READY`, install one skill into a temporary target first:
 If the library needs `REVIEW`, inspect the unclear file or guide before installing.
 
 If the library is `BLOCK`, do not install it.
+
+If you have more than one possible first skill, use [`first-skill-scorecard.md`](first-skill-scorecard.md) to score the safest first install before copying anything into your real target.
