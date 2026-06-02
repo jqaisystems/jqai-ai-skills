@@ -2,7 +2,7 @@
 
 This is a fictional public-release candidate for a first `github-safe-publisher` test.
 
-Use it with the [`first skill walkthrough`](../first-skill-walkthrough.md) when you want a ready fake folder instead of writing your own test files.
+Use it with the [`first skill walkthrough`](../first-skill-walkthrough.md) when you want a ready fake folder instead of writing your own test files. After running the first prompt, compare your result with [`expected-review.md`](expected-review.md).
 
 ## What This Candidate Is
 
@@ -45,8 +45,11 @@ A useful first result should include:
 - exact next commands for reviewing diffs;
 - no commit, push, upload, send, or publish action before human approval.
 
+For a concrete output shape for this exact candidate, use [`expected-review.md`](expected-review.md).
+
 ## Related Files
 
+- [`expected-review.md`](expected-review.md)
 - [`docs/example-release-note.md`](docs/example-release-note.md)
 - [`docs/example-workflow-summary.md`](docs/example-workflow-summary.md)
 - [`../first-run-github-safe-publisher.md`](../first-run-github-safe-publisher.md)

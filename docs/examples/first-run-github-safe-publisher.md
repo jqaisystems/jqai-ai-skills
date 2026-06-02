@@ -16,7 +16,7 @@ docs/example-workflow-summary.md
 
 The files describe a fictional workflow called `Example Review Queue`. They do not include real account data, unpublished source code, raw logs, exports, or screenshots.
 
-Use the ready version at [`first-skill-candidate/README.md`](first-skill-candidate/README.md), or recreate the same file shape in a temporary folder.
+Use the ready version at [`first-skill-candidate/README.md`](first-skill-candidate/README.md), then compare your result with [`first-skill-candidate/expected-review.md`](first-skill-candidate/expected-review.md). You can also recreate the same file shape in a temporary folder.
 
 ## Prompt
 
@@ -97,5 +97,6 @@ Do not rewrite around real secrets, account identifiers, raw exports, logs, or s
 - Install the skill with [`docs/guides/one-minute-install.md`](../guides/one-minute-install.md).
 - Use the first skill walkthrough for the complete fake-data run: [`first-skill-walkthrough.md`](first-skill-walkthrough.md).
 - Use the ready fake candidate pack: [`first-skill-candidate/README.md`](first-skill-candidate/README.md).
+- Compare with the expected review for that candidate: [`first-skill-candidate/expected-review.md`](first-skill-candidate/expected-review.md).
 - Compare this example with the `github-safe-publisher` sample review: [`github-safe-publisher-sample-review.md`](github-safe-publisher-sample-review.md).
 - Use the public publishing bundle when a release also needs a case study or launch note: [`workflow-bundles.md`](workflow-bundles.md).

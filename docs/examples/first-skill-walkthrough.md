@@ -132,7 +132,7 @@ A good first result should include:
 - exact next commands;
 - a reminder not to commit or push until the staged diff is reviewed and approved.
 
-Use `READY` only when the fake files are public-safe and the manual checks are straightforward.
+Use `READY` only when the fake files are public-safe and the manual checks are straightforward. For this exact candidate, compare with [`first-skill-candidate/expected-review.md`](first-skill-candidate/expected-review.md).
 
 Use `REVIEW` if wording, links, screenshots, or file names need a human check.
 
@@ -143,6 +143,7 @@ Use `BLOCK` if the candidate includes secrets, account data, logs, exports, cust
 Use these sample outputs:
 
 - [`first-skill-candidate/README.md`](first-skill-candidate/README.md)
+- [`first-skill-candidate/expected-review.md`](first-skill-candidate/expected-review.md)
 - [`first-run-github-safe-publisher.md`](first-run-github-safe-publisher.md)
 - [`github-safe-publisher-sample-review.md`](github-safe-publisher-sample-review.md)
 - [`install-smoke-test-sample.md`](install-smoke-test-sample.md)
@@ -183,6 +184,7 @@ Stop and install nothing if:
 - [`../../INSTALL.md`](../../INSTALL.md)
 - [`../guides/install-verification.md`](../guides/install-verification.md)
 - [`first-skill-candidate/README.md`](first-skill-candidate/README.md)
+- [`first-skill-candidate/expected-review.md`](first-skill-candidate/expected-review.md)
 - [`install-smoke-test-sample.md`](install-smoke-test-sample.md)
 - [`first-run-github-safe-publisher.md`](first-run-github-safe-publisher.md)
 - [`github-safe-publisher-sample-review.md`](github-safe-publisher-sample-review.md)

@@ -2,7 +2,7 @@
 
 Use this guide when you want to install one useful skill first instead of browsing every folder.
 
-For the fastest guided install, see [`docs/guides/one-minute-install.md`](one-minute-install.md). If two or three skills look useful and you need to choose one first, use [`first-skill-scorecard.md`](first-skill-scorecard.md). After choosing one, use [`../examples/first-skill-walkthrough.md`](../examples/first-skill-walkthrough.md) and the ready [`first-skill candidate pack`](../examples/first-skill-candidate/README.md) to run it with fake input. For the complete skill list with recommended bundles and safe install defaults, see [`docs/catalog.md`](../catalog.md).
+For the fastest guided install, see [`docs/guides/one-minute-install.md`](one-minute-install.md). If two or three skills look useful and you need to choose one first, use [`first-skill-scorecard.md`](first-skill-scorecard.md). After choosing one, use [`../examples/first-skill-walkthrough.md`](../examples/first-skill-walkthrough.md), the ready [`first-skill candidate pack`](../examples/first-skill-candidate/README.md), and its [`expected review`](../examples/first-skill-candidate/expected-review.md) to run it with fake input. For the complete skill list with recommended bundles and safe install defaults, see [`docs/catalog.md`](../catalog.md).
 
 ## Start With Your Job
 
@@ -67,6 +67,7 @@ Use this set when you need to show a workflow and then announce it clearly.
 - Use [`first-skill-scorecard.md`](first-skill-scorecard.md) when several skills look useful and you want to pick one safe first test.
 - Use [`../examples/first-skill-walkthrough.md`](../examples/first-skill-walkthrough.md) when you want to run the selected skill with fake input.
 - Use [`../examples/first-skill-candidate/README.md`](../examples/first-skill-candidate/README.md) when you want ready fake README and docs files for that first test.
+- Use [`../examples/first-skill-candidate/expected-review.md`](../examples/first-skill-candidate/expected-review.md) when you want to compare the expected first review.
 - Use `github-safe-publisher` before publishing any repo, example, case study, screenshot, or release note that came from private work.
 - Use `demo-animation-v2` for new demos unless you specifically need the legacy desktop style.
 

@@ -30,23 +30,24 @@ Follow this path if you want to try one skill before reading the whole repo.
 6. Use the [`first skill scorecard`](docs/guides/first-skill-scorecard.md) if you want to score one safe, testable first install.
 7. Use the [`first skill walkthrough`](docs/examples/first-skill-walkthrough.md) if you want to run the selected skill with fake input.
 8. Use the [`first-skill candidate pack`](docs/examples/first-skill-candidate/README.md) if you want ready fake files for that run.
-9. Follow the [`quick reference walkthrough`](docs/examples/quick-reference-walkthrough.md) if you want the clone-to-first-prompt route.
-10. Install it with [`INSTALL.md`](INSTALL.md) or the [`one-minute install guide`](docs/guides/one-minute-install.md).
-11. Use the [`install FAQ`](docs/guides/install-faq.md) if you are unsure about targets, reloads, first prompts, updates, or removal.
-12. Reload your AI coding tool.
-13. Verify the install with [`docs/guides/install-verification.md`](docs/guides/install-verification.md).
-14. Compare the temporary install check with the [`install smoke-test sample`](docs/examples/install-smoke-test-sample.md).
-15. Run the first prompt:
+9. Compare with the [`expected review`](docs/examples/first-skill-candidate/expected-review.md) if you want to know what a good result looks like for those files.
+10. Follow the [`quick reference walkthrough`](docs/examples/quick-reference-walkthrough.md) if you want the clone-to-first-prompt route.
+11. Install it with [`INSTALL.md`](INSTALL.md) or the [`one-minute install guide`](docs/guides/one-minute-install.md).
+12. Use the [`install FAQ`](docs/guides/install-faq.md) if you are unsure about targets, reloads, first prompts, updates, or removal.
+13. Reload your AI coding tool.
+14. Verify the install with [`docs/guides/install-verification.md`](docs/guides/install-verification.md).
+15. Compare the temporary install check with the [`install smoke-test sample`](docs/examples/install-smoke-test-sample.md).
+16. Run the first prompt:
 
 ```text
 Use $github-safe-publisher to review this README and docs folder before public release.
 ```
 
-16. Compare the result with the [`first-run sample`](docs/examples/first-run-github-safe-publisher.md).
-17. Use [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md) if the skill does not appear after install.
-18. Use the [`skill selection guide`](docs/guides/skill-selection.md) if your first job is not public GitHub publishing.
-19. Use the [`skill anatomy guide`](docs/guides/skill-anatomy.md) when you want to understand what each folder file does.
-20. Use the [`catalog`](docs/catalog.md) when you want the full list.
+17. Compare the result with the [`first-run sample`](docs/examples/first-run-github-safe-publisher.md).
+18. Use [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md) if the skill does not appear after install.
+19. Use the [`skill selection guide`](docs/guides/skill-selection.md) if your first job is not public GitHub publishing.
+20. Use the [`skill anatomy guide`](docs/guides/skill-anatomy.md) when you want to understand what each folder file does.
+21. Use the [`catalog`](docs/catalog.md) when you want the full list.
 
 ## What To Read First
 
@@ -58,6 +59,7 @@ Use $github-safe-publisher to review this README and docs folder before public r
 | Score the safest first install | [`docs/guides/first-skill-scorecard.md`](docs/guides/first-skill-scorecard.md) |
 | Run the selected skill with fake input | [`docs/examples/first-skill-walkthrough.md`](docs/examples/first-skill-walkthrough.md) |
 | Use ready fake first-run files | [`docs/examples/first-skill-candidate/README.md`](docs/examples/first-skill-candidate/README.md) |
+| Compare the expected first review | [`docs/examples/first-skill-candidate/expected-review.md`](docs/examples/first-skill-candidate/expected-review.md) |
 | Scan commands and key links | [`QUICK_REFERENCE.md`](QUICK_REFERENCE.md) |
 | Walk from clone to first prompt | [`docs/examples/quick-reference-walkthrough.md`](docs/examples/quick-reference-walkthrough.md) |
 | Try one skill fast | [`docs/guides/one-minute-install.md`](docs/guides/one-minute-install.md) |
@@ -113,6 +115,7 @@ Once the first skill makes sense:
 - Use [`docs/guides/first-skill-scorecard.md`](docs/guides/first-skill-scorecard.md) when you want to score one safe, testable first install.
 - Use [`docs/examples/first-skill-walkthrough.md`](docs/examples/first-skill-walkthrough.md) when you want to run the selected skill with fake input before touching real work.
 - Use [`docs/examples/first-skill-candidate/README.md`](docs/examples/first-skill-candidate/README.md) when you want ready fake README and docs files for that first review.
+- Use [`docs/examples/first-skill-candidate/expected-review.md`](docs/examples/first-skill-candidate/expected-review.md) when you want to compare the expected `READY` review for those exact files.
 - Use [`docs/examples/quick-reference-walkthrough.md`](docs/examples/quick-reference-walkthrough.md) when you want the quick reference as a step-by-step first-use route.
 - Use [`docs/examples/workflow-bundles.md`](docs/examples/workflow-bundles.md) for multi-skill paths.
 - Use [`docs/examples/README.md`](docs/examples/README.md) to browse public-safe examples by job.
@@ -152,5 +155,5 @@ assets/                 public visual and demo assets
 The public onboarding path is now:
 
 ```text
-START_HERE -> visitor paths if choosing a route -> QUICK_REFERENCE if scanning -> quick reference walkthrough if you want steps -> understand anatomy -> choose -> score first skill -> run the first skill walkthrough with the first-skill candidate pack -> review before install -> INSTALL -> install FAQ if unsure -> verify install -> update installed skills when needed -> troubleshoot or support if needed -> SECURITY if sensitive -> run -> understand output -> release checklist if publishing -> use bundles, catalog, or quality matrix
+START_HERE -> visitor paths if choosing a route -> QUICK_REFERENCE if scanning -> quick reference walkthrough if you want steps -> understand anatomy -> choose -> score first skill -> run the first skill walkthrough with the first-skill candidate pack -> compare the expected review -> review before install -> INSTALL -> install FAQ if unsure -> verify install -> update installed skills when needed -> troubleshoot or support if needed -> SECURITY if sensitive -> run -> understand output -> release checklist if publishing -> use bundles, catalog, or quality matrix
 ```

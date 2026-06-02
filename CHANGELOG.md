@@ -4,6 +4,15 @@ Public release history for JQ AI Skills.
 
 The social preview image is intentionally stable for 2026 and is not updated for every release.
 
+## [v0.6.9](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.6.9) - 2026-06-02
+
+Added the expected first-skill candidate review.
+
+- Added `docs/examples/first-skill-candidate/expected-review.md` with a concrete `READY` review output for the fake `Example Review Queue` candidate.
+- Linked the expected review from the README, start page, quick reference, examples index, candidate pack, first skill walkthrough, first-run sample, public proof index, visitor paths, evaluation checklist, first skill scorecard, skill selection guide, catalog, and changelog.
+- Added a v0.6.9 release announcement.
+- Kept the stable 2026 social preview unchanged.
+
 ## [v0.6.8](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.6.8) - 2026-06-02
 
 Added a first-skill candidate pack.

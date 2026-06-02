@@ -90,7 +90,7 @@ Restart or reload your AI coding tool so it can discover the copied skill folder
 
 ## 6. Run The First Prompt
 
-Use a small public-release candidate first, such as a README and docs folder. If you do not have fake files ready, use the [`first-skill candidate pack`](first-skill-candidate/README.md).
+Use a small public-release candidate first, such as a README and docs folder. If you do not have fake files ready, use the [`first-skill candidate pack`](first-skill-candidate/README.md) and compare your result with its [`expected review`](first-skill-candidate/expected-review.md).
 
 ```text
 Use $github-safe-publisher to review this README and docs folder before public release.
@@ -110,6 +110,7 @@ Use these examples to understand what a healthy result looks like:
 
 - [`first-skill-walkthrough.md`](first-skill-walkthrough.md)
 - [`first-skill-candidate/README.md`](first-skill-candidate/README.md)
+- [`first-skill-candidate/expected-review.md`](first-skill-candidate/expected-review.md)
 - [`install-smoke-test-sample.md`](install-smoke-test-sample.md)
 - [`first-run-github-safe-publisher.md`](first-run-github-safe-publisher.md)
 - [`github-safe-publisher-sample-review.md`](github-safe-publisher-sample-review.md)
@@ -143,6 +144,7 @@ rm -rf .tmp/skill-install-smoke
 - [`../../QUICK_REFERENCE.md`](../../QUICK_REFERENCE.md)
 - [`first-skill-walkthrough.md`](first-skill-walkthrough.md)
 - [`first-skill-candidate/README.md`](first-skill-candidate/README.md)
+- [`first-skill-candidate/expected-review.md`](first-skill-candidate/expected-review.md)
 - [`../../INSTALL.md`](../../INSTALL.md)
 - [`../guides/install-verification.md`](../guides/install-verification.md)
 - [`install-smoke-test-sample.md`](install-smoke-test-sample.md)
