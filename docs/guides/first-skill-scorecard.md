@@ -4,7 +4,7 @@ Use this worksheet when the repo looks useful but you are not sure which skill t
 
 The goal is to pick one safe, testable first skill. Do not install every skill just because the library looks interesting.
 
-After choosing the winner, use the [`first skill walkthrough`](../examples/first-skill-walkthrough.md) to run it with fake input before touching real work.
+After choosing the winner, use the [`first skill walkthrough`](../examples/first-skill-walkthrough.md) and the ready [`first-skill candidate pack`](../examples/first-skill-candidate/README.md) to run it with fake input before touching real work.
 
 ## Quick Rule
 
@@ -39,7 +39,7 @@ Next step:
 
 | If the highest-score job is... | Start with | First safe input |
 |---|---|---|
-| Public release, repo cleanup, README, case study, or screenshot review | [`github-safe-publisher`](../../skills/github-safe-publisher/SKILL.md) | A fake README or public docs folder |
+| Public release, repo cleanup, README, case study, or screenshot review | [`github-safe-publisher`](../../skills/github-safe-publisher/SKILL.md) | [`A fake README and docs folder`](../examples/first-skill-candidate/README.md) |
 | Turning project work into public proof | [`case-study-writer`](../../skills/case-study-writer/SKILL.md) | A fictional project summary |
 | Changelog, launch post, or release copy | [`release-announcement-writer`](../../skills/release-announcement-writer/SKILL.md) | A fake changelog |
 | Reviewing a downloaded or modified skill | [`skill-reviewer`](../../skills/skill-reviewer/SKILL.md) | A copied test skill folder |
@@ -70,7 +70,7 @@ Use a temporary target first:
 
 Replace `github-safe-publisher` with the winning skill name.
 
-Then verify the copied folder with [`install-verification.md`](install-verification.md), run the selected skill with fake input using [`../examples/first-skill-walkthrough.md`](../examples/first-skill-walkthrough.md), compare output with a relevant sample from [`../examples/README.md`](../examples/README.md), and install into your real skill target only after the test is clear.
+Then verify the copied folder with [`install-verification.md`](install-verification.md), run the selected skill with fake input using [`../examples/first-skill-walkthrough.md`](../examples/first-skill-walkthrough.md) and [`../examples/first-skill-candidate/README.md`](../examples/first-skill-candidate/README.md), compare output with a relevant sample from [`../examples/README.md`](../examples/README.md), and install into your real skill target only after the test is clear.
 
 ## Stop Conditions
 

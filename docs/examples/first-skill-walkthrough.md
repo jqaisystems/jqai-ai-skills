@@ -78,7 +78,7 @@ Compare with [`install-smoke-test-sample.md`](install-smoke-test-sample.md) if t
 
 Use a tiny fake candidate so the first run tests the workflow shape, not private material.
 
-Example candidate:
+You can use the ready [`first-skill candidate pack`](first-skill-candidate/README.md), or create the same shape yourself:
 
 ```text
 public-candidate/
@@ -142,6 +142,7 @@ Use `BLOCK` if the candidate includes secrets, account data, logs, exports, cust
 
 Use these sample outputs:
 
+- [`first-skill-candidate/README.md`](first-skill-candidate/README.md)
 - [`first-run-github-safe-publisher.md`](first-run-github-safe-publisher.md)
 - [`github-safe-publisher-sample-review.md`](github-safe-publisher-sample-review.md)
 - [`install-smoke-test-sample.md`](install-smoke-test-sample.md)
@@ -181,6 +182,7 @@ Stop and install nothing if:
 - [`../guides/first-skill-scorecard.md`](../guides/first-skill-scorecard.md)
 - [`../../INSTALL.md`](../../INSTALL.md)
 - [`../guides/install-verification.md`](../guides/install-verification.md)
+- [`first-skill-candidate/README.md`](first-skill-candidate/README.md)
 - [`install-smoke-test-sample.md`](install-smoke-test-sample.md)
 - [`first-run-github-safe-publisher.md`](first-run-github-safe-publisher.md)
 - [`github-safe-publisher-sample-review.md`](github-safe-publisher-sample-review.md)

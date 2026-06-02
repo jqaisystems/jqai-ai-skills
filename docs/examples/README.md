@@ -12,6 +12,7 @@ Use this page when you want to inspect expected output before installing a skill
 | Inspect public proof assets | [`public-proof-index.md`](public-proof-index.md) |
 | Score the safest first install | [`../guides/first-skill-scorecard.md`](../guides/first-skill-scorecard.md) |
 | Run the selected skill with fake input | [`first-skill-walkthrough.md`](first-skill-walkthrough.md) |
+| Use ready fake first-run files | [`first-skill-candidate/README.md`](first-skill-candidate/README.md) |
 | Walk from clone to first prompt | [`quick-reference-walkthrough.md`](quick-reference-walkthrough.md) |
 | Verify a temporary install result | [`install-smoke-test-sample.md`](install-smoke-test-sample.md) |
 | See the first-run shape for safety review | [`first-run-github-safe-publisher.md`](first-run-github-safe-publisher.md) |
@@ -29,6 +30,7 @@ Use this page when you want to inspect expected output before installing a skill
 
 | File | Use |
 |---|---|
+| [`first-skill-candidate/README.md`](first-skill-candidate/README.md) | Ready fake README and docs files for the first `github-safe-publisher` review. |
 | [`research-brief-curator-sample-items.json`](research-brief-curator-sample-items.json) | Fake source items for the research brief sample. |
 
 ## Recommended Reading Path
@@ -37,16 +39,17 @@ Use this page when you want to inspect expected output before installing a skill
 2. Use [`public-proof-index.md`](public-proof-index.md) if you want one page of install, safety, sample, system, and visual proof assets.
 3. Use [`../guides/first-skill-scorecard.md`](../guides/first-skill-scorecard.md) if several skills look useful and you want to pick one first.
 4. Use [`first-skill-walkthrough.md`](first-skill-walkthrough.md) when you want to run the selected skill with fake input.
-5. Use [`quick-reference-walkthrough.md`](quick-reference-walkthrough.md) if you want the clone-to-first-prompt path.
-6. Use [`install-smoke-test-sample.md`](install-smoke-test-sample.md) when you want to verify a disposable install before real use.
-7. Start with [`first-run-github-safe-publisher.md`](first-run-github-safe-publisher.md) if you are evaluating safety habits.
-8. Read [`skill-reviewer-sample.md`](skill-reviewer-sample.md) before installing unfamiliar skill folders.
-9. Read [`workflow-bundles.md`](workflow-bundles.md) if you want to combine skills.
-10. Use [`skill-request-example.md`](skill-request-example.md) if you want to propose a new skill.
-11. Use the sample for the skill closest to your job.
-12. Use [`../guides/skill-anatomy.md`](../guides/skill-anatomy.md) if you want to understand what each skill folder file does.
-13. Use [`../skill-quality-matrix.md`](../skill-quality-matrix.md) to compare maturity, examples, and safety sensitivity.
-14. Use [`../../INSTALL.md`](../../INSTALL.md) when you are ready to install one skill.
+5. Use [`first-skill-candidate/README.md`](first-skill-candidate/README.md) when you want ready fake files for that first run.
+6. Use [`quick-reference-walkthrough.md`](quick-reference-walkthrough.md) if you want the clone-to-first-prompt path.
+7. Use [`install-smoke-test-sample.md`](install-smoke-test-sample.md) when you want to verify a disposable install before real use.
+8. Start with [`first-run-github-safe-publisher.md`](first-run-github-safe-publisher.md) if you are evaluating safety habits.
+9. Read [`skill-reviewer-sample.md`](skill-reviewer-sample.md) before installing unfamiliar skill folders.
+10. Read [`workflow-bundles.md`](workflow-bundles.md) if you want to combine skills.
+11. Use [`skill-request-example.md`](skill-request-example.md) if you want to propose a new skill.
+12. Use the sample for the skill closest to your job.
+13. Use [`../guides/skill-anatomy.md`](../guides/skill-anatomy.md) if you want to understand what each skill folder file does.
+14. Use [`../skill-quality-matrix.md`](../skill-quality-matrix.md) to compare maturity, examples, and safety sensitivity.
+15. Use [`../../INSTALL.md`](../../INSTALL.md) when you are ready to install one skill.
 
 ## Safety Boundary
 

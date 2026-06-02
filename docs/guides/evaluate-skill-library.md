@@ -98,6 +98,7 @@ For this repo:
 
 - Examples index: [`../examples/README.md`](../examples/README.md)
 - First skill walkthrough: [`../examples/first-skill-walkthrough.md`](../examples/first-skill-walkthrough.md)
+- First-skill candidate pack: [`../examples/first-skill-candidate/README.md`](../examples/first-skill-candidate/README.md)
 - First-run sample: [`../examples/first-run-github-safe-publisher.md`](../examples/first-run-github-safe-publisher.md)
 - Install smoke-test sample: [`../examples/install-smoke-test-sample.md`](../examples/install-smoke-test-sample.md)
 - Skill reviewer sample: [`../examples/skill-reviewer-sample.md`](../examples/skill-reviewer-sample.md)
@@ -134,6 +135,7 @@ For this repo:
 - First skill route: [`../../START_HERE.md`](../../START_HERE.md)
 - First skill scorecard: [`first-skill-scorecard.md`](first-skill-scorecard.md)
 - First skill walkthrough: [`../examples/first-skill-walkthrough.md`](../examples/first-skill-walkthrough.md)
+- First-skill candidate pack: [`../examples/first-skill-candidate/README.md`](../examples/first-skill-candidate/README.md)
 - Skill selection: [`skill-selection.md`](skill-selection.md)
 - Quick reference walkthrough: [`../examples/quick-reference-walkthrough.md`](../examples/quick-reference-walkthrough.md)
 
@@ -184,4 +186,4 @@ If the library is `BLOCK`, do not install it.
 
 If you have more than one possible first skill, use [`first-skill-scorecard.md`](first-skill-scorecard.md) to score the safest first install before copying anything into your real target.
 
-After choosing one skill, use [`../examples/first-skill-walkthrough.md`](../examples/first-skill-walkthrough.md) to test it with fake input before touching real work.
+After choosing one skill, use [`../examples/first-skill-walkthrough.md`](../examples/first-skill-walkthrough.md) and the ready [`first-skill candidate pack`](../examples/first-skill-candidate/README.md) to test it with fake input before touching real work.

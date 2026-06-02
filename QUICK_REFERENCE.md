@@ -14,6 +14,7 @@ For the guided path, start with [`START_HERE.md`](START_HERE.md). For full insta
 | Evaluate trust and install readiness | [`docs/guides/evaluate-skill-library.md`](docs/guides/evaluate-skill-library.md) |
 | Score one first skill | [`docs/guides/first-skill-scorecard.md`](docs/guides/first-skill-scorecard.md) |
 | Run the selected skill with fake input | [`docs/examples/first-skill-walkthrough.md`](docs/examples/first-skill-walkthrough.md) |
+| Use ready fake first-run files | [`docs/examples/first-skill-candidate/README.md`](docs/examples/first-skill-candidate/README.md) |
 | Choose by job | [`docs/guides/skill-selection.md`](docs/guides/skill-selection.md) |
 | Browse every skill | [`docs/catalog.md`](docs/catalog.md) |
 | Understand folder shape | [`docs/guides/skill-anatomy.md`](docs/guides/skill-anatomy.md) |
@@ -68,6 +69,7 @@ Install all skills only after review:
 |---|---|
 | Walk from clone to first prompt | [`docs/examples/quick-reference-walkthrough.md`](docs/examples/quick-reference-walkthrough.md) |
 | Run the selected skill with fake input | [`docs/examples/first-skill-walkthrough.md`](docs/examples/first-skill-walkthrough.md) |
+| Use ready fake candidate files | [`docs/examples/first-skill-candidate/README.md`](docs/examples/first-skill-candidate/README.md) |
 | Answer install questions | [`docs/guides/install-faq.md`](docs/guides/install-faq.md) |
 | Verify folder, reload, and first prompt | [`docs/guides/install-verification.md`](docs/guides/install-verification.md) |
 | Update installed skills | [`docs/guides/update-installed-skills.md`](docs/guides/update-installed-skills.md) |
@@ -115,6 +117,7 @@ Useful links:
 | Evaluation checklist | [`docs/guides/evaluate-skill-library.md`](docs/guides/evaluate-skill-library.md) |
 | First skill scorecard | [`docs/guides/first-skill-scorecard.md`](docs/guides/first-skill-scorecard.md) |
 | First skill walkthrough | [`docs/examples/first-skill-walkthrough.md`](docs/examples/first-skill-walkthrough.md) |
+| First-skill candidate pack | [`docs/examples/first-skill-candidate/README.md`](docs/examples/first-skill-candidate/README.md) |
 | Workflow bundles | [`docs/examples/workflow-bundles.md`](docs/examples/workflow-bundles.md) |
 
 Core checks:
@@ -136,6 +139,7 @@ git status --short
 | Evaluation checklist | [`docs/guides/evaluate-skill-library.md`](docs/guides/evaluate-skill-library.md) |
 | First skill scorecard | [`docs/guides/first-skill-scorecard.md`](docs/guides/first-skill-scorecard.md) |
 | First skill walkthrough | [`docs/examples/first-skill-walkthrough.md`](docs/examples/first-skill-walkthrough.md) |
+| First-skill candidate pack | [`docs/examples/first-skill-candidate/README.md`](docs/examples/first-skill-candidate/README.md) |
 | Quick reference walkthrough | [`docs/examples/quick-reference-walkthrough.md`](docs/examples/quick-reference-walkthrough.md) |
 | Install commands | [`INSTALL.md`](INSTALL.md) |
 | Install FAQ | [`docs/guides/install-faq.md`](docs/guides/install-faq.md) |
