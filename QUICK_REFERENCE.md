@@ -11,6 +11,7 @@ For the guided path, start with [`START_HERE.md`](START_HERE.md). For full insta
 | Try one safe first skill | [`github-safe-publisher`](skills/github-safe-publisher/SKILL.md) |
 | Choose a visitor route | [`docs/examples/visitor-paths.md`](docs/examples/visitor-paths.md) |
 | Inspect public proof assets | [`docs/examples/public-proof-index.md`](docs/examples/public-proof-index.md) |
+| Prove the first install path | [`docs/examples/first-install-proof.md`](docs/examples/first-install-proof.md) |
 | Evaluate trust and install readiness | [`docs/guides/evaluate-skill-library.md`](docs/guides/evaluate-skill-library.md) |
 | Score one first skill | [`docs/guides/first-skill-scorecard.md`](docs/guides/first-skill-scorecard.md) |
 | Run the selected skill with fake input | [`docs/examples/first-skill-walkthrough.md`](docs/examples/first-skill-walkthrough.md) |
@@ -68,6 +69,7 @@ Install all skills only after review:
 
 | Step | Link |
 |---|---|
+| Prove clone to expected review | [`docs/examples/first-install-proof.md`](docs/examples/first-install-proof.md) |
 | Walk from clone to first prompt | [`docs/examples/quick-reference-walkthrough.md`](docs/examples/quick-reference-walkthrough.md) |
 | Run the selected skill with fake input | [`docs/examples/first-skill-walkthrough.md`](docs/examples/first-skill-walkthrough.md) |
 | Use ready fake candidate files | [`docs/examples/first-skill-candidate/README.md`](docs/examples/first-skill-candidate/README.md) |
@@ -116,6 +118,7 @@ Useful links:
 | Release history | [`CHANGELOG.md`](CHANGELOG.md) |
 | Public examples | [`docs/examples/README.md`](docs/examples/README.md) |
 | Public proof index | [`docs/examples/public-proof-index.md`](docs/examples/public-proof-index.md) |
+| First install proof | [`docs/examples/first-install-proof.md`](docs/examples/first-install-proof.md) |
 | Evaluation checklist | [`docs/guides/evaluate-skill-library.md`](docs/guides/evaluate-skill-library.md) |
 | First skill scorecard | [`docs/guides/first-skill-scorecard.md`](docs/guides/first-skill-scorecard.md) |
 | First skill walkthrough | [`docs/examples/first-skill-walkthrough.md`](docs/examples/first-skill-walkthrough.md) |
@@ -139,6 +142,7 @@ git status --short
 | Start here | [`START_HERE.md`](START_HERE.md) |
 | Visitor paths | [`docs/examples/visitor-paths.md`](docs/examples/visitor-paths.md) |
 | Public proof index | [`docs/examples/public-proof-index.md`](docs/examples/public-proof-index.md) |
+| First install proof | [`docs/examples/first-install-proof.md`](docs/examples/first-install-proof.md) |
 | Evaluation checklist | [`docs/guides/evaluate-skill-library.md`](docs/guides/evaluate-skill-library.md) |
 | First skill scorecard | [`docs/guides/first-skill-scorecard.md`](docs/guides/first-skill-scorecard.md) |
 | First skill walkthrough | [`docs/examples/first-skill-walkthrough.md`](docs/examples/first-skill-walkthrough.md) |

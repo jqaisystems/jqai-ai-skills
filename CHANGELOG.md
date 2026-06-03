@@ -4,6 +4,15 @@ Public release history for JQ AI Skills.
 
 The social preview image is intentionally stable for 2026 and is not updated for every release.
 
+## [v0.7.0](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.7.0) - 2026-06-03
+
+Added a first install proof trail.
+
+- Added `docs/examples/first-install-proof.md` to connect clone, first-skill choice, temporary install, folder verification, fake candidate run, and expected review comparison in one path.
+- Linked the first install proof from the README, start page, quick reference, examples index, public proof index, visitor paths, catalog, and changelog.
+- Added a v0.7.0 release announcement.
+- Kept the stable 2026 social preview unchanged.
+
 ## [v0.6.9](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.6.9) - 2026-06-02
 
 Added the expected first-skill candidate review.
