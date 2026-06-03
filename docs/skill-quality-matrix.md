@@ -1,38 +1,62 @@
 # Skill Quality Matrix
 
-Current as of v0.5.3.
+Current as of v0.7.1.
 
-Use this matrix to compare the public skills by maturity, example coverage, safety sensitivity, and install notes. It is a practical adoption guide, not a certification. For the browsable examples index, use [`docs/examples/README.md`](examples/README.md). For the folder contract behind every skill, use [`docs/guides/skill-anatomy.md`](guides/skill-anatomy.md).
+Use this matrix to compare the public skills by maturity, visible proof, safety sensitivity, and install notes. It is a practical adoption guide, not a certification. For the browsable examples index, use [`docs/examples/README.md`](examples/README.md). For the folder contract behind every skill, use [`docs/guides/skill-anatomy.md`](guides/skill-anatomy.md). For the complete first-install trust path, use [`docs/examples/first-install-proof.md`](examples/first-install-proof.md).
 
 ## Matrix
 
-| Skill | Category | Public maturity | Example coverage | Safety sensitivity | Install notes |
+| Skill | Category | Public maturity | Visible proof | Safety sensitivity | Safest install note |
 |---|---|---|---|---|---|
-| [`github-safe-publisher`](../skills/github-safe-publisher/SKILL.md) | Safety and publishing | Core public skill | First-run sample and fake-file review example | High | Recommended first install for public release work. |
-| [`case-study-writer`](../skills/case-study-writer/SKILL.md) | Public proof | Core public skill | Public-safe case study sample | High | Use fictional or approved source material only. |
-| [`release-announcement-writer`](../skills/release-announcement-writer/SKILL.md) | Public proof | Core public skill | Release notes archive, template reference, and fake changelog sample | Medium | Pair with changelog and release checklist. |
-| [`research-brief-curator`](../skills/research-brief-curator/SKILL.md) | Content and research | Core public skill | Sample brief and sample items | Medium | Use public sources or approved notes only. |
-| [`outreach-pipeline-designer`](../skills/outreach-pipeline-designer/SKILL.md) | Growth and outreach | Core public skill | Reference workflow, scoring rubric, and fake review-gated pipeline sample | High | Human review is required before outreach use. |
-| [`etsy-listing-optimizer`](../skills/etsy-listing-optimizer/SKILL.md) | Growth and marketplace | Core public skill | Constraint, keyword, batch references, and fictional listing audit sample | Medium | Remove shop exports and private metrics before use. |
-| [`skill-reviewer`](../skills/skill-reviewer/SKILL.md) | Safety and publishing | Utility skill | README guidance and catalog entry | High | Use before installing third-party or untrusted skills. |
-| [`web-scraper`](../skills/web-scraper/SKILL.md) | Content and research | Utility skill | README prompts and catalog entry | Medium | Use on public pages and respect site rules. |
-| [`em-dash-remover`](../skills/em-dash-remover/SKILL.md) | Content and copy | Utility skill | README prompts and catalog entry | Low | Lightweight copy cleanup skill. |
-| [`code-deduplicator`](../skills/code-deduplicator/SKILL.md) | Dev workflow | Utility skill | README prompts and catalog entry | Medium | Review diffs carefully before applying code changes. |
-| [`demo-animation-v2`](../skills/demo-animation-v2/SKILL.md) | Demo and presentation | Recommended demo skill | Includes responsive HTML template asset | Low | Prefer this for new walkthrough demos. |
-| [`demo-animation`](../skills/demo-animation/SKILL.md) | Demo and presentation | Legacy demo skill | Legacy engine reference | Low | Keep for older desktop-oriented demos. |
+| [`github-safe-publisher`](../skills/github-safe-publisher/SKILL.md) | Safety and publishing | Core first-install skill | First-run sample, fake-file review example, first-skill candidate pack, expected review, and first install proof | High | Recommended first install. Run it first on fake files, then review diffs before publishing. |
+| [`case-study-writer`](../skills/case-study-writer/SKILL.md) | Public proof | Core public skill | Public-safe case study sample and workflow bundle coverage | High | Use fictional, generalized, or explicitly approved source material only. |
+| [`release-announcement-writer`](../skills/release-announcement-writer/SKILL.md) | Public proof | Core public skill | Template reference, fake changelog sample, release announcement archive, and demo launch bundle coverage | Medium | Pair with changelog facts and release checklist; avoid unsupported claims. |
+| [`research-brief-curator`](../skills/research-brief-curator/SKILL.md) | Content and research | Core public skill | Sample brief, sample items JSON, and content/research bundle coverage | Medium | Use public sources or approved notes; label anything that needs human review. |
+| [`outreach-pipeline-designer`](../skills/outreach-pipeline-designer/SKILL.md) | Growth and outreach | Core public skill | Reference workflow, scoring rubric, fake review-gated pipeline sample, and workflow bundle coverage | High | Keep prospect data, credentials, and sending actions outside the skill output. |
+| [`etsy-listing-optimizer`](../skills/etsy-listing-optimizer/SKILL.md) | Growth and marketplace | Core public skill | Constraint reference, keyword workflow, batch notes, and fictional listing audit sample | Medium | Remove shop exports, private metrics, customer data, and live account details before use. |
+| [`skill-reviewer`](../skills/skill-reviewer/SKILL.md) | Safety and review | Utility skill | Review checklist, sample `READY`/`REVIEW`/`BLOCK` decisions, catalog entry, and quick reference links | High | Use before installing third-party, downloaded, or modified skill folders. |
+| [`web-scraper`](../skills/web-scraper/SKILL.md) | Content and extraction | Utility skill | Catalog entry, workflow bundle coverage, and public-page usage notes | Medium | Use only on public or authorized pages and respect site rules. |
+| [`em-dash-remover`](../skills/em-dash-remover/SKILL.md) | Content and copy | Utility skill | Catalog entry and common prompt examples | Low | Lightweight copy cleanup; preserve meaning and review edited copy. |
+| [`code-deduplicator`](../skills/code-deduplicator/SKILL.md) | Development workflow | Utility skill | Catalog entry and common prompt examples | Medium | Review diffs carefully before applying code changes. |
+| [`demo-animation-v2`](../skills/demo-animation-v2/SKILL.md) | Demo and presentation | Recommended demo skill | Responsive HTML template asset, catalog entry, and demo launch bundle coverage | Low | Prefer this for new walkthrough demos. |
+| [`demo-animation`](../skills/demo-animation/SKILL.md) | Demo and presentation | Legacy demo skill | Legacy engine reference and catalog entry | Low | Keep for older desktop-oriented demos; use v2 for new responsive demos. |
+
+## Coverage Signals
+
+| Signal | Where to inspect it |
+|---|---|
+| First install path | [`docs/examples/first-install-proof.md`](examples/first-install-proof.md) |
+| First skill choice | [`docs/guides/first-skill-scorecard.md`](guides/first-skill-scorecard.md) |
+| Fake first-run files | [`docs/examples/first-skill-candidate/README.md`](examples/first-skill-candidate/README.md) |
+| Expected first review | [`docs/examples/first-skill-candidate/expected-review.md`](examples/first-skill-candidate/expected-review.md) |
+| Public proof map | [`docs/examples/public-proof-index.md`](examples/public-proof-index.md) |
+| Visitor routes | [`docs/examples/visitor-paths.md`](examples/visitor-paths.md) |
+| Install verification | [`docs/guides/install-verification.md`](guides/install-verification.md) |
+| Public-safe samples | [`docs/examples/README.md`](examples/README.md) |
+| Full catalog | [`docs/catalog.md`](catalog.md) |
 
 ## Reading The Columns
 
 - Public maturity describes how ready the skill is for general public use.
-- Example coverage describes the visible examples or references available in this repo.
+- Visible proof describes the examples, references, or proof assets a visitor can inspect before installing.
 - Safety sensitivity describes how careful a user should be with private inputs.
-- Install notes explain the safest first-use habit for the skill.
+- Safest install note explains the safest first-use habit for the skill.
 
 ## Recommended Adoption Path
 
 1. Start with [`github-safe-publisher`](../skills/github-safe-publisher/SKILL.md).
-2. Install one skill and run it on fake or low-risk material.
-3. Use [`TROUBLESHOOTING.md`](../TROUBLESHOOTING.md) if it does not appear after reload.
-4. Use [`SECURITY.md`](../SECURITY.md) before working with sensitive or client-facing material.
-5. Use [`docs/examples/workflow-bundles.md`](examples/workflow-bundles.md) when you want a multi-skill path.
-6. Use [`docs/guides/skill-anatomy.md`](guides/skill-anatomy.md) before adapting or creating a skill folder.
+2. Follow the [`first install proof`](examples/first-install-proof.md) from clone to expected review.
+3. Use the [`first-skill candidate pack`](examples/first-skill-candidate/README.md) so the first run uses fake files.
+4. Compare your result with the [`expected first review`](examples/first-skill-candidate/expected-review.md).
+5. Use [`TROUBLESHOOTING.md`](../TROUBLESHOOTING.md) if the skill does not appear after reload.
+6. Use [`SECURITY.md`](../SECURITY.md) before working with sensitive or client-facing material.
+7. Use [`docs/examples/workflow-bundles.md`](examples/workflow-bundles.md) when you want a multi-skill path.
+8. Use [`docs/guides/skill-anatomy.md`](guides/skill-anatomy.md) before adapting or creating a skill folder.
+
+## Current Gaps To Watch
+
+- Some utility skills have catalog and prompt coverage but do not yet have standalone fake-output samples.
+- `demo-animation-v2` has a strong template asset, but future releases could add a public-safe rendered walkthrough sample.
+- `web-scraper`, `code-deduplicator`, and `em-dash-remover` are useful utilities; their safest public proof is still the skill instructions plus catalog coverage.
+
+These are not blockers. They are the next places to improve if the public library needs more proof depth.

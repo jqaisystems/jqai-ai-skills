@@ -19,6 +19,7 @@ For the guided path, start with [`START_HERE.md`](START_HERE.md). For full insta
 | Compare expected first review | [`docs/examples/first-skill-candidate/expected-review.md`](docs/examples/first-skill-candidate/expected-review.md) |
 | Choose by job | [`docs/guides/skill-selection.md`](docs/guides/skill-selection.md) |
 | Browse every skill | [`docs/catalog.md`](docs/catalog.md) |
+| Compare current maturity and proof coverage | [`docs/skill-quality-matrix.md`](docs/skill-quality-matrix.md) |
 | Understand folder shape | [`docs/guides/skill-anatomy.md`](docs/guides/skill-anatomy.md) |
 | Review before install | [`docs/guides/skill-review-checklist.md`](docs/guides/skill-review-checklist.md) |
 
@@ -124,6 +125,7 @@ Useful links:
 | First skill walkthrough | [`docs/examples/first-skill-walkthrough.md`](docs/examples/first-skill-walkthrough.md) |
 | First-skill candidate pack | [`docs/examples/first-skill-candidate/README.md`](docs/examples/first-skill-candidate/README.md) |
 | First-skill expected review | [`docs/examples/first-skill-candidate/expected-review.md`](docs/examples/first-skill-candidate/expected-review.md) |
+| Current quality matrix | [`docs/skill-quality-matrix.md`](docs/skill-quality-matrix.md) |
 | Workflow bundles | [`docs/examples/workflow-bundles.md`](docs/examples/workflow-bundles.md) |
 
 Core checks:

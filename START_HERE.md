@@ -77,7 +77,7 @@ Use $github-safe-publisher to review this README and docs folder before public r
 | Understand security and responsible use | [`SECURITY.md`](SECURITY.md) |
 | See the public roadmap | [`ROADMAP.md`](ROADMAP.md) |
 | Get help or report an issue | [`SUPPORT.md`](SUPPORT.md) |
-| Compare skill maturity | [`docs/skill-quality-matrix.md`](docs/skill-quality-matrix.md) |
+| Compare current skill maturity and proof coverage | [`docs/skill-quality-matrix.md`](docs/skill-quality-matrix.md) |
 | Understand a skill folder | [`docs/guides/skill-anatomy.md`](docs/guides/skill-anatomy.md) |
 | Understand first-run output | [`docs/examples/first-run-github-safe-publisher.md`](docs/examples/first-run-github-safe-publisher.md) |
 | Browse public-safe examples | [`docs/examples/README.md`](docs/examples/README.md) |
@@ -133,7 +133,7 @@ Once the first skill makes sense:
 - Use [`SECURITY.md`](SECURITY.md) before using skills on sensitive or client-facing work.
 - Use [`ROADMAP.md`](ROADMAP.md) to see where the public library is going next.
 - Use [`SUPPORT.md`](SUPPORT.md) when you need install help, want to report a problem, or have a public-safe question.
-- Use [`docs/skill-quality-matrix.md`](docs/skill-quality-matrix.md) to compare maturity, examples, and safety sensitivity.
+- Use [`docs/skill-quality-matrix.md`](docs/skill-quality-matrix.md) to compare current maturity, visible proof, install notes, and safety sensitivity.
 - Use [`skills/_template/`](skills/_template/) if you want to create a new skill folder.
 - Use [`CONTRIBUTING.md`](CONTRIBUTING.md) before proposing changes.
 
