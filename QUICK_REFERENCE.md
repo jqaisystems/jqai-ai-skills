@@ -12,6 +12,7 @@ For the guided path, start with [`START_HERE.md`](START_HERE.md). For full insta
 | Choose a visitor route | [`docs/examples/visitor-paths.md`](docs/examples/visitor-paths.md) |
 | Inspect public proof assets | [`docs/examples/public-proof-index.md`](docs/examples/public-proof-index.md) |
 | Prove the first install path | [`docs/examples/first-install-proof.md`](docs/examples/first-install-proof.md) |
+| Prove a post-release update path | [`docs/examples/update-after-release-proof.md`](docs/examples/update-after-release-proof.md) |
 | Evaluate trust and install readiness | [`docs/guides/evaluate-skill-library.md`](docs/guides/evaluate-skill-library.md) |
 | Score one first skill | [`docs/guides/first-skill-scorecard.md`](docs/guides/first-skill-scorecard.md) |
 | Run the selected skill with fake input | [`docs/examples/first-skill-walkthrough.md`](docs/examples/first-skill-walkthrough.md) |
@@ -78,6 +79,7 @@ Install all skills only after review:
 | Answer install questions | [`docs/guides/install-faq.md`](docs/guides/install-faq.md) |
 | Verify folder, reload, and first prompt | [`docs/guides/install-verification.md`](docs/guides/install-verification.md) |
 | Update installed skills | [`docs/guides/update-installed-skills.md`](docs/guides/update-installed-skills.md) |
+| Prove update after release | [`docs/examples/update-after-release-proof.md`](docs/examples/update-after-release-proof.md) |
 | Compare expected terminal output | [`docs/examples/install-smoke-test-sample.md`](docs/examples/install-smoke-test-sample.md) |
 | Fix install or reload issues | [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md) |
 | See a first-run output shape | [`docs/examples/first-run-github-safe-publisher.md`](docs/examples/first-run-github-safe-publisher.md) |
@@ -120,6 +122,7 @@ Useful links:
 | Public examples | [`docs/examples/README.md`](docs/examples/README.md) |
 | Public proof index | [`docs/examples/public-proof-index.md`](docs/examples/public-proof-index.md) |
 | First install proof | [`docs/examples/first-install-proof.md`](docs/examples/first-install-proof.md) |
+| Update after release proof | [`docs/examples/update-after-release-proof.md`](docs/examples/update-after-release-proof.md) |
 | Evaluation checklist | [`docs/guides/evaluate-skill-library.md`](docs/guides/evaluate-skill-library.md) |
 | First skill scorecard | [`docs/guides/first-skill-scorecard.md`](docs/guides/first-skill-scorecard.md) |
 | First skill walkthrough | [`docs/examples/first-skill-walkthrough.md`](docs/examples/first-skill-walkthrough.md) |
@@ -154,6 +157,7 @@ git status --short
 | Install commands | [`INSTALL.md`](INSTALL.md) |
 | Install FAQ | [`docs/guides/install-faq.md`](docs/guides/install-faq.md) |
 | Update installed skills | [`docs/guides/update-installed-skills.md`](docs/guides/update-installed-skills.md) |
+| Update after release proof | [`docs/examples/update-after-release-proof.md`](docs/examples/update-after-release-proof.md) |
 | Catalog | [`docs/catalog.md`](docs/catalog.md) |
 | Quality matrix | [`docs/skill-quality-matrix.md`](docs/skill-quality-matrix.md) |
 | Roadmap | [`ROADMAP.md`](ROADMAP.md) |

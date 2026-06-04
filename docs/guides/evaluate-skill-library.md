@@ -49,6 +49,7 @@ For this repo:
 - Install FAQ: [`install-faq.md`](install-faq.md)
 - Install verification: [`install-verification.md`](install-verification.md)
 - Update installed skills: [`update-installed-skills.md`](update-installed-skills.md)
+- Update after release proof: [`../examples/update-after-release-proof.md`](../examples/update-after-release-proof.md)
 - Troubleshooting: [`../../TROUBLESHOOTING.md`](../../TROUBLESHOOTING.md)
 
 ## 3. Folder Shape
@@ -102,6 +103,7 @@ For this repo:
 - First-skill expected review: [`../examples/first-skill-candidate/expected-review.md`](../examples/first-skill-candidate/expected-review.md)
 - First-run sample: [`../examples/first-run-github-safe-publisher.md`](../examples/first-run-github-safe-publisher.md)
 - Install smoke-test sample: [`../examples/install-smoke-test-sample.md`](../examples/install-smoke-test-sample.md)
+- Update after release proof: [`../examples/update-after-release-proof.md`](../examples/update-after-release-proof.md)
 - Skill reviewer sample: [`../examples/skill-reviewer-sample.md`](../examples/skill-reviewer-sample.md)
 - Workflow bundles: [`../examples/workflow-bundles.md`](../examples/workflow-bundles.md)
 

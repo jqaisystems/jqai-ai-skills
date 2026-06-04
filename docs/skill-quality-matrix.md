@@ -1,14 +1,14 @@
 # Skill Quality Matrix
 
-Current as of v0.7.1.
+Current as of v0.7.2.
 
-Use this matrix to compare the public skills by maturity, visible proof, safety sensitivity, and install notes. It is a practical adoption guide, not a certification. For the browsable examples index, use [`docs/examples/README.md`](examples/README.md). For the folder contract behind every skill, use [`docs/guides/skill-anatomy.md`](guides/skill-anatomy.md). For the complete first-install trust path, use [`docs/examples/first-install-proof.md`](examples/first-install-proof.md).
+Use this matrix to compare the public skills by maturity, visible proof, safety sensitivity, and install notes. It is a practical adoption guide, not a certification. For the browsable examples index, use [`docs/examples/README.md`](examples/README.md). For the folder contract behind every skill, use [`docs/guides/skill-anatomy.md`](guides/skill-anatomy.md). For the complete first-install trust path, use [`docs/examples/first-install-proof.md`](examples/first-install-proof.md). For the post-release refresh path, use [`docs/examples/update-after-release-proof.md`](examples/update-after-release-proof.md).
 
 ## Matrix
 
 | Skill | Category | Public maturity | Visible proof | Safety sensitivity | Safest install note |
 |---|---|---|---|---|---|
-| [`github-safe-publisher`](../skills/github-safe-publisher/SKILL.md) | Safety and publishing | Core first-install skill | First-run sample, fake-file review example, first-skill candidate pack, expected review, and first install proof | High | Recommended first install. Run it first on fake files, then review diffs before publishing. |
+| [`github-safe-publisher`](../skills/github-safe-publisher/SKILL.md) | Safety and publishing | Core first-install skill | First-run sample, fake-file review example, first-skill candidate pack, expected review, first install proof, and update-after-release proof | High | Recommended first install. Run it first on fake files, then review diffs before publishing. |
 | [`case-study-writer`](../skills/case-study-writer/SKILL.md) | Public proof | Core public skill | Public-safe case study sample and workflow bundle coverage | High | Use fictional, generalized, or explicitly approved source material only. |
 | [`release-announcement-writer`](../skills/release-announcement-writer/SKILL.md) | Public proof | Core public skill | Template reference, fake changelog sample, release announcement archive, and demo launch bundle coverage | Medium | Pair with changelog facts and release checklist; avoid unsupported claims. |
 | [`research-brief-curator`](../skills/research-brief-curator/SKILL.md) | Content and research | Core public skill | Sample brief, sample items JSON, and content/research bundle coverage | Medium | Use public sources or approved notes; label anything that needs human review. |
@@ -26,6 +26,7 @@ Use this matrix to compare the public skills by maturity, visible proof, safety 
 | Signal | Where to inspect it |
 |---|---|
 | First install path | [`docs/examples/first-install-proof.md`](examples/first-install-proof.md) |
+| Update after release path | [`docs/examples/update-after-release-proof.md`](examples/update-after-release-proof.md) |
 | First skill choice | [`docs/guides/first-skill-scorecard.md`](guides/first-skill-scorecard.md) |
 | Fake first-run files | [`docs/examples/first-skill-candidate/README.md`](examples/first-skill-candidate/README.md) |
 | Expected first review | [`docs/examples/first-skill-candidate/expected-review.md`](examples/first-skill-candidate/expected-review.md) |
@@ -48,10 +49,11 @@ Use this matrix to compare the public skills by maturity, visible proof, safety 
 2. Follow the [`first install proof`](examples/first-install-proof.md) from clone to expected review.
 3. Use the [`first-skill candidate pack`](examples/first-skill-candidate/README.md) so the first run uses fake files.
 4. Compare your result with the [`expected first review`](examples/first-skill-candidate/expected-review.md).
-5. Use [`TROUBLESHOOTING.md`](../TROUBLESHOOTING.md) if the skill does not appear after reload.
-6. Use [`SECURITY.md`](../SECURITY.md) before working with sensitive or client-facing material.
-7. Use [`docs/examples/workflow-bundles.md`](examples/workflow-bundles.md) when you want a multi-skill path.
-8. Use [`docs/guides/skill-anatomy.md`](guides/skill-anatomy.md) before adapting or creating a skill folder.
+5. Use the [`update after release proof`](examples/update-after-release-proof.md) when refreshing an installed skill after a new release.
+6. Use [`TROUBLESHOOTING.md`](../TROUBLESHOOTING.md) if the skill does not appear after reload.
+7. Use [`SECURITY.md`](../SECURITY.md) before working with sensitive or client-facing material.
+8. Use [`docs/examples/workflow-bundles.md`](examples/workflow-bundles.md) when you want a multi-skill path.
+9. Use [`docs/guides/skill-anatomy.md`](guides/skill-anatomy.md) before adapting or creating a skill folder.
 
 ## Current Gaps To Watch
 

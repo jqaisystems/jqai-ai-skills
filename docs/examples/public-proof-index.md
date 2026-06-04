@@ -14,6 +14,7 @@ All linked examples use fictional, public, or generalized material. They do not 
 | What can I do quickly? | [`../../QUICK_REFERENCE.md`](../../QUICK_REFERENCE.md) |
 | Which route fits me? | [`visitor-paths.md`](visitor-paths.md) |
 | Is there one end-to-end first install proof? | [`first-install-proof.md`](first-install-proof.md) |
+| Is there proof for updating after a release? | [`update-after-release-proof.md`](update-after-release-proof.md) |
 | How do I evaluate trust and install readiness? | [`../guides/evaluate-skill-library.md`](../guides/evaluate-skill-library.md) |
 | Which skill should I install first? | [`../guides/first-skill-scorecard.md`](../guides/first-skill-scorecard.md) |
 | How do I run the selected skill safely? | [`first-skill-walkthrough.md`](first-skill-walkthrough.md) |
@@ -31,6 +32,7 @@ Good stopping point: after five minutes, a visitor should know what the repo con
 | Proof asset | What it shows |
 |---|---|
 | [`first-install-proof.md`](first-install-proof.md) | Clone, first-skill choice, temporary install, folder verification, fake candidate run, and expected review comparison in one proof trail. |
+| [`update-after-release-proof.md`](update-after-release-proof.md) | Pull, change review, temporary update test, selected reinstall, reload, and fake post-update check in one proof trail. |
 | [`../../INSTALL.md`](../../INSTALL.md) | Install one skill, all skills, or a custom temporary target. |
 | [`../guides/install-faq.md`](../guides/install-faq.md) | Common first-install, target, reload, update, and removal questions. |
 | [`../guides/install-verification.md`](../guides/install-verification.md) | Checks for repo root, skill list, copied folder, reload, and first prompt. |
@@ -72,6 +74,7 @@ Good stopping point: after five minutes, a visitor should know what the repo con
 | [`../guides/evaluate-skill-library.md`](../guides/evaluate-skill-library.md) | A checklist for identity, license, install path, folder shape, examples, safety boundaries, releases, and first-skill choice. |
 | [`../guides/first-skill-scorecard.md`](../guides/first-skill-scorecard.md) | A worksheet for choosing one safe, testable first skill instead of installing everything at once. |
 | [`first-install-proof.md`](first-install-proof.md) | A single path proving the recommended first skill can be selected, installed, verified, run, and compared. |
+| [`update-after-release-proof.md`](update-after-release-proof.md) | A single path proving an installed skill can be refreshed after a release without skipping temporary checks. |
 | [`first-skill-walkthrough.md`](first-skill-walkthrough.md) | A public-safe walkthrough for scoring, installing, prompting, and interpreting one first skill run. |
 | [`first-skill-candidate/README.md`](first-skill-candidate/README.md) | A reusable fake candidate folder for the first skill review. |
 | [`first-skill-candidate/expected-review.md`](first-skill-candidate/expected-review.md) | A concrete expected review for that reusable candidate. |

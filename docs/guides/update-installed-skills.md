@@ -2,6 +2,8 @@
 
 Use this guide when you already installed one or more JQ AI Skills and want to refresh them from the latest repo version.
 
+For a full public-safe proof trail after a new release, use [`../examples/update-after-release-proof.md`](../examples/update-after-release-proof.md).
+
 The short version:
 
 1. Update your local repo.
@@ -127,5 +129,6 @@ rm -rf .tmp/skill-update-check
 - [`../../INSTALL.md`](../../INSTALL.md)
 - [`install-faq.md`](install-faq.md)
 - [`install-verification.md`](install-verification.md)
+- [`../examples/update-after-release-proof.md`](../examples/update-after-release-proof.md)
 - [`../examples/install-smoke-test-sample.md`](../examples/install-smoke-test-sample.md)
 - [`../../TROUBLESHOOTING.md`](../../TROUBLESHOOTING.md)

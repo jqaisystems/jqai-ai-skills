@@ -4,6 +4,16 @@ Public release history for JQ AI Skills.
 
 The social preview image is intentionally stable for 2026 and is not updated for every release.
 
+## [v0.7.2](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.7.2) - 2026-06-04
+
+Added an update-after-release proof trail.
+
+- Added `docs/examples/update-after-release-proof.md` to connect pull, change review, temporary update test, selected reinstall, reload, and fake post-update check in one path.
+- Linked the update proof from the README, start page, quick reference, examples index, public proof index, visitor paths, update guide, evaluation checklist, catalog, quality matrix, and changelog.
+- Updated `docs/skill-quality-matrix.md` to `v0.7.2` with the new update proof coverage signal.
+- Added a v0.7.2 release announcement.
+- Kept the stable 2026 social preview unchanged.
+
 ## [v0.7.1](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.7.1) - 2026-06-03
 
 Refreshed the skill quality matrix.
