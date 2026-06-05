@@ -1,8 +1,8 @@
 # Skill Quality Matrix
 
-Current as of v0.7.3.
+Current as of v0.7.4.
 
-Use this matrix to compare the public skills by maturity, visible proof, safety sensitivity, and install notes. It is a practical adoption guide, not a certification. For the browsable examples index, use [`docs/examples/README.md`](examples/README.md). For the folder contract behind every skill, use [`docs/guides/skill-anatomy.md`](guides/skill-anatomy.md). For the complete first-install trust path, use [`docs/examples/first-install-proof.md`](examples/first-install-proof.md). For the post-release refresh path, use [`docs/examples/update-after-release-proof.md`](examples/update-after-release-proof.md). For smaller utility skill examples, use [`docs/examples/utility-skill-proof-pack.md`](examples/utility-skill-proof-pack.md).
+Use this matrix to compare the public skills by maturity, visible proof, safety sensitivity, and install notes. It is a practical adoption guide, not a certification. For the browsable examples index, use [`docs/examples/README.md`](examples/README.md). For the folder contract behind every skill, use [`docs/guides/skill-anatomy.md`](guides/skill-anatomy.md). For the complete first-install trust path, use [`docs/examples/first-install-proof.md`](examples/first-install-proof.md). For the post-release refresh path, use [`docs/examples/update-after-release-proof.md`](examples/update-after-release-proof.md). For smaller utility skill examples, use [`docs/examples/utility-skill-proof-pack.md`](examples/utility-skill-proof-pack.md). For responsive demo output proof, use [`docs/examples/demo-animation-v2-walkthrough-sample.md`](examples/demo-animation-v2-walkthrough-sample.md).
 
 ## Matrix
 
@@ -18,7 +18,7 @@ Use this matrix to compare the public skills by maturity, visible proof, safety 
 | [`web-scraper`](../skills/web-scraper/SKILL.md) | Content and extraction | Utility skill | Utility proof pack, catalog entry, workflow bundle coverage, and public-page usage notes | Medium | Use only on public or authorized pages and respect site rules. |
 | [`em-dash-remover`](../skills/em-dash-remover/SKILL.md) | Content and copy | Utility skill | Utility proof pack, catalog entry, and common prompt examples | Low | Lightweight copy cleanup; preserve meaning and review edited copy. |
 | [`code-deduplicator`](../skills/code-deduplicator/SKILL.md) | Development workflow | Utility skill | Utility proof pack, catalog entry, and common prompt examples | Medium | Review diffs carefully before applying code changes. |
-| [`demo-animation-v2`](../skills/demo-animation-v2/SKILL.md) | Demo and presentation | Recommended demo skill | Responsive HTML template asset, catalog entry, and demo launch bundle coverage | Low | Prefer this for new walkthrough demos. |
+| [`demo-animation-v2`](../skills/demo-animation-v2/SKILL.md) | Demo and presentation | Recommended demo skill | Responsive HTML template asset, rendered walkthrough sample, catalog entry, and demo launch bundle coverage | Low | Prefer this for new walkthrough demos; review the sample for pacing, captions, mobile controls, and safety checks. |
 | [`demo-animation`](../skills/demo-animation/SKILL.md) | Demo and presentation | Legacy demo skill | Legacy engine reference and catalog entry | Low | Keep for older desktop-oriented demos; use v2 for new responsive demos. |
 
 ## Coverage Signals
@@ -35,6 +35,7 @@ Use this matrix to compare the public skills by maturity, visible proof, safety 
 | Install verification | [`docs/guides/install-verification.md`](guides/install-verification.md) |
 | Public-safe samples | [`docs/examples/README.md`](examples/README.md) |
 | Utility proof pack | [`docs/examples/utility-skill-proof-pack.md`](examples/utility-skill-proof-pack.md) |
+| Demo walkthrough sample | [`docs/examples/demo-animation-v2-walkthrough-sample.md`](examples/demo-animation-v2-walkthrough-sample.md) |
 | Full catalog | [`docs/catalog.md`](catalog.md) |
 
 ## Reading The Columns
@@ -59,6 +60,6 @@ Use this matrix to compare the public skills by maturity, visible proof, safety 
 ## Current Gaps To Watch
 
 - Utility skills now have a shared fake-output proof pack. Future releases can split those into separate per-skill samples if the public library needs deeper proof.
-- `demo-animation-v2` has a strong template asset, but future releases could add a public-safe rendered walkthrough sample.
+- `demo-animation-v2` now has a public-safe walkthrough sample. Future releases can add a real rendered media artifact if the library needs visual proof beyond the sample page.
 
 These are not blockers. They are the next places to improve if the public library needs more proof depth.

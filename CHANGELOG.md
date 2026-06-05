@@ -4,6 +4,17 @@ Public release history for JQ AI Skills.
 
 The social preview image is intentionally stable for 2026 and is not updated for every release.
 
+## [v0.7.4](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.7.4) - 2026-06-05
+
+Added a demo animation v2 walkthrough sample.
+
+- Added `docs/examples/demo-animation-v2-walkthrough-sample.md` with a fictional Signal Desk walkthrough shape.
+- Documented expected screens, captions, timeline, desktop/mobile review checks, and public-safety checks for generated demos.
+- Linked the sample from the README, start page, quick reference, examples index, workflow bundles, public proof index, catalog, quality matrix, and changelog.
+- Updated `docs/skill-quality-matrix.md` to `v0.7.4` with the new demo walkthrough proof signal.
+- Added a v0.7.4 release announcement.
+- Kept the stable 2026 social preview unchanged.
+
 ## [v0.7.3](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.7.3) - 2026-06-05
 
 Added a utility skill proof pack.

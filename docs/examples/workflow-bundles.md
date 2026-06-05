@@ -119,9 +119,10 @@ Use this bundle when you need to show a workflow and then announce it clearly.
 
 ### Suggested Flow
 
-1. Use `demo-animation-v2` to create the responsive walkthrough.
-2. Review the demo for accuracy, readable text, and public-safe visuals.
-3. Use `release-announcement-writer` from the final demo notes and shipped changes.
+1. Compare the target shape with [`demo-animation-v2-walkthrough-sample.md`](demo-animation-v2-walkthrough-sample.md).
+2. Use `demo-animation-v2` to create the responsive walkthrough.
+3. Review the demo for accuracy, readable text, and public-safe visuals.
+4. Use `release-announcement-writer` from the final demo notes and shipped changes.
 
 ### Example Prompts
 
@@ -136,6 +137,7 @@ Use $release-announcement-writer to write a GitHub release note and short launch
 ### Expected Outputs
 
 - Responsive HTML walkthrough demo.
+- Public-safe demo review notes.
 - Release notes, website blurb, and short launch copy.
 - Checklist of links or assets to verify before publishing.
 

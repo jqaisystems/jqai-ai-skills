@@ -14,6 +14,7 @@ For the guided path, start with [`START_HERE.md`](START_HERE.md). For full insta
 | Prove the first install path | [`docs/examples/first-install-proof.md`](docs/examples/first-install-proof.md) |
 | Prove a post-release update path | [`docs/examples/update-after-release-proof.md`](docs/examples/update-after-release-proof.md) |
 | Inspect utility output examples | [`docs/examples/utility-skill-proof-pack.md`](docs/examples/utility-skill-proof-pack.md) |
+| Inspect responsive demo output | [`docs/examples/demo-animation-v2-walkthrough-sample.md`](docs/examples/demo-animation-v2-walkthrough-sample.md) |
 | Evaluate trust and install readiness | [`docs/guides/evaluate-skill-library.md`](docs/guides/evaluate-skill-library.md) |
 | Score one first skill | [`docs/guides/first-skill-scorecard.md`](docs/guides/first-skill-scorecard.md) |
 | Run the selected skill with fake input | [`docs/examples/first-skill-walkthrough.md`](docs/examples/first-skill-walkthrough.md) |
@@ -128,6 +129,7 @@ Useful links:
 | First install proof | [`docs/examples/first-install-proof.md`](docs/examples/first-install-proof.md) |
 | Update after release proof | [`docs/examples/update-after-release-proof.md`](docs/examples/update-after-release-proof.md) |
 | Utility skill proof pack | [`docs/examples/utility-skill-proof-pack.md`](docs/examples/utility-skill-proof-pack.md) |
+| Demo animation v2 sample | [`docs/examples/demo-animation-v2-walkthrough-sample.md`](docs/examples/demo-animation-v2-walkthrough-sample.md) |
 | Evaluation checklist | [`docs/guides/evaluate-skill-library.md`](docs/guides/evaluate-skill-library.md) |
 | First skill scorecard | [`docs/guides/first-skill-scorecard.md`](docs/guides/first-skill-scorecard.md) |
 | First skill walkthrough | [`docs/examples/first-skill-walkthrough.md`](docs/examples/first-skill-walkthrough.md) |
@@ -164,6 +166,7 @@ git status --short
 | Update installed skills | [`docs/guides/update-installed-skills.md`](docs/guides/update-installed-skills.md) |
 | Update after release proof | [`docs/examples/update-after-release-proof.md`](docs/examples/update-after-release-proof.md) |
 | Utility skill proof pack | [`docs/examples/utility-skill-proof-pack.md`](docs/examples/utility-skill-proof-pack.md) |
+| Demo animation v2 sample | [`docs/examples/demo-animation-v2-walkthrough-sample.md`](docs/examples/demo-animation-v2-walkthrough-sample.md) |
 | Catalog | [`docs/catalog.md`](docs/catalog.md) |
 | Quality matrix | [`docs/skill-quality-matrix.md`](docs/skill-quality-matrix.md) |
 | Roadmap | [`ROADMAP.md`](ROADMAP.md) |
