@@ -59,6 +59,7 @@ Use $github-safe-publisher to review this README and docs folder before public r
 | Inspect public proof assets | [`docs/examples/public-proof-index.md`](docs/examples/public-proof-index.md) |
 | Prove the first install path | [`docs/examples/first-install-proof.md`](docs/examples/first-install-proof.md) |
 | Prove a post-release update path | [`docs/examples/update-after-release-proof.md`](docs/examples/update-after-release-proof.md) |
+| Inspect utility skill output examples | [`docs/examples/utility-skill-proof-pack.md`](docs/examples/utility-skill-proof-pack.md) |
 | Evaluate trust and install readiness | [`docs/guides/evaluate-skill-library.md`](docs/guides/evaluate-skill-library.md) |
 | Score the safest first install | [`docs/guides/first-skill-scorecard.md`](docs/guides/first-skill-scorecard.md) |
 | Run the selected skill with fake input | [`docs/examples/first-skill-walkthrough.md`](docs/examples/first-skill-walkthrough.md) |
@@ -117,6 +118,7 @@ Once the first skill makes sense:
 - Use [`docs/examples/public-proof-index.md`](docs/examples/public-proof-index.md) when you want one page of install, safety, sample, system, and visual proof assets.
 - Use [`docs/examples/first-install-proof.md`](docs/examples/first-install-proof.md) when you want to verify the full path from clone to fake candidate review in one page.
 - Use [`docs/examples/update-after-release-proof.md`](docs/examples/update-after-release-proof.md) when you want to refresh an installed skill after a new release.
+- Use [`docs/examples/utility-skill-proof-pack.md`](docs/examples/utility-skill-proof-pack.md) when you want fake output examples for `web-scraper`, `code-deduplicator`, and `em-dash-remover`.
 - Use [`docs/guides/evaluate-skill-library.md`](docs/guides/evaluate-skill-library.md) when you want a checklist for trust, install readiness, examples, and release discipline.
 - Use [`docs/guides/first-skill-scorecard.md`](docs/guides/first-skill-scorecard.md) when you want to score one safe, testable first install.
 - Use [`docs/examples/first-skill-walkthrough.md`](docs/examples/first-skill-walkthrough.md) when you want to run the selected skill with fake input before touching real work.
@@ -161,5 +163,5 @@ assets/                 public visual and demo assets
 The public onboarding path is now:
 
 ```text
-START_HERE -> visitor paths if choosing a route -> QUICK_REFERENCE if scanning -> first install proof if you want the full trust path -> quick reference walkthrough if you want steps -> understand anatomy -> choose -> score first skill -> run the first skill walkthrough with the first-skill candidate pack -> compare the expected review -> review before install -> INSTALL -> install FAQ if unsure -> verify install -> update installed skills when needed -> update after release proof when refreshing -> troubleshoot or support if needed -> SECURITY if sensitive -> run -> understand output -> release checklist if publishing -> use bundles, catalog, or quality matrix
+START_HERE -> visitor paths if choosing a route -> QUICK_REFERENCE if scanning -> first install proof if you want the full trust path -> quick reference walkthrough if you want steps -> understand anatomy -> choose -> score first skill -> run the first skill walkthrough with the first-skill candidate pack -> compare the expected review -> review before install -> INSTALL -> install FAQ if unsure -> verify install -> update installed skills when needed -> update after release proof when refreshing -> utility proof pack when checking lightweight utilities -> troubleshoot or support if needed -> SECURITY if sensitive -> run -> understand output -> release checklist if publishing -> use bundles, catalog, or quality matrix
 ```

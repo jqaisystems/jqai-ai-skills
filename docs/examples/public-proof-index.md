@@ -15,6 +15,7 @@ All linked examples use fictional, public, or generalized material. They do not 
 | Which route fits me? | [`visitor-paths.md`](visitor-paths.md) |
 | Is there one end-to-end first install proof? | [`first-install-proof.md`](first-install-proof.md) |
 | Is there proof for updating after a release? | [`update-after-release-proof.md`](update-after-release-proof.md) |
+| Do the utility skills have fake-output proof? | [`utility-skill-proof-pack.md`](utility-skill-proof-pack.md) |
 | How do I evaluate trust and install readiness? | [`../guides/evaluate-skill-library.md`](../guides/evaluate-skill-library.md) |
 | Which skill should I install first? | [`../guides/first-skill-scorecard.md`](../guides/first-skill-scorecard.md) |
 | How do I run the selected skill safely? | [`first-skill-walkthrough.md`](first-skill-walkthrough.md) |
@@ -64,6 +65,7 @@ Good stopping point: after five minutes, a visitor should know what the repo con
 | Human-reviewed outreach | [`outreach-pipeline-designer-sample.md`](outreach-pipeline-designer-sample.md) |
 | Marketplace listing optimization | [`etsy-listing-optimizer-sample.md`](etsy-listing-optimizer-sample.md) |
 | Skill review | [`skill-reviewer-sample.md`](skill-reviewer-sample.md) |
+| Utility skills | [`utility-skill-proof-pack.md`](utility-skill-proof-pack.md) |
 | Multi-skill workflows | [`workflow-bundles.md`](workflow-bundles.md) |
 
 ## System And Library Proof
@@ -78,6 +80,7 @@ Good stopping point: after five minutes, a visitor should know what the repo con
 | [`first-skill-walkthrough.md`](first-skill-walkthrough.md) | A public-safe walkthrough for scoring, installing, prompting, and interpreting one first skill run. |
 | [`first-skill-candidate/README.md`](first-skill-candidate/README.md) | A reusable fake candidate folder for the first skill review. |
 | [`first-skill-candidate/expected-review.md`](first-skill-candidate/expected-review.md) | A concrete expected review for that reusable candidate. |
+| [`utility-skill-proof-pack.md`](utility-skill-proof-pack.md) | Fake output shapes for `web-scraper`, `code-deduplicator`, and `em-dash-remover`. |
 | [`../skill-quality-matrix.md`](../skill-quality-matrix.md) | Skill maturity, examples, and safety sensitivity are visible instead of implied. |
 | [`../guides/skill-anatomy.md`](../guides/skill-anatomy.md) | The folder contract is documented for maintainers and reviewers. |
 | [`../../CHANGELOG.md`](../../CHANGELOG.md) | Release history is versioned and inspectable. |

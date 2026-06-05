@@ -2,7 +2,7 @@
 
 This catalog gives a public, client-readable view of the skills in this repo: what each skill does, who it helps, when to use it, and how to install it.
 
-If you are new to the repo, start with [`START_HERE.md`](../START_HERE.md). For visitor routes, use [`docs/examples/visitor-paths.md`](examples/visitor-paths.md). For one page of public proof assets, use [`docs/examples/public-proof-index.md`](examples/public-proof-index.md). For one end-to-end first install proof, use [`docs/examples/first-install-proof.md`](examples/first-install-proof.md). For one post-release update proof, use [`docs/examples/update-after-release-proof.md`](examples/update-after-release-proof.md). To evaluate trust and install readiness, use [`docs/guides/evaluate-skill-library.md`](guides/evaluate-skill-library.md). To score one safe first install, use [`docs/guides/first-skill-scorecard.md`](guides/first-skill-scorecard.md). To run the selected skill with fake input, use [`docs/examples/first-skill-walkthrough.md`](examples/first-skill-walkthrough.md), [`docs/examples/first-skill-candidate/README.md`](examples/first-skill-candidate/README.md), and [`docs/examples/first-skill-candidate/expected-review.md`](examples/first-skill-candidate/expected-review.md). For install commands, use [`INSTALL.md`](../INSTALL.md). To review a skill before install, use [`docs/guides/skill-review-checklist.md`](guides/skill-review-checklist.md). To confirm a copied folder, reload, and first prompt, use [`docs/guides/install-verification.md`](guides/install-verification.md). To refresh an installed skill, use [`docs/guides/update-installed-skills.md`](guides/update-installed-skills.md). For install or reload issues, use [`TROUBLESHOOTING.md`](../TROUBLESHOOTING.md). For a guided first install, use [`docs/guides/one-minute-install.md`](guides/one-minute-install.md). For a clone-to-first-prompt route, use [`docs/examples/quick-reference-walkthrough.md`](examples/quick-reference-walkthrough.md). For a shorter first-choice guide, use [`docs/guides/skill-selection.md`](guides/skill-selection.md). To understand the folder contract, use [`docs/guides/skill-anatomy.md`](guides/skill-anatomy.md). For current maturity, visible proof, install notes, and safety sensitivity, use [`docs/skill-quality-matrix.md`](skill-quality-matrix.md). For public-safe output examples, including a safe skill request shape, use [`docs/examples/README.md`](examples/README.md).
+If you are new to the repo, start with [`START_HERE.md`](../START_HERE.md). For visitor routes, use [`docs/examples/visitor-paths.md`](examples/visitor-paths.md). For one page of public proof assets, use [`docs/examples/public-proof-index.md`](examples/public-proof-index.md). For one end-to-end first install proof, use [`docs/examples/first-install-proof.md`](examples/first-install-proof.md). For one post-release update proof, use [`docs/examples/update-after-release-proof.md`](examples/update-after-release-proof.md). For utility skill output proof, use [`docs/examples/utility-skill-proof-pack.md`](examples/utility-skill-proof-pack.md). To evaluate trust and install readiness, use [`docs/guides/evaluate-skill-library.md`](guides/evaluate-skill-library.md). To score one safe first install, use [`docs/guides/first-skill-scorecard.md`](guides/first-skill-scorecard.md). To run the selected skill with fake input, use [`docs/examples/first-skill-walkthrough.md`](examples/first-skill-walkthrough.md), [`docs/examples/first-skill-candidate/README.md`](examples/first-skill-candidate/README.md), and [`docs/examples/first-skill-candidate/expected-review.md`](examples/first-skill-candidate/expected-review.md). For install commands, use [`INSTALL.md`](../INSTALL.md). To review a skill before install, use [`docs/guides/skill-review-checklist.md`](guides/skill-review-checklist.md). To confirm a copied folder, reload, and first prompt, use [`docs/guides/install-verification.md`](guides/install-verification.md). To refresh an installed skill, use [`docs/guides/update-installed-skills.md`](guides/update-installed-skills.md). For install or reload issues, use [`TROUBLESHOOTING.md`](../TROUBLESHOOTING.md). For a guided first install, use [`docs/guides/one-minute-install.md`](guides/one-minute-install.md). For a clone-to-first-prompt route, use [`docs/examples/quick-reference-walkthrough.md`](examples/quick-reference-walkthrough.md). For a shorter first-choice guide, use [`docs/guides/skill-selection.md`](guides/skill-selection.md). To understand the folder contract, use [`docs/guides/skill-anatomy.md`](guides/skill-anatomy.md). For current maturity, visible proof, install notes, and safety sensitivity, use [`docs/skill-quality-matrix.md`](skill-quality-matrix.md). For public-safe output examples, including a safe skill request shape, use [`docs/examples/README.md`](examples/README.md).
 
 ## At A Glance
 
@@ -197,6 +197,8 @@ Typical output:
 
 **Typical output:** browser console scraper, localStorage accumulation pattern, and processing notes.
 
+**Utility proof pack:** [`docs/examples/utility-skill-proof-pack.md`](examples/utility-skill-proof-pack.md)
+
 **Install:**
 
 ```powershell
@@ -211,6 +213,8 @@ Typical output:
 
 **Typical output:** edited copy with em dashes replaced by commas, periods, parentheses, or rewritten sentences where needed.
 
+**Utility proof pack:** [`docs/examples/utility-skill-proof-pack.md`](examples/utility-skill-proof-pack.md)
+
 **Install:**
 
 ```powershell
@@ -224,6 +228,8 @@ Typical output:
 **Who it helps:** developers who want small consolidation passes without broad refactors or behavior changes.
 
 **Typical output:** proposed duplicates, scoped consolidation, and verification notes.
+
+**Utility proof pack:** [`docs/examples/utility-skill-proof-pack.md`](examples/utility-skill-proof-pack.md)
 
 **Install:**
 
@@ -278,6 +284,7 @@ Typical output:
 - Use the [`install verification guide`](guides/install-verification.md) to confirm the target folder, copied files, reload, and first prompt.
 - Use the [`update installed skills guide`](guides/update-installed-skills.md) when you need to refresh a copied skill folder.
 - Use the [`update after release proof`](examples/update-after-release-proof.md) when you want to test pull, temporary copy, reinstall, reload, and fake post-update check.
+- Use the [`utility skill proof pack`](examples/utility-skill-proof-pack.md) when you want fake output shapes for `web-scraper`, `code-deduplicator`, and `em-dash-remover`.
 - Compare with the [`install smoke-test sample`](examples/install-smoke-test-sample.md) when you want a disposable temporary-target example.
 - Use [`TROUBLESHOOTING.md`](../TROUBLESHOOTING.md) if a skill does not appear after install.
 - Use the [`one-minute install guide`](guides/one-minute-install.md) if you want the shortest verified path.

@@ -1,8 +1,8 @@
 # Skill Quality Matrix
 
-Current as of v0.7.2.
+Current as of v0.7.3.
 
-Use this matrix to compare the public skills by maturity, visible proof, safety sensitivity, and install notes. It is a practical adoption guide, not a certification. For the browsable examples index, use [`docs/examples/README.md`](examples/README.md). For the folder contract behind every skill, use [`docs/guides/skill-anatomy.md`](guides/skill-anatomy.md). For the complete first-install trust path, use [`docs/examples/first-install-proof.md`](examples/first-install-proof.md). For the post-release refresh path, use [`docs/examples/update-after-release-proof.md`](examples/update-after-release-proof.md).
+Use this matrix to compare the public skills by maturity, visible proof, safety sensitivity, and install notes. It is a practical adoption guide, not a certification. For the browsable examples index, use [`docs/examples/README.md`](examples/README.md). For the folder contract behind every skill, use [`docs/guides/skill-anatomy.md`](guides/skill-anatomy.md). For the complete first-install trust path, use [`docs/examples/first-install-proof.md`](examples/first-install-proof.md). For the post-release refresh path, use [`docs/examples/update-after-release-proof.md`](examples/update-after-release-proof.md). For smaller utility skill examples, use [`docs/examples/utility-skill-proof-pack.md`](examples/utility-skill-proof-pack.md).
 
 ## Matrix
 
@@ -15,9 +15,9 @@ Use this matrix to compare the public skills by maturity, visible proof, safety 
 | [`outreach-pipeline-designer`](../skills/outreach-pipeline-designer/SKILL.md) | Growth and outreach | Core public skill | Reference workflow, scoring rubric, fake review-gated pipeline sample, and workflow bundle coverage | High | Keep prospect data, credentials, and sending actions outside the skill output. |
 | [`etsy-listing-optimizer`](../skills/etsy-listing-optimizer/SKILL.md) | Growth and marketplace | Core public skill | Constraint reference, keyword workflow, batch notes, and fictional listing audit sample | Medium | Remove shop exports, private metrics, customer data, and live account details before use. |
 | [`skill-reviewer`](../skills/skill-reviewer/SKILL.md) | Safety and review | Utility skill | Review checklist, sample `READY`/`REVIEW`/`BLOCK` decisions, catalog entry, and quick reference links | High | Use before installing third-party, downloaded, or modified skill folders. |
-| [`web-scraper`](../skills/web-scraper/SKILL.md) | Content and extraction | Utility skill | Catalog entry, workflow bundle coverage, and public-page usage notes | Medium | Use only on public or authorized pages and respect site rules. |
-| [`em-dash-remover`](../skills/em-dash-remover/SKILL.md) | Content and copy | Utility skill | Catalog entry and common prompt examples | Low | Lightweight copy cleanup; preserve meaning and review edited copy. |
-| [`code-deduplicator`](../skills/code-deduplicator/SKILL.md) | Development workflow | Utility skill | Catalog entry and common prompt examples | Medium | Review diffs carefully before applying code changes. |
+| [`web-scraper`](../skills/web-scraper/SKILL.md) | Content and extraction | Utility skill | Utility proof pack, catalog entry, workflow bundle coverage, and public-page usage notes | Medium | Use only on public or authorized pages and respect site rules. |
+| [`em-dash-remover`](../skills/em-dash-remover/SKILL.md) | Content and copy | Utility skill | Utility proof pack, catalog entry, and common prompt examples | Low | Lightweight copy cleanup; preserve meaning and review edited copy. |
+| [`code-deduplicator`](../skills/code-deduplicator/SKILL.md) | Development workflow | Utility skill | Utility proof pack, catalog entry, and common prompt examples | Medium | Review diffs carefully before applying code changes. |
 | [`demo-animation-v2`](../skills/demo-animation-v2/SKILL.md) | Demo and presentation | Recommended demo skill | Responsive HTML template asset, catalog entry, and demo launch bundle coverage | Low | Prefer this for new walkthrough demos. |
 | [`demo-animation`](../skills/demo-animation/SKILL.md) | Demo and presentation | Legacy demo skill | Legacy engine reference and catalog entry | Low | Keep for older desktop-oriented demos; use v2 for new responsive demos. |
 
@@ -34,6 +34,7 @@ Use this matrix to compare the public skills by maturity, visible proof, safety 
 | Visitor routes | [`docs/examples/visitor-paths.md`](examples/visitor-paths.md) |
 | Install verification | [`docs/guides/install-verification.md`](guides/install-verification.md) |
 | Public-safe samples | [`docs/examples/README.md`](examples/README.md) |
+| Utility proof pack | [`docs/examples/utility-skill-proof-pack.md`](examples/utility-skill-proof-pack.md) |
 | Full catalog | [`docs/catalog.md`](catalog.md) |
 
 ## Reading The Columns
@@ -57,8 +58,7 @@ Use this matrix to compare the public skills by maturity, visible proof, safety 
 
 ## Current Gaps To Watch
 
-- Some utility skills have catalog and prompt coverage but do not yet have standalone fake-output samples.
+- Utility skills now have a shared fake-output proof pack. Future releases can split those into separate per-skill samples if the public library needs deeper proof.
 - `demo-animation-v2` has a strong template asset, but future releases could add a public-safe rendered walkthrough sample.
-- `web-scraper`, `code-deduplicator`, and `em-dash-remover` are useful utilities; their safest public proof is still the skill instructions plus catalog coverage.
 
 These are not blockers. They are the next places to improve if the public library needs more proof depth.
