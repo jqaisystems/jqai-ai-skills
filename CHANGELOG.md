@@ -4,6 +4,17 @@ Public release history for JQ AI Skills.
 
 The social preview image is intentionally stable for 2026 and is not updated for every release.
 
+## [v0.7.5](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.7.5) - 2026-06-06
+
+Added a release-to-showcase handoff proof sample.
+
+- Added `docs/examples/release-showcase-handoff-sample.md` with a fictional Example Skill Library handoff path.
+- Documented GitHub release, profile update, website source update, host upload package, live verification, cache-busted checks, and final `READY` status.
+- Linked the sample from the README, start page, quick reference, examples index, visitor paths, public proof index, catalog, quality matrix, and changelog.
+- Updated `docs/skill-quality-matrix.md` to `v0.7.5` with the new release handoff proof signal.
+- Added a v0.7.5 release announcement.
+- Kept the stable 2026 social preview unchanged.
+
 ## [v0.7.4](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.7.4) - 2026-06-05
 
 Added a demo animation v2 walkthrough sample.

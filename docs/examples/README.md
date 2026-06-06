@@ -14,6 +14,7 @@ Use this page when you want to inspect expected output before installing a skill
 | Prove an update after release | [`update-after-release-proof.md`](update-after-release-proof.md) |
 | Inspect utility skill outputs | [`utility-skill-proof-pack.md`](utility-skill-proof-pack.md) |
 | Inspect responsive demo output | [`demo-animation-v2-walkthrough-sample.md`](demo-animation-v2-walkthrough-sample.md) |
+| Inspect release-to-showcase handoff | [`release-showcase-handoff-sample.md`](release-showcase-handoff-sample.md) |
 | Score the safest first install | [`../guides/first-skill-scorecard.md`](../guides/first-skill-scorecard.md) |
 | Run the selected skill with fake input | [`first-skill-walkthrough.md`](first-skill-walkthrough.md) |
 | Use ready fake first-run files | [`first-skill-candidate/README.md`](first-skill-candidate/README.md) |
@@ -28,6 +29,7 @@ Use this page when you want to inspect expected output before installing a skill
 | Review a skill before installing it | [`skill-reviewer-sample.md`](skill-reviewer-sample.md) |
 | Inspect lightweight utility outputs | [`utility-skill-proof-pack.md`](utility-skill-proof-pack.md) |
 | Inspect a responsive demo walkthrough | [`demo-animation-v2-walkthrough-sample.md`](demo-animation-v2-walkthrough-sample.md) |
+| Inspect a release handoff routine | [`release-showcase-handoff-sample.md`](release-showcase-handoff-sample.md) |
 | Design a human-reviewed outreach workflow | [`outreach-pipeline-designer-sample.md`](outreach-pipeline-designer-sample.md) |
 | Audit a fictional marketplace listing | [`etsy-listing-optimizer-sample.md`](etsy-listing-optimizer-sample.md) |
 | Propose a new skill safely | [`skill-request-example.md`](skill-request-example.md) |
@@ -49,20 +51,21 @@ Use this page when you want to inspect expected output before installing a skill
 4. Use [`update-after-release-proof.md`](update-after-release-proof.md) if you want the pull-to-reload proof trail after a new release.
 5. Use [`utility-skill-proof-pack.md`](utility-skill-proof-pack.md) if you want fake output examples for the smaller utility skills.
 6. Use [`demo-animation-v2-walkthrough-sample.md`](demo-animation-v2-walkthrough-sample.md) if you want a finished demo output shape.
-7. Use [`../guides/first-skill-scorecard.md`](../guides/first-skill-scorecard.md) if several skills look useful and you want to pick one first.
-8. Use [`first-skill-walkthrough.md`](first-skill-walkthrough.md) when you want to run the selected skill with fake input.
-9. Use [`first-skill-candidate/README.md`](first-skill-candidate/README.md) when you want ready fake files for that first run.
-10. Use [`first-skill-candidate/expected-review.md`](first-skill-candidate/expected-review.md) when you want to compare a good first result.
-11. Use [`quick-reference-walkthrough.md`](quick-reference-walkthrough.md) if you want the clone-to-first-prompt path.
-12. Use [`install-smoke-test-sample.md`](install-smoke-test-sample.md) when you want to verify a disposable install before real use.
-13. Start with [`first-run-github-safe-publisher.md`](first-run-github-safe-publisher.md) if you are evaluating safety habits.
-14. Read [`skill-reviewer-sample.md`](skill-reviewer-sample.md) before installing unfamiliar skill folders.
-15. Read [`workflow-bundles.md`](workflow-bundles.md) if you want to combine skills.
-16. Use [`skill-request-example.md`](skill-request-example.md) if you want to propose a new skill.
-17. Use the sample for the skill closest to your job.
-18. Use [`../guides/skill-anatomy.md`](../guides/skill-anatomy.md) if you want to understand what each skill folder file does.
-19. Use [`../skill-quality-matrix.md`](../skill-quality-matrix.md) to compare maturity, examples, and safety sensitivity.
-20. Use [`../../INSTALL.md`](../../INSTALL.md) when you are ready to install one skill.
+7. Use [`release-showcase-handoff-sample.md`](release-showcase-handoff-sample.md) if you want the GitHub release to profile to website verification path.
+8. Use [`../guides/first-skill-scorecard.md`](../guides/first-skill-scorecard.md) if several skills look useful and you want to pick one first.
+9. Use [`first-skill-walkthrough.md`](first-skill-walkthrough.md) when you want to run the selected skill with fake input.
+10. Use [`first-skill-candidate/README.md`](first-skill-candidate/README.md) when you want ready fake files for that first run.
+11. Use [`first-skill-candidate/expected-review.md`](first-skill-candidate/expected-review.md) when you want to compare a good first result.
+12. Use [`quick-reference-walkthrough.md`](quick-reference-walkthrough.md) if you want the clone-to-first-prompt path.
+13. Use [`install-smoke-test-sample.md`](install-smoke-test-sample.md) when you want to verify a disposable install before real use.
+14. Start with [`first-run-github-safe-publisher.md`](first-run-github-safe-publisher.md) if you are evaluating safety habits.
+15. Read [`skill-reviewer-sample.md`](skill-reviewer-sample.md) before installing unfamiliar skill folders.
+16. Read [`workflow-bundles.md`](workflow-bundles.md) if you want to combine skills.
+17. Use [`skill-request-example.md`](skill-request-example.md) if you want to propose a new skill.
+18. Use the sample for the skill closest to your job.
+19. Use [`../guides/skill-anatomy.md`](../guides/skill-anatomy.md) if you want to understand what each skill folder file does.
+20. Use [`../skill-quality-matrix.md`](../skill-quality-matrix.md) to compare maturity, examples, and safety sensitivity.
+21. Use [`../../INSTALL.md`](../../INSTALL.md) when you are ready to install one skill.
 
 ## Safety Boundary
 

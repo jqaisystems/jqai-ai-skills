@@ -17,6 +17,7 @@ All linked examples use fictional, public, or generalized material. They do not 
 | Is there proof for updating after a release? | [`update-after-release-proof.md`](update-after-release-proof.md) |
 | Do the utility skills have fake-output proof? | [`utility-skill-proof-pack.md`](utility-skill-proof-pack.md) |
 | Is there proof for finished responsive demos? | [`demo-animation-v2-walkthrough-sample.md`](demo-animation-v2-walkthrough-sample.md) |
+| Is there proof for release-to-showcase handoff? | [`release-showcase-handoff-sample.md`](release-showcase-handoff-sample.md) |
 | How do I evaluate trust and install readiness? | [`../guides/evaluate-skill-library.md`](../guides/evaluate-skill-library.md) |
 | Which skill should I install first? | [`../guides/first-skill-scorecard.md`](../guides/first-skill-scorecard.md) |
 | How do I run the selected skill safely? | [`first-skill-walkthrough.md`](first-skill-walkthrough.md) |
@@ -53,6 +54,7 @@ Good stopping point: after five minutes, a visitor should know what the repo con
 | [`github-safe-publisher-sample-review.md`](github-safe-publisher-sample-review.md) | A fictional safety review with `READY`, scanner summary, manual checks, and next commands. |
 | [`case-study-writer-sample.md`](case-study-writer-sample.md) | A public-safe case study shape using a fictional review queue workflow. |
 | [`release-announcement-writer-sample.md`](release-announcement-writer-sample.md) | Release notes, website copy, and short launch post from a fake changelog. |
+| [`release-showcase-handoff-sample.md`](release-showcase-handoff-sample.md) | A fictional release handoff from GitHub release to profile, website package, live verification, and final `READY` note. |
 | [`skill-request-example.md`](skill-request-example.md) | A safe request shape for proposing a new skill with fictional material. |
 | [`../../SECURITY.md`](../../SECURITY.md) | Responsible-use, install-safety, sensitive issue, and public publishing boundaries. |
 | [`../../RELEASE_CHECKLIST.md`](../../RELEASE_CHECKLIST.md) | The safe release routine for validation, scans, diff review, tagging, profile update, and website handoff. |
@@ -68,6 +70,7 @@ Good stopping point: after five minutes, a visitor should know what the repo con
 | Skill review | [`skill-reviewer-sample.md`](skill-reviewer-sample.md) |
 | Utility skills | [`utility-skill-proof-pack.md`](utility-skill-proof-pack.md) |
 | Responsive demo walkthrough | [`demo-animation-v2-walkthrough-sample.md`](demo-animation-v2-walkthrough-sample.md) |
+| Release showcase handoff | [`release-showcase-handoff-sample.md`](release-showcase-handoff-sample.md) |
 | Multi-skill workflows | [`workflow-bundles.md`](workflow-bundles.md) |
 
 ## System And Library Proof
@@ -84,6 +87,7 @@ Good stopping point: after five minutes, a visitor should know what the repo con
 | [`first-skill-candidate/expected-review.md`](first-skill-candidate/expected-review.md) | A concrete expected review for that reusable candidate. |
 | [`utility-skill-proof-pack.md`](utility-skill-proof-pack.md) | Fake output shapes for `web-scraper`, `code-deduplicator`, and `em-dash-remover`. |
 | [`demo-animation-v2-walkthrough-sample.md`](demo-animation-v2-walkthrough-sample.md) | Public-safe finished walkthrough shape for `demo-animation-v2`, including screens, captions, timeline, and review checks. |
+| [`release-showcase-handoff-sample.md`](release-showcase-handoff-sample.md) | Public-safe release alignment shape for GitHub release, profile update, website upload package, live checks, and final status. |
 | [`../skill-quality-matrix.md`](../skill-quality-matrix.md) | Skill maturity, examples, and safety sensitivity are visible instead of implied. |
 | [`../guides/skill-anatomy.md`](../guides/skill-anatomy.md) | The folder contract is documented for maintainers and reviewers. |
 | [`../../CHANGELOG.md`](../../CHANGELOG.md) | Release history is versioned and inspectable. |
@@ -119,4 +123,4 @@ If you are evaluating the repo, open [`visitor-paths.md`](visitor-paths.md), [`.
 
 If you are ready to try one skill, open [`first-install-proof.md`](first-install-proof.md), [`first-skill-walkthrough.md`](first-skill-walkthrough.md), [`first-skill-candidate/README.md`](first-skill-candidate/README.md), [`first-skill-candidate/expected-review.md`](first-skill-candidate/expected-review.md), or [`quick-reference-walkthrough.md`](quick-reference-walkthrough.md).
 
-If you are publishing a public artifact, open [`github-safe-publisher-sample-review.md`](github-safe-publisher-sample-review.md) and [`../../RELEASE_CHECKLIST.md`](../../RELEASE_CHECKLIST.md).
+If you are publishing a public artifact, open [`github-safe-publisher-sample-review.md`](github-safe-publisher-sample-review.md), [`release-showcase-handoff-sample.md`](release-showcase-handoff-sample.md), and [`../../RELEASE_CHECKLIST.md`](../../RELEASE_CHECKLIST.md).

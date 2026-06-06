@@ -1,8 +1,8 @@
 # Skill Quality Matrix
 
-Current as of v0.7.4.
+Current as of v0.7.5.
 
-Use this matrix to compare the public skills by maturity, visible proof, safety sensitivity, and install notes. It is a practical adoption guide, not a certification. For the browsable examples index, use [`docs/examples/README.md`](examples/README.md). For the folder contract behind every skill, use [`docs/guides/skill-anatomy.md`](guides/skill-anatomy.md). For the complete first-install trust path, use [`docs/examples/first-install-proof.md`](examples/first-install-proof.md). For the post-release refresh path, use [`docs/examples/update-after-release-proof.md`](examples/update-after-release-proof.md). For smaller utility skill examples, use [`docs/examples/utility-skill-proof-pack.md`](examples/utility-skill-proof-pack.md). For responsive demo output proof, use [`docs/examples/demo-animation-v2-walkthrough-sample.md`](examples/demo-animation-v2-walkthrough-sample.md).
+Use this matrix to compare the public skills by maturity, visible proof, safety sensitivity, and install notes. It is a practical adoption guide, not a certification. For the browsable examples index, use [`docs/examples/README.md`](examples/README.md). For the folder contract behind every skill, use [`docs/guides/skill-anatomy.md`](guides/skill-anatomy.md). For the complete first-install trust path, use [`docs/examples/first-install-proof.md`](examples/first-install-proof.md). For the post-release refresh path, use [`docs/examples/update-after-release-proof.md`](examples/update-after-release-proof.md). For smaller utility skill examples, use [`docs/examples/utility-skill-proof-pack.md`](examples/utility-skill-proof-pack.md). For responsive demo output proof, use [`docs/examples/demo-animation-v2-walkthrough-sample.md`](examples/demo-animation-v2-walkthrough-sample.md). For release-to-showcase handoff proof, use [`docs/examples/release-showcase-handoff-sample.md`](examples/release-showcase-handoff-sample.md).
 
 ## Matrix
 
@@ -10,7 +10,7 @@ Use this matrix to compare the public skills by maturity, visible proof, safety 
 |---|---|---|---|---|---|
 | [`github-safe-publisher`](../skills/github-safe-publisher/SKILL.md) | Safety and publishing | Core first-install skill | First-run sample, fake-file review example, first-skill candidate pack, expected review, first install proof, and update-after-release proof | High | Recommended first install. Run it first on fake files, then review diffs before publishing. |
 | [`case-study-writer`](../skills/case-study-writer/SKILL.md) | Public proof | Core public skill | Public-safe case study sample and workflow bundle coverage | High | Use fictional, generalized, or explicitly approved source material only. |
-| [`release-announcement-writer`](../skills/release-announcement-writer/SKILL.md) | Public proof | Core public skill | Template reference, fake changelog sample, release announcement archive, and demo launch bundle coverage | Medium | Pair with changelog facts and release checklist; avoid unsupported claims. |
+| [`release-announcement-writer`](../skills/release-announcement-writer/SKILL.md) | Public proof | Core public skill | Template reference, fake changelog sample, release announcement archive, release handoff proof, and demo launch bundle coverage | Medium | Pair with changelog facts and release checklist; avoid unsupported claims. |
 | [`research-brief-curator`](../skills/research-brief-curator/SKILL.md) | Content and research | Core public skill | Sample brief, sample items JSON, and content/research bundle coverage | Medium | Use public sources or approved notes; label anything that needs human review. |
 | [`outreach-pipeline-designer`](../skills/outreach-pipeline-designer/SKILL.md) | Growth and outreach | Core public skill | Reference workflow, scoring rubric, fake review-gated pipeline sample, and workflow bundle coverage | High | Keep prospect data, credentials, and sending actions outside the skill output. |
 | [`etsy-listing-optimizer`](../skills/etsy-listing-optimizer/SKILL.md) | Growth and marketplace | Core public skill | Constraint reference, keyword workflow, batch notes, and fictional listing audit sample | Medium | Remove shop exports, private metrics, customer data, and live account details before use. |
@@ -36,6 +36,7 @@ Use this matrix to compare the public skills by maturity, visible proof, safety 
 | Public-safe samples | [`docs/examples/README.md`](examples/README.md) |
 | Utility proof pack | [`docs/examples/utility-skill-proof-pack.md`](examples/utility-skill-proof-pack.md) |
 | Demo walkthrough sample | [`docs/examples/demo-animation-v2-walkthrough-sample.md`](examples/demo-animation-v2-walkthrough-sample.md) |
+| Release showcase handoff | [`docs/examples/release-showcase-handoff-sample.md`](examples/release-showcase-handoff-sample.md) |
 | Full catalog | [`docs/catalog.md`](catalog.md) |
 
 ## Reading The Columns
@@ -55,11 +56,13 @@ Use this matrix to compare the public skills by maturity, visible proof, safety 
 6. Use [`TROUBLESHOOTING.md`](../TROUBLESHOOTING.md) if the skill does not appear after reload.
 7. Use [`SECURITY.md`](../SECURITY.md) before working with sensitive or client-facing material.
 8. Use [`docs/examples/workflow-bundles.md`](examples/workflow-bundles.md) when you want a multi-skill path.
-9. Use [`docs/guides/skill-anatomy.md`](guides/skill-anatomy.md) before adapting or creating a skill folder.
+9. Use [`docs/examples/release-showcase-handoff-sample.md`](examples/release-showcase-handoff-sample.md) when a release needs profile, website, upload package, and live verification alignment.
+10. Use [`docs/guides/skill-anatomy.md`](guides/skill-anatomy.md) before adapting or creating a skill folder.
 
 ## Current Gaps To Watch
 
 - Utility skills now have a shared fake-output proof pack. Future releases can split those into separate per-skill samples if the public library needs deeper proof.
 - `demo-animation-v2` now has a public-safe walkthrough sample. Future releases can add a real rendered media artifact if the library needs visual proof beyond the sample page.
+- Release handoff now has a public-safe sample. Future releases can add a shorter operator checklist if the handoff routine needs a compact daily-use version.
 
 These are not blockers. They are the next places to improve if the public library needs more proof depth.

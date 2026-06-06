@@ -8,7 +8,7 @@ The repo has three common visitor routes:
 |---|---|---|
 | Evaluate the library | [`../../START_HERE.md`](../../START_HERE.md) | [`public-proof-index.md`](public-proof-index.md), [`first-install-proof.md`](first-install-proof.md), [`update-after-release-proof.md`](update-after-release-proof.md), [`../guides/evaluate-skill-library.md`](../guides/evaluate-skill-library.md), [`../guides/first-skill-scorecard.md`](../guides/first-skill-scorecard.md), [`first-skill-walkthrough.md`](first-skill-walkthrough.md), [`first-skill-candidate/README.md`](first-skill-candidate/README.md), [`first-skill-candidate/expected-review.md`](first-skill-candidate/expected-review.md), [`../catalog.md`](../catalog.md), [`../skill-quality-matrix.md`](../skill-quality-matrix.md), [`README.md`](README.md) |
 | Install one skill | [`first-install-proof.md`](first-install-proof.md) | [`quick-reference-walkthrough.md`](quick-reference-walkthrough.md), [`../guides/first-skill-scorecard.md`](../guides/first-skill-scorecard.md), [`first-skill-walkthrough.md`](first-skill-walkthrough.md), [`first-skill-candidate/README.md`](first-skill-candidate/README.md), [`first-skill-candidate/expected-review.md`](first-skill-candidate/expected-review.md), [`../../INSTALL.md`](../../INSTALL.md), [`../guides/install-verification.md`](../guides/install-verification.md), [`update-after-release-proof.md`](update-after-release-proof.md), [`install-smoke-test-sample.md`](install-smoke-test-sample.md) |
-| Publish public proof safely | [`public-proof-index.md`](public-proof-index.md) | [`first-skill-candidate/README.md`](first-skill-candidate/README.md), [`first-skill-candidate/expected-review.md`](first-skill-candidate/expected-review.md), [`first-run-github-safe-publisher.md`](first-run-github-safe-publisher.md), [`github-safe-publisher-sample-review.md`](github-safe-publisher-sample-review.md), [`../../SECURITY.md`](../../SECURITY.md), [`../../RELEASE_CHECKLIST.md`](../../RELEASE_CHECKLIST.md) |
+| Publish public proof safely | [`public-proof-index.md`](public-proof-index.md) | [`first-skill-candidate/README.md`](first-skill-candidate/README.md), [`first-skill-candidate/expected-review.md`](first-skill-candidate/expected-review.md), [`first-run-github-safe-publisher.md`](first-run-github-safe-publisher.md), [`github-safe-publisher-sample-review.md`](github-safe-publisher-sample-review.md), [`release-showcase-handoff-sample.md`](release-showcase-handoff-sample.md), [`../../SECURITY.md`](../../SECURITY.md), [`../../RELEASE_CHECKLIST.md`](../../RELEASE_CHECKLIST.md) |
 
 ## Path 1: Evaluate The Library
 
@@ -57,9 +57,10 @@ Use this route if you want to turn real work into a public-safe README update, e
 1. Start with [`public-proof-index.md`](public-proof-index.md) to see the public-safe proof assets already in the repo.
 2. Use [`first-run-github-safe-publisher.md`](first-run-github-safe-publisher.md) to understand the expected review shape.
 3. Compare with [`github-safe-publisher-sample-review.md`](github-safe-publisher-sample-review.md) for a complete fictional safety review.
-4. Use [`../../SECURITY.md`](../../SECURITY.md) to check the public boundary.
-5. Use [`../../RELEASE_CHECKLIST.md`](../../RELEASE_CHECKLIST.md) before committing, tagging, or publishing.
-6. Use [`../../CHANGELOG.md`](../../CHANGELOG.md) to keep release history easy to inspect.
+4. Use [`release-showcase-handoff-sample.md`](release-showcase-handoff-sample.md) when the release also needs profile, website, upload package, and live verification alignment.
+5. Use [`../../SECURITY.md`](../../SECURITY.md) to check the public boundary.
+6. Use [`../../RELEASE_CHECKLIST.md`](../../RELEASE_CHECKLIST.md) before committing, tagging, or publishing.
+7. Use [`../../CHANGELOG.md`](../../CHANGELOG.md) to keep release history easy to inspect.
 
 Good stopping point: the candidate has a clear `READY`, `REVIEW`, or `BLOCK` decision, changed files have been scanned, and the staged diff has been reviewed.
 
@@ -71,6 +72,7 @@ Good stopping point: the candidate has a clear `READY`, `REVIEW`, or `BLOCK` dec
 | "How do I try one skill?" | Install one skill |
 | "Can I see the whole first install proof?" | [`first-install-proof.md`](first-install-proof.md) |
 | "How do I update after a release?" | [`update-after-release-proof.md`](update-after-release-proof.md) |
+| "How do I align GitHub, profile, and website after release?" | [`release-showcase-handoff-sample.md`](release-showcase-handoff-sample.md) |
 | "Can I publish this safely?" | Publish public proof safely |
 | "Which skill matches my job?" | [`../guides/skill-selection.md`](../guides/skill-selection.md) |
 | "Which one should I install first?" | [`../guides/first-skill-scorecard.md`](../guides/first-skill-scorecard.md) |
@@ -86,6 +88,7 @@ Good stopping point: the candidate has a clear `READY`, `REVIEW`, or `BLOCK` dec
 - [`public-proof-index.md`](public-proof-index.md)
 - [`first-install-proof.md`](first-install-proof.md)
 - [`update-after-release-proof.md`](update-after-release-proof.md)
+- [`release-showcase-handoff-sample.md`](release-showcase-handoff-sample.md)
 - [`../guides/evaluate-skill-library.md`](../guides/evaluate-skill-library.md)
 - [`../guides/first-skill-scorecard.md`](../guides/first-skill-scorecard.md)
 - [`first-skill-walkthrough.md`](first-skill-walkthrough.md)

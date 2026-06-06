@@ -30,28 +30,29 @@ Follow this path if you want to try one skill before reading the whole repo.
 6. Use the [`update after release proof`](docs/examples/update-after-release-proof.md) if you are refreshing an installed skill after a new release.
 7. Use the [`utility skill proof pack`](docs/examples/utility-skill-proof-pack.md) if you want fake output examples for the smaller utility skills.
 8. Use the [`demo animation v2 walkthrough sample`](docs/examples/demo-animation-v2-walkthrough-sample.md) if you want the expected shape of a finished responsive demo.
-9. Use the [`evaluation checklist`](docs/guides/evaluate-skill-library.md) if you want to decide whether the repo is ready for a test install.
-10. Use the [`first skill scorecard`](docs/guides/first-skill-scorecard.md) if you want to score one safe, testable first install.
-11. Use the [`first skill walkthrough`](docs/examples/first-skill-walkthrough.md) if you want to run the selected skill with fake input.
-12. Use the [`first-skill candidate pack`](docs/examples/first-skill-candidate/README.md) if you want ready fake files for that run.
-13. Compare with the [`expected review`](docs/examples/first-skill-candidate/expected-review.md) if you want to know what a good result looks like for those files.
-14. Follow the [`quick reference walkthrough`](docs/examples/quick-reference-walkthrough.md) if you want the clone-to-first-prompt route.
-15. Install it with [`INSTALL.md`](INSTALL.md) or the [`one-minute install guide`](docs/guides/one-minute-install.md).
-16. Use the [`install FAQ`](docs/guides/install-faq.md) if you are unsure about targets, reloads, first prompts, updates, or removal.
-17. Reload your AI coding tool.
-18. Verify the install with [`docs/guides/install-verification.md`](docs/guides/install-verification.md).
-19. Compare the temporary install check with the [`install smoke-test sample`](docs/examples/install-smoke-test-sample.md).
-20. Run the first prompt:
+9. Use the [`release showcase handoff sample`](docs/examples/release-showcase-handoff-sample.md) if you want the release-to-profile-to-website proof path.
+10. Use the [`evaluation checklist`](docs/guides/evaluate-skill-library.md) if you want to decide whether the repo is ready for a test install.
+11. Use the [`first skill scorecard`](docs/guides/first-skill-scorecard.md) if you want to score one safe, testable first install.
+12. Use the [`first skill walkthrough`](docs/examples/first-skill-walkthrough.md) if you want to run the selected skill with fake input.
+13. Use the [`first-skill candidate pack`](docs/examples/first-skill-candidate/README.md) if you want ready fake files for that run.
+14. Compare with the [`expected review`](docs/examples/first-skill-candidate/expected-review.md) if you want to know what a good result looks like for those files.
+15. Follow the [`quick reference walkthrough`](docs/examples/quick-reference-walkthrough.md) if you want the clone-to-first-prompt route.
+16. Install it with [`INSTALL.md`](INSTALL.md) or the [`one-minute install guide`](docs/guides/one-minute-install.md).
+17. Use the [`install FAQ`](docs/guides/install-faq.md) if you are unsure about targets, reloads, first prompts, updates, or removal.
+18. Reload your AI coding tool.
+19. Verify the install with [`docs/guides/install-verification.md`](docs/guides/install-verification.md).
+20. Compare the temporary install check with the [`install smoke-test sample`](docs/examples/install-smoke-test-sample.md).
+21. Run the first prompt:
 
 ```text
 Use $github-safe-publisher to review this README and docs folder before public release.
 ```
 
-21. Compare the result with the [`first-run sample`](docs/examples/first-run-github-safe-publisher.md).
-22. Use [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md) if the skill does not appear after install.
-23. Use the [`skill selection guide`](docs/guides/skill-selection.md) if your first job is not public GitHub publishing.
-24. Use the [`skill anatomy guide`](docs/guides/skill-anatomy.md) when you want to understand what each folder file does.
-25. Use the [`catalog`](docs/catalog.md) when you want the full list.
+22. Compare the result with the [`first-run sample`](docs/examples/first-run-github-safe-publisher.md).
+23. Use [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md) if the skill does not appear after install.
+24. Use the [`skill selection guide`](docs/guides/skill-selection.md) if your first job is not public GitHub publishing.
+25. Use the [`skill anatomy guide`](docs/guides/skill-anatomy.md) when you want to understand what each folder file does.
+26. Use the [`catalog`](docs/catalog.md) when you want the full list.
 
 ## What To Read First
 
@@ -63,6 +64,7 @@ Use $github-safe-publisher to review this README and docs folder before public r
 | Prove a post-release update path | [`docs/examples/update-after-release-proof.md`](docs/examples/update-after-release-proof.md) |
 | Inspect utility skill output examples | [`docs/examples/utility-skill-proof-pack.md`](docs/examples/utility-skill-proof-pack.md) |
 | Inspect a responsive demo walkthrough sample | [`docs/examples/demo-animation-v2-walkthrough-sample.md`](docs/examples/demo-animation-v2-walkthrough-sample.md) |
+| Inspect release-to-showcase handoff proof | [`docs/examples/release-showcase-handoff-sample.md`](docs/examples/release-showcase-handoff-sample.md) |
 | Evaluate trust and install readiness | [`docs/guides/evaluate-skill-library.md`](docs/guides/evaluate-skill-library.md) |
 | Score the safest first install | [`docs/guides/first-skill-scorecard.md`](docs/guides/first-skill-scorecard.md) |
 | Run the selected skill with fake input | [`docs/examples/first-skill-walkthrough.md`](docs/examples/first-skill-walkthrough.md) |
@@ -123,6 +125,7 @@ Once the first skill makes sense:
 - Use [`docs/examples/update-after-release-proof.md`](docs/examples/update-after-release-proof.md) when you want to refresh an installed skill after a new release.
 - Use [`docs/examples/utility-skill-proof-pack.md`](docs/examples/utility-skill-proof-pack.md) when you want fake output examples for `web-scraper`, `code-deduplicator`, and `em-dash-remover`.
 - Use [`docs/examples/demo-animation-v2-walkthrough-sample.md`](docs/examples/demo-animation-v2-walkthrough-sample.md) when you want a public-safe finished demo shape for `demo-animation-v2`.
+- Use [`docs/examples/release-showcase-handoff-sample.md`](docs/examples/release-showcase-handoff-sample.md) when you want the release-to-profile-to-website verification path.
 - Use [`docs/guides/evaluate-skill-library.md`](docs/guides/evaluate-skill-library.md) when you want a checklist for trust, install readiness, examples, and release discipline.
 - Use [`docs/guides/first-skill-scorecard.md`](docs/guides/first-skill-scorecard.md) when you want to score one safe, testable first install.
 - Use [`docs/examples/first-skill-walkthrough.md`](docs/examples/first-skill-walkthrough.md) when you want to run the selected skill with fake input before touching real work.
@@ -167,5 +170,5 @@ assets/                 public visual and demo assets
 The public onboarding path is now:
 
 ```text
-START_HERE -> visitor paths if choosing a route -> QUICK_REFERENCE if scanning -> first install proof if you want the full trust path -> quick reference walkthrough if you want steps -> understand anatomy -> choose -> score first skill -> run the first skill walkthrough with the first-skill candidate pack -> compare the expected review -> review before install -> INSTALL -> install FAQ if unsure -> verify install -> update installed skills when needed -> update after release proof when refreshing -> utility proof pack when checking lightweight utilities -> demo animation sample when checking visual walkthrough output -> troubleshoot or support if needed -> SECURITY if sensitive -> run -> understand output -> release checklist if publishing -> use bundles, catalog, or quality matrix
+START_HERE -> visitor paths if choosing a route -> QUICK_REFERENCE if scanning -> first install proof if you want the full trust path -> quick reference walkthrough if you want steps -> understand anatomy -> choose -> score first skill -> run the first skill walkthrough with the first-skill candidate pack -> compare the expected review -> review before install -> INSTALL -> install FAQ if unsure -> verify install -> update installed skills when needed -> update after release proof when refreshing -> utility proof pack when checking lightweight utilities -> demo animation sample when checking visual walkthrough output -> release showcase handoff when aligning GitHub, profile, and website surfaces -> troubleshoot or support if needed -> SECURITY if sensitive -> run -> understand output -> release checklist if publishing -> use bundles, catalog, or quality matrix
 ```
