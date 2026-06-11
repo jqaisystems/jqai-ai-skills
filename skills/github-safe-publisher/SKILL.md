@@ -51,9 +51,10 @@ Recommended commands:
 ```bash
 python scripts/scan_public_safety.py path/to/candidate
 python scripts/scan_public_safety.py path/to/candidate --json
+python scripts/scan_public_safety.py path/to/candidate --no-baseline
 ```
 
-The scanner checks risky filenames, file extensions, binary-like artifacts, local path patterns, credential terms, token formats, private-key blocks, and private/client wording. A clean scan still requires human diff review.
+The scanner checks risky filenames, file extensions, binary-like artifacts, local path patterns, credential terms, token formats, private-key blocks, and private/client wording. Folder scans use `.public-safety-baseline.json` when present to suppress known review findings; use `--no-baseline` to see the raw scan. A clean scan still requires human diff review.
 
 ## Git Safety
 

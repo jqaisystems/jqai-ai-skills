@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "generated_by": "scan_public_safety.py",
+  "notes": "Hashes suppress known review findings only. Blocking findings are not baselined.",
+  "findings": [
+    {
+      "hash": "44bf1b775aaf554b9a7092437c826dae60bccbd8a9b8679fa3ef926b8e226041",
+      "severity": "review",
+      "path": ".github/ISSUE_TEMPLATE/docs-feedback.yml",
+      "kind": "private wording",
+      "reason": "Known intentional finding for this public repo."
+    },
+    {
+      "hash": "2e2f18a0fea9033db25932632441c02060c6a00b43cc11f56f7d400b6c5e8475",
+      "severity": "review",
+      "path": ".github/ISSUE_TEMPLATE/install-or-bug.yml",
+      "kind": "private wording",
+      "reason": "Known intentional finding for this public repo."
+    },
+    {
+      "hash": "21b558878d24d6283396815ba5e6db6e93c49b2bf03c254e6c1fd7ae0deaf48d",
+      "severity": "review",
+      "path": ".github/ISSUE_TEMPLATE/skill-request.yml",
+      "kind": "private wording",
+      "reason": "Known intentional finding for this public repo."
+    },
+    {
+      "hash": "84adccbe88be95ac315e1101c49de57eff01196fab71278fe7fb0040a574716f",
+      "severity": "review",
+      "path": ".github/PULL_REQUEST_TEMPLATE.md",
+      "kind": "private wording",
+      "reason": "Known intentional finding for this public repo."
+    },
+    {
+      "hash": "76b77723d7e7b0eb5a126c1d6826b53508dd3931d52576abf6699052d09bdd70",
+      "severity": "review",
+      "path": "CONTRIBUTING.md",
+      "kind": "credential keyword",
+      "reason": "Known intentional finding for this public repo."
+    },
+    {
+      "hash": "52ef7e4ac25e42915b0c52b58877f12b00aa9d5f47aa8ee6fda4c6e36e10c14f",
+      "severity": "review",
+      "path": "CONTRIBUTING.md",
+      "kind": "private wording",
+      "reason": "Known intentional finding for this public repo."
+    },
+    {
+      "hash": "9d0d8fa7a7cea74929417ac5650802e3d233ffee736d3e4ad9adfb87ae8d8140",
+      "severity": "review",
+      "path": "RELEASE_CHECKLIST.md",
+      "kind": "private wording",
+      "reason": "Known intentional finding for this public repo."
+    },
+    {
+      "hash": "68a137af99aa2f2e69b3230a5bf59dd9b27873473d61f5f0368f156f70fe2581",
+      "severity": "review",
+      "path": "ROADMAP.md",
+      "kind": "private wording",
+      "reason": "Known intentional finding for this public repo."
+    },
+    {
+      "hash": "d511b2a139457749a9e1ab66ce5a5cfaf1361924cf5c4cf7381e883ee4e6d80d",
+      "severity": "review",
+      "path": "SECURITY.md",
+      "kind": "private wording",
+      "reason": "Known intentional finding for this public repo."
+    },
+    {
+      "hash": "1bef34231b635984d0d6dfcb87c3f7a924349cce89a32b8dd6e6c914da938759",
+      "severity": "review",
+      "path": "SECURITY.md",
+      "kind": "private wording",
+      "reason": "Known intentional finding for this public repo."
+    },
+    {
+      "hash": "7a7a6002de44be2f23ff4d2cf0c813e917dd3e07b98c514eea95a453f8a282a9",
+      "severity": "review",
+      "path": "SUPPORT.md",
+      "kind": "private wording",
+      "reason": "Known intentional finding for this public repo."
+    },
+    {
+      "hash": "1268acabe5469c65bd6e981f797938fffa45d4f5aa2e9ae6a26355fc349c3a49",
+      "severity": "review",
+      "path": "assets/github-social-preview.jpg",
+      "kind": "binary file",
+      "reason": "Known intentional finding for this public repo."
+    },
+    {
+      "hash": "1072f7b7fee3f3b2c8a7a05cfd78962c5e6d1910a4aa1b93d5a7164bcaafb715",
+      "severity": "review",
+      "path": "assets/github-social-preview.png",
+      "kind": "binary file",
+      "reason": "Known intentional finding for this public repo."
+    },
+    {
+      "hash": "77ef040a86a3fcd76dc3ffa547170fb8096148d768131291b84bf1e0d0df505a",
+      "severity": "review",
+      "path": "assets/jq-ai-skills-launch-preview.gif",
+      "kind": "binary file",
+      "reason": "Known intentional finding for this public repo."
+    },
+    {
+      "hash": "443627d7d87a13d8c1b8f7b54073d81d3d627065034e59e955f6054179a89d0f",
+      "severity": "review",
+      "path": "assets/jq-ai-skills-launch-video-with-music.mp4",
+      "kind": "binary file",
+      "reason": "Known intentional finding for this public repo."
+    },
+    {
+      "hash": "01c05690f5c0e4c28d2de7bbafae9809dd942324f28fc7ddc149d7c6bea27be3",
+      "severity": "review",
+      "path": "assets/skill-folder-structure.png",
+      "kind": "binary file",
+      "reason": "Known intentional finding for this public repo."
+    },
+    {
+      "hash": "322f0601bbac1ebe956a20515ed3a4070a7681d9ec86b52914fce9e58f0ac60f",
+      "severity": "review",
+      "path": "assets/skill-install-demo-poster.png",
+      "kind": "binary file",
+      "reason": "Known intentional finding for this public repo."
+    },
+    {
+      "hash": "7748b83e9e0f10d6786d210680dce299441ad16a6672d071489fb065fac44013",
+      "severity": "review",
+      "path": "assets/skill-install-demo.gif",
+      "kind": "binary file",
+      "reason": "Known intentional finding for this public repo."
+    },
+    {
+      "hash": "847d8522e41eeff76461cc34652c1cf4a64fce6b1fea91e770b80ba8fdf73d7b",
+      "severity": "review",
+      "path": "assets/skill-install-demo.mp4",
+      "kind": "binary file",
+      "reason": "Known intentional finding for this public repo."
+    },
+    {
+      "hash": "8f84904b619b7faa88fe4729ddbfd6d4abb4a336541acf10f4d77100b5d2407e",
+      "severity": "review",
+      "path": "assets/skill-library-overview.png",
+      "kind": "binary file",
+      "reason": "Known intentional finding for this public repo."
+    },
+    {
+      "hash": "b64d858ac3a16d3afe9cb599f961fdab9bf99c52a54bb99e097096d9bfac21f6",
+      "severity": "review",
+      "path": "assets/skill-packaging-demo.gif",
+      "kind": "binary file",
+      "reason": "Known intentional finding for this public repo."
+    },
+    {
+      "hash": "74133b7cefc5bbd4b420ecf0d44434db579f7426bfa127d076332cc4c9c8aa49",
+      "severity": "review",
+      "path": "skills/case-study-writer/SKILL.md",
+      "kind": "private wording",
+      "reason": "Known intentional finding for this public repo."
+    },
+    {
+      "hash": "dc2e84a73af9af2d6b2d465c887d4f0477aff126e103f0be432ba2ab875620e3",
+      "severity": "review",
+      "path": "skills/case-study-writer/SKILL.md",
+      "kind": "private wording",
+      "reason": "Known intentional finding for this public repo."
+    },
+    {
+      "hash": "06b4319372129f24f0126df23bea30932b7e35835cb816b10bc7398b473b3524",
+      "severity": "review",
+      "path": "skills/case-study-writer/references/case-study-template.md",
+      "kind": "private wording",
+      "reason": "Known intentional finding for this public repo."
+    },
+    {
+      "hash": "7779442e9b30b0d1ee44a2686af1896ea12cd446daa799fadcea76f000010854",
+      "severity": "review",
+      "path": "skills/case-study-writer/references/safety-boundary-examples.md",
+      "kind": "private wording",
+      "reason": "Known intentional finding for this public repo."
+    },
+    {
+      "hash": "b2d1419fc947eafa57460e37b2a4f1c8ee7bad08e00890394720082ca5dc3ad3",
+      "severity": "review",
+      "path": "skills/github-safe-publisher/SKILL.md",
+      "kind": "credential keyword",
+      "reason": "Known intentional finding for this public repo."
+    },
+    {
+      "hash": "26f427ca8038db6064fed4f5d171f8eafd52ab638c731d813031eee0a0e2e03a",
+      "severity": "review",
+      "path": "skills/github-safe-publisher/SKILL.md",
+      "kind": "private wording",
+      "reason": "Known intentional finding for this public repo."
+    },
+    {
+      "hash": "44d056ee51f6054b2a442d5dfba0c55004d43d301f97913c9e539086c5d31b33",
+      "severity": "review",
+      "path": "skills/github-safe-publisher/references/public-safety-boundaries.md",
+      "kind": "credential keyword",
+      "reason": "Known intentional finding for this public repo."
+    },
+    {
+      "hash": "21c34b9e1a4d759131c5c381c9463232e6bd28ff7c7a23547fd02dfdcadd30d1",
+      "severity": "review",
+      "path": "skills/github-safe-publisher/references/public-safety-boundaries.md",
+      "kind": "credential keyword",
+      "reason": "Known intentional finding for this public repo."
+    },
+    {
+      "hash": "5cc592252c3a029b90ccf35cbe6656096e7abba3e881e46a43a3c4a15c760240",
+      "severity": "review",
+      "path": "skills/github-safe-publisher/references/release-workflow.md",
+      "kind": "credential keyword",
+      "reason": "Known intentional finding for this public repo."
+    },
+    {
+      "hash": "5eb13a794931e88d2792a1a72d407eb5b78aede05749f22526079d9ad933efe1",
+      "severity": "review",
+      "path": "skills/github-safe-publisher/scripts/scan_public_safety.py",
+      "kind": "credential keyword",
+      "reason": "Known intentional finding for this public repo."
+    },
+    {
+      "hash": "28dbb80b4df234b93d8baf14ef03574bc8d3eb37975f8173359eee7958319ef2",
+      "severity": "review",
+      "path": "skills/github-safe-publisher/scripts/scan_public_safety.py",
+      "kind": "credential keyword",
+      "reason": "Known intentional finding for this public repo."
+    },
+    {
+      "hash": "ffa347c6bae720b172f1199bf6aeaadb6d6544045fd15c365740b74be02070fe",
+      "severity": "review",
+      "path": "skills/github-safe-publisher/scripts/scan_public_safety.py",
+      "kind": "credential keyword",
+      "reason": "Known intentional finding for this public repo."
+    },
+    {
+      "hash": "620a6207fe5d050693037d0671b5bad5059421660916f138f818252a9945d80f",
+      "severity": "review",
+      "path": "skills/github-safe-publisher/scripts/scan_public_safety.py",
+      "kind": "private wording",
+      "reason": "Known intentional finding for this public repo."
+    },
+    {
+      "hash": "ee7d218ffa0ad5032e24854f8b3d0d6ecf1a0b5b8667dc1edadcb35c82088597",
+      "severity": "review",
+      "path": "skills/research-brief-curator/SKILL.md",
+      "kind": "private wording",
+      "reason": "Known intentional finding for this public repo."
+    },
+    {
+      "hash": "7bb24fe4484137b09098747029d8fe326630203b3295c4d278843e4e961e3e09",
+      "severity": "review",
+      "path": "skills/research-brief-curator/scripts/build_brief_skeleton.py",
+      "kind": "credential keyword",
+      "reason": "Known intentional finding for this public repo."
+    },
+    {
+      "hash": "71cd9afda6becec78e6889576f2927e7b931dc633133961cb70696cf343ba53f",
+      "severity": "review",
+      "path": "skills/skill-reviewer/SKILL.md",
+      "kind": "credential keyword",
+      "reason": "Known intentional finding for this public repo."
+    }
+  ]
+}

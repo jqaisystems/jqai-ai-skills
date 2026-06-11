@@ -35,6 +35,8 @@ python scripts/scan_public_safety.py path/to/sanitized-draft
 
 If findings appear, fix them before moving into a public repo. Use `--json` when another tool needs structured results.
 
+For a public repo with a committed `.public-safety-baseline.json`, a normal folder scan suppresses known review findings and reports only new risks. Use `--no-baseline` before release when you want the complete raw review list.
+
 ## 4. Move To Public Repo
 
 Move or copy only the reviewed draft files into the intended public repository.

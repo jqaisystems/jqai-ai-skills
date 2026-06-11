@@ -60,6 +60,7 @@ When install behavior changes, also smoke-test one install into a temporary targ
 Scan every changed public candidate:
 
 ```bash
+python skills/github-safe-publisher/scripts/scan_public_safety.py .
 python skills/github-safe-publisher/scripts/scan_public_safety.py README.md
 python skills/github-safe-publisher/scripts/scan_public_safety.py START_HERE.md
 python skills/github-safe-publisher/scripts/scan_public_safety.py CHANGELOG.md
@@ -69,7 +70,7 @@ python skills/github-safe-publisher/scripts/scan_public_safety.py docs/announcem
 
 The scanner is a guardrail, not the final decision. A clean scan still needs manual diff review.
 
-If a file contains an intentional safety warning, document that it is a review finding and confirm there are no blocking findings.
+The repo-level scan uses `.public-safety-baseline.json` to suppress known review findings. Use `--no-baseline` to inspect the complete raw list before changing the baseline. Never baseline blocking findings.
 
 ## 5. Stage Named Files Only
 
