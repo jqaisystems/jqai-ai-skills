@@ -86,49 +86,14 @@ Use $demo-animation-v2 to create a responsive animated walkthrough.
 
 ## Example Artifacts
 
-- [`START_HERE.md`](START_HERE.md) is the top-level onboarding path through the repo.
-- [`QUICK_REFERENCE.md`](QUICK_REFERENCE.md) is the short command and link map for first-use, install checks, examples, and release helpers.
-- [`docs/examples/visitor-paths.md`](docs/examples/visitor-paths.md) routes visitors through evaluation, install, and public-proof publishing paths.
+Every skill ships with public-safe proof: fake-data samples, guides, and checklists a visitor can inspect before installing anything. The short list below covers the main entry points; everything else is one click away.
+
+- [`docs/examples/README.md`](docs/examples/README.md) is the full index of public-safe samples, walkthroughs, workflow bundles, and first-run outputs.
 - [`docs/examples/public-proof-index.md`](docs/examples/public-proof-index.md) gathers the install, safety, sample, system, and visual proof assets in one place.
-- [`docs/examples/first-install-proof.md`](docs/examples/first-install-proof.md) ties clone, first-skill choice, temporary install, folder verification, fake candidate run, and expected review comparison into one proof trail.
-- [`docs/examples/update-after-release-proof.md`](docs/examples/update-after-release-proof.md) ties pull, change review, temporary update test, reinstall, reload, and fake post-update check into one proof trail.
-- [`docs/examples/utility-skill-proof-pack.md`](docs/examples/utility-skill-proof-pack.md) shows fake output shapes for `web-scraper`, `code-deduplicator`, and `em-dash-remover`.
-- [`docs/examples/demo-animation-v2-walkthrough-sample.md`](docs/examples/demo-animation-v2-walkthrough-sample.md) shows the expected structure, pacing, and review checks for a finished responsive demo walkthrough.
-- [`docs/examples/release-showcase-handoff-sample.md`](docs/examples/release-showcase-handoff-sample.md) shows the release-to-showcase path from GitHub release to profile, website package, live verification, and final `READY` status.
-- [`docs/guides/evaluate-skill-library.md`](docs/guides/evaluate-skill-library.md) gives visitors a trust and install readiness checklist before using the repo.
-- [`docs/guides/first-skill-scorecard.md`](docs/guides/first-skill-scorecard.md) helps visitors pick one safe, testable first skill after evaluation.
-- [`docs/examples/first-skill-walkthrough.md`](docs/examples/first-skill-walkthrough.md) shows the complete fake-data path after choosing `github-safe-publisher` as the first skill.
-- [`docs/examples/first-skill-candidate/README.md`](docs/examples/first-skill-candidate/README.md) provides a ready fake candidate folder for the first `github-safe-publisher` review.
-- [`docs/examples/first-skill-candidate/expected-review.md`](docs/examples/first-skill-candidate/expected-review.md) shows the expected `READY` review output for that exact candidate folder.
-- [`docs/examples/quick-reference-walkthrough.md`](docs/examples/quick-reference-walkthrough.md) walks from clone to first safe prompt using the quick reference.
-- [`INSTALL.md`](INSTALL.md) is the short command reference for installing one skill, all skills, or a custom test target.
-- [`docs/guides/install-faq.md`](docs/guides/install-faq.md) answers common first-install, update, target, reload, and removal questions.
-- [`docs/guides/skill-review-checklist.md`](docs/guides/skill-review-checklist.md) helps review permissions, scripts, risky wording, and first-run safety before installing a skill.
-- [`docs/guides/install-verification.md`](docs/guides/install-verification.md) confirms an install target, copied folder, reload, and first prompt before real work.
-- [`docs/guides/update-installed-skills.md`](docs/guides/update-installed-skills.md) explains how to refresh installed skills safely after repo updates.
-- [`docs/examples/install-smoke-test-sample.md`](docs/examples/install-smoke-test-sample.md) shows a disposable install smoke test with expected terminal checks.
-- [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md) helps fix install target, reload, shell, reinstall, and removal issues.
-- [`CHANGELOG.md`](CHANGELOG.md) tracks public releases and top-level repo changes.
-- [`RELEASE_CHECKLIST.md`](RELEASE_CHECKLIST.md) documents the safe release routine for validation, scanning, tagging, profile updates, website handoff, and live verification.
-- [`SECURITY.md`](SECURITY.md) explains responsible use, sensitive issue reporting, install safety, and public publishing boundaries.
-- [`ROADMAP.md`](ROADMAP.md) shows the public-safe direction for near-term skill library work.
-- [`SUPPORT.md`](SUPPORT.md) explains where to ask for help and what not to post publicly.
-- [`docs/skill-quality-matrix.md`](docs/skill-quality-matrix.md) summarizes current skill maturity, visible proof, safety sensitivity, and safest install notes.
-- [`docs/guides/skill-anatomy.md`](docs/guides/skill-anatomy.md) explains what each required and optional skill folder file does.
-- [`docs/catalog.md`](docs/catalog.md) is the complete public catalog of all installable skills, recommended bundles, and safe install defaults.
-- [`docs/guides/one-minute-install.md`](docs/guides/one-minute-install.md) shows the fastest path to install one skill, reload your tool, and run a first prompt.
-- [`docs/examples/README.md`](docs/examples/README.md) is the index for public-safe samples, workflow bundles, and first-run outputs.
-- [`docs/examples/install-smoke-test-sample.md`](docs/examples/install-smoke-test-sample.md) shows the expected shape of a temporary install check before real use.
-- [`docs/examples/skill-request-example.md`](docs/examples/skill-request-example.md) shows how to propose a new skill with fictional, public-safe material.
-- [`docs/examples/first-run-github-safe-publisher.md`](docs/examples/first-run-github-safe-publisher.md) shows the expected first-run output shape for `github-safe-publisher` using fake files.
-- [`docs/examples/skill-reviewer-sample.md`](docs/examples/skill-reviewer-sample.md) shows `READY`, `REVIEW`, and `BLOCK` decisions for fictional skill folders.
-- [`docs/examples/workflow-bundles.md`](docs/examples/workflow-bundles.md) shows three practical multi-skill paths: public GitHub publishing, content and research, and demo launch.
-- [`docs/examples/github-safe-publisher-sample-review.md`](docs/examples/github-safe-publisher-sample-review.md) shows the `github-safe-publisher` safety verdict, scanner summary, and manual review gate using fake files.
-- [`docs/examples/case-study-writer-sample.md`](docs/examples/case-study-writer-sample.md) shows the `case-study-writer` case study shape using a fictional review queue workflow.
-- [`docs/examples/research-brief-curator-sample.md`](docs/examples/research-brief-curator-sample.md) shows the `research-brief-curator` output shape using fake public sources and review labels.
-- [`docs/examples/release-announcement-writer-sample.md`](docs/examples/release-announcement-writer-sample.md) shows release notes, website copy, and a compact post from a fake changelog.
-- [`docs/examples/outreach-pipeline-designer-sample.md`](docs/examples/outreach-pipeline-designer-sample.md) shows a human-reviewed outreach workflow with fake prospects and approval gates.
-- [`docs/examples/etsy-listing-optimizer-sample.md`](docs/examples/etsy-listing-optimizer-sample.md) shows a fictional marketplace listing audit with title, tag, description, and safety notes.
+- [`docs/catalog.md`](docs/catalog.md) is the complete catalog of all installable skills, recommended bundles, and safe install defaults.
+- [`docs/skill-quality-matrix.md`](docs/skill-quality-matrix.md) compares skill maturity, visible proof, safety sensitivity, and safest install notes.
+- [`INSTALL.md`](INSTALL.md), [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md), and the guides in [`docs/guides/`](docs/guides/) cover install, verification, update, review, and first-skill selection routines.
+- [`CHANGELOG.md`](CHANGELOG.md), [`RELEASE_CHECKLIST.md`](RELEASE_CHECKLIST.md), [`SECURITY.md`](SECURITY.md), [`ROADMAP.md`](ROADMAP.md), and [`SUPPORT.md`](SUPPORT.md) document how this repo is maintained and released.
 
 ## Skill Folder Structure
 
