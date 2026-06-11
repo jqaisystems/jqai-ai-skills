@@ -1,0 +1,4 @@
+interface:
+  display_name: "Cold Outreach Writer"
+  short_description: "Draft a personalised cold email, subjects, LinkedIn note, and follow-up"
+  default_prompt: "Use $cold-outreach-writer to draft a cold email for this prospect from my research notes."

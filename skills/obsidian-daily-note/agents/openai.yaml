@@ -1,0 +1,4 @@
+interface:
+  display_name: "Obsidian Daily Note"
+  short_description: "Append to today's Obsidian daily note from the terminal"
+  default_prompt: "Use $obsidian-daily-note to log this to today's daily note."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vault Janitor"
+  short_description: "Find folder junk and report it with sizes; deletes only what you approve"
+  default_prompt: "Use $vault-janitor to scan this folder and report what is safe to clean."

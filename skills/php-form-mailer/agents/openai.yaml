@@ -1,0 +1,4 @@
+interface:
+  display_name: "PHP Form Mailer"
+  short_description: "Wire any HTML form to a two-email PHP handler"
+  default_prompt: "Use $php-form-mailer to make this form send a notification email to me and a branded confirmation to the submitter."

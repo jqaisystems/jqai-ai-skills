@@ -6,7 +6,7 @@ These skills are small, portable instruction folders for Claude/Codex-style work
 
 [![Website](https://img.shields.io/badge/Website-ai.joaoqueiros.com-111827?style=for-the-badge)](https://www.ai.joaoqueiros.com)
 [![License](https://img.shields.io/badge/License-MIT-059669?style=for-the-badge)](LICENSE)
-[![Release](https://img.shields.io/badge/Release-v0.7.5-2563eb?style=for-the-badge)](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.7.5)
+[![Release](https://img.shields.io/badge/Release-v0.8.0-2563eb?style=for-the-badge)](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.8.0)
 [![Validate skills](https://github.com/jqaisystems/jqai-ai-skills/actions/workflows/validate.yml/badge.svg)](https://github.com/jqaisystems/jqai-ai-skills/actions/workflows/validate.yml)
 
 ## Start Here
@@ -66,12 +66,21 @@ Example prompts:
 Use $github-safe-publisher to prepare this repo for a public release.
 Use $case-study-writer to turn this private project summary into a public-safe case study.
 Use $outreach-pipeline-designer to design a safe human-reviewed prospecting workflow.
+Use $cold-outreach-writer to draft a cold email for this prospect from my research notes.
+Use $lead-scorer to score this lead list against my rubric and rank it.
 Use $etsy-listing-optimizer to audit and rewrite a marketplace listing safely.
 Use $research-brief-curator to turn public links into a safe weekly research brief.
 Use $release-announcement-writer to turn this changelog into release notes and a launch post.
 Use $skill-reviewer to audit this downloaded skill before installing it.
 Use $em-dash-remover to clean this landing page copy.
 Use $code-deduplicator to consolidate repeated formatting helpers in this sample.
+Use $brand-voice-linter to check this copy against our voice guide.
+Use $php-form-mailer to make this contact form send email without a third-party service.
+Use $client-intake-builder to create a branded intake questionnaire for this project.
+Use $llms-txt-generator to create an llms.txt for this site.
+Use $vault-janitor to scan this folder and report what is safe to clean.
+Use $obsidian-daily-note to log this to today's daily note.
+Use $idea-inbox to capture this idea into my ideas folder.
 Use $demo-animation-v2 to create a responsive animated walkthrough.
 ```
 
@@ -158,6 +167,8 @@ For a field-by-field walkthrough, use [`docs/guides/skill-anatomy.md`](docs/guid
 | Skill | File | Use |
 |---|---|---|
 | Outreach Pipeline Designer | [`skills/outreach-pipeline-designer/SKILL.md`](skills/outreach-pipeline-designer/SKILL.md) | Design safe human-reviewed prospecting and outreach workflows. |
+| Cold Outreach Writer | [`skills/cold-outreach-writer/SKILL.md`](skills/cold-outreach-writer/SKILL.md) | Draft a personalised cold email, subject lines, LinkedIn note, and follow-up from research notes. |
+| Lead Scorer | [`skills/lead-scorer/SKILL.md`](skills/lead-scorer/SKILL.md) | Rank a lead list into hot, warm, and cold tiers against your own rubric. |
 | Etsy Listing Optimizer | [`skills/etsy-listing-optimizer/SKILL.md`](skills/etsy-listing-optimizer/SKILL.md) | Audit, rewrite, batch, and monitor marketplace listings. |
 
 ### Content & Research
@@ -165,14 +176,26 @@ For a field-by-field walkthrough, use [`docs/guides/skill-anatomy.md`](docs/guid
 | Skill | File | Use |
 |---|---|---|
 | Research Brief Curator | [`skills/research-brief-curator/SKILL.md`](skills/research-brief-curator/SKILL.md) | Turn public links and notes into source-aware research briefs with review gates. |
+| llms.txt Generator | [`skills/llms-txt-generator/SKILL.md`](skills/llms-txt-generator/SKILL.md) | Generate a spec-compliant llms.txt map of a website for AI assistants. |
 | Web Scraper | [`skills/web-scraper/SKILL.md`](skills/web-scraper/SKILL.md) | Extract public page content safely into structured notes. |
 | Em Dash Remover | [`skills/em-dash-remover/SKILL.md`](skills/em-dash-remover/SKILL.md) | Clean one common AI-writing tell from copy. |
+| Brand Voice Linter | [`skills/brand-voice-linter/SKILL.md`](skills/brand-voice-linter/SKILL.md) | Lint copy against a brand voice guide: buzzwords, hedging, superlatives, AI tells. |
 
 ### Dev Workflow
 
 | Skill | File | Use |
 |---|---|---|
 | Code Deduplicator | [`skills/code-deduplicator/SKILL.md`](skills/code-deduplicator/SKILL.md) | Safely consolidate repeated code patterns. |
+| PHP Form Mailer | [`skills/php-form-mailer/SKILL.md`](skills/php-form-mailer/SKILL.md) | Wire any HTML form to a two-email PHP handler with no form SaaS. |
+| Client Intake Builder | [`skills/client-intake-builder/SKILL.md`](skills/client-intake-builder/SKILL.md) | Generate a branded single-file client intake questionnaire. |
+| Vault Janitor | [`skills/vault-janitor/SKILL.md`](skills/vault-janitor/SKILL.md) | Find folder junk and report it with sizes; deletes only what you approve. |
+
+### Notes & Productivity
+
+| Skill | File | Use |
+|---|---|---|
+| Obsidian Daily Note | [`skills/obsidian-daily-note/SKILL.md`](skills/obsidian-daily-note/SKILL.md) | Append to today's Obsidian daily note from the terminal. |
+| Idea Inbox | [`skills/idea-inbox/SKILL.md`](skills/idea-inbox/SKILL.md) | Capture raw ideas as dated, tagged, indexed markdown files. |
 
 ### Demo & Presentation
 
@@ -190,13 +213,22 @@ For the fastest guided install, see [`docs/guides/one-minute-install.md`](docs/g
 | Publish private work without leaking secrets | [`github-safe-publisher`](skills/github-safe-publisher/SKILL.md) |
 | Turn internal work into client-readable proof | [`case-study-writer`](skills/case-study-writer/SKILL.md) |
 | Design a review-first sales or prospecting workflow | [`outreach-pipeline-designer`](skills/outreach-pipeline-designer/SKILL.md) |
+| Draft a personalised cold email from research notes | [`cold-outreach-writer`](skills/cold-outreach-writer/SKILL.md) |
+| Decide which leads to contact first | [`lead-scorer`](skills/lead-scorer/SKILL.md) |
 | Improve a marketplace listing safely | [`etsy-listing-optimizer`](skills/etsy-listing-optimizer/SKILL.md) |
 | Turn public links into a reviewed research brief | [`research-brief-curator`](skills/research-brief-curator/SKILL.md) |
 | Package release notes or a launch post | [`release-announcement-writer`](skills/release-announcement-writer/SKILL.md) |
 | Review a downloaded skill before installing it | [`skill-reviewer`](skills/skill-reviewer/SKILL.md) |
 | Extract structured data from public pages | [`web-scraper`](skills/web-scraper/SKILL.md) |
 | Clean AI-ish punctuation from copy | [`em-dash-remover`](skills/em-dash-remover/SKILL.md) |
+| Enforce a full brand voice guide on copy | [`brand-voice-linter`](skills/brand-voice-linter/SKILL.md) |
 | Reduce repeated code patterns | [`code-deduplicator`](skills/code-deduplicator/SKILL.md) |
+| Make a static-site form send email without a service | [`php-form-mailer`](skills/php-form-mailer/SKILL.md) |
+| Onboard clients with a branded questionnaire | [`client-intake-builder`](skills/client-intake-builder/SKILL.md) |
+| Make a website readable and citable by AI assistants | [`llms-txt-generator`](skills/llms-txt-generator/SKILL.md) |
+| Find out what is eating a folder's disk space | [`vault-janitor`](skills/vault-janitor/SKILL.md) |
+| Log work and thoughts to an Obsidian daily note | [`obsidian-daily-note`](skills/obsidian-daily-note/SKILL.md) |
+| Capture ideas without losing them in the repo root | [`idea-inbox`](skills/idea-inbox/SKILL.md) |
 | Build a responsive walkthrough demo | [`demo-animation-v2`](skills/demo-animation-v2/SKILL.md) |
 | Build a legacy desktop-only walkthrough demo | [`demo-animation`](skills/demo-animation/SKILL.md) |
 

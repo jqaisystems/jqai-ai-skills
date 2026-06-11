@@ -1,6 +1,6 @@
 # Skill Quality Matrix
 
-Current as of v0.7.5.
+Current as of v0.8.0.
 
 Use this matrix to compare the public skills by maturity, visible proof, safety sensitivity, and install notes. It is a practical adoption guide, not a certification. For the browsable examples index, use [`docs/examples/README.md`](examples/README.md). For the folder contract behind every skill, use [`docs/guides/skill-anatomy.md`](guides/skill-anatomy.md). For the complete first-install trust path, use [`docs/examples/first-install-proof.md`](examples/first-install-proof.md). For the post-release refresh path, use [`docs/examples/update-after-release-proof.md`](examples/update-after-release-proof.md). For smaller utility skill examples, use [`docs/examples/utility-skill-proof-pack.md`](examples/utility-skill-proof-pack.md). For responsive demo output proof, use [`docs/examples/demo-animation-v2-walkthrough-sample.md`](examples/demo-animation-v2-walkthrough-sample.md). For release-to-showcase handoff proof, use [`docs/examples/release-showcase-handoff-sample.md`](examples/release-showcase-handoff-sample.md).
 
@@ -20,6 +20,15 @@ Use this matrix to compare the public skills by maturity, visible proof, safety 
 | [`code-deduplicator`](../skills/code-deduplicator/SKILL.md) | Development workflow | Utility skill | Utility proof pack, catalog entry, and common prompt examples | Medium | Review diffs carefully before applying code changes. |
 | [`demo-animation-v2`](../skills/demo-animation-v2/SKILL.md) | Demo and presentation | Recommended demo skill | Responsive HTML template asset, rendered walkthrough sample, catalog entry, and demo launch bundle coverage | Low | Prefer this for new walkthrough demos; review the sample for pacing, captions, mobile controls, and safety checks. |
 | [`demo-animation`](../skills/demo-animation/SKILL.md) | Demo and presentation | Legacy demo skill | Legacy engine reference and catalog entry | Low | Keep for older desktop-oriented demos; use v2 for new responsive demos. |
+| [`php-form-mailer`](../skills/php-form-mailer/SKILL.md) | Development workflow | New public skill | Catalog entry and README prompt examples | Medium | Configure your own addresses via the ask-once config; test with a curl POST before going live. |
+| [`client-intake-builder`](../skills/client-intake-builder/SKILL.md) | Development workflow | New public skill | Catalog entry and README prompt examples | Low | Review the generated form in a browser before sending it to a client. |
+| [`cold-outreach-writer`](../skills/cold-outreach-writer/SKILL.md) | Growth and outreach | New public skill | Catalog entry and README prompt examples | High | Drafts only; a human reviews and sends every message from their own inbox. |
+| [`lead-scorer`](../skills/lead-scorer/SKILL.md) | Growth and outreach | New public skill | Catalog entry and README prompt examples | High | Keep lead data local; write the rubric before scoring and audit reasons, not just numbers. |
+| [`brand-voice-linter`](../skills/brand-voice-linter/SKILL.md) | Content and copy | New public skill | Catalog entry and README prompt examples | Low | Run report-only first; apply fixes after reviewing the suggested rewrites. |
+| [`obsidian-daily-note`](../skills/obsidian-daily-note/SKILL.md) | Notes and productivity | New public skill | Catalog entry and README prompt examples | Low | Confirm the vault path on first run; the skill is append-only by rule. |
+| [`idea-inbox`](../skills/idea-inbox/SKILL.md) | Notes and productivity | New public skill | Catalog entry and README prompt examples | Low | Point it at a dedicated ideas folder; it never edits or deletes existing ideas. |
+| [`llms-txt-generator`](../skills/llms-txt-generator/SKILL.md) | Content and AI search | New public skill | Catalog entry and README prompt examples | Medium | Review the summary blockquote personally; it is the line AIs will quote. |
+| [`vault-janitor`](../skills/vault-janitor/SKILL.md) | Development workflow | New public skill | Catalog entry and README prompt examples | High | Run the read-only scan first; approve specific groups and prefer the archive over hard deletion. |
 
 ## Coverage Signals
 

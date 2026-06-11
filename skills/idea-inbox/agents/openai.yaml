@@ -1,0 +1,4 @@
+interface:
+  display_name: "Idea Inbox"
+  short_description: "Capture raw ideas as dated, indexed markdown files"
+  default_prompt: "Use $idea-inbox to capture this idea into my ideas folder."

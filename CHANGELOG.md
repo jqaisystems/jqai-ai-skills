@@ -4,6 +4,25 @@ Public release history for JQ AI Skills.
 
 The social preview image is intentionally stable for 2026 and is not updated for every release.
 
+## [v0.8.0](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.8.0) - 2026-06-11
+
+Added nine new skills, growing the library from 12 to 21.
+
+- Added `php-form-mailer`: wire any HTML form to a two-email PHP handler with no form SaaS.
+- Added `client-intake-builder`: generate a branded single-file client intake questionnaire from four question banks.
+- Added `cold-outreach-writer`: draft one personalised cold email with subject lines, LinkedIn note, and follow-up; drafts only.
+- Added `lead-scorer`: rank a lead list into hot, warm, and cold tiers against a user-defined rubric.
+- Added `brand-voice-linter`: lint copy against a voice guide for buzzwords, hedging, superlatives, and AI tells.
+- Added `obsidian-daily-note`: append to today's Obsidian daily note from the terminal, append-only.
+- Added `idea-inbox`: capture raw ideas as dated, tagged, indexed markdown files.
+- Added `llms-txt-generator`: generate a spec-compliant llms.txt map of a website for AI assistants.
+- Added `vault-janitor`: report-first folder junk scanner with sized groups and archive-first cleanup.
+- All nine use ask-once configuration files instead of hardcoded personal data, and report or draft before acting.
+- Updated the README with a Notes & Productivity category, nine prompt examples, and catalog rows for each skill.
+- Updated `docs/catalog.md` and `docs/skill-quality-matrix.md` with the nine new skills.
+- Added a v0.8.0 release announcement.
+- Kept the stable 2026 social preview unchanged.
+
 ## [v0.7.5](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.7.5) - 2026-06-06
 
 Added a release-to-showcase handoff proof sample.

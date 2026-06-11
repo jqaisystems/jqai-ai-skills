@@ -13,11 +13,20 @@ If you are new to the repo, start with [`START_HERE.md`](../START_HERE.md). For 
 | Public proof | [`case-study-writer`](../skills/case-study-writer/SKILL.md) | Turning private project work into public-safe case studies. | `.\install.ps1 case-study-writer` |
 | Public proof | [`release-announcement-writer`](../skills/release-announcement-writer/SKILL.md) | Turning shipped changes into release notes and launch copy. | `.\install.ps1 release-announcement-writer` |
 | Growth and outreach | [`outreach-pipeline-designer`](../skills/outreach-pipeline-designer/SKILL.md) | Designing review-first prospecting and lead workflows. | `.\install.ps1 outreach-pipeline-designer` |
+| Growth and outreach | [`cold-outreach-writer`](../skills/cold-outreach-writer/SKILL.md) | Drafting one personalised cold email, subject lines, LinkedIn note, and follow-up. | `.\install.ps1 cold-outreach-writer` |
+| Growth and outreach | [`lead-scorer`](../skills/lead-scorer/SKILL.md) | Ranking a lead list into hot, warm, and cold tiers against your own rubric. | `.\install.ps1 lead-scorer` |
 | Growth and marketplace | [`etsy-listing-optimizer`](../skills/etsy-listing-optimizer/SKILL.md) | Improving marketplace listing copy and keyword fit safely. | `.\install.ps1 etsy-listing-optimizer` |
 | Content and research | [`research-brief-curator`](../skills/research-brief-curator/SKILL.md) | Turning public links and approved notes into research briefs. | `.\install.ps1 research-brief-curator` |
+| Content and AI search | [`llms-txt-generator`](../skills/llms-txt-generator/SKILL.md) | Generating a spec-compliant llms.txt map of a website for AI assistants. | `.\install.ps1 llms-txt-generator` |
 | Content and extraction | [`web-scraper`](../skills/web-scraper/SKILL.md) | Generating browser console scripts for public or authorized paginated extraction. | `.\install.ps1 web-scraper` |
 | Content cleanup | [`em-dash-remover`](../skills/em-dash-remover/SKILL.md) | Cleaning em dashes from copy without changing meaning. | `.\install.ps1 em-dash-remover` |
+| Content cleanup | [`brand-voice-linter`](../skills/brand-voice-linter/SKILL.md) | Linting copy against a brand voice guide with suggested rewrites. | `.\install.ps1 brand-voice-linter` |
 | Development | [`code-deduplicator`](../skills/code-deduplicator/SKILL.md) | Consolidating repeated code patterns safely. | `.\install.ps1 code-deduplicator` |
+| Development | [`php-form-mailer`](../skills/php-form-mailer/SKILL.md) | Wiring any HTML form to a two-email PHP handler with no form SaaS. | `.\install.ps1 php-form-mailer` |
+| Development | [`client-intake-builder`](../skills/client-intake-builder/SKILL.md) | Generating a branded single-file client intake questionnaire. | `.\install.ps1 client-intake-builder` |
+| Development | [`vault-janitor`](../skills/vault-janitor/SKILL.md) | Finding folder junk and reporting it with sizes before any cleanup. | `.\install.ps1 vault-janitor` |
+| Notes and productivity | [`obsidian-daily-note`](../skills/obsidian-daily-note/SKILL.md) | Appending to today's Obsidian daily note from the terminal. | `.\install.ps1 obsidian-daily-note` |
+| Notes and productivity | [`idea-inbox`](../skills/idea-inbox/SKILL.md) | Capturing raw ideas as dated, tagged, indexed markdown files. | `.\install.ps1 idea-inbox` |
 | Demo and presentation | [`demo-animation-v2`](../skills/demo-animation-v2/SKILL.md) | Building responsive product walkthrough demos. | `.\install.ps1 demo-animation-v2` |
 | Demo and presentation | [`demo-animation`](../skills/demo-animation/SKILL.md) | Building the older desktop-oriented demo style. | `.\install.ps1 demo-animation` |
 
@@ -267,6 +276,132 @@ Typical output:
 
 ```powershell
 .\install.ps1 demo-animation
+```
+
+### `php-form-mailer`
+
+**Use it for:** wiring an HTML form to a two-email PHP system: a structured notification to the site owner and a branded confirmation to the submitter.
+
+**Who it helps:** anyone running static or hand-coded sites on cPanel or shared PHP hosting who does not want a third-party form service.
+
+**Typical output:** one self-contained PHP handler with sanitisation and a honeypot, an updated form action and JS handler with a mailto fallback, and a live curl test.
+
+**Install:**
+
+```powershell
+.\install.ps1 php-form-mailer
+```
+
+### `client-intake-builder`
+
+**Use it for:** generating a branded, single-file HTML client intake questionnaire from one of four question banks: brand identity, web design, automation, or pre-call brief.
+
+**Who it helps:** freelancers and studios who want the client's first touchpoint to look like the work they sell, not a default form builder.
+
+**Typical output:** one production-ready HTML file with validation, progress, a honeypot, and a success state, ready to pair with `php-form-mailer`.
+
+**Install:**
+
+```powershell
+.\install.ps1 client-intake-builder
+```
+
+### `cold-outreach-writer`
+
+**Use it for:** drafting one personalised cold email under 180 words from a research block, plus three subject lines, a LinkedIn note, and a 7-day follow-up.
+
+**Who it helps:** freelancers and small studios doing targeted outreach to a researched shortlist, not mass sends.
+
+**Typical output:** a draft package for human review. The skill never sends anything and never fabricates claims.
+
+**Install:**
+
+```powershell
+.\install.ps1 cold-outreach-writer
+```
+
+### `lead-scorer`
+
+**Use it for:** ranking a lead list 0 to 100 into hot, warm, and cold tiers against a rubric you define once and reuse.
+
+**Who it helps:** anyone whose lead list is bigger than their outreach capacity and who wants reasons behind every score.
+
+**Typical output:** a ranked CSV with score, tier, reason, and next action per lead, plus a summary with per-tier counts and observed patterns. Thin-data leads get flagged for research, not guessed.
+
+**Install:**
+
+```powershell
+.\install.ps1 lead-scorer
+```
+
+### `brand-voice-linter`
+
+**Use it for:** linting copy against a voice guide: buzzword clusters, hedge language, vague superlatives, passive voice, exclamation marks, and AI-tell phrases.
+
+**Who it helps:** writers and brand owners who want their writing rules enforced on every draft, not remembered occasionally.
+
+**Typical output:** a violation report with line numbers, severity, and suggested rewrites. Report-only by default; fixes applied only on request.
+
+**Install:**
+
+```powershell
+.\install.ps1 brand-voice-linter
+```
+
+### `obsidian-daily-note`
+
+**Use it for:** creating or appending to today's daily note in an Obsidian vault without leaving the terminal.
+
+**Who it helps:** terminal-heavy workers whose daily logging habit dies on the context switch to a notes app.
+
+**Typical output:** a titled section appended to the correct dated note, using the vault's own folder and date format. Append-only by rule.
+
+**Install:**
+
+```powershell
+.\install.ps1 obsidian-daily-note
+```
+
+### `idea-inbox`
+
+**Use it for:** capturing a raw idea as a dated, tagged markdown file in a dedicated ideas folder with an index kept up to date.
+
+**Who it helps:** anyone whose ideas arrive mid-task and die in untitled files or memory.
+
+**Typical output:** one idea file with frontmatter plus an index entry under a category heading with a one-line hook. Never saves to the project root.
+
+**Install:**
+
+```powershell
+.\install.ps1 idea-inbox
+```
+
+### `llms-txt-generator`
+
+**Use it for:** generating a spec-compliant `llms.txt` so AI assistants and answer engines can understand and cite a website accurately.
+
+**Who it helps:** site owners who want AI systems to describe their business correctly instead of approximately.
+
+**Typical output:** an `llms.txt` for the site root with an accurate summary blockquote, sectioned page links with one honest line each, validated URLs, and private endpoints excluded.
+
+**Install:**
+
+```powershell
+.\install.ps1 llms-txt-generator
+```
+
+### `vault-janitor`
+
+**Use it for:** scanning a folder tree for accumulated junk: dependency folders, build caches, stray backups, logs, and OS litter.
+
+**Who it helps:** anyone with a working folder that feels heavy, before a backup, migration, or cleanup.
+
+**Typical output:** a `cleanup-report.md` with sized groups, top offenders, judgment-call flags, and recommendations ordered by most space per least risk. Report-only by default; archive-first when a cleanup list is approved.
+
+**Install:**
+
+```powershell
+.\install.ps1 vault-janitor
 ```
 
 ## Safe Install Defaults

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Client Intake Builder"
+  short_description: "Generate a branded single-file client intake questionnaire"
+  default_prompt: "Use $client-intake-builder to create a branded intake questionnaire for this project."

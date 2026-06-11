@@ -1,0 +1,4 @@
+interface:
+  display_name: "Brand Voice Linter"
+  short_description: "Lint copy against a brand voice guide and report violations"
+  default_prompt: "Use $brand-voice-linter to check this copy against our voice guide and report every violation."

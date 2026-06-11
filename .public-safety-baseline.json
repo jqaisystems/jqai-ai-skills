@@ -179,6 +179,13 @@
       "reason": "Known intentional finding for this public repo."
     },
     {
+      "hash": "f96601fd5eaca7bb139ebf2e1a4b5f48fa0e335497a31bf79527f6956b87e0b3",
+      "severity": "review",
+      "path": "skills/client-intake-builder/SKILL.md",
+      "kind": "private wording",
+      "reason": "Known intentional finding for this public repo."
+    },
+    {
       "hash": "b2d1419fc947eafa57460e37b2a4f1c8ee7bad08e00890394720082ca5dc3ad3",
       "severity": "review",
       "path": "skills/github-safe-publisher/SKILL.md",
@@ -238,6 +245,13 @@
       "hash": "620a6207fe5d050693037d0671b5bad5059421660916f138f818252a9945d80f",
       "severity": "review",
       "path": "skills/github-safe-publisher/scripts/scan_public_safety.py",
+      "kind": "private wording",
+      "reason": "Known intentional finding for this public repo."
+    },
+    {
+      "hash": "87685023bf3405c7bd3d19249ecff0607b2e68d47169f308cdaa0dd430fc262f",
+      "severity": "review",
+      "path": "skills/php-form-mailer/SKILL.md",
       "kind": "private wording",
       "reason": "Known intentional finding for this public repo."
     },

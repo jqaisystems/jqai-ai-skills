@@ -1,0 +1,4 @@
+interface:
+  display_name: "llms.txt Generator"
+  short_description: "Generate a spec-compliant llms.txt map of a website for AI assistants"
+  default_prompt: "Use $llms-txt-generator to create an llms.txt for this site."

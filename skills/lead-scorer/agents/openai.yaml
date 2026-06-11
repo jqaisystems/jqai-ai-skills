@@ -1,0 +1,4 @@
+interface:
+  display_name: "Lead Scorer"
+  short_description: "Rank a lead list into hot, warm, and cold tiers with reasons"
+  default_prompt: "Use $lead-scorer to score this lead list against my rubric and rank it."
