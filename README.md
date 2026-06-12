@@ -71,6 +71,8 @@ Use $lead-scorer to score this lead list against my rubric and rank it.
 Use $etsy-listing-optimizer to audit and rewrite a marketplace listing safely.
 Use $research-brief-curator to turn public links into a safe weekly research brief.
 Use $release-announcement-writer to turn this changelog into release notes and a launch post.
+Use $github-profile-proof-updater to refresh my GitHub profile assets and prepare the proof trail.
+Use $social-campaign-proof-tracker to turn this project update into LinkedIn/X copy, alt text, and follow-up notes.
 Use $skill-reviewer to audit this downloaded skill before installing it.
 Use $em-dash-remover to clean this landing page copy.
 Use $code-deduplicator to consolidate repeated formatting helpers in this sample.
@@ -126,6 +128,8 @@ For a field-by-field walkthrough, use [`docs/guides/skill-anatomy.md`](docs/guid
 |---|---|---|
 | Case Study Writer | [`skills/case-study-writer/SKILL.md`](skills/case-study-writer/SKILL.md) | Turn private project work into public-safe case studies. |
 | Release Announcement Writer | [`skills/release-announcement-writer/SKILL.md`](skills/release-announcement-writer/SKILL.md) | Turn changelogs and shipped changes into release notes, website blurbs, and launch posts. |
+| GitHub Profile Proof Updater | [`skills/github-profile-proof-updater/SKILL.md`](skills/github-profile-proof-updater/SKILL.md) | Refresh GitHub profile visuals, preserve README paths, verify live rendering, and document proof trails. |
+| Social Campaign Proof Tracker | [`skills/social-campaign-proof-tracker/SKILL.md`](skills/social-campaign-proof-tracker/SKILL.md) | Plan LinkedIn/X proof campaigns, alt text, published links, reply banks, and follow-up windows. |
 
 ### Growth & Outreach
 
@@ -183,6 +187,8 @@ For the fastest guided install, see [`docs/guides/one-minute-install.md`](docs/g
 | Improve a marketplace listing safely | [`etsy-listing-optimizer`](skills/etsy-listing-optimizer/SKILL.md) |
 | Turn public links into a reviewed research brief | [`research-brief-curator`](skills/research-brief-curator/SKILL.md) |
 | Package release notes or a launch post | [`release-announcement-writer`](skills/release-announcement-writer/SKILL.md) |
+| Refresh a GitHub profile as a public proof layer | [`github-profile-proof-updater`](skills/github-profile-proof-updater/SKILL.md) |
+| Track a LinkedIn/X proof campaign after publishing | [`social-campaign-proof-tracker`](skills/social-campaign-proof-tracker/SKILL.md) |
 | Review a downloaded skill before installing it | [`skill-reviewer`](skills/skill-reviewer/SKILL.md) |
 | Extract structured data from public pages | [`web-scraper`](skills/web-scraper/SKILL.md) |
 | Clean AI-ish punctuation from copy | [`em-dash-remover`](skills/em-dash-remover/SKILL.md) |

@@ -18,6 +18,8 @@ All linked examples use fictional, public, or generalized material. They do not 
 | Do the utility skills have fake-output proof? | [`utility-skill-proof-pack.md`](utility-skill-proof-pack.md) |
 | Is there proof for finished responsive demos? | [`demo-animation-v2-walkthrough-sample.md`](demo-animation-v2-walkthrough-sample.md) |
 | Is there proof for release-to-showcase handoff? | [`release-showcase-handoff-sample.md`](release-showcase-handoff-sample.md) |
+| Is there proof for GitHub profile refreshes? | [`github-profile-proof-updater-sample.md`](github-profile-proof-updater-sample.md) |
+| Is there proof for social campaign tracking? | [`social-campaign-proof-tracker-sample.md`](social-campaign-proof-tracker-sample.md) |
 | How do I evaluate trust and install readiness? | [`../guides/evaluate-skill-library.md`](../guides/evaluate-skill-library.md) |
 | Which skill should I install first? | [`../guides/first-skill-scorecard.md`](../guides/first-skill-scorecard.md) |
 | How do I run the selected skill safely? | [`first-skill-walkthrough.md`](first-skill-walkthrough.md) |
@@ -55,6 +57,8 @@ Good stopping point: after five minutes, a visitor should know what the repo con
 | [`case-study-writer-sample.md`](case-study-writer-sample.md) | A public-safe case study shape using a fictional review queue workflow. |
 | [`release-announcement-writer-sample.md`](release-announcement-writer-sample.md) | Release notes, website copy, and short launch post from a fake changelog. |
 | [`release-showcase-handoff-sample.md`](release-showcase-handoff-sample.md) | A fictional release handoff from GitHub release to profile, website package, live verification, and final `READY` note. |
+| [`github-profile-proof-updater-sample.md`](github-profile-proof-updater-sample.md) | A fictional GitHub profile asset refresh with README path preservation, live checks, and proof-trail update. |
+| [`social-campaign-proof-tracker-sample.md`](social-campaign-proof-tracker-sample.md) | A fictional LinkedIn/X proof campaign with copy, alt text, published links, and follow-up windows. |
 | [`skill-request-example.md`](skill-request-example.md) | A safe request shape for proposing a new skill with fictional material. |
 | [`../../SECURITY.md`](../../SECURITY.md) | Responsible-use, install-safety, sensitive issue, and public publishing boundaries. |
 | [`../../RELEASE_CHECKLIST.md`](../../RELEASE_CHECKLIST.md) | The safe release routine for validation, scans, diff review, tagging, profile update, and website handoff. |
@@ -71,6 +75,8 @@ Good stopping point: after five minutes, a visitor should know what the repo con
 | Utility skills | [`utility-skill-proof-pack.md`](utility-skill-proof-pack.md) |
 | Responsive demo walkthrough | [`demo-animation-v2-walkthrough-sample.md`](demo-animation-v2-walkthrough-sample.md) |
 | Release showcase handoff | [`release-showcase-handoff-sample.md`](release-showcase-handoff-sample.md) |
+| GitHub profile proof refresh | [`github-profile-proof-updater-sample.md`](github-profile-proof-updater-sample.md) |
+| Social campaign proof tracking | [`social-campaign-proof-tracker-sample.md`](social-campaign-proof-tracker-sample.md) |
 | Multi-skill workflows | [`workflow-bundles.md`](workflow-bundles.md) |
 
 ## System And Library Proof

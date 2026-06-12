@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub Profile Proof Updater"
+  short_description: "Refresh and verify GitHub profile proof"
+  default_prompt: "Use $github-profile-proof-updater to refresh my GitHub profile assets, verify the live page, and prepare the proof trail."

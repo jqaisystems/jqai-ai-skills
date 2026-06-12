@@ -186,6 +186,13 @@
       "reason": "Known intentional finding for this public repo."
     },
     {
+      "hash": "e2792cd828de8c76b823f6d17232cb321de486589c0cf3cd7668c1eb142ba053",
+      "severity": "review",
+      "path": "skills/github-profile-proof-updater/SKILL.md",
+      "kind": "private wording",
+      "reason": "Known intentional finding for this public repo."
+    },
+    {
       "hash": "b2d1419fc947eafa57460e37b2a4f1c8ee7bad08e00890394720082ca5dc3ad3",
       "severity": "review",
       "path": "skills/github-safe-publisher/SKILL.md",
@@ -274,6 +281,13 @@
       "severity": "review",
       "path": "skills/skill-reviewer/SKILL.md",
       "kind": "credential keyword",
+      "reason": "Known intentional finding for this public repo."
+    },
+    {
+      "hash": "bc576455e6bf39774626d9b63917d3d4028b2b18c5355ff5a3fa5bad83f3e4cf",
+      "severity": "review",
+      "path": "skills/social-campaign-proof-tracker/SKILL.md",
+      "kind": "private wording",
       "reason": "Known intentional finding for this public repo."
     }
   ]

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Social Campaign Proof Tracker"
+  short_description: "Track proof campaigns and follow-ups"
+  default_prompt: "Use $social-campaign-proof-tracker to turn this project update into LinkedIn/X copy, alt text, a proof trail, and follow-up notes."

@@ -99,6 +99,8 @@ Use $github-safe-publisher to review this README and docs folder before public r
 Use $github-safe-publisher to prepare this repo for a public release.
 Use $case-study-writer to turn this private project summary into a public-safe case study.
 Use $release-announcement-writer to turn this changelog into release notes and a launch post.
+Use $github-profile-proof-updater to refresh my GitHub profile assets and prepare the proof trail.
+Use $social-campaign-proof-tracker to turn this project update into LinkedIn/X copy, alt text, and follow-up notes.
 Use $skill-reviewer to audit this downloaded skill before installing it.
 Use $web-scraper to create a browser console script for this public demo directory.
 Use $code-deduplicator to consolidate repeated formatting helpers in this sample.
@@ -132,6 +134,8 @@ Useful links:
 | Utility skill proof pack | [`docs/examples/utility-skill-proof-pack.md`](docs/examples/utility-skill-proof-pack.md) |
 | Demo animation v2 sample | [`docs/examples/demo-animation-v2-walkthrough-sample.md`](docs/examples/demo-animation-v2-walkthrough-sample.md) |
 | Release showcase handoff sample | [`docs/examples/release-showcase-handoff-sample.md`](docs/examples/release-showcase-handoff-sample.md) |
+| GitHub profile proof updater sample | [`docs/examples/github-profile-proof-updater-sample.md`](docs/examples/github-profile-proof-updater-sample.md) |
+| Social campaign proof tracker sample | [`docs/examples/social-campaign-proof-tracker-sample.md`](docs/examples/social-campaign-proof-tracker-sample.md) |
 | Evaluation checklist | [`docs/guides/evaluate-skill-library.md`](docs/guides/evaluate-skill-library.md) |
 | First skill scorecard | [`docs/guides/first-skill-scorecard.md`](docs/guides/first-skill-scorecard.md) |
 | First skill walkthrough | [`docs/examples/first-skill-walkthrough.md`](docs/examples/first-skill-walkthrough.md) |

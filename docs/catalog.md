@@ -12,6 +12,8 @@ If you are new to the repo, start with [`START_HERE.md`](../START_HERE.md). For 
 | Safety and review | [`skill-reviewer`](../skills/skill-reviewer/SKILL.md) | Auditing downloaded or newly written skills before installing them. | `.\install.ps1 skill-reviewer` |
 | Public proof | [`case-study-writer`](../skills/case-study-writer/SKILL.md) | Turning private project work into public-safe case studies. | `.\install.ps1 case-study-writer` |
 | Public proof | [`release-announcement-writer`](../skills/release-announcement-writer/SKILL.md) | Turning shipped changes into release notes and launch copy. | `.\install.ps1 release-announcement-writer` |
+| Public proof | [`github-profile-proof-updater`](../skills/github-profile-proof-updater/SKILL.md) | Refreshing GitHub profile visuals, live checks, and proof trails. | `.\install.ps1 github-profile-proof-updater` |
+| Public proof | [`social-campaign-proof-tracker`](../skills/social-campaign-proof-tracker/SKILL.md) | Planning LinkedIn/X proof campaigns, links, alt text, and follow-ups. | `.\install.ps1 social-campaign-proof-tracker` |
 | Growth and outreach | [`outreach-pipeline-designer`](../skills/outreach-pipeline-designer/SKILL.md) | Designing review-first prospecting and lead workflows. | `.\install.ps1 outreach-pipeline-designer` |
 | Growth and outreach | [`cold-outreach-writer`](../skills/cold-outreach-writer/SKILL.md) | Drafting one personalised cold email, subject lines, LinkedIn note, and follow-up. | `.\install.ps1 cold-outreach-writer` |
 | Growth and outreach | [`lead-scorer`](../skills/lead-scorer/SKILL.md) | Ranking a lead list into hot, warm, and cold tiers against your own rubric. | `.\install.ps1 lead-scorer` |
@@ -49,6 +51,22 @@ Typical output:
 - Public-safe README or release copy.
 - Sanitized case study draft.
 - GitHub release notes, website blurb, and short launch post.
+
+### Proof Campaign Handoff
+
+Use this bundle when shipped work needs a profile update, public proof trail, and LinkedIn/X campaign follow-up.
+
+```powershell
+.\install.ps1 github-profile-proof-updater
+.\install.ps1 social-campaign-proof-tracker
+.\install.ps1 release-announcement-writer
+```
+
+Typical output:
+
+- GitHub profile asset refresh checklist.
+- Live profile verification notes.
+- Social post copy, alt text, published links, reply bank, and follow-up windows.
 
 ### Content And Research
 
@@ -152,6 +170,38 @@ Typical output:
 
 ```powershell
 .\install.ps1 release-announcement-writer
+```
+
+### `github-profile-proof-updater`
+
+**Use it for:** refreshing a GitHub profile or public proof layer, replacing visual assets while preserving README paths, validating live GitHub rendering, and recording proof-trail links.
+
+**Who it helps:** builders who use GitHub as a public credibility surface and want profile updates to be reviewable, safe, and repeatable.
+
+**Typical output:** changed asset list, image-reference verification, live profile check, proof-trail update, and next social handoff.
+
+**Sample:** [`docs/examples/github-profile-proof-updater-sample.md`](examples/github-profile-proof-updater-sample.md)
+
+**Install:**
+
+```powershell
+.\install.ps1 github-profile-proof-updater
+```
+
+### `social-campaign-proof-tracker`
+
+**Use it for:** turning a project update into LinkedIn/X proof copy, image or video order, alt text, published-link tracking, reply bank notes, and follow-up windows.
+
+**Who it helps:** builders who want public proof campaigns to become reusable evidence, not one-off posts that disappear into the feed.
+
+**Typical output:** platform-specific campaign recommendation, copy, alt text, proof-trail updates, and follow-up checklist.
+
+**Sample:** [`docs/examples/social-campaign-proof-tracker-sample.md`](examples/social-campaign-proof-tracker-sample.md)
+
+**Install:**
+
+```powershell
+.\install.ps1 social-campaign-proof-tracker
 ```
 
 ### `outreach-pipeline-designer`
@@ -426,6 +476,8 @@ Typical output:
 - Use the [`utility skill proof pack`](examples/utility-skill-proof-pack.md) when you want fake output shapes for `web-scraper`, `code-deduplicator`, and `em-dash-remover`.
 - Use the [`demo animation v2 walkthrough sample`](examples/demo-animation-v2-walkthrough-sample.md) when you want a public-safe finished demo shape.
 - Use the [`release showcase handoff sample`](examples/release-showcase-handoff-sample.md) when you want to align GitHub release, profile copy, website package, live verification, and final status.
+- Use the [`GitHub profile proof updater sample`](examples/github-profile-proof-updater-sample.md) when you want a profile asset refresh and proof-trail output shape.
+- Use the [`social campaign proof tracker sample`](examples/social-campaign-proof-tracker-sample.md) when you want a LinkedIn/X proof campaign output shape.
 - Compare with the [`install smoke-test sample`](examples/install-smoke-test-sample.md) when you want a disposable temporary-target example.
 - Use [`TROUBLESHOOTING.md`](../TROUBLESHOOTING.md) if a skill does not appear after install.
 - Use the [`one-minute install guide`](guides/one-minute-install.md) if you want the shortest verified path.
