@@ -4,14 +4,15 @@ Public release history for JQ AI Skills.
 
 The social preview image is intentionally stable for 2026 and is not updated for every release.
 
-## Unreleased
+## [v0.8.1](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.8.1) - 2026-06-13
 
-Prepared two proof-workflow skills for the next release.
+Added two proof-workflow skills.
 
 - Added `github-profile-proof-updater`: refresh GitHub profile visuals, preserve README image paths, verify live rendering, and document a proof trail.
 - Added `social-campaign-proof-tracker`: plan LinkedIn/X proof campaigns, write platform-specific copy, add alt text, track published links, and prepare follow-up notes.
 - Added public-safe samples for both proof-workflow skills.
 - Kept `client-intake-triage` private because `client-intake-builder` and `lead-scorer` now cover adjacent public needs.
+- Added a v0.8.1 release announcement.
 - Kept the stable 2026 social preview unchanged.
 
 ## [v0.8.0](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.8.0) - 2026-06-11
