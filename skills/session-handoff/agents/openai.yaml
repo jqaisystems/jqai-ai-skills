@@ -1,0 +1,4 @@
+interface:
+  display_name: "Session Handoff"
+  short_description: "Freeze session state into a start-here doc for instant resume"
+  default_prompt: "Use $session-handoff to wrap up this session into a START_HERE.md."

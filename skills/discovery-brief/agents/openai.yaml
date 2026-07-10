@@ -1,0 +1,4 @@
+interface:
+  display_name: "Discovery Brief"
+  short_description: "Interview through project discovery and write the brief plus strategy starter"
+  default_prompt: "Use $discovery-brief to run discovery for this client project."

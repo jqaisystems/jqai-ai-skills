@@ -1,0 +1,4 @@
+interface:
+  display_name: "Follow-up Radar"
+  short_description: "Find overdue outreach follow-ups and draft them, oldest first"
+  default_prompt: "Use $follow-up-radar to scan my outreach folder and show me what follow-ups are overdue."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Client Workspace Scaffolder"
+  short_description: "Scaffold a client project folder from your reusable template"
+  default_prompt: "Use $client-workspace-scaffolder to set up a folder for my new client."

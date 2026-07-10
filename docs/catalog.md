@@ -17,6 +17,15 @@ If you are new to the repo, start with [`START_HERE.md`](../START_HERE.md). For 
 | Growth and outreach | [`outreach-pipeline-designer`](../skills/outreach-pipeline-designer/SKILL.md) | Designing review-first prospecting and lead workflows. | `.\install.ps1 outreach-pipeline-designer` |
 | Growth and outreach | [`cold-outreach-writer`](../skills/cold-outreach-writer/SKILL.md) | Drafting one personalised cold email, subject lines, LinkedIn note, and follow-up. | `.\install.ps1 cold-outreach-writer` |
 | Growth and outreach | [`lead-scorer`](../skills/lead-scorer/SKILL.md) | Ranking a lead list into hot, warm, and cold tiers against your own rubric. | `.\install.ps1 lead-scorer` |
+| Growth and outreach | [`follow-up-radar`](../skills/follow-up-radar/SKILL.md) | Finding overdue outreach follow-ups and drafting them, oldest first. | `.\install.ps1 follow-up-radar` |
+| Client work | [`client-workspace-scaffolder`](../skills/client-workspace-scaffolder/SKILL.md) | Scaffolding a client project folder from your reusable structure template. | `.\install.ps1 client-workspace-scaffolder` |
+| Client work | [`discovery-brief`](../skills/discovery-brief/SKILL.md) | Running a discovery interview and writing the brief plus a strategy starter. | `.\install.ps1 discovery-brief` |
+| Client work | [`proposal-writer`](../skills/proposal-writer/SKILL.md) | Drafting a client proposal from your own service tiers and terms. | `.\install.ps1 proposal-writer` |
+| Agent workflow | [`skill-builder`](../skills/skill-builder/SKILL.md) | Authoring a new skill with the right storage tier, template, and registration. | `.\install.ps1 skill-builder` |
+| Agent workflow | [`session-handoff`](../skills/session-handoff/SKILL.md) | Freezing session state into a start-here doc for instant resume. | `.\install.ps1 session-handoff` |
+| Agent workflow | [`agents-md-writer`](../skills/agents-md-writer/SKILL.md) | Generating the AGENTS.md plus CLAUDE.md contract that shares skills across agents. | `.\install.ps1 agents-md-writer` |
+| Agent workflow | [`ops-status-report`](../skills/ops-status-report/SKILL.md) | Compiling a workspace status snapshot with an Attention Needed section. | `.\install.ps1 ops-status-report` |
+| Demo and presentation | [`screen-recorder`](../skills/screen-recorder/SKILL.md) | Recording a drag-selected region of the Windows desktop to a clean MP4. | `.\install.ps1 screen-recorder` |
 | Growth and marketplace | [`etsy-listing-optimizer`](../skills/etsy-listing-optimizer/SKILL.md) | Improving marketplace listing copy and keyword fit safely. | `.\install.ps1 etsy-listing-optimizer` |
 | Content and research | [`research-brief-curator`](../skills/research-brief-curator/SKILL.md) | Turning public links and approved notes into research briefs. | `.\install.ps1 research-brief-curator` |
 | Content and AI search | [`llms-txt-generator`](../skills/llms-txt-generator/SKILL.md) | Generating a spec-compliant llms.txt map of a website for AI assistants. | `.\install.ps1 llms-txt-generator` |
@@ -83,6 +92,40 @@ Typical output:
 - Source-aware research brief.
 - Browser console extraction script for public or authorized pages.
 - Cleaned copy with meaning preserved.
+
+### Freelance Client Flow
+
+Use this bundle when you run client work end to end: onboard, discover, propose, and chase the follow-ups.
+
+```powershell
+.\install.ps1 client-workspace-scaffolder
+.\install.ps1 discovery-brief
+.\install.ps1 proposal-writer
+.\install.ps1 follow-up-radar
+```
+
+Typical output:
+
+- A ready client folder with a filled brief and feedback log.
+- A discovery brief and strategy starter document.
+- A reviewed proposal with an investment table.
+- A follow-up radar report with drafts for everything overdue.
+
+### Agent Workflow Setup
+
+Use this bundle when you want your AI-assisted work itself to be repeatable across sessions, workspaces, and agents.
+
+```powershell
+.\install.ps1 skill-builder
+.\install.ps1 session-handoff
+.\install.ps1 agents-md-writer
+```
+
+Typical output:
+
+- A new skill folder in the right tier, registered and verified.
+- A START_HERE.md that resumes the next session in minutes.
+- An AGENTS.md plus CLAUDE.md contract serving Claude Code and Codex from one skill set.
 
 ### Demo And Launch
 
@@ -452,6 +495,132 @@ Typical output:
 
 ```powershell
 .\install.ps1 vault-janitor
+```
+
+### `proposal-writer`
+
+**Use it for:** client proposals and quotes built from your own service tiers, terms, and process, saved once in an ask-once pricing config.
+
+**Who it helps:** freelancers and studios who quote the same services repeatedly and want proposals that open with a specific read of the client, not filler.
+
+**Typical output:** a one-page proposal markdown with situation read, scoped line items, investment table, process phases, and terms. Drafts only; nothing is ever sent.
+
+**Install:**
+
+```powershell
+.\install.ps1 proposal-writer
+```
+
+### `follow-up-radar`
+
+**Use it for:** scanning a folder of outreach or CRM markdown files for overdue follow-ups, then drafting them oldest first.
+
+**Who it helps:** anyone doing manual outreach whose second touch dies in a busy week. The radar finds what is owed; a human sends every message.
+
+**Typical output:** an overdue/due-soon report, follow-up drafts under 80 words each, and confirmed frontmatter updates after the user says a message went out.
+
+**Install:**
+
+```powershell
+.\install.ps1 follow-up-radar
+```
+
+### `client-workspace-scaffolder`
+
+**Use it for:** creating a complete client project folder (subfolders, filled brief, feedback log) from a structure template you define once.
+
+**Who it helps:** freelancers and studios where every engagement starts with the same folder dance and half the clients end up with no brief at all.
+
+**Typical output:** a ready client folder with the standard tree, a brief with status and scope filled in, and a feedback-round log. Never overwrites existing work.
+
+**Install:**
+
+```powershell
+.\install.ps1 client-workspace-scaffolder
+```
+
+### `discovery-brief`
+
+**Use it for:** running a structured discovery interview (business, audience, competitors, personality, style, deliverables, timeline and budget) and writing the results into documents.
+
+**Who it helps:** anyone scoping creative or consulting projects who wants discovery answers captured as a brief and a first strategy pass, not scattered across chat.
+
+**Typical output:** a completed brief plus a strategy starter with a draft positioning sentence, direction hypotheses, and honest open questions.
+
+**Install:**
+
+```powershell
+.\install.ps1 discovery-brief
+```
+
+### `skill-builder`
+
+**Use it for:** turning a workflow into a new skill: naming, trigger-matching description, storage tier choice, cross-workspace linking, and registration for agents that do not auto-load skills.
+
+**Who it helps:** anyone who has repeated the same instructions to their AI tool three times and wants the fourth time to be one command.
+
+**Typical output:** a working skill folder in the right tier, linked with junctions or symlinks where shared, registered in AGENTS.md where needed, verified with a dry run.
+
+**Install:**
+
+```powershell
+.\install.ps1 skill-builder
+```
+
+### `session-handoff`
+
+**Use it for:** ending a work session with a start-here document capturing state, decisions and why, ordered next steps, and the gotchas that burned time.
+
+**Who it helps:** anyone whose next session starts with twenty minutes of "where was I", or who hands work to teammates or a fresh AI session.
+
+**Typical output:** a `START_HERE.md` readable with zero context, with the first next step precise enough to start typing immediately.
+
+**Install:**
+
+```powershell
+.\install.ps1 session-handoff
+```
+
+### `agents-md-writer`
+
+**Use it for:** generating the dual-agent workspace contract: an AGENTS.md that registers your skills as required reading, plus a short CLAUDE.md pointer.
+
+**Who it helps:** people running both Claude Code and Codex (or any AGENTS.md-reading agent) on the same workspace who want one skill set serving both.
+
+**Typical output:** an AGENTS.md with grouped skill registry and usage rules, a CLAUDE.md pointer, and a verification step that the target agent can actually recite the contract.
+
+**Install:**
+
+```powershell
+.\install.ps1 agents-md-writer
+```
+
+### `ops-status-report`
+
+**Use it for:** a recurring status snapshot of a folder-based workspace: tracked items and their statuses, overdue dates, recent activity, and read-only tool health checks.
+
+**Who it helps:** solo operators and small teams whose workspace holds an honest status report nobody compiles until something is a month overdue.
+
+**Typical output:** a dated ops report ending in an Attention Needed section of three to five bullets ordered by the cost of ignoring them. Read-only except the report file.
+
+**Install:**
+
+```powershell
+.\install.ps1 ops-status-report
+```
+
+### `screen-recorder`
+
+**Use it for:** recording a drag-selected region of the Windows desktop to a clean, seekable MP4 using FFmpeg, with a floating stop button.
+
+**Who it helps:** anyone making quick demo clips or bug recordings without installing a screen capture suite. Windows only in v1; video only, silent by default.
+
+**Typical output:** a timestamped MP4 in a recordings folder, recorded from a drag-to-crop overlay that stays aligned under display scaling.
+
+**Install:**
+
+```powershell
+.\install.ps1 screen-recorder
 ```
 
 ## Safe Install Defaults

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Skill Builder"
+  short_description: "Author a new skill with the right storage tier, template, and registration"
+  default_prompt: "Use $skill-builder to turn the workflow we just did into a reusable skill."

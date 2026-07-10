@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ops Status Report"
+  short_description: "Compile a workspace status snapshot with an Attention Needed section"
+  default_prompt: "Use $ops-status-report to generate this week's status snapshot of my workspace."

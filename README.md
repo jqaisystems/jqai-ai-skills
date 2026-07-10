@@ -6,7 +6,7 @@ These skills are small, portable instruction folders for Claude/Codex-style work
 
 [![Website](https://img.shields.io/badge/Website-ai.joaoqueiros.com-111827?style=for-the-badge)](https://www.ai.joaoqueiros.com)
 [![License](https://img.shields.io/badge/License-MIT-059669?style=for-the-badge)](LICENSE)
-[![Release](https://img.shields.io/badge/Release-v0.8.1-2563eb?style=for-the-badge)](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.8.1)
+[![Release](https://img.shields.io/badge/Release-v0.9.0-2563eb?style=for-the-badge)](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.9.0)
 [![Validate skills](https://github.com/jqaisystems/jqai-ai-skills/actions/workflows/validate.yml/badge.svg)](https://github.com/jqaisystems/jqai-ai-skills/actions/workflows/validate.yml)
 
 ## Start Here
@@ -84,6 +84,15 @@ Use $vault-janitor to scan this folder and report what is safe to clean.
 Use $obsidian-daily-note to log this to today's daily note.
 Use $idea-inbox to capture this idea into my ideas folder.
 Use $demo-animation-v2 to create a responsive animated walkthrough.
+Use $proposal-writer to draft a proposal for this client from my pricing config and their brief.
+Use $follow-up-radar to scan my outreach folder and show me what follow-ups are overdue.
+Use $client-workspace-scaffolder to set up a folder for my new client.
+Use $discovery-brief to run discovery for this client project.
+Use $skill-builder to turn the workflow we just did into a reusable skill.
+Use $session-handoff to wrap up this session into a START_HERE.md.
+Use $agents-md-writer to register my local skills for both Claude Code and Codex.
+Use $ops-status-report to generate this week's status snapshot of my workspace.
+Use $screen-recorder to record a region of my screen.
 ```
 
 ## Example Artifacts
@@ -138,7 +147,16 @@ For a field-by-field walkthrough, use [`docs/guides/skill-anatomy.md`](docs/guid
 | Outreach Pipeline Designer | [`skills/outreach-pipeline-designer/SKILL.md`](skills/outreach-pipeline-designer/SKILL.md) | Design safe human-reviewed prospecting and outreach workflows. |
 | Cold Outreach Writer | [`skills/cold-outreach-writer/SKILL.md`](skills/cold-outreach-writer/SKILL.md) | Draft a personalised cold email, subject lines, LinkedIn note, and follow-up from research notes. |
 | Lead Scorer | [`skills/lead-scorer/SKILL.md`](skills/lead-scorer/SKILL.md) | Rank a lead list into hot, warm, and cold tiers against your own rubric. |
+| Follow-up Radar | [`skills/follow-up-radar/SKILL.md`](skills/follow-up-radar/SKILL.md) | Find overdue outreach follow-ups in a folder of markdown and draft them, oldest first. |
 | Etsy Listing Optimizer | [`skills/etsy-listing-optimizer/SKILL.md`](skills/etsy-listing-optimizer/SKILL.md) | Audit, rewrite, batch, and monitor marketplace listings. |
+
+### Client Work
+
+| Skill | File | Use |
+|---|---|---|
+| Client Workspace Scaffolder | [`skills/client-workspace-scaffolder/SKILL.md`](skills/client-workspace-scaffolder/SKILL.md) | Scaffold a client project folder from your reusable structure template. |
+| Discovery Brief | [`skills/discovery-brief/SKILL.md`](skills/discovery-brief/SKILL.md) | Run a discovery interview and write the brief plus a strategy starter. |
+| Proposal Writer | [`skills/proposal-writer/SKILL.md`](skills/proposal-writer/SKILL.md) | Draft a client proposal from your own service tiers and terms. |
 
 ### Content & Research
 
@@ -165,6 +183,15 @@ For a field-by-field walkthrough, use [`docs/guides/skill-anatomy.md`](docs/guid
 |---|---|---|
 | Obsidian Daily Note | [`skills/obsidian-daily-note/SKILL.md`](skills/obsidian-daily-note/SKILL.md) | Append to today's Obsidian daily note from the terminal. |
 | Idea Inbox | [`skills/idea-inbox/SKILL.md`](skills/idea-inbox/SKILL.md) | Capture raw ideas as dated, tagged, indexed markdown files. |
+| Ops Status Report | [`skills/ops-status-report/SKILL.md`](skills/ops-status-report/SKILL.md) | Compile a workspace status snapshot with an Attention Needed section. |
+
+### Agent Workflow
+
+| Skill | File | Use |
+|---|---|---|
+| Skill Builder | [`skills/skill-builder/SKILL.md`](skills/skill-builder/SKILL.md) | Author a new skill with the right storage tier, template, and registration. |
+| Session Handoff | [`skills/session-handoff/SKILL.md`](skills/session-handoff/SKILL.md) | Freeze session state into a start-here doc for instant resume. |
+| AGENTS.md Writer | [`skills/agents-md-writer/SKILL.md`](skills/agents-md-writer/SKILL.md) | Generate the AGENTS.md and CLAUDE.md contract that shares skills across agents. |
 
 ### Demo & Presentation
 
@@ -172,6 +199,7 @@ For a field-by-field walkthrough, use [`docs/guides/skill-anatomy.md`](docs/guid
 |---|---|---|
 | Demo Animation | [`skills/demo-animation/SKILL.md`](skills/demo-animation/SKILL.md) | Build legacy desktop-oriented product/demo walkthroughs. |
 | Demo Animation V2 | [`skills/demo-animation-v2/SKILL.md`](skills/demo-animation-v2/SKILL.md) | Build recommended responsive demo walkthroughs. Includes [`assets/template.html`](skills/demo-animation-v2/assets/template.html). |
+| Screen Recorder | [`skills/screen-recorder/SKILL.md`](skills/screen-recorder/SKILL.md) | Record a drag-selected region of the Windows desktop to a clean MP4 (FFmpeg). |
 
 ## Which Skill Should I Use?
 
@@ -202,6 +230,15 @@ For the fastest guided install, see [`docs/guides/one-minute-install.md`](docs/g
 | Capture ideas without losing them in the repo root | [`idea-inbox`](skills/idea-inbox/SKILL.md) |
 | Build a responsive walkthrough demo | [`demo-animation-v2`](skills/demo-animation-v2/SKILL.md) |
 | Build a legacy desktop-only walkthrough demo | [`demo-animation`](skills/demo-animation/SKILL.md) |
+| Draft a client proposal from your own price tiers | [`proposal-writer`](skills/proposal-writer/SKILL.md) |
+| Find and draft the follow-ups you forgot | [`follow-up-radar`](skills/follow-up-radar/SKILL.md) |
+| Set up a new client folder in seconds | [`client-workspace-scaffolder`](skills/client-workspace-scaffolder/SKILL.md) |
+| Run project discovery and write the brief | [`discovery-brief`](skills/discovery-brief/SKILL.md) |
+| Turn a workflow into a reusable skill | [`skill-builder`](skills/skill-builder/SKILL.md) |
+| Resume tomorrow where you stopped today | [`session-handoff`](skills/session-handoff/SKILL.md) |
+| Share one skill set between Claude Code and Codex | [`agents-md-writer`](skills/agents-md-writer/SKILL.md) |
+| Get a weekly status snapshot of a workspace | [`ops-status-report`](skills/ops-status-report/SKILL.md) |
+| Record a region of the Windows desktop to MP4 | [`screen-recorder`](skills/screen-recorder/SKILL.md) |
 
 ## Why This Matters
 

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Proposal Writer"
+  short_description: "Draft a client proposal from your own service tiers and terms"
+  default_prompt: "Use $proposal-writer to draft a proposal for this client from my pricing config and their brief."

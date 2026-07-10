@@ -107,6 +107,15 @@ Use $code-deduplicator to consolidate repeated formatting helpers in this sample
 Use $em-dash-remover to clean this short product note without changing meaning.
 Use $research-brief-curator to turn public links into a safe weekly research brief.
 Use $demo-animation-v2 to create a responsive animated walkthrough.
+Use $proposal-writer to draft a proposal for this client from my pricing config and their brief.
+Use $follow-up-radar to scan my outreach folder and show me what follow-ups are overdue.
+Use $client-workspace-scaffolder to set up a folder for my new client.
+Use $discovery-brief to run discovery for this client project.
+Use $skill-builder to turn the workflow we just did into a reusable skill.
+Use $session-handoff to wrap up this session into a START_HERE.md.
+Use $agents-md-writer to register my local skills for both Claude Code and Codex.
+Use $ops-status-report to generate this week's status snapshot of my workspace.
+Use $screen-recorder to record a region of my screen.
 ```
 
 ## Public-Safe Publishing

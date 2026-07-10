@@ -1,0 +1,4 @@
+interface:
+  display_name: "AGENTS.md Writer"
+  short_description: "Generate the AGENTS.md + CLAUDE.md contract that shares skills across agents"
+  default_prompt: "Use $agents-md-writer to register my local skills for both Claude Code and Codex."

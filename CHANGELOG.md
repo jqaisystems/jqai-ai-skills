@@ -4,6 +4,26 @@ Public release history for JQ AI Skills.
 
 The social preview image is intentionally stable for 2026 and is not updated for every release.
 
+## [v0.9.0](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.9.0) - 2026-07-10
+
+Added nine new skills, growing the library from 23 to 32, across two new categories: Client Work and Agent Workflow.
+
+- Added `proposal-writer`: draft a client proposal from your own service tiers and terms; drafts only.
+- Added `follow-up-radar`: find overdue outreach follow-ups in a folder of markdown and draft them, oldest first; report-first, never sends.
+- Added `client-workspace-scaffolder`: scaffold a client project folder from a reusable structure template; never overwrites.
+- Added `discovery-brief`: run a discovery interview and write the brief plus a strategy starter.
+- Added `skill-builder`: author a new skill with the right storage tier, trigger-matching description, cross-workspace linking, and agent registration.
+- Added `session-handoff`: freeze session state into a START_HERE.md for instant resume.
+- Added `agents-md-writer`: generate the AGENTS.md plus CLAUDE.md contract that shares one skill set across Claude Code and Codex.
+- Added `ops-status-report`: compile a workspace status snapshot ending in an Attention Needed section; read-only except the report file.
+- Added `screen-recorder`: record a drag-selected region of the Windows desktop to a clean MP4 with FFmpeg; previously website-only, now in the repo.
+- All business skills use ask-once configuration files instead of hardcoded personal data, and report or draft before acting.
+- Updated the README with Client Work and Agent Workflow categories and nine prompt examples.
+- Updated `docs/catalog.md` with At A Glance rows, detail sections, and two new bundles (Freelance Client Flow, Agent Workflow Setup).
+- Updated `docs/skill-quality-matrix.md` with the nine new skills.
+- Added a v0.9.0 release announcement.
+- Kept the stable 2026 social preview unchanged.
+
 ## [v0.8.1](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.8.1) - 2026-06-13
 
 Added two proof-workflow skills.

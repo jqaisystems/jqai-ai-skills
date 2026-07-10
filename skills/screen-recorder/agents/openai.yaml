@@ -1,0 +1,4 @@
+interface:
+  display_name: "Screen Recorder"
+  short_description: "Record a drag-selected region of the Windows desktop to MP4"
+  default_prompt: "Use $screen-recorder to record a region of my screen."
