@@ -1,0 +1,4 @@
+interface:
+  display_name: "Verify Website Changes"
+  short_description: "Check every affected website surface"
+  default_prompt: "Use $website-change-verifier to verify this website change locally and report any unverified surfaces."

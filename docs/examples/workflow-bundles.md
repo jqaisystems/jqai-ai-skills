@@ -145,6 +145,58 @@ Use $release-announcement-writer to write a GitHub release note and short launch
 
 Check the demo at desktop and mobile sizes, confirm all on-screen text is public-safe, and verify that the launch copy only claims what the demo shows.
 
+## Bundle 4: Client Revision And Delivery
+
+Use this bundle when approved feedback must become a verified implementation and a reviewable final handoff.
+
+### Install
+
+```powershell
+.\install.ps1 implement-client-feedback
+.\install.ps1 website-change-verifier
+.\install.ps1 client-delivery-auditor
+```
+
+### When To Use It
+
+- You have revision notes that mix requested changes, things to preserve, exclusions, questions, and future ideas.
+- You need evidence that implemented website changes work across source, build, routes, content, and browser behavior.
+- You need to compare the final package with what was promised before preparing a handoff.
+
+### Suggested Flow
+
+1. Use `implement-client-feedback` to normalize the latest authoritative notes into a decision matrix.
+2. Implement only confirmed in-scope changes and record evidence for each row.
+3. Use `website-change-verifier` to test the supported source, build, route, content, and browser layers.
+4. Use `client-delivery-auditor` to compare the verified package with the promised deliverables.
+5. Review the generic handoff and unsent email draft before any external action.
+
+### Example Prompts
+
+```text
+Use $implement-client-feedback to turn these revision notes into a traceable matrix, preserve literal decisions, and verify every implemented item.
+```
+
+```text
+Use $website-change-verifier to verify this local website change across the source, build, routes, required content, forbidden content, and browser behavior.
+```
+
+```text
+Use $client-delivery-auditor to compare this final package with the promised deliverables and draft a generic handoff plus an unsent email.
+```
+
+### Expected Outputs
+
+- A feedback matrix with change, keep, remove, exclude, question, and future decisions.
+- Verification evidence for every implemented row.
+- A website verification report with explicit pass, fail, blocked, and not-run states.
+- A delivery audit that separates complete, partial, missing, unverified, and awaiting-client items.
+- A generic handoff and unsent email draft.
+
+### Review Gate
+
+Do not mark the work complete while any in-scope item lacks implementation evidence or verification. Do not send, upload, deploy, or change access permissions without separate human approval.
+
 ## Choosing A Bundle
 
 | If your goal is... | Start with |
@@ -152,5 +204,6 @@ Check the demo at desktop and mobile sizes, confirm all on-screen text is public
 | Publish proof from real project work | Public GitHub Publishing |
 | Turn public sources into a brief | Content And Research |
 | Show a workflow and launch it | Demo And Launch |
+| Implement feedback and prove final delivery | Client Revision And Delivery |
 
 If you are not sure, start with one skill from [`docs/guides/skill-selection.md`](../guides/skill-selection.md) before installing a bundle.

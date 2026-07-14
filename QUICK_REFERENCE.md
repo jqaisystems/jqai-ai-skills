@@ -112,6 +112,9 @@ Use $proposal-writer to draft a proposal for this client from my pricing config 
 Use $follow-up-radar to scan my outreach folder and show me what follow-ups are overdue.
 Use $client-workspace-scaffolder to set up a folder for my new client.
 Use $discovery-brief to run discovery for this client project.
+Use $implement-client-feedback to turn these revision notes into scoped changes and verify every item.
+Use $client-delivery-auditor to audit this final package and draft a clear handoff.
+Use $website-change-verifier to verify this website change across routes, rendering, metadata, and discovery surfaces.
 Use $skill-builder to turn the workflow we just did into a reusable skill.
 Use $session-handoff to wrap up this session into a START_HERE.md.
 Use $agents-md-writer to register my local skills for both Claude Code and Codex.

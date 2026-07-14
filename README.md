@@ -6,7 +6,7 @@ These skills are small, portable instruction folders for Claude/Codex-style work
 
 [![Website](https://img.shields.io/badge/Website-ai.joaoqueiros.com-111827?style=for-the-badge)](https://www.ai.joaoqueiros.com)
 [![License](https://img.shields.io/badge/License-MIT-059669?style=for-the-badge)](LICENSE)
-[![Release](https://img.shields.io/badge/Release-v0.9.1-2563eb?style=for-the-badge)](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.9.1)
+[![Release](https://img.shields.io/badge/Release-v0.10.0-2563eb?style=for-the-badge)](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.10.0)
 [![Validate skills](https://github.com/jqaisystems/jqai-ai-skills/actions/workflows/validate.yml/badge.svg)](https://github.com/jqaisystems/jqai-ai-skills/actions/workflows/validate.yml)
 
 ## Start Here
@@ -88,6 +88,9 @@ Use $proposal-writer to draft a proposal for this client from my pricing config 
 Use $follow-up-radar to scan my outreach folder and show me what follow-ups are overdue.
 Use $client-workspace-scaffolder to set up a folder for my new client.
 Use $discovery-brief to run discovery for this client project.
+Use $implement-client-feedback to turn these revision notes into scoped changes and verify every item.
+Use $client-delivery-auditor to audit this final package and draft a clear handoff.
+Use $website-change-verifier to verify this website change across routes, rendering, metadata, and discovery surfaces.
 Use $skill-builder to turn the workflow we just did into a reusable skill.
 Use $session-handoff to wrap up this session into a START_HERE.md.
 Use $agents-md-writer to register my local skills for both Claude Code and Codex.
@@ -158,6 +161,9 @@ For a field-by-field walkthrough, use [`docs/guides/skill-anatomy.md`](docs/guid
 | Client Workspace Scaffolder | [`skills/client-workspace-scaffolder/SKILL.md`](skills/client-workspace-scaffolder/SKILL.md) | Scaffold a client project folder from your reusable structure template. |
 | Discovery Brief | [`skills/discovery-brief/SKILL.md`](skills/discovery-brief/SKILL.md) | Run a discovery interview and write the brief plus a strategy starter. |
 | Proposal Writer | [`skills/proposal-writer/SKILL.md`](skills/proposal-writer/SKILL.md) | Draft a client proposal from your own service tiers and terms. |
+| Implement Client Feedback | [`skills/implement-client-feedback/SKILL.md`](skills/implement-client-feedback/SKILL.md) | Convert revision notes into scoped changes, protected exclusions, and verified results. |
+| Client Delivery Auditor | [`skills/client-delivery-auditor/SKILL.md`](skills/client-delivery-auditor/SKILL.md) | Audit promised deliverables and prepare a clear handoff plus an unsent delivery message. |
+| Website Change Verifier | [`skills/website-change-verifier/SKILL.md`](skills/website-change-verifier/SKILL.md) | Verify website changes across routes, rendering, metadata, discovery surfaces, and deployment state. |
 
 ### Content & Research
 
@@ -241,6 +247,9 @@ For the fastest guided install, see [`docs/guides/one-minute-install.md`](docs/g
 | Find and draft the follow-ups you forgot | [`follow-up-radar`](skills/follow-up-radar/SKILL.md) |
 | Set up a new client folder in seconds | [`client-workspace-scaffolder`](skills/client-workspace-scaffolder/SKILL.md) |
 | Run project discovery and write the brief | [`discovery-brief`](skills/discovery-brief/SKILL.md) |
+| Turn revision notes into scoped, verified changes | [`implement-client-feedback`](skills/implement-client-feedback/SKILL.md) |
+| Audit a final delivery package before sending | [`client-delivery-auditor`](skills/client-delivery-auditor/SKILL.md) |
+| Verify a website change across every affected surface | [`website-change-verifier`](skills/website-change-verifier/SKILL.md) |
 | Turn a workflow into a reusable skill | [`skill-builder`](skills/skill-builder/SKILL.md) |
 | Resume tomorrow where you stopped today | [`session-handoff`](skills/session-handoff/SKILL.md) |
 | Share one skill set between Claude Code and Codex | [`agents-md-writer`](skills/agents-md-writer/SKILL.md) |

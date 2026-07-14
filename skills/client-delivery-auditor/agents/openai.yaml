@@ -1,0 +1,4 @@
+interface:
+  display_name: "Audit Client Deliveries"
+  short_description: "Verify deliverables and prepare a safe handoff"
+  default_prompt: "Use $client-delivery-auditor to audit this delivery package and draft a clear handoff."

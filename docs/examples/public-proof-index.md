@@ -21,6 +21,9 @@ All linked examples use fictional, public, or generalized material. They do not 
 | Is there proof for release-to-showcase handoff? | [`release-showcase-handoff-sample.md`](release-showcase-handoff-sample.md) |
 | Is there proof for GitHub profile refreshes? | [`github-profile-proof-updater-sample.md`](github-profile-proof-updater-sample.md) |
 | Is there proof for social campaign tracking? | [`social-campaign-proof-tracker-sample.md`](social-campaign-proof-tracker-sample.md) |
+| Is there proof for traceable feedback implementation? | [`implement-client-feedback-sample.md`](implement-client-feedback-sample.md) |
+| Is there proof for final package auditing? | [`client-delivery-auditor-sample.md`](client-delivery-auditor-sample.md) |
+| Is there proof for website change verification? | [`website-change-verifier-sample.md`](website-change-verifier-sample.md) |
 | How do I evaluate trust and install readiness? | [`../guides/evaluate-skill-library.md`](../guides/evaluate-skill-library.md) |
 | Which skill should I install first? | [`../guides/first-skill-scorecard.md`](../guides/first-skill-scorecard.md) |
 | How do I run the selected skill safely? | [`first-skill-walkthrough.md`](first-skill-walkthrough.md) |
@@ -79,6 +82,9 @@ Good stopping point: after five minutes, a visitor should know what the repo con
 | Release showcase handoff | [`release-showcase-handoff-sample.md`](release-showcase-handoff-sample.md) |
 | GitHub profile proof refresh | [`github-profile-proof-updater-sample.md`](github-profile-proof-updater-sample.md) |
 | Social campaign proof tracking | [`social-campaign-proof-tracker-sample.md`](social-campaign-proof-tracker-sample.md) |
+| Feedback implementation | [`implement-client-feedback-sample.md`](implement-client-feedback-sample.md) |
+| Client delivery audit | [`client-delivery-auditor-sample.md`](client-delivery-auditor-sample.md) |
+| Website change verification | [`website-change-verifier-sample.md`](website-change-verifier-sample.md) |
 | Multi-skill workflows | [`workflow-bundles.md`](workflow-bundles.md) |
 
 ## System And Library Proof
@@ -97,6 +103,9 @@ Good stopping point: after five minutes, a visitor should know what the repo con
 | [`remove-ai-image-metadata-sample.md`](remove-ai-image-metadata-sample.md) | Public-safe inspection and verified-copy output for PNG, JPEG, WebP, and GIF metadata cleanup. |
 | [`demo-animation-v2-walkthrough-sample.md`](demo-animation-v2-walkthrough-sample.md) | Public-safe finished walkthrough shape for `demo-animation-v2`, including screens, captions, timeline, and review checks. |
 | [`release-showcase-handoff-sample.md`](release-showcase-handoff-sample.md) | Public-safe release alignment shape for GitHub release, profile update, website upload package, live checks, and final status. |
+| [`implement-client-feedback-sample.md`](implement-client-feedback-sample.md) | Public-safe proof that mixed revision notes can retain literal decisions and produce item-level verification evidence. |
+| [`client-delivery-auditor-sample.md`](client-delivery-auditor-sample.md) | Public-safe proof of promised-versus-delivered classification and an unsent handoff. |
+| [`website-change-verifier-sample.md`](website-change-verifier-sample.md) | Public-safe proof of local route, status, content, and JSON verification. |
 | [`../skill-quality-matrix.md`](../skill-quality-matrix.md) | Skill maturity, examples, and safety sensitivity are visible instead of implied. |
 | [`../guides/skill-anatomy.md`](../guides/skill-anatomy.md) | The folder contract is documented for maintainers and reviewers. |
 | [`../../CHANGELOG.md`](../../CHANGELOG.md) | Release history is versioned and inspectable. |

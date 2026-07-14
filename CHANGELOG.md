@@ -4,6 +4,24 @@ Public release history for JQ AI Skills.
 
 The social preview image is intentionally stable for 2026 and is not updated for every release.
 
+## [v0.10.0](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.10.0) - 2026-07-14
+
+Added three client-delivery and website-verification skills, growing the library from 33 to 36 skills.
+
+### Added
+
+- Added `implement-client-feedback` for traceable revision matrices, protected exclusions, controlled implementation, and item-by-item verification.
+- Added `client-delivery-auditor` for promised-deliverable audits, package checks, generic handoffs, and unsent delivery messages.
+- Added `website-change-verifier` for framework-neutral source, route, rendering, metadata, discovery, and deployment checks.
+- Added one fictional public-safe sample for each new skill.
+- Added a standard-library route checker with status, required-text, forbidden-text, timeout, and JSON interfaces.
+
+### Safety and verification
+
+- Rewrote the workflows from generalized patterns instead of copying private skill folders.
+- Removed personal identity, local paths, client records, project codenames, account data, and private specialist-skill references.
+- Passed official skill validation, synthetic forward tests, disposable localhost route tests, and public-safety scanning with zero candidate findings.
+
 ## [v0.9.1](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.9.1) - 2026-07-13
 
 Added `remove-ai-image-metadata`, growing the library from 32 to 33 skills.

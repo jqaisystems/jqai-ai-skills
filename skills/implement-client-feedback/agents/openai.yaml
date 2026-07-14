@@ -1,0 +1,4 @@
+interface:
+  display_name: "Implement Client Feedback"
+  short_description: "Turn feedback into verified project changes"
+  default_prompt: "Use $implement-client-feedback to turn these revision notes into scoped changes and verify every item."

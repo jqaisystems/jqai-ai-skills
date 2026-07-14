@@ -1,6 +1,6 @@
 # Skill Quality Matrix
 
-Current as of v0.9.1.
+Current as of v0.10.0.
 
 Use this matrix to compare the public skills by maturity, visible proof, safety sensitivity, and install notes. It is a practical adoption guide, not a certification. For the browsable examples index, use [`docs/examples/README.md`](examples/README.md). For the folder contract behind every skill, use [`docs/guides/skill-anatomy.md`](guides/skill-anatomy.md). For the complete first-install trust path, use [`docs/examples/first-install-proof.md`](examples/first-install-proof.md). For the post-release refresh path, use [`docs/examples/update-after-release-proof.md`](examples/update-after-release-proof.md). For smaller utility skill examples, use [`docs/examples/utility-skill-proof-pack.md`](examples/utility-skill-proof-pack.md). For responsive demo output proof, use [`docs/examples/demo-animation-v2-walkthrough-sample.md`](examples/demo-animation-v2-walkthrough-sample.md). For release-to-showcase handoff proof, use [`docs/examples/release-showcase-handoff-sample.md`](examples/release-showcase-handoff-sample.md).
 
@@ -36,6 +36,9 @@ Use this matrix to compare the public skills by maturity, visible proof, safety 
 | [`follow-up-radar`](../skills/follow-up-radar/SKILL.md) | Growth and outreach | New public skill | Catalog entry and README prompt examples | High | Report first, drafts second; a human sends every message and confirms before any file is updated. |
 | [`client-workspace-scaffolder`](../skills/client-workspace-scaffolder/SKILL.md) | Client work | New public skill | Catalog entry and README prompt examples | Low | Define the workspace template once; the skill never overwrites an existing client folder. |
 | [`discovery-brief`](../skills/discovery-brief/SKILL.md) | Client work | New public skill | Catalog entry and README prompt examples | Low | Point it at existing material first so it only asks what is genuinely unknown. |
+| [`implement-client-feedback`](../skills/implement-client-feedback/SKILL.md) | Client work | New public skill | Dedicated sample, reusable template, forward test, catalog entry, and quick reference prompt | Medium | Use the latest authoritative feedback, preserve keep and exclude decisions, and verify every implemented row. |
+| [`client-delivery-auditor`](../skills/client-delivery-auditor/SKILL.md) | Client work | New public skill | Dedicated sample, reusable handoff template, synthetic package test, catalog entry, and quick reference prompt | High | Inspect files read-only first; the skill does not send, upload, deploy, or change permissions. |
+| [`website-change-verifier`](../skills/website-change-verifier/SKILL.md) | Development workflow | New public skill | Dedicated sample, two verification references, localhost route test, portable script, catalog entry, and quick reference prompt | Medium | Test user-specified HTTP or HTTPS URLs and report only supported states; deployment is outside the skill. |
 | [`skill-builder`](../skills/skill-builder/SKILL.md) | Agent workflow | New public skill | Catalog entry, README prompt examples, and the `_template` folder it builds on | Medium | Review the generated skill with `skill-reviewer` before installing it anywhere shared. |
 | [`session-handoff`](../skills/session-handoff/SKILL.md) | Agent workflow | New public skill | Catalog entry and README prompt examples | Low | Facts only; verify the handoff reads cold and contains no secrets seen during the session. |
 | [`agents-md-writer`](../skills/agents-md-writer/SKILL.md) | Agent workflow | New public skill | Catalog entry and README prompt examples | Low | Extend existing AGENTS.md/CLAUDE.md files; review the diff before accepting. |
@@ -58,6 +61,9 @@ Use this matrix to compare the public skills by maturity, visible proof, safety 
 | Utility proof pack | [`docs/examples/utility-skill-proof-pack.md`](examples/utility-skill-proof-pack.md) |
 | Demo walkthrough sample | [`docs/examples/demo-animation-v2-walkthrough-sample.md`](examples/demo-animation-v2-walkthrough-sample.md) |
 | Release showcase handoff | [`docs/examples/release-showcase-handoff-sample.md`](examples/release-showcase-handoff-sample.md) |
+| Feedback implementation sample | [`docs/examples/implement-client-feedback-sample.md`](examples/implement-client-feedback-sample.md) |
+| Client delivery audit sample | [`docs/examples/client-delivery-auditor-sample.md`](examples/client-delivery-auditor-sample.md) |
+| Website change verification sample | [`docs/examples/website-change-verifier-sample.md`](examples/website-change-verifier-sample.md) |
 | Full catalog | [`docs/catalog.md`](catalog.md) |
 
 ## Reading The Columns

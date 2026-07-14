@@ -18,6 +18,9 @@ Use this page when you want to inspect expected output before installing a skill
 | Inspect release-to-showcase handoff | [`release-showcase-handoff-sample.md`](release-showcase-handoff-sample.md) |
 | Inspect GitHub profile proof refresh output | [`github-profile-proof-updater-sample.md`](github-profile-proof-updater-sample.md) |
 | Inspect social proof campaign tracking output | [`social-campaign-proof-tracker-sample.md`](social-campaign-proof-tracker-sample.md) |
+| Inspect traceable feedback implementation | [`implement-client-feedback-sample.md`](implement-client-feedback-sample.md) |
+| Inspect a final delivery audit and handoff | [`client-delivery-auditor-sample.md`](client-delivery-auditor-sample.md) |
+| Inspect framework-neutral website verification | [`website-change-verifier-sample.md`](website-change-verifier-sample.md) |
 | Score the safest first install | [`../guides/first-skill-scorecard.md`](../guides/first-skill-scorecard.md) |
 | Run the selected skill with fake input | [`first-skill-walkthrough.md`](first-skill-walkthrough.md) |
 | Use ready fake first-run files | [`first-skill-candidate/README.md`](first-skill-candidate/README.md) |
@@ -48,6 +51,9 @@ Use this page when you want to inspect expected output before installing a skill
 | [`first-skill-candidate/expected-review.md`](first-skill-candidate/expected-review.md) | Expected `READY` review output for the first-skill candidate pack. |
 | [`research-brief-curator-sample-items.json`](research-brief-curator-sample-items.json) | Fake source items for the research brief sample. |
 | [`remove-ai-image-metadata-sample.md`](remove-ai-image-metadata-sample.md) | Fictional inspection and verified-copy output for the image metadata cleanup skill. |
+| [`implement-client-feedback-sample.md`](implement-client-feedback-sample.md) | Fictional mixed revision notes converted into a traceable decision and verification matrix. |
+| [`client-delivery-auditor-sample.md`](client-delivery-auditor-sample.md) | Fictional package audit covering complete, partial, missing, unverified, and awaiting-client items. |
+| [`website-change-verifier-sample.md`](website-change-verifier-sample.md) | Fictional localhost verification covering statuses, content assertions, and JSON output. |
 
 ## Recommended Reading Path
 

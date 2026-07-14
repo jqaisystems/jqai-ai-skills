@@ -21,6 +21,9 @@ If you are new to the repo, start with [`START_HERE.md`](../START_HERE.md). For 
 | Client work | [`client-workspace-scaffolder`](../skills/client-workspace-scaffolder/SKILL.md) | Scaffolding a client project folder from your reusable structure template. | `.\install.ps1 client-workspace-scaffolder` |
 | Client work | [`discovery-brief`](../skills/discovery-brief/SKILL.md) | Running a discovery interview and writing the brief plus a strategy starter. | `.\install.ps1 discovery-brief` |
 | Client work | [`proposal-writer`](../skills/proposal-writer/SKILL.md) | Drafting a client proposal from your own service tiers and terms. | `.\install.ps1 proposal-writer` |
+| Client work | [`implement-client-feedback`](../skills/implement-client-feedback/SKILL.md) | Turning revision notes into traceable, verified implementation decisions. | `.\install.ps1 implement-client-feedback` |
+| Client work | [`client-delivery-auditor`](../skills/client-delivery-auditor/SKILL.md) | Auditing a final package against promised deliverables and preparing an unsent handoff. | `.\install.ps1 client-delivery-auditor` |
+| Development | [`website-change-verifier`](../skills/website-change-verifier/SKILL.md) | Verifying website changes across source, build, routes, content, and browser behavior. | `.\install.ps1 website-change-verifier` |
 | Agent workflow | [`skill-builder`](../skills/skill-builder/SKILL.md) | Authoring a new skill with the right storage tier, template, and registration. | `.\install.ps1 skill-builder` |
 | Agent workflow | [`session-handoff`](../skills/session-handoff/SKILL.md) | Freezing session state into a start-here doc for instant resume. | `.\install.ps1 session-handoff` |
 | Agent workflow | [`agents-md-writer`](../skills/agents-md-writer/SKILL.md) | Generating the AGENTS.md plus CLAUDE.md contract that shares skills across agents. | `.\install.ps1 agents-md-writer` |
@@ -96,12 +99,15 @@ Typical output:
 
 ### Freelance Client Flow
 
-Use this bundle when you run client work end to end: onboard, discover, propose, and chase the follow-ups.
+Use this bundle when you run client work end to end: onboard, discover, propose, implement revisions, verify the website, audit delivery, and chase follow-ups.
 
 ```powershell
 .\install.ps1 client-workspace-scaffolder
 .\install.ps1 discovery-brief
 .\install.ps1 proposal-writer
+.\install.ps1 implement-client-feedback
+.\install.ps1 website-change-verifier
+.\install.ps1 client-delivery-auditor
 .\install.ps1 follow-up-radar
 ```
 
@@ -110,6 +116,9 @@ Typical output:
 - A ready client folder with a filled brief and feedback log.
 - A discovery brief and strategy starter document.
 - A reviewed proposal with an investment table.
+- A traceable feedback matrix with implementation and verification status.
+- A website verification report covering source, build, routes, content, and browser behavior.
+- A delivery audit, generic handoff, and unsent email draft.
 - A follow-up radar report with drafts for everything overdue.
 
 ### Agent Workflow Setup
@@ -552,6 +561,54 @@ Typical output:
 
 ```powershell
 .\install.ps1 discovery-brief
+```
+
+### `implement-client-feedback`
+
+**Use it for:** turning mixed client revision notes into explicit change, keep, remove, exclude, question, and future decisions, then verifying every implemented item.
+
+**Who it helps:** freelancers, studios, and delivery teams that need an auditable bridge between feedback and the final build.
+
+**Typical output:** a feedback implementation brief with source wording, interpreted action, scope state, implementation evidence, verification result, and open questions.
+
+**Sample:** [`docs/examples/implement-client-feedback-sample.md`](examples/implement-client-feedback-sample.md)
+
+**Install:**
+
+```powershell
+.\install.ps1 implement-client-feedback
+```
+
+### `client-delivery-auditor`
+
+**Use it for:** comparing promised deliverables with a final package before handoff.
+
+**Who it helps:** anyone who needs to distinguish complete, partial, missing, unverified, and awaiting-client items without overstating delivery readiness.
+
+**Typical output:** a delivery audit, unresolved-item list, generic handoff document, and unsent email draft. The skill never sends, uploads, or changes permissions.
+
+**Sample:** [`docs/examples/client-delivery-auditor-sample.md`](examples/client-delivery-auditor-sample.md)
+
+**Install:**
+
+```powershell
+.\install.ps1 client-delivery-auditor
+```
+
+### `website-change-verifier`
+
+**Use it for:** framework-neutral website verification across source changes, automated checks, builds, routes, content assertions, and browser behavior.
+
+**Who it helps:** developers and delivery teams that need evidence for website changes without assuming a specific framework or claiming a deployment happened.
+
+**Typical output:** a verification matrix with pass, fail, blocked, and not-run states. The included route checker supports status, required-text, forbidden-text, timeout, and JSON checks against user-specified HTTP or HTTPS URLs.
+
+**Sample:** [`docs/examples/website-change-verifier-sample.md`](examples/website-change-verifier-sample.md)
+
+**Install:**
+
+```powershell
+.\install.ps1 website-change-verifier
 ```
 
 ### `skill-builder`
