@@ -10,6 +10,8 @@ The goal is simple: every release should be small, inspectable, public-safe, val
 - Keep the release scoped to files that support that purpose.
 - Do not update the stable 2026 social preview unless the release is specifically about brand or preview redesign.
 - Do not publish raw private notes, chat logs, local paths, client data, credentials, exports, databases, screenshots with private UI, or deployment details.
+- For every new or changed skill, inspect `SKILL.md`, agent metadata, scripts, references, and assets for unexpected network access, credential access, broad reads, destructive writes, hidden goals, or description mismatch.
+- Work from a sanitized candidate folder and record a behavior verdict plus a public-safety verdict before copying it into the public repo. Any `UNSAFE` or `BLOCK` verdict stops the release.
 - Check the current state:
 
 ```bash
@@ -22,6 +24,7 @@ git log --oneline --decorate -5
 
 - Add or update the public-safe files.
 - Use fake data in examples.
+- Do not add the skill to the website, release notes, or public catalog until its candidate verdict is `READY` and a human has approved the reviewed files.
 - Link the new artifact from the most relevant entry points.
 - Keep `README.md`, `START_HERE.md`, and `CHANGELOG.md` aligned when the change affects first-use or release history.
 - Keep [`QUICK_REFERENCE.md`](QUICK_REFERENCE.md) aligned when commands, first-use links, or release helper links change.
@@ -53,6 +56,8 @@ Run the skill structure validator:
 python tools/validate_skills.py
 ```
 
+For a new or changed skill, complete the behavior review before executing its helper scripts. Then test only with fake, public, or authorized fixtures in a disposable folder.
+
 When install behavior changes, also smoke-test one install into a temporary target and remove the test output after the check.
 
 ## 4. Run Public-Safety Scans
@@ -61,6 +66,7 @@ Scan every changed public candidate:
 
 ```bash
 python skills/github-safe-publisher/scripts/scan_public_safety.py .
+python skills/github-safe-publisher/scripts/scan_public_safety.py skills/changed-skill
 python skills/github-safe-publisher/scripts/scan_public_safety.py README.md
 python skills/github-safe-publisher/scripts/scan_public_safety.py START_HERE.md
 python skills/github-safe-publisher/scripts/scan_public_safety.py CHANGELOG.md
@@ -87,7 +93,7 @@ git diff --cached --stat
 git diff --cached
 ```
 
-Do not commit until every staged line is intentional and public-safe.
+Do not commit until every staged line is intentional and public-safe, and a human has explicitly approved the final staged diff.
 
 ## 6. Commit And Push
 

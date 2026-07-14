@@ -30,6 +30,7 @@ If you are new to the repo, start with [`START_HERE.md`](../START_HERE.md). For 
 | Content and research | [`research-brief-curator`](../skills/research-brief-curator/SKILL.md) | Turning public links and approved notes into research briefs. | `.\install.ps1 research-brief-curator` |
 | Content and AI search | [`llms-txt-generator`](../skills/llms-txt-generator/SKILL.md) | Generating a spec-compliant llms.txt map of a website for AI assistants. | `.\install.ps1 llms-txt-generator` |
 | Content and extraction | [`web-scraper`](../skills/web-scraper/SKILL.md) | Generating browser console scripts for public or authorized paginated extraction. | `.\install.ps1 web-scraper` |
+| Media and provenance | [`remove-ai-image-metadata`](../skills/remove-ai-image-metadata/SKILL.md) | Inspecting and removing explicit AI provenance metadata from owned or authorized images without re-encoding supported picture data. | `.\install.ps1 remove-ai-image-metadata` |
 | Content cleanup | [`em-dash-remover`](../skills/em-dash-remover/SKILL.md) | Cleaning em dashes from copy without changing meaning. | `.\install.ps1 em-dash-remover` |
 | Content cleanup | [`brand-voice-linter`](../skills/brand-voice-linter/SKILL.md) | Linting copy against a brand voice guide with suggested rewrites. | `.\install.ps1 brand-voice-linter` |
 | Development | [`code-deduplicator`](../skills/code-deduplicator/SKILL.md) | Consolidating repeated code patterns safely. | `.\install.ps1 code-deduplicator` |
@@ -621,6 +622,22 @@ Typical output:
 
 ```powershell
 .\install.ps1 screen-recorder
+```
+
+### `remove-ai-image-metadata`
+
+**Use it for:** inspecting and removing explicit C2PA, Content Credentials, or AI-generator metadata from PNG, JPEG, WebP, and GIF files while preserving encoded picture data.
+
+**Who it helps:** creators and operators cleaning owned or authorized image files for privacy, publishing, or asset hygiene without a generic re-save that may alter pixels, animation, orientation, or color behavior.
+
+**Typical output:** a report-first inspection followed by verified clean copies. The helper reparses each written container, confirms matching metadata is gone, and checks that encoded image payload hashes are unchanged.
+
+**Safety boundary:** use only on files you own or are authorized to modify. Removing explicit metadata does not change how an image was created and must not be used to misrepresent provenance or bypass disclosure requirements.
+
+**Install:**
+
+```powershell
+.\install.ps1 remove-ai-image-metadata
 ```
 
 ## Safe Install Defaults

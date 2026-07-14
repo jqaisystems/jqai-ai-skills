@@ -4,6 +4,20 @@ Public release history for JQ AI Skills.
 
 The social preview image is intentionally stable for 2026 and is not updated for every release.
 
+## [v0.9.1](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.9.1) - 2026-07-13
+
+Added `remove-ai-image-metadata`, growing the library from 32 to 33 skills.
+
+### Added
+
+- Added a format-aware skill and standard-library Python helper for inspecting and removing explicit AI-generator or provenance metadata from PNG, JPEG, WebP, and GIF files without re-encoding picture data.
+- Added copy-first defaults, encoded-payload verification, optional in-place backups, unsupported-format stop conditions, and responsible-use rules.
+- Added a public-safe sample, catalog entry, quality-matrix row, quick-reference prompt, and v0.9.1 release announcement.
+
+### Safety
+
+- Strengthened the release checklist and pull-request template so new or changed skills require behavior review, candidate scanning, named-file diff review, and explicit approval before publication.
+
 ## [v0.9.0](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.9.0) - 2026-07-10
 
 Added nine new skills, growing the library from 23 to 32, across two new categories: Client Work and Agent Workflow.

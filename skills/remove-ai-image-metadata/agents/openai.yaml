@@ -1,0 +1,4 @@
+interface:
+  display_name: "Remove AI Image Metadata"
+  short_description: "Clean AI metadata from image files"
+  default_prompt: "Use $remove-ai-image-metadata to inspect these images, remove embedded AI provenance metadata safely, and verify the cleaned files."

@@ -13,6 +13,7 @@ Use this page when you want to inspect expected output before installing a skill
 | Prove the first install path | [`first-install-proof.md`](first-install-proof.md) |
 | Prove an update after release | [`update-after-release-proof.md`](update-after-release-proof.md) |
 | Inspect utility skill outputs | [`utility-skill-proof-pack.md`](utility-skill-proof-pack.md) |
+| Inspect verified image-metadata cleanup output | [`remove-ai-image-metadata-sample.md`](remove-ai-image-metadata-sample.md) |
 | Inspect responsive demo output | [`demo-animation-v2-walkthrough-sample.md`](demo-animation-v2-walkthrough-sample.md) |
 | Inspect release-to-showcase handoff | [`release-showcase-handoff-sample.md`](release-showcase-handoff-sample.md) |
 | Inspect GitHub profile proof refresh output | [`github-profile-proof-updater-sample.md`](github-profile-proof-updater-sample.md) |
@@ -46,6 +47,7 @@ Use this page when you want to inspect expected output before installing a skill
 | [`first-skill-candidate/README.md`](first-skill-candidate/README.md) | Ready fake README and docs files for the first `github-safe-publisher` review. |
 | [`first-skill-candidate/expected-review.md`](first-skill-candidate/expected-review.md) | Expected `READY` review output for the first-skill candidate pack. |
 | [`research-brief-curator-sample-items.json`](research-brief-curator-sample-items.json) | Fake source items for the research brief sample. |
+| [`remove-ai-image-metadata-sample.md`](remove-ai-image-metadata-sample.md) | Fictional inspection and verified-copy output for the image metadata cleanup skill. |
 
 ## Recommended Reading Path
 

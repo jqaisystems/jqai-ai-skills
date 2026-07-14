@@ -14,6 +14,7 @@ For the guided path, start with [`START_HERE.md`](START_HERE.md). For full insta
 | Prove the first install path | [`docs/examples/first-install-proof.md`](docs/examples/first-install-proof.md) |
 | Prove a post-release update path | [`docs/examples/update-after-release-proof.md`](docs/examples/update-after-release-proof.md) |
 | Inspect utility output examples | [`docs/examples/utility-skill-proof-pack.md`](docs/examples/utility-skill-proof-pack.md) |
+| Inspect verified image-metadata cleanup output | [`docs/examples/remove-ai-image-metadata-sample.md`](docs/examples/remove-ai-image-metadata-sample.md) |
 | Inspect responsive demo output | [`docs/examples/demo-animation-v2-walkthrough-sample.md`](docs/examples/demo-animation-v2-walkthrough-sample.md) |
 | Inspect release-to-showcase handoff | [`docs/examples/release-showcase-handoff-sample.md`](docs/examples/release-showcase-handoff-sample.md) |
 | Evaluate trust and install readiness | [`docs/guides/evaluate-skill-library.md`](docs/guides/evaluate-skill-library.md) |
@@ -116,6 +117,7 @@ Use $session-handoff to wrap up this session into a START_HERE.md.
 Use $agents-md-writer to register my local skills for both Claude Code and Codex.
 Use $ops-status-report to generate this week's status snapshot of my workspace.
 Use $screen-recorder to record a region of my screen.
+Use $remove-ai-image-metadata to inspect these images, create verified clean copies, and report which explicit AI provenance metadata was removed.
 ```
 
 ## Public-Safe Publishing

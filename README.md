@@ -6,7 +6,7 @@ These skills are small, portable instruction folders for Claude/Codex-style work
 
 [![Website](https://img.shields.io/badge/Website-ai.joaoqueiros.com-111827?style=for-the-badge)](https://www.ai.joaoqueiros.com)
 [![License](https://img.shields.io/badge/License-MIT-059669?style=for-the-badge)](LICENSE)
-[![Release](https://img.shields.io/badge/Release-v0.9.0-2563eb?style=for-the-badge)](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.9.0)
+[![Release](https://img.shields.io/badge/Release-v0.9.1-2563eb?style=for-the-badge)](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.9.1)
 [![Validate skills](https://github.com/jqaisystems/jqai-ai-skills/actions/workflows/validate.yml/badge.svg)](https://github.com/jqaisystems/jqai-ai-skills/actions/workflows/validate.yml)
 
 ## Start Here
@@ -93,6 +93,7 @@ Use $session-handoff to wrap up this session into a START_HERE.md.
 Use $agents-md-writer to register my local skills for both Claude Code and Codex.
 Use $ops-status-report to generate this week's status snapshot of my workspace.
 Use $screen-recorder to record a region of my screen.
+Use $remove-ai-image-metadata to inspect these images, create verified clean copies, and report which explicit AI provenance metadata was removed.
 ```
 
 ## Example Artifacts
@@ -176,6 +177,12 @@ For a field-by-field walkthrough, use [`docs/guides/skill-anatomy.md`](docs/guid
 | PHP Form Mailer | [`skills/php-form-mailer/SKILL.md`](skills/php-form-mailer/SKILL.md) | Wire any HTML form to a two-email PHP handler with no form SaaS. |
 | Client Intake Builder | [`skills/client-intake-builder/SKILL.md`](skills/client-intake-builder/SKILL.md) | Generate a branded single-file client intake questionnaire. |
 | Vault Janitor | [`skills/vault-janitor/SKILL.md`](skills/vault-janitor/SKILL.md) | Find folder junk and report it with sizes; deletes only what you approve. |
+
+### Media & Provenance
+
+| Skill | File | Use |
+|---|---|---|
+| Remove AI Image Metadata | [`skills/remove-ai-image-metadata/SKILL.md`](skills/remove-ai-image-metadata/SKILL.md) | Inspect and remove explicit AI-generator or provenance metadata from authorized image files while preserving encoded picture data when the format permits. |
 
 ### Notes & Productivity
 
