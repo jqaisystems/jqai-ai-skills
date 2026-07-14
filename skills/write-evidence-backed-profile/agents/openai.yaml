@@ -1,0 +1,4 @@
+interface:
+  display_name: "Write Evidence-Backed Profile"
+  short_description: "Draft profile copy from approved evidence"
+  default_prompt: "Use $write-evidence-backed-profile to draft this profile copy from the approved evidence pack."

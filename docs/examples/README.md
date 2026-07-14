@@ -21,6 +21,9 @@ Use this page when you want to inspect expected output before installing a skill
 | Inspect traceable feedback implementation | [`implement-client-feedback-sample.md`](implement-client-feedback-sample.md) |
 | Inspect a final delivery audit and handoff | [`client-delivery-auditor-sample.md`](client-delivery-auditor-sample.md) |
 | Inspect framework-neutral website verification | [`website-change-verifier-sample.md`](website-change-verifier-sample.md) |
+| Inspect public claim verification | [`verify-public-claims-sample.md`](verify-public-claims-sample.md) |
+| Inspect a source-traceable article package | [`research-to-article-sample.md`](research-to-article-sample.md) |
+| Inspect evidence-backed profile writing | [`write-evidence-backed-profile-sample.md`](write-evidence-backed-profile-sample.md) |
 | Score the safest first install | [`../guides/first-skill-scorecard.md`](../guides/first-skill-scorecard.md) |
 | Run the selected skill with fake input | [`first-skill-walkthrough.md`](first-skill-walkthrough.md) |
 | Use ready fake first-run files | [`first-skill-candidate/README.md`](first-skill-candidate/README.md) |
@@ -54,6 +57,9 @@ Use this page when you want to inspect expected output before installing a skill
 | [`implement-client-feedback-sample.md`](implement-client-feedback-sample.md) | Fictional mixed revision notes converted into a traceable decision and verification matrix. |
 | [`client-delivery-auditor-sample.md`](client-delivery-auditor-sample.md) | Fictional package audit covering complete, partial, missing, unverified, and awaiting-client items. |
 | [`website-change-verifier-sample.md`](website-change-verifier-sample.md) | Fictional localhost verification covering statuses, content assertions, and JSON output. |
+| [`verify-public-claims-sample.md`](verify-public-claims-sample.md) | Fictional claim ledger covering supported, qualified, inferred, unsupported, and stale wording. |
+| [`research-to-article-sample.md`](research-to-article-sample.md) | Fictional article package with a claim map, conflicting source notes, and publication boundary. |
+| [`write-evidence-backed-profile-sample.md`](write-evidence-backed-profile-sample.md) | Fictional portfolio introduction that excludes unsupported experience and outcome claims. |
 
 ## Recommended Reading Path
 

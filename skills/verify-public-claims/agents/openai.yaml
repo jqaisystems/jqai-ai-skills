@@ -1,0 +1,4 @@
+interface:
+  display_name: "Verify Public Claims"
+  short_description: "Check public claims against current evidence"
+  default_prompt: "Use $verify-public-claims to check this copy against the supplied evidence and flag unsupported claims."

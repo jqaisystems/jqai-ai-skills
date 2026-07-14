@@ -107,6 +107,9 @@ Use $web-scraper to create a browser console script for this public demo directo
 Use $code-deduplicator to consolidate repeated formatting helpers in this sample.
 Use $em-dash-remover to clean this short product note without changing meaning.
 Use $research-brief-curator to turn public links into a safe weekly research brief.
+Use $verify-public-claims to check this public copy against the supplied evidence and flag unsupported claims.
+Use $research-to-article to turn these sources into a traceable, publication-ready article package.
+Use $write-evidence-backed-profile to draft this profile copy from the approved evidence pack.
 Use $demo-animation-v2 to create a responsive animated walkthrough.
 Use $proposal-writer to draft a proposal for this client from my pricing config and their brief.
 Use $follow-up-radar to scan my outreach folder and show me what follow-ups are overdue.

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research to Article"
+  short_description: "Turn verified research into a finished article"
+  default_prompt: "Use $research-to-article to turn these sources into a traceable, publication-ready article package."

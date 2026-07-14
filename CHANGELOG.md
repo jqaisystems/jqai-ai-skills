@@ -4,6 +4,24 @@ Public release history for JQ AI Skills.
 
 The social preview image is intentionally stable for 2026 and is not updated for every release.
 
+## [v0.11.0](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.11.0) - 2026-07-14
+
+Added three evidence-based writing skills, growing the library from 36 to 39 skills.
+
+### Added
+
+- Added `verify-public-claims` for claim-level evidence status, source dates, defensible rewrites, and unresolved checks.
+- Added `research-to-article` for claim maps, metadata, finished articles, Link Maps, and publication-boundary reporting.
+- Added `write-evidence-backed-profile` for evidence maps, audience-specific profile writing, qualifications, and omitted unsupported claims.
+- Added one fictional public-safe proof sample for each new skill.
+- Added an optional Evidence-Based Writing workflow bundle.
+
+### Safety and verification
+
+- Rewrote the workflows from general evidence-handling patterns instead of copying personal skill folders.
+- Removed personal identity, local paths, client material, source registries, raw prompts, memory content, and user-specific voice rules.
+- Passed official skill validation, independent synthetic forward tests, local link checks, and candidate safety scanning with zero findings.
+
 ## [v0.10.0](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.10.0) - 2026-07-14
 
 Added three client-delivery and website-verification skills, growing the library from 33 to 36 skills.

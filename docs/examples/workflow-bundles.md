@@ -197,6 +197,59 @@ Use $client-delivery-auditor to compare this final package with the promised del
 
 Do not mark the work complete while any in-scope item lacks implementation evidence or verification. Do not send, upload, deploy, or change access permissions without separate human approval.
 
+## Bundle 5: Evidence-Based Writing
+
+Use this bundle when public writing must remain traceable to current evidence from first review through finished draft.
+
+### Install
+
+```powershell
+.\install.ps1 verify-public-claims
+.\install.ps1 research-to-article
+.\install.ps1 write-evidence-backed-profile
+```
+
+### When To Use It
+
+- Existing public copy contains factual, performance, attribution, or recency claims that need checking.
+- A source set must become a finished article rather than a research brief.
+- A bio, application, proposal introduction, or portfolio profile must use only approved evidence.
+
+### Suggested Flow
+
+1. Establish the audience, publication surface, evidence cutoff, and approved source set.
+2. Use `verify-public-claims` to classify material statements and identify evidence gaps.
+3. Use `research-to-article` when the result is a finished source-backed article package.
+4. Use `write-evidence-backed-profile` when the result is audience-specific professional positioning.
+5. Review held claims, source dates, links, qualifications, and omitted assertions before use.
+
+Each skill also works independently. The article and profile skills do not require the claim-verification skill to be installed.
+
+### Example Prompts
+
+```text
+Use $verify-public-claims to check this homepage copy against the supplied sources and rewrite anything unsupported or stale.
+```
+
+```text
+Use $research-to-article to turn these current sources into a finished article package with a claim map and Link Map.
+```
+
+```text
+Use $write-evidence-backed-profile to draft this application response from the approved evidence pack and omit unsupported claims.
+```
+
+### Expected Outputs
+
+- A dated claim ledger with defensible replacement wording.
+- A finished article package that separates fact, analysis, inference, scenario, and recommendation.
+- Profile writing with an evidence map, qualifications, and omitted unsupported claims.
+- A clear list of sources, conflicts, inaccessible evidence, and remaining checks.
+
+### Review Gate
+
+Do not publish a material claim that remains unsupported or stale. Do not hide source conflicts, invent access, submit forms, send messages, modify websites, or update public profiles.
+
 ## Choosing A Bundle
 
 | If your goal is... | Start with |
@@ -205,5 +258,6 @@ Do not mark the work complete while any in-scope item lacks implementation evide
 | Turn public sources into a brief | Content And Research |
 | Show a workflow and launch it | Demo And Launch |
 | Implement feedback and prove final delivery | Client Revision And Delivery |
+| Check claims and create evidence-backed public writing | Evidence-Based Writing |
 
 If you are not sure, start with one skill from [`docs/guides/skill-selection.md`](../guides/skill-selection.md) before installing a bundle.

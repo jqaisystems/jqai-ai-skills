@@ -24,6 +24,9 @@ All linked examples use fictional, public, or generalized material. They do not 
 | Is there proof for traceable feedback implementation? | [`implement-client-feedback-sample.md`](implement-client-feedback-sample.md) |
 | Is there proof for final package auditing? | [`client-delivery-auditor-sample.md`](client-delivery-auditor-sample.md) |
 | Is there proof for website change verification? | [`website-change-verifier-sample.md`](website-change-verifier-sample.md) |
+| Is there proof for public claim verification? | [`verify-public-claims-sample.md`](verify-public-claims-sample.md) |
+| Is there proof for source-backed article creation? | [`research-to-article-sample.md`](research-to-article-sample.md) |
+| Is there proof for evidence-backed profile writing? | [`write-evidence-backed-profile-sample.md`](write-evidence-backed-profile-sample.md) |
 | How do I evaluate trust and install readiness? | [`../guides/evaluate-skill-library.md`](../guides/evaluate-skill-library.md) |
 | Which skill should I install first? | [`../guides/first-skill-scorecard.md`](../guides/first-skill-scorecard.md) |
 | How do I run the selected skill safely? | [`first-skill-walkthrough.md`](first-skill-walkthrough.md) |
@@ -85,6 +88,9 @@ Good stopping point: after five minutes, a visitor should know what the repo con
 | Feedback implementation | [`implement-client-feedback-sample.md`](implement-client-feedback-sample.md) |
 | Client delivery audit | [`client-delivery-auditor-sample.md`](client-delivery-auditor-sample.md) |
 | Website change verification | [`website-change-verifier-sample.md`](website-change-verifier-sample.md) |
+| Public claim verification | [`verify-public-claims-sample.md`](verify-public-claims-sample.md) |
+| Source-backed article package | [`research-to-article-sample.md`](research-to-article-sample.md) |
+| Evidence-backed profile writing | [`write-evidence-backed-profile-sample.md`](write-evidence-backed-profile-sample.md) |
 | Multi-skill workflows | [`workflow-bundles.md`](workflow-bundles.md) |
 
 ## System And Library Proof
@@ -106,6 +112,9 @@ Good stopping point: after five minutes, a visitor should know what the repo con
 | [`implement-client-feedback-sample.md`](implement-client-feedback-sample.md) | Public-safe proof that mixed revision notes can retain literal decisions and produce item-level verification evidence. |
 | [`client-delivery-auditor-sample.md`](client-delivery-auditor-sample.md) | Public-safe proof of promised-versus-delivered classification and an unsent handoff. |
 | [`website-change-verifier-sample.md`](website-change-verifier-sample.md) | Public-safe proof of local route, status, content, and JSON verification. |
+| [`verify-public-claims-sample.md`](verify-public-claims-sample.md) | Public-safe proof of claim-level evidence classification and defensible rewrites. |
+| [`research-to-article-sample.md`](research-to-article-sample.md) | Public-safe proof of claim mapping, conflict handling, finished drafting, and no publication action. |
+| [`write-evidence-backed-profile-sample.md`](write-evidence-backed-profile-sample.md) | Public-safe proof of audience-specific profile writing that omits unsupported claims. |
 | [`../skill-quality-matrix.md`](../skill-quality-matrix.md) | Skill maturity, examples, and safety sensitivity are visible instead of implied. |
 | [`../guides/skill-anatomy.md`](../guides/skill-anatomy.md) | The folder contract is documented for maintainers and reviewers. |
 | [`../../CHANGELOG.md`](../../CHANGELOG.md) | Release history is versioned and inspectable. |

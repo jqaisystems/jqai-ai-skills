@@ -31,6 +31,9 @@ If you are new to the repo, start with [`START_HERE.md`](../START_HERE.md). For 
 | Demo and presentation | [`screen-recorder`](../skills/screen-recorder/SKILL.md) | Recording a drag-selected region of the Windows desktop to a clean MP4. | `.\install.ps1 screen-recorder` |
 | Growth and marketplace | [`etsy-listing-optimizer`](../skills/etsy-listing-optimizer/SKILL.md) | Improving marketplace listing copy and keyword fit safely. | `.\install.ps1 etsy-listing-optimizer` |
 | Content and research | [`research-brief-curator`](../skills/research-brief-curator/SKILL.md) | Turning public links and approved notes into research briefs. | `.\install.ps1 research-brief-curator` |
+| Content and evidence | [`verify-public-claims`](../skills/verify-public-claims/SKILL.md) | Checking public claims against current evidence and producing defensible rewrites. | `.\install.ps1 verify-public-claims` |
+| Content and research | [`research-to-article`](../skills/research-to-article/SKILL.md) | Turning verified sources into a finished article package with a visible claim map. | `.\install.ps1 research-to-article` |
+| Professional writing | [`write-evidence-backed-profile`](../skills/write-evidence-backed-profile/SKILL.md) | Drafting bios, applications, and profile copy from approved evidence. | `.\install.ps1 write-evidence-backed-profile` |
 | Content and AI search | [`llms-txt-generator`](../skills/llms-txt-generator/SKILL.md) | Generating a spec-compliant llms.txt map of a website for AI assistants. | `.\install.ps1 llms-txt-generator` |
 | Content and extraction | [`web-scraper`](../skills/web-scraper/SKILL.md) | Generating browser console scripts for public or authorized paginated extraction. | `.\install.ps1 web-scraper` |
 | Media and provenance | [`remove-ai-image-metadata`](../skills/remove-ai-image-metadata/SKILL.md) | Inspecting and removing explicit AI provenance metadata from owned or authorized images without re-encoding supported picture data. | `.\install.ps1 remove-ai-image-metadata` |
@@ -96,6 +99,22 @@ Typical output:
 - Source-aware research brief.
 - Browser console extraction script for public or authorized pages.
 - Cleaned copy with meaning preserved.
+
+### Evidence-Based Writing
+
+Use this bundle when public copy must be researched, defensible, and tailored without invented claims.
+
+```powershell
+.\install.ps1 verify-public-claims
+.\install.ps1 research-to-article
+.\install.ps1 write-evidence-backed-profile
+```
+
+Typical output:
+
+- A claim ledger with supported, qualified, inferred, unsupported, and stale statements.
+- A source-traceable article package with metadata, Link Map, and verification notes.
+- Audience-specific profile writing with qualifications and omitted unsupported claims.
 
 ### Freelance Client Flow
 
@@ -301,6 +320,54 @@ Typical output:
 
 ```powershell
 .\install.ps1 research-brief-curator
+```
+
+### `verify-public-claims`
+
+**Use it for:** fact-checking public website copy, release notes, case studies, marketing claims, reports, articles, product descriptions, and profiles against supplied evidence and current public sources.
+
+**Who it helps:** writers, founders, marketers, researchers, and reviewers who need to know which claims are supported, qualified, inferred, unsupported, or stale before publication.
+
+**Typical output:** a dated claim ledger, defensible revised copy, sources checked, unresolved conflicts, and held claims.
+
+**Sample:** [`docs/examples/verify-public-claims-sample.md`](examples/verify-public-claims-sample.md)
+
+**Install:**
+
+```powershell
+.\install.ps1 verify-public-claims
+```
+
+### `research-to-article`
+
+**Use it for:** turning a topic and public sources into a finished article rather than a brief or reading queue.
+
+**Who it helps:** builders, researchers, educators, and small teams that need a practical article with claim mapping, metadata, source credits, and a visible evidence cutoff.
+
+**Typical output:** title, slug, meta description, claim map, outline, finished article, Link Map, and verification report. The skill does not publish or modify websites.
+
+**Sample:** [`docs/examples/research-to-article-sample.md`](examples/research-to-article-sample.md)
+
+**Install:**
+
+```powershell
+.\install.ps1 research-to-article
+```
+
+### `write-evidence-backed-profile`
+
+**Use it for:** bios, applications, portfolio introductions, proposal introductions, cover notes, and professional profile copy that must remain grounded in approved evidence.
+
+**Who it helps:** independent professionals, teams, applicants, and organizations that need audience-specific positioning without invented experience, credentials, relationships, or results.
+
+**Typical output:** a compact evidence map, finished draft, qualifications, omitted claims, sources checked, and facts that still need confirmation.
+
+**Sample:** [`docs/examples/write-evidence-backed-profile-sample.md`](examples/write-evidence-backed-profile-sample.md)
+
+**Install:**
+
+```powershell
+.\install.ps1 write-evidence-backed-profile
 ```
 
 ### `web-scraper`

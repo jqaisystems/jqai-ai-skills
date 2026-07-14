@@ -1,6 +1,6 @@
 # Skill Quality Matrix
 
-Current as of v0.10.0.
+Current as of v0.11.0.
 
 Use this matrix to compare the public skills by maturity, visible proof, safety sensitivity, and install notes. It is a practical adoption guide, not a certification. For the browsable examples index, use [`docs/examples/README.md`](examples/README.md). For the folder contract behind every skill, use [`docs/guides/skill-anatomy.md`](guides/skill-anatomy.md). For the complete first-install trust path, use [`docs/examples/first-install-proof.md`](examples/first-install-proof.md). For the post-release refresh path, use [`docs/examples/update-after-release-proof.md`](examples/update-after-release-proof.md). For smaller utility skill examples, use [`docs/examples/utility-skill-proof-pack.md`](examples/utility-skill-proof-pack.md). For responsive demo output proof, use [`docs/examples/demo-animation-v2-walkthrough-sample.md`](examples/demo-animation-v2-walkthrough-sample.md). For release-to-showcase handoff proof, use [`docs/examples/release-showcase-handoff-sample.md`](examples/release-showcase-handoff-sample.md).
 
@@ -14,6 +14,9 @@ Use this matrix to compare the public skills by maturity, visible proof, safety 
 | [`github-profile-proof-updater`](../skills/github-profile-proof-updater/SKILL.md) | Public proof | New public skill | Profile proof refresh sample, public proof index, catalog entry, and quick reference prompt | Medium | Fetch first, preserve README image paths, verify live GitHub rendering, and avoid local/private paths in proof notes. |
 | [`social-campaign-proof-tracker`](../skills/social-campaign-proof-tracker/SKILL.md) | Public proof | New public skill | Social campaign tracker sample, public proof index, catalog entry, and quick reference prompt | Medium | Track only public links and human-reviewed replies; do not invent engagement or store private analytics exports. |
 | [`research-brief-curator`](../skills/research-brief-curator/SKILL.md) | Content and research | Core public skill | Sample brief, sample items JSON, and content/research bundle coverage | Medium | Use public sources or approved notes; label anything that needs human review. |
+| [`verify-public-claims`](../skills/verify-public-claims/SKILL.md) | Content and evidence | New public skill | Dedicated sample, claim-ledger template, evidence-status reference, independent forward test, catalog entry, and quick-reference prompt | High | Use current direct sources, preserve conflicts, and hold unsupported or stale claims before publication. |
+| [`research-to-article`](../skills/research-to-article/SKILL.md) | Content and research | New public skill | Dedicated sample, article-package template, source-quality reference, independent forward test, catalog entry, and quick-reference prompt | High | Keep facts, analysis, and recommendations distinct; review every material citation and never treat the draft as published. |
+| [`write-evidence-backed-profile`](../skills/write-evidence-backed-profile/SKILL.md) | Professional writing | New public skill | Dedicated sample, evidence-pack template, channel-output reference, independent forward test, catalog entry, and quick-reference prompt | High | Use approved evidence only, qualify adjacent experience, and omit unsupported credentials, relationships, metrics, or results. |
 | [`outreach-pipeline-designer`](../skills/outreach-pipeline-designer/SKILL.md) | Growth and outreach | Core public skill | Reference workflow, scoring rubric, fake review-gated pipeline sample, and workflow bundle coverage | High | Keep prospect data, credentials, and sending actions outside the skill output. |
 | [`etsy-listing-optimizer`](../skills/etsy-listing-optimizer/SKILL.md) | Growth and marketplace | Core public skill | Constraint reference, keyword workflow, batch notes, and fictional listing audit sample | Medium | Remove shop exports, private metrics, customer data, and live account details before use. |
 | [`skill-reviewer`](../skills/skill-reviewer/SKILL.md) | Safety and review | Utility skill | Review checklist, sample `READY`/`REVIEW`/`BLOCK` decisions, catalog entry, and quick reference links | High | Use before installing third-party, downloaded, or modified skill folders. |
@@ -64,6 +67,9 @@ Use this matrix to compare the public skills by maturity, visible proof, safety 
 | Feedback implementation sample | [`docs/examples/implement-client-feedback-sample.md`](examples/implement-client-feedback-sample.md) |
 | Client delivery audit sample | [`docs/examples/client-delivery-auditor-sample.md`](examples/client-delivery-auditor-sample.md) |
 | Website change verification sample | [`docs/examples/website-change-verifier-sample.md`](examples/website-change-verifier-sample.md) |
+| Public claim verification sample | [`docs/examples/verify-public-claims-sample.md`](examples/verify-public-claims-sample.md) |
+| Research-to-article sample | [`docs/examples/research-to-article-sample.md`](examples/research-to-article-sample.md) |
+| Evidence-backed profile sample | [`docs/examples/write-evidence-backed-profile-sample.md`](examples/write-evidence-backed-profile-sample.md) |
 | Full catalog | [`docs/catalog.md`](catalog.md) |
 
 ## Reading The Columns

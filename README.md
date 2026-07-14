@@ -6,7 +6,7 @@ These skills are small, portable instruction folders for Claude/Codex-style work
 
 [![Website](https://img.shields.io/badge/Website-ai.joaoqueiros.com-111827?style=for-the-badge)](https://www.ai.joaoqueiros.com)
 [![License](https://img.shields.io/badge/License-MIT-059669?style=for-the-badge)](LICENSE)
-[![Release](https://img.shields.io/badge/Release-v0.10.0-2563eb?style=for-the-badge)](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.10.0)
+[![Release](https://img.shields.io/badge/Release-v0.11.0-2563eb?style=for-the-badge)](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.11.0)
 [![Validate skills](https://github.com/jqaisystems/jqai-ai-skills/actions/workflows/validate.yml/badge.svg)](https://github.com/jqaisystems/jqai-ai-skills/actions/workflows/validate.yml)
 
 ## Start Here
@@ -70,6 +70,9 @@ Use $cold-outreach-writer to draft a cold email for this prospect from my resear
 Use $lead-scorer to score this lead list against my rubric and rank it.
 Use $etsy-listing-optimizer to audit and rewrite a marketplace listing safely.
 Use $research-brief-curator to turn public links into a safe weekly research brief.
+Use $verify-public-claims to check this public copy against the supplied evidence and flag unsupported claims.
+Use $research-to-article to turn these sources into a traceable, publication-ready article package.
+Use $write-evidence-backed-profile to draft this profile copy from the approved evidence pack.
 Use $release-announcement-writer to turn this changelog into release notes and a launch post.
 Use $github-profile-proof-updater to refresh my GitHub profile assets and prepare the proof trail.
 Use $social-campaign-proof-tracker to turn this project update into LinkedIn/X copy, alt text, and follow-up notes.
@@ -170,6 +173,9 @@ For a field-by-field walkthrough, use [`docs/guides/skill-anatomy.md`](docs/guid
 | Skill | File | Use |
 |---|---|---|
 | Research Brief Curator | [`skills/research-brief-curator/SKILL.md`](skills/research-brief-curator/SKILL.md) | Turn public links and notes into source-aware research briefs with review gates. |
+| Verify Public Claims | [`skills/verify-public-claims/SKILL.md`](skills/verify-public-claims/SKILL.md) | Classify public claims against current evidence and produce defensible rewrites. |
+| Research to Article | [`skills/research-to-article/SKILL.md`](skills/research-to-article/SKILL.md) | Turn sources into a claim map, finished article, metadata, Link Map, and verification notes. |
+| Write Evidence-Backed Profile | [`skills/write-evidence-backed-profile/SKILL.md`](skills/write-evidence-backed-profile/SKILL.md) | Draft bios, applications, and profile copy from approved evidence without invented claims. |
 | llms.txt Generator | [`skills/llms-txt-generator/SKILL.md`](skills/llms-txt-generator/SKILL.md) | Generate a spec-compliant llms.txt map of a website for AI assistants. |
 | Web Scraper | [`skills/web-scraper/SKILL.md`](skills/web-scraper/SKILL.md) | Extract public page content safely into structured notes. |
 | Em Dash Remover | [`skills/em-dash-remover/SKILL.md`](skills/em-dash-remover/SKILL.md) | Clean one common AI-writing tell from copy. |
@@ -227,6 +233,9 @@ For the fastest guided install, see [`docs/guides/one-minute-install.md`](docs/g
 | Decide which leads to contact first | [`lead-scorer`](skills/lead-scorer/SKILL.md) |
 | Improve a marketplace listing safely | [`etsy-listing-optimizer`](skills/etsy-listing-optimizer/SKILL.md) |
 | Turn public links into a reviewed research brief | [`research-brief-curator`](skills/research-brief-curator/SKILL.md) |
+| Check whether public claims match the evidence | [`verify-public-claims`](skills/verify-public-claims/SKILL.md) |
+| Turn verified sources into a finished article package | [`research-to-article`](skills/research-to-article/SKILL.md) |
+| Write a bio or application from approved evidence | [`write-evidence-backed-profile`](skills/write-evidence-backed-profile/SKILL.md) |
 | Package release notes or a launch post | [`release-announcement-writer`](skills/release-announcement-writer/SKILL.md) |
 | Refresh a GitHub profile as a public proof layer | [`github-profile-proof-updater`](skills/github-profile-proof-updater/SKILL.md) |
 | Track a LinkedIn/X proof campaign after publishing | [`social-campaign-proof-tracker`](skills/social-campaign-proof-tracker/SKILL.md) |
