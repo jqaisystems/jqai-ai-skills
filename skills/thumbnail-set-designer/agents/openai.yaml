@@ -1,0 +1,4 @@
+interface:
+  display_name: "Thumbnail Set Designer"
+  short_description: "Plan a set of genuinely different thumbnails"
+  default_prompt: "Use $thumbnail-set-designer to turn this title and hook into a set of distinct on-brand thumbnail prompts: rotate the layouts and accents, pull the hero element from the title only, and state the on-image text and its punctuation exactly."

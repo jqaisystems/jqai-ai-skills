@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Image Run Pacing"
+  short_description: "Run image batches without getting rate limited"
+  default_prompt: "Use $ai-image-run-pacing to plan and run this batch of image generations: set the send interval, enforce the reference-image cap, keep subject likeness consistent, and make the run resumable without storing any credentials."

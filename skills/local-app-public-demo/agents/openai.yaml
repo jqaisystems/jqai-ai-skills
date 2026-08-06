@@ -1,0 +1,4 @@
+interface:
+  display_name: "Local App to Public Demo"
+  short_description: "Freeze a local app into a safe read-only demo"
+  default_prompt: "Use $local-app-public-demo to snapshot this local app into a static read-only demo from the same codebase: freeze the API responses, degrade every write to an honest message, remove machine paths and private data, and verify the built output before it goes public."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Thumbnail Legibility Check"
+  short_description: "Judge thumbnails at the size viewers see them"
+  default_prompt: "Use $thumbnail-legibility-check to score these thumbnail candidates at real display size, run the glance, grayscale, real-feed and decoy tests, and rank them through pairwise duels."

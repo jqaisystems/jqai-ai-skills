@@ -137,6 +137,7 @@ For a field-by-field walkthrough, use [`docs/guides/skill-anatomy.md`](docs/guid
 |---|---|---|
 | GitHub Safe Publisher | [`skills/github-safe-publisher/SKILL.md`](skills/github-safe-publisher/SKILL.md) | Prepare private work for public GitHub releases safely. |
 | Skill Reviewer | [`skills/skill-reviewer/SKILL.md`](skills/skill-reviewer/SKILL.md) | Review AI skill files or folders for dangerous behavior. |
+| Local App to Public Demo | [`skills/local-app-public-demo/SKILL.md`](skills/local-app-public-demo/SKILL.md) | Freeze a local app into a static read-only public demo from the same codebase, with machine paths and private data verified gone. |
 
 ### Public Proof
 
@@ -195,6 +196,9 @@ For a field-by-field walkthrough, use [`docs/guides/skill-anatomy.md`](docs/guid
 | Skill | File | Use |
 |---|---|---|
 | Remove AI Image Metadata | [`skills/remove-ai-image-metadata/SKILL.md`](skills/remove-ai-image-metadata/SKILL.md) | Inspect and remove explicit AI-generator or provenance metadata from authorized image files while preserving encoded picture data when the format permits. |
+| AI Image Run Pacing | [`skills/ai-image-run-pacing/SKILL.md`](skills/ai-image-run-pacing/SKILL.md) | Run a batch of AI image generations without getting rate limited, losing subject likeness, or storing credentials. |
+| Thumbnail Set Designer | [`skills/thumbnail-set-designer/SKILL.md`](skills/thumbnail-set-designer/SKILL.md) | Turn a title and hook into a set of genuinely different on-brand thumbnail prompts, with the traps that ruin AI thumbnails built in. |
+| Thumbnail Legibility Check | [`skills/thumbnail-legibility-check/SKILL.md`](skills/thumbnail-legibility-check/SKILL.md) | Judge thumbnail candidates at the size viewers actually see them, then rank them through pairwise duels. |
 
 ### Notes & Productivity
 
