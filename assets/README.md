@@ -1,10 +1,13 @@
-# Assets
+# Preview media
 
-This folder contains public preview media for the JQ AI Skills repository.
+The overview and folder diagram use the current instruction-folder format. The animated preview explains choosing, inspecting, installing and using a skill without embedding a release number.
 
-- `skill-library-overview.png`, `skill-folder-structure.png`, and the skill demo GIFs show the reusable skill-folder format.
-- `github-social-preview.png` and `github-social-preview.jpg` are 1280x640 social preview cards for GitHub and launch sharing.
-- `jq-ai-skills-launch-preview.gif` is a short silent motion preview for the public skill library.
-- `jq-ai-skills-launch-video-with-music.mp4` is the 30-second launch video with rights-cleared music for the public release campaign.
+- skill-library-overview.png: static workflow-library overview.
+- skill-folder-structure.png: illustrative folder structure; supporting folders are optional.
+- jq-ai-skills-launch-preview.gif: 16-second silent landscape preview.
+- jq-ai-skills-launch-poster.png: static alternative to the animation.
+- jq-ai-skills-launch-video-with-music.mp4: the matching 16-second silent MP4. The legacy filename is retained for existing links; this replacement contains no music.
+- skill-packaging-demo.gif and skill-install-demo.gif: historical illustrations. These are not current installation instructions; use INSTALL.md and the safe-installation guide.
+- github-social-preview.png and github-social-preview.jpg: stable social preview cards.
 
-The media files are promotional/supporting assets. Installing or using the skills only requires the folders under `skills/`.
+Artwork uses the original owner-provided JQ AI SYSTEMS mark. Examples are illustrative, with no account credentials or private data. The media is optional; using the skills requires only the selected instruction folders and their documented prerequisites.

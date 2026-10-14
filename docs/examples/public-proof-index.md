@@ -133,10 +133,10 @@ The corrected [catalog](../catalog.md) also accounts for four existing August ad
 |---|---|
 | [`../../assets/skill-library-overview.png`](../../assets/skill-library-overview.png) | Overview of the reusable workflow library. |
 | [`../../assets/skill-folder-structure.png`](../../assets/skill-folder-structure.png) | The folder structure behind an installable skill. |
-| [`../../assets/skill-packaging-demo.gif`](../../assets/skill-packaging-demo.gif) | A workflow being packaged into a reviewable skill. |
-| [`../../assets/skill-install-demo.gif`](../../assets/skill-install-demo.gif) | A skill install and invocation flow. |
+| [`../../assets/skill-packaging-demo.gif`](../../assets/skill-packaging-demo.gif) | Historical packaging illustration; inspect current skill instructions and examples. |
+| [`../../assets/skill-install-demo.gif`](../../assets/skill-install-demo.gif) | Historical install illustration; use INSTALL.md for current commands and prerequisites. |
 | [`../../assets/jq-ai-skills-launch-preview.gif`](../../assets/jq-ai-skills-launch-preview.gif) | Launch motion preview for the public library. |
-| [`../../assets/jq-ai-skills-launch-video-with-music.mp4`](../../assets/jq-ai-skills-launch-video-with-music.mp4) | Short launch video. |
+| [`../../assets/jq-ai-skills-launch-video-with-music.mp4`](../../assets/jq-ai-skills-launch-video-with-music.mp4) | 16-second silent workflow overview, retained at its existing media path. |
 | [`../../assets/github-social-preview.png`](../../assets/github-social-preview.png) | Stable 2026 GitHub social preview. |
 
 ## What This Page Does Not Prove

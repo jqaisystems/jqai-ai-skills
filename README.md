@@ -1,48 +1,40 @@
 # JQ AI Skills
 
-Reusable AI skills by JQ AI SYSTEMS.
+Portable instruction folders for repeatable work with Codex and Claude Code. Read the instructions, inspect the examples, and start with one workflow.
 
-**v0.13.0 contains 47 skills**, including backup-evidence review, safer installation, and updated skill setup guidance. See the [release notes](docs/announcements/v0.13.0.md).
+[Start here](START_HERE.md) · [Browse the catalog](docs/catalog.md) · [Install safely](INSTALL.md) · [Inspect the proof](docs/examples/public-proof-index.md)
 
-New: [backup-readiness-auditor](skills/backup-readiness-auditor/SKILL.md), which evaluates supplied evidence without operating on backups. Installation now requires Python 3.11+ and protects existing copies and links; see [safe installation](docs/guides/safe-installation.md).
-
-These skills are small, portable instruction folders for Claude/Codex-style workflows. They are published under the MIT License so you can adapt them for your own local setup.
-
-[![Website](https://img.shields.io/badge/Website-ai.joaoqueiros.com-111827?style=for-the-badge)](https://www.ai.joaoqueiros.com)
-[![License](https://img.shields.io/badge/License-MIT-059669?style=for-the-badge)](LICENSE)
-[![Release](https://img.shields.io/badge/Release-v0.13.0-2563eb?style=for-the-badge)](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.13.0)
+[![Latest release](https://img.shields.io/github/v/release/jqaisystems/jqai-ai-skills?label=latest%20release&color=267b91)](https://github.com/jqaisystems/jqai-ai-skills/releases/latest)
+[![MIT licence](https://img.shields.io/badge/licence-MIT-267b91)](LICENSE)
 [![Validate skills](https://github.com/jqaisystems/jqai-ai-skills/actions/workflows/validate.yml/badge.svg)](https://github.com/jqaisystems/jqai-ai-skills/actions/workflows/validate.yml)
 
-## Start Here
+The [v0.13.0 release](docs/announcements/v0.13.0.md), published on 14 October 2026, contains 47 skills. It adds [backup-readiness-auditor](skills/backup-readiness-auditor/SKILL.md), safer installation and updated setup guidance. Check the [latest release](https://github.com/jqaisystems/jqai-ai-skills/releases/latest) for subsequent changes.
 
-New here? Pick one route:
+Installation requires Python 3.11+. New Codex setups should explicitly choose the supported discovery target; read [safe installation and discovery](docs/guides/safe-installation.md) before copying or upgrading skills.
 
-| Goal | Start with | Then use |
-|---|---|---|
-| Understand the library quickly | [`START_HERE.md`](START_HERE.md) | [`docs/examples/visitor-paths.md`](docs/examples/visitor-paths.md) |
-| Choose one safe first install | [`docs/guides/first-skill-scorecard.md`](docs/guides/first-skill-scorecard.md) | [`docs/examples/first-skill-walkthrough.md`](docs/examples/first-skill-walkthrough.md) |
-| Check trust and public proof | [`docs/guides/evaluate-skill-library.md`](docs/guides/evaluate-skill-library.md) | [`docs/examples/public-proof-index.md`](docs/examples/public-proof-index.md) |
-| Install or update skills | [`INSTALL.md`](INSTALL.md) | [`docs/guides/install-verification.md`](docs/guides/install-verification.md) |
+<a href="START_HERE.md"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/jq-ai-skills-launch-poster.png"><img src="assets/jq-ai-skills-launch-preview.gif" alt="JQ AI Skills: choose a workflow, inspect instructions, install into your chosen target, and use the skill"></picture></a>
 
-Need the compact command map? Use [`QUICK_REFERENCE.md`](QUICK_REFERENCE.md). Want the full catalog? Use [`docs/catalog.md`](docs/catalog.md).
+[Static preview](assets/jq-ai-skills-launch-poster.png) · [Watch the 16-second silent overview](assets/jq-ai-skills-launch-video-with-music.mp4)
 
-## Preview
+This animation explains the workflow. Use the install guide for current commands and prerequisites.
 
-![JQ AI Skills overview](assets/skill-library-overview.png)
+## Pick your route
 
-![Skill folder structure](assets/skill-folder-structure.png)
+| You want to… | Start with |
+|---|---|
+| Understand the library | [Start Here](START_HERE.md) and the [visitor paths](docs/examples/visitor-paths.md) |
+| Try one useful skill | [First-skill scorecard](docs/guides/first-skill-scorecard.md) and [walkthrough](docs/examples/first-skill-walkthrough.md) |
+| Check the quality and boundaries | [Evaluation guide](docs/guides/evaluate-skill-library.md) and [public proof index](docs/examples/public-proof-index.md) |
+| Install or update | [Installation](INSTALL.md) and [verification](docs/guides/install-verification.md) |
 
-![Skill packaging demo](assets/skill-packaging-demo.gif)
+<details>
+<summary>What is inside a skill folder?</summary>
 
-![Skill install demo](assets/skill-install-demo.gif)
+![Skill folder: SKILL.md plus optional supporting references, scripts and assets](assets/skill-folder-structure.png)
 
-### Launch Video
+SKILL.md defines the workflow. Supporting folders vary by skill. Read the instructions and public examples before use.
 
-![JQ AI Skills launch motion preview](assets/jq-ai-skills-launch-preview.gif)
-
-[Watch the 30-second launch video with music](assets/jq-ai-skills-launch-video-with-music.mp4).
-
-The launch video is a promotional preview of the public skill library. Skill installation does not require these media assets.
+</details>
 
 ## Quick Start
 
@@ -60,11 +52,12 @@ For first-use help, use [`START_HERE.md`](START_HERE.md), [`QUICK_REFERENCE.md`]
 Install flow:
 
 1. Pick a skill folder from `skills/`.
-2. Copy the whole folder into your local skills directory, or use the install scripts below.
+2. Read the installation guide, choose your target and preview the planned changes before installing.
 3. Restart or reload your AI coding tool.
 4. Invoke the skill by name in your prompt.
 
-Example prompts:
+<details>
+<summary>Example prompts for the workflows</summary>
 
 ```text
 Use $github-safe-publisher to prepare this repo for a public release.
@@ -106,6 +99,8 @@ Use $screen-recorder to record a region of my screen.
 Use $remove-ai-image-metadata to inspect these images, create verified clean copies, and report which explicit AI provenance metadata was removed.
 ```
 
+</details>
+
 ## Example Artifacts
 
 Every skill ships with public-safe proof: fake-data samples, guides, and checklists a visitor can inspect before installing anything. The short list below covers the main entry points; everything else is one click away.
@@ -117,23 +112,12 @@ Every skill ships with public-safe proof: fake-data samples, guides, and checkli
 - [`INSTALL.md`](INSTALL.md), [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md), and the guides in [`docs/guides/`](docs/guides/) cover install, verification, update, review, and first-skill selection routines.
 - [`CHANGELOG.md`](CHANGELOG.md), [`RELEASE_CHECKLIST.md`](RELEASE_CHECKLIST.md), [`SECURITY.md`](SECURITY.md), [`ROADMAP.md`](ROADMAP.md), and [`SUPPORT.md`](SUPPORT.md) document how this repo is maintained and released.
 
-## Skill Folder Structure
+## Skill catalog
 
-Each skill is packaged as a self-contained folder:
+[Browse the complete catalog](docs/catalog.md) or expand the category index below.
 
-```text
-skill-name/
-  SKILL.md
-  agents/
-    openai.yaml
-  assets/       optional templates, images, or reusable files
-  references/   optional supporting docs
-  scripts/      optional helper scripts
-```
-
-For a field-by-field walkthrough, use [`docs/guides/skill-anatomy.md`](docs/guides/skill-anatomy.md). To create a new skill, copy [`skills/_template/`](skills/_template/) and replace the placeholder names, descriptions, and prompts.
-
-## Skills Included
+<details>
+<summary>Browse the skills by category</summary>
 
 ### Safety & Publishing
 
@@ -236,7 +220,10 @@ For a field-by-field walkthrough, use [`docs/guides/skill-anatomy.md`](docs/guid
 | Demo Animation V2 | [`skills/demo-animation-v2/SKILL.md`](skills/demo-animation-v2/SKILL.md) | Build recommended responsive demo walkthroughs. Includes [`assets/template.html`](skills/demo-animation-v2/assets/template.html). |
 | Screen Recorder | [`skills/screen-recorder/SKILL.md`](skills/screen-recorder/SKILL.md) | Record a drag-selected region of the Windows desktop to a clean MP4 (FFmpeg). |
 
-## Which Skill Should I Use?
+</details>
+
+<details>
+<summary>Match a task to a skill</summary>
 
 For the fastest guided install, see [`docs/guides/one-minute-install.md`](docs/guides/one-minute-install.md). To score the safest first install, see [`docs/guides/first-skill-scorecard.md`](docs/guides/first-skill-scorecard.md). To prove the full first-install path, see [`docs/examples/first-install-proof.md`](docs/examples/first-install-proof.md). To run the selected skill with fake input, see [`docs/examples/first-skill-walkthrough.md`](docs/examples/first-skill-walkthrough.md), the [`first-skill candidate pack`](docs/examples/first-skill-candidate/README.md), and its [`expected review`](docs/examples/first-skill-candidate/expected-review.md). For the detailed visitor guide, see [`docs/guides/skill-selection.md`](docs/guides/skill-selection.md). To understand the folder contract, see [`docs/guides/skill-anatomy.md`](docs/guides/skill-anatomy.md). To review an unfamiliar skill before install, see [`docs/guides/skill-review-checklist.md`](docs/guides/skill-review-checklist.md). For the complete catalog, see [`docs/catalog.md`](docs/catalog.md).
 
@@ -281,70 +268,35 @@ For the fastest guided install, see [`docs/guides/one-minute-install.md`](docs/g
 | Get a weekly status snapshot of a workspace | [`ops-status-report`](skills/ops-status-report/SKILL.md) |
 | Record a region of the Windows desktop to MP4 | [`screen-recorder`](skills/screen-recorder/SKILL.md) |
 
+</details>
+
 ## Why This Matters
 
 The skills repo is the technical credibility layer behind the client-facing systems. It shows how JQ AI SYSTEMS packages repeatable AI workflows into reusable instructions, review steps, and safety checks instead of relying on one-off prompts.
 
 ## Installation
 
-For the short command reference, see [`INSTALL.md`](INSTALL.md). After installing, confirm the setup with [`docs/guides/install-verification.md`](docs/guides/install-verification.md). If a skill does not show up after install, see [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md).
+Requires Python 3.11+. Review [INSTALL.md](INSTALL.md) and [safe installation and discovery](docs/guides/safe-installation.md) first. Choose a verified target and use a dry run before writing files. New Codex setups use ~/.agents/skills; Claude Code uses ~/.claude/skills.
 
-For Claude Code/Codex-style local skills:
-
-1. Create a local skills folder if you do not already have one.
-2. Copy the selected skill folder from `skills/`.
-3. Place the whole folder in your local skills directory.
-4. Restart or reload your AI coding tool if needed.
-5. Ask the tool to use the skill by name.
-
-Only install skills you understand. Review the instructions before using them on private projects.
-
-## Codex Install
-
-Copy a whole skill folder into your Codex skills directory, then restart Codex so the skill list reloads.
-
-Fast install from this repo:
+From the repository root, preview one Codex skill:
 
 Windows PowerShell:
 
 ```powershell
-.\install.ps1 github-safe-publisher
-.\install.ps1 case-study-writer
-.\install.ps1 outreach-pipeline-designer
-.\install.ps1 etsy-listing-optimizer
-.\install.ps1 research-brief-curator
-.\install.ps1 -All
+.\install.ps1 github-safe-publisher -Target "$HOME\.agents\skills" -DryRun
 ```
 
 macOS/Linux:
 
 ```bash
-chmod +x ./install.sh
-./install.sh github-safe-publisher
-./install.sh case-study-writer
-./install.sh outreach-pipeline-designer
-./install.sh etsy-listing-optimizer
-./install.sh research-brief-curator
-./install.sh --all
+bash ./install.sh --target "$HOME/.agents/skills" --dry-run github-safe-publisher
 ```
 
-List available skills:
+Inspect the plan, then repeat the command without the dry-run flag to install. Reload your tool and verify discovery with the [installation checks](docs/guides/install-verification.md).
 
-```powershell
-.\install.ps1 -List
-```
+The installer retains a legacy default for compatibility. These examples choose the target explicitly. Do not merge or force-copy into an existing skill; follow the guide for managed upgrades and manual-install migration.
 
-```bash
-./install.sh --list
-```
-
-For current discovery locations, dry-run installation, managed upgrades, and private/shared-link protection, use [safe installation](docs/guides/safe-installation.md). Do not force-copy over an existing skill. The legacy default is retained for compatibility; select your tool's current target explicitly.
-
-Then invoke it by name:
-
-```text
-Use $web-scraper to build a browser console scraper for this public paginated website.
-```
+[List commands and prerequisites](INSTALL.md) · [First-skill walkthrough](docs/examples/first-skill-walkthrough.md) · [Troubleshooting](TROUBLESHOOTING.md)
 
 ## Contributing
 
