@@ -2,13 +2,13 @@
 
 Reusable AI skills by JQ AI SYSTEMS.
 
-This working tree contains the **v0.12.0 candidate: 46 skills**. The published release badge below remains v0.11.0 until publication is approved. See the [draft announcement](docs/announcements/v0.12.0.md).
+**v0.12.0 contains 46 skills**, including local media checks, offline automation reconciliation, and Windows reinstall planning. See the [release notes](docs/announcements/v0.12.0.md).
 
 These skills are small, portable instruction folders for Claude/Codex-style workflows. They are published under the MIT License so you can adapt them for your own local setup.
 
 [![Website](https://img.shields.io/badge/Website-ai.joaoqueiros.com-111827?style=for-the-badge)](https://www.ai.joaoqueiros.com)
 [![License](https://img.shields.io/badge/License-MIT-059669?style=for-the-badge)](LICENSE)
-[![Release](https://img.shields.io/badge/Release-v0.11.0-2563eb?style=for-the-badge)](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.11.0)
+[![Release](https://img.shields.io/badge/Release-v0.12.0-2563eb?style=for-the-badge)](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.12.0)
 [![Validate skills](https://github.com/jqaisystems/jqai-ai-skills/actions/workflows/validate.yml/badge.svg)](https://github.com/jqaisystems/jqai-ai-skills/actions/workflows/validate.yml)
 
 ## Start Here

@@ -6,7 +6,7 @@ If you are new to the repo, start with [`START_HERE.md`](../START_HERE.md). For 
 
 ## At A Glance
 
-Inventory: 46 skills in the v0.12.0 candidate. Four August additions were already on main; their implementations are unchanged by this candidate.
+Inventory: 46 skills in v0.12.0. Four August additions were already on main; their implementations are unchanged by this release.
 
 | Area | Skill | Best for | Install |
 |---|---|---|---|

@@ -4,9 +4,9 @@ Public release history for JQ AI Skills.
 
 The social preview image is intentionally stable for 2026 and is not updated for every release.
 
-## v0.12.0 - Unreleased
+## [v0.12.0](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.12.0) - 2026-10-14
 
-Candidate library: 46 skills (43 on main plus three new utilities).
+Library: 46 skills (43 previously on main plus three new utilities).
 
 ### Added
 
@@ -23,7 +23,7 @@ Candidate library: 46 skills (43 on main plus three new utilities).
 
 ### Release Gates
 
-Local verification precedes human approval to stage, commit, or publish. Remote GitHub Actions and release creation remain pending. Generated operational data stays private.
+Publication is gated on explicit human approval and passing GitHub Actions for the release commit. See the release page for remote verification evidence. Generated operational data stays private.
 
 ## [v0.11.0](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.11.0) - 2026-07-14
 

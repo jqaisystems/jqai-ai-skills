@@ -128,7 +128,7 @@ Use $remove-ai-image-metadata to inspect these images, create verified clean cop
 
 ## Local Verification And Recovery
 
-The v0.12.0 candidate contains 46 skills. These utilities work independently; generated inventories, reports, snapshots, and receipts stay private by default.
+The v0.12.0 library contains 46 skills. These utilities work independently; generated inventories, reports, snapshots, and receipts stay private by default.
 
 ```text
 Use $media-spec-checker to check these local files against my JSON rules without modifying them.

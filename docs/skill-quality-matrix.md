@@ -1,6 +1,6 @@
 # Skill Quality Matrix
 
-Current as of the v0.12.0 candidate: 46 skills. Published release remains v0.11.0. Candidate checks do not imply remote CI has run.
+Current as of v0.12.0: 46 skills. Local checks and remote CI provide different evidence; see the release page for the tested release commit.
 
 Use this matrix to compare the public skills by maturity, visible proof, safety sensitivity, and install notes. It is a practical adoption guide, not a certification. For the browsable examples index, use [`docs/examples/README.md`](examples/README.md). For the folder contract behind every skill, use [`docs/guides/skill-anatomy.md`](guides/skill-anatomy.md). For the complete first-install trust path, use [`docs/examples/first-install-proof.md`](examples/first-install-proof.md). For the post-release refresh path, use [`docs/examples/update-after-release-proof.md`](examples/update-after-release-proof.md). For smaller utility skill examples, use [`docs/examples/utility-skill-proof-pack.md`](examples/utility-skill-proof-pack.md). For responsive demo output proof, use [`docs/examples/demo-animation-v2-walkthrough-sample.md`](examples/demo-animation-v2-walkthrough-sample.md). For release-to-showcase handoff proof, use [`docs/examples/release-showcase-handoff-sample.md`](examples/release-showcase-handoff-sample.md).
 
@@ -54,15 +54,15 @@ Use this matrix to compare the public skills by maturity, visible proof, safety 
 
 | Skill | Maturity and visible proof | Safety boundary |
 |---|---|---|
-| [media-spec-checker](../skills/media-spec-checker/SKILL.md) | Tested candidate; rules contract, synthetic image/video regressions, [sample](examples/media-spec-checker-sample.md) | Read-only local inputs; unknowns are unverified; no automatic dependency installs. |
-| [automation-state-reconciler](../skills/automation-state-reconciler/SKILL.md) | Tested candidate; versioned snapshots, receipt tests, [sample](examples/automation-state-reconciler-sample.md) | Offline comparison only; stale/incomplete evidence never permits removal. |
-| [windows-reinstall-planner](../skills/windows-reinstall-planner/SKILL.md) | Tested candidate; mocked collection and synthetic report tests, [sample](examples/windows-reinstall-planner-sample.md) | No real inventory in development; private metadata output, not proof of runnable applications. |
-| [ai-image-run-pacing](../skills/ai-image-run-pacing/SKILL.md) | Existing August addition; instructions and catalog coverage | Provider limits must be rechecked; this candidate does not retest its workflow. |
+| [media-spec-checker](../skills/media-spec-checker/SKILL.md) | Tested utility; rules contract, synthetic image/video regressions, [sample](examples/media-spec-checker-sample.md) | Read-only local inputs; unknowns are unverified; no automatic dependency installs. |
+| [automation-state-reconciler](../skills/automation-state-reconciler/SKILL.md) | Tested utility; versioned snapshots, receipt tests, [sample](examples/automation-state-reconciler-sample.md) | Offline comparison only; stale/incomplete evidence never permits removal. |
+| [windows-reinstall-planner](../skills/windows-reinstall-planner/SKILL.md) | Tested utility; mocked collection and synthetic report tests, [sample](examples/windows-reinstall-planner-sample.md) | No real inventory in development; private metadata output, not proof of runnable applications. |
+| [ai-image-run-pacing](../skills/ai-image-run-pacing/SKILL.md) | Existing August addition; instructions and catalog coverage | Provider limits must be rechecked; this release does not retest its workflow. |
 | [local-app-public-demo](../skills/local-app-public-demo/SKILL.md) | Existing August addition; instructions and catalog coverage | Public demo sanitization requires separate review; implementation unchanged. |
 | [thumbnail-set-designer](../skills/thumbnail-set-designer/SKILL.md) | Existing August addition; instructions and catalog coverage | Use approved reference material; implementation unchanged. |
 | [thumbnail-legibility-check](../skills/thumbnail-legibility-check/SKILL.md) | Existing August addition; instructions and catalog coverage | Legibility judgments are not platform performance guarantees; implementation unchanged. |
 
-The metadata upgrade adds selective XMP/Photoshop handling and preservation regressions. The article upgrade adds date provenance, credits, asset decisions, and an independent fictional forward test. See the [candidate verification notes](examples/v0.12.0-verification.md).
+The metadata upgrade adds selective XMP/Photoshop handling and preservation regressions. The article upgrade adds date provenance, credits, asset decisions, and an independent fictional forward test. See the [verification notes](examples/v0.12.0-verification.md).
 
 ### Library-Wide Signals
 
