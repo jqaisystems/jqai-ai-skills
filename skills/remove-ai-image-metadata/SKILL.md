@@ -16,7 +16,8 @@ Remove explicit embedded AI provenance or generator metadata using a format-awar
    python "<skill-folder>\scripts\clean_image_metadata.py" "<file-or-folder>" --recursive
    ```
 
-3. Review every proposed removal. Default mode removes C2PA/Content Credentials blocks and metadata fields that contain known AI-generator markers.
+3. Review every proposed removal. Default mode removes supported C2PA/Content Credentials blocks and metadata fields that contain known AI-generator markers. JPEG JUMBF requires a metadata-aware editor because a segment can contain unrelated or split records.
+   Standard JPEG, WebP, and PNG iTXt XMP uses field-level edits, preserving unrelated sibling attributes and records. Photoshop support is limited to parsed Unicode text fields in descriptor-free version 6 slices; matching strings become same-length spaces. Unsupported matched structures and extended XMP stop for a metadata-aware editor. See [selective handling](references/selective-handling.md).
 4. Choose a write mode:
 
    - Prefer verified copies when replacement was not explicitly requested:
@@ -44,7 +45,7 @@ Remove explicit embedded AI provenance or generator metadata using a format-awar
 - Never claim a cleaned image is undetectable or guaranteed not to be classified as AI-generated. State only which explicit metadata was removed. Pixel-based classifiers may still guess.
 - Preserve encoded picture data, ICC profiles, gamma/chromaticity information, JPEG color-transform markers, animation control, and other rendering-related data.
 - In default mode, preserve unrelated copyright, authorship, descriptions, and location metadata unless the user requests broader removal.
-- Warn when removing a whole EXIF block could also remove orientation or other co-located fields. Prefer a metadata-aware editor when selective EXIF tag deletion is possible.
+- Default JPEG mode refuses matched EXIF blocks that need selective tag editing, preserving orientation and co-located fields. Use a metadata-aware editor instead. Explicit all-metadata mode is broader and can remove EXIF orientation; check display orientation before choosing it.
 - Keep backups outside the upload/publish folder so tagged originals are not selected accidentally.
 - Stop on malformed containers, failed integrity validation, changed encoded-image hashes, or incomplete post-clean inspection.
 

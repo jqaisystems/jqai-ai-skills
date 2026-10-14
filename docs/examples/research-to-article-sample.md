@@ -31,3 +31,18 @@ For a small team, one review point before the highest-risk action is often a mor
 - The unsupported cost claim is absent.
 - The recommendation is presented as advice rather than fact.
 - Publication action taken: none.
+
+## Additional Fictional Video-Led Case
+
+Example Builder supplies an approved transcript and a secondary summary about the same demonstration. The transcript records the demonstration on 2026-02-03; the summary was published on 2026-02-05. The video's own publication date is unavailable. These are not interchangeable dates.
+
+Article publication: planned, not yet published. Article update: none. No policy authorizes matching an article date to a source or video date.
+
+| Asset | Decision | Credit and unresolved checks |
+|---|---|---|
+| Primary demonstration embed | Hold pending usage review | Example Builder; example.com; video publication date unknown |
+| Static duplicate of player thumbnail | Omit | Embed already supplies the preview |
+| Explanatory process diagram | Keep as an original asset brief | Example Studio; distinguish illustration from source evidence |
+| Social-preview image | Keep as a separate asset brief | Not an in-article duplicate |
+
+The claim of an 80% improvement has no supporting measurement and is omitted. Conflicting secondary dates remain in the verification report, not silently resolved. Attribution is present but does not establish usage permission. This package remains a draft; no embed is published and no website is modified.

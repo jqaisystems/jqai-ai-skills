@@ -126,6 +126,29 @@ Use $screen-recorder to record a region of my screen.
 Use $remove-ai-image-metadata to inspect these images, create verified clean copies, and report which explicit AI provenance metadata was removed.
 ```
 
+## Local Verification And Recovery
+
+The v0.12.0 candidate contains 46 skills. These utilities work independently; generated inventories, reports, snapshots, and receipts stay private by default.
+
+```text
+Use $media-spec-checker to check these local files against my JSON rules without modifying them.
+Use $automation-state-reconciler to compare these offline snapshots and receipts and draft a repair plan only.
+Use $windows-reinstall-planner to prepare a private reinstall checklist from this approved inventory.
+```
+
+Proof samples: [media](docs/examples/media-spec-checker-sample.md), [reconciliation](docs/examples/automation-state-reconciler-sample.md), [reinstall planning](docs/examples/windows-reinstall-planner-sample.md).
+
+The inventory also includes four skills added to main in August:
+
+```text
+Use $ai-image-run-pacing to plan a generation batch within the service's current limits.
+Use $thumbnail-set-designer to draft distinct thumbnail concepts from this title and hook.
+Use $thumbnail-legibility-check to compare these candidates at small display sizes.
+Use $local-app-public-demo to plan a read-only public demo from this local app.
+```
+
+For `research-to-article`, request separate source/video and article dates, credits, embed decisions, and a publication hold for unresolved evidence.
+
 ## Public-Safe Publishing
 
 Before publishing public artifacts:

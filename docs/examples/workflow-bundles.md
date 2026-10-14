@@ -250,6 +250,18 @@ Use $write-evidence-backed-profile to draft this application response from the a
 
 Do not publish a material claim that remains unsupported or stale. Do not hide source conflicts, invent access, submit forms, send messages, modify websites, or update public profiles.
 
+## Local Verification And Recovery
+
+These are optional combinations, not required dependencies:
+
+- Media delivery: `thumbnail-set-designer` and `thumbnail-legibility-check` for concept review, then `media-spec-checker` for supplied technical constraints, then `client-delivery-auditor` for the package. `ai-image-run-pacing` is optional only when generation is authorized and current service limits are observed.
+- Offline operations: `automation-state-reconciler` compares approved snapshots and receipts and prepares a repair plan. No connector, schedule, write, or deletion follows automatically.
+- Recovery preparation: `windows-reinstall-planner` creates private inventory and checklist artifacts. Registration is not execution proof; reinstall decisions remain human-reviewed.
+- Evidence-based writing: `research-to-article` keeps source/video dates, credits, and visual decisions separate from article publication/update dates. Embeds do not imply permission or publication approval.
+- Public demonstration: `local-app-public-demo` may help showcase a local utility, after an independent public-safety review. Never include collected inventories or real snapshot exports.
+
+Each skill remains independently usable.
+
 ## Choosing A Bundle
 
 | If your goal is... | Start with |

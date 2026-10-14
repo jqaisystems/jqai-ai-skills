@@ -48,6 +48,19 @@ Use this page when you want to inspect expected output before installing a skill
 
 ## Sample Data
 
+### v0.12.0 Candidate Samples
+
+| Sample | What it demonstrates |
+|---|---|
+| [Media spec checker](media-spec-checker-sample.md) | A measured pass, measured failure, and unknown result without changing input files. |
+| [Automation state reconciler](automation-state-reconciler-sample.md) | Drift, missing evidence, duplicate identity, and retained delivery history. |
+| [Windows reinstall planner](windows-reinstall-planner-sample.md) | Registrations and shortcuts, conservative grouping, private reports, and partial coverage. |
+| [Verification notes](v0.12.0-verification.md) | Synthetic regression scope and remaining release gates. |
+
+Four existing August skills now appear in the corrected [46-skill catalog](../catalog.md): image-run pacing, local-app public demos, thumbnail-set design, and thumbnail legibility. No new dedicated proof samples or implementation changes are claimed for those four.
+
+### Existing Samples
+
 | File | Use |
 |---|---|
 | [`first-skill-candidate/README.md`](first-skill-candidate/README.md) | Ready fake README and docs files for the first `github-safe-publisher` review. |

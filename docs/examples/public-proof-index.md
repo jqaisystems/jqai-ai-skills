@@ -72,6 +72,10 @@ Good stopping point: after five minutes, a visitor should know what the repo con
 
 ## Skill Output Samples
 
+The v0.12.0 candidate adds [media checking](media-spec-checker-sample.md), [offline reconciliation](automation-state-reconciler-sample.md), and [reinstall planning](windows-reinstall-planner-sample.md). The [verification notes](v0.12.0-verification.md) distinguish local tests from pending publication and remote CI.
+
+The corrected [catalog](../catalog.md) also accounts for four existing August additions without changing their implementations or claiming new workflow tests for them.
+
 | Skill area | Sample |
 |---|---|
 | Research brief | [`research-brief-curator-sample.md`](research-brief-curator-sample.md) |

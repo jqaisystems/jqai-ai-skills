@@ -1,0 +1,4 @@
+interface:
+  display_name: "Media Spec Checker"
+  short_description: "Check local media against explicit delivery rules"
+  default_prompt: "Use $media-spec-checker to check these local media files against the supplied delivery requirements."

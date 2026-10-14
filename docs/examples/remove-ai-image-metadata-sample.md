@@ -35,3 +35,11 @@ Each changed file reports `PASS` only after the helper reparses the cleaned cont
 - Process only images you own or are authorized to modify.
 - Do not use metadata removal to misrepresent an image's origin or bypass platform disclosure requirements.
 - Report only which explicit metadata was removed. Do not claim that a cleaned image is undetectable or no longer AI-generated.
+
+## Selective Upgrade Proof
+
+Synthetic JPEG, WebP, and PNG iTXt packets place a generator attribute next to unrelated rights, orientation, and title records. Default cleanup removes the targeted field, not its mixed parent. Compressed PNG XMP is also checked.
+
+Supported descriptor-free Photoshop version 6 slice strings use same-length Unicode replacements. Binary fields, resource sizes, unrelated resources, and encoded image bytes remain unchanged. Unsupported versions or descriptors stop.
+
+Truncated JPEGs and matched EXIF requiring a selective editor are refused. Progressive JPEGs and GIF frame timing remain intact. Repeated cleanup is idempotent. Source hashes remain unchanged when using inspect/copy modes.

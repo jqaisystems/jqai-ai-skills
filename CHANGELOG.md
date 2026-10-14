@@ -4,6 +4,27 @@ Public release history for JQ AI Skills.
 
 The social preview image is intentionally stable for 2026 and is not updated for every release.
 
+## v0.12.0 - Unreleased
+
+Candidate library: 46 skills (43 on main plus three new utilities).
+
+### Added
+
+- `media-spec-checker`: read-only local image/video checks against versioned JSON rules, with explicit unverified results.
+- `automation-state-reconciler`: offline snapshot and receipt comparison with a non-executing repair-plan template.
+- `windows-reinstall-planner`: metadata-only PowerShell collection and private Python checklist/report generation.
+- Fictional samples, synthetic regressions, mocked Windows collection, and CI test definitions.
+
+### Improved
+
+- `remove-ai-image-metadata`: selective XMP in JPEG, WebP, and PNG; parsed supported Photoshop slice text; preservation and malformed-input guards.
+- `research-to-article`: distinct source/video/article dates, embed credits, permissions review, and visual-asset decisions.
+- Catalog, quick reference, quality matrix, indexes, and bundles now include the four August additions already on main: `ai-image-run-pacing`, `local-app-public-demo`, `thumbnail-legibility-check`, and `thumbnail-set-designer`. Their implementations are unchanged.
+
+### Release Gates
+
+Local verification precedes human approval to stage, commit, or publish. Remote GitHub Actions and release creation remain pending. Generated operational data stays private.
+
 ## [v0.11.0](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.11.0) - 2026-07-14
 
 Added three evidence-based writing skills, growing the library from 36 to 39 skills.

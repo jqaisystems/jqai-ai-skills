@@ -8,10 +8,12 @@ from dataclasses import dataclass
 import hashlib
 import os
 from pathlib import Path
+import re
 import shutil
 import struct
 import sys
 import tempfile
+import xml.etree.ElementTree as ET
 import zlib
 
 
@@ -141,9 +143,13 @@ def png_reason(chunk: dict, strip_all: bool) -> str | None:
         return "C2PA/Content Credentials caBX block"
     if strip_all and kind in PNG_ALL_METADATA:
         return "all-metadata mode"
+    if kind in PNG_TEXT_CHUNKS and chunk["payload"].split(b"\x00", 1)[0].lower() in {b"copyright", b"author", b"rights"}:
+        return None
     searchable = png_text(kind, chunk["payload"]) if kind in PNG_TEXT_CHUNKS else chunk["payload"]
     marker = marker_in(searchable)
-    if marker is not None and bool(kind[0] & 0x20):
+    if marker is not None and kind == b"eXIf":
+        raise ImageMetadataError("Selective PNG EXIF editing requires a metadata-aware tool")
+    if marker is not None and kind in PNG_TEXT_CHUNKS:
         return f"AI metadata marker: {marker.decode('ascii', errors='replace')}"
     return None
 
@@ -153,6 +159,32 @@ def clean_png(data: bytes, source: Path, strip_all: bool) -> CleanResult:
     kept = []
     removals = []
     for chunk in chunks:
+        if not strip_all and chunk["type"] in PNG_TEXT_CHUNKS and chunk["payload"].split(b"\0", 1)[0] == b"XML:com.adobe.xmp":
+            if chunk["type"] != b"iTXt":
+                raise ImageMetadataError(f"{source}: unsupported PNG XMP text encoding")
+            try:
+                keyword, rest = chunk["payload"].split(b"\0", 1)
+                compressed, method = rest[0], rest[1]
+                if compressed not in {0, 1} or method != 0:
+                    raise ValueError("unsupported compression")
+                language, rest = rest[2:].split(b"\0", 1)
+                translated, packet = rest.split(b"\0", 1)
+                if compressed:
+                    packet = zlib.decompress(packet)
+            except (IndexError, ValueError, zlib.error) as exc:
+                raise ImageMetadataError(f"{source}: malformed PNG XMP text") from exc
+            edited, count = selective_xmp(XMP_HEADER + packet, source)
+            if count:
+                packet = edited[len(XMP_HEADER):]
+                if compressed:
+                    packet = zlib.compress(packet)
+                payload = keyword + b"\0" + bytes((compressed, method)) + language + b"\0" + translated + b"\0" + packet
+                raw = struct.pack(">I", len(payload)) + b"iTXt" + payload + struct.pack(">I", zlib.crc32(b"iTXt" + payload) & 0xFFFFFFFF)
+                kept.append({"type": b"iTXt", "payload": payload, "raw": raw})
+                removals.append(("iTXt", len(chunk["payload"]), f"{count} targeted XMP fields"))
+            else:
+                kept.append(chunk)
+            continue
         reason = png_reason(chunk, strip_all)
         if reason:
             removals.append((chunk["type"].decode("latin-1"), len(chunk["payload"]), reason))
@@ -169,6 +201,185 @@ def clean_png(data: bytes, source: Path, strip_all: bool) -> CleanResult:
 JPEG_STANDALONE = {0x01, 0xD8, 0xD9, *range(0xD0, 0xD8)}
 JPEG_ALL_METADATA = {0xE1, 0xEB, 0xEC, 0xED, 0xFE}
 JPEG_SOF = {0xC0, 0xC1, 0xC2, 0xC3, 0xC5, 0xC6, 0xC7, 0xC9, 0xCA, 0xCB, 0xCD, 0xCE, 0xCF}
+XMP_HEADER = b"http://ns.adobe.com/xap/1.0/\x00"
+XMP_EXTENDED = b"http://ns.adobe.com/xmp/extension/\x00"
+PHOTOSHOP_HEADER = b"Photoshop 3.0\x00"
+
+
+def jpeg_segment(marker: int, payload: bytes) -> bytes:
+    if len(payload) > 65533:
+        raise ImageMetadataError("Cleaned JPEG metadata exceeds segment capacity")
+    return b"\xff" + bytes([marker]) + struct.pack(">H", len(payload) + 2) + payload
+
+
+def protected_xmp(tag: str) -> bool:
+    local = tag.rsplit("}", 1)[-1].lower()
+    return local in {"rights", "copyright", "creator", "author", "orientation", "image"}
+
+
+def selective_xmp(payload: bytes, source: Path) -> tuple[bytes, int]:
+    packet = payload[len(XMP_HEADER):]
+    if re.search(br"<!\s*(?:DOCTYPE|ENTITY)\b", packet, re.I):
+        raise ImageMetadataError(f"{source}: XMP declarations are unsupported")
+    try:
+        parser = ET.XMLParser(target=ET.TreeBuilder(insert_comments=True, insert_pis=True))
+        root = ET.fromstring(packet, parser=parser)
+    except ET.ParseError as exc:
+        raise ImageMetadataError(f"{source}: malformed XMP packet") from exc
+    if root.tag.rsplit("}", 1)[-1] not in {"xmpmeta", "RDF"}:
+        raise ImageMetadataError(f"{source}: unsupported XMP root")
+    parents = {child: parent for parent in root.iter() for child in parent}
+    edits = 0
+    for element in list(root.iter()):
+        if not isinstance(element.tag, str):
+            continue
+        lineage = [element]
+        while lineage[-1] in parents:
+            lineage.append(parents[lineage[-1]])
+        if any(isinstance(node.tag, str) and protected_xmp(node.tag) for node in lineage):
+            continue
+        for key, value in list(element.attrib.items()):
+            if not protected_xmp(key) and marker_in(value.encode("utf-8")):
+                # Attributes are edited individually, never by deleting their parent.
+                del element.attrib[key]
+                edits += 1
+        if element.text and marker_in(element.text.encode("utf-8")):
+            if element not in parents:
+                raise ImageMetadataError(f"{source}: unsupported root-level XMP text")
+            if len(element) == 0 and not element.attrib:
+                parents[element].remove(element)
+            else:
+                element.text = None
+            edits += 1
+    if not edits:
+        return payload, 0
+    # Preserve comments inside the document; leave protected properties intact.
+    return XMP_HEADER + ET.tostring(root, encoding="utf-8"), edits
+
+
+def selective_slices(data: bytes, source: Path) -> tuple[bytes, int]:
+    """Support only descriptor-free version 6, editing parsed Unicode strings."""
+    position = 0
+    ranges = []
+
+    def take(length):
+        nonlocal position
+        if length < 0 or position + length > len(data):
+            raise ImageMetadataError(f"{source}: truncated Photoshop slices")
+        start = position
+        position += length
+        return data[start:position]
+
+    def integer():
+        return struct.unpack(">I", take(4))[0]
+
+    def text_field():
+        size = integer() * 2
+        start = position
+        value = take(size)
+        try:
+            value.decode("utf-16-be")
+        except UnicodeDecodeError as exc:
+            raise ImageMetadataError(f"{source}: invalid Photoshop Unicode field") from exc
+        ranges.append((start, position))
+
+    if integer() != 6:
+        raise ImageMetadataError(f"{source}: unsupported Photoshop slices version")
+    take(16)
+    text_field()
+    count = integer()
+    if count > len(data) // 60:
+        raise ImageMetadataError(f"{source}: invalid Photoshop slice count")
+    for _ in range(count):
+        take(8)
+        origin = integer()
+        if origin not in {0, 1, 2}:
+            raise ImageMetadataError(f"{source}: unsupported Photoshop slice origin")
+        if origin == 1:
+            take(4)
+        text_field()
+        take(20)
+        for _ in range(4):
+            text_field()
+        if take(1) not in {b"\0", b"\1"}:
+            raise ImageMetadataError(f"{source}: invalid Photoshop slice boolean")
+        text_field()
+        take(12)
+    if position != len(data):
+        raise ImageMetadataError(f"{source}: Photoshop slice descriptors are unsupported")
+    result = bytearray(data)
+    edits = 0
+    for start, end in ranges:
+        # Work in Unicode character boundaries, never regex arbitrary binary data.
+        value = data[start:end].decode("utf-16-be")
+        for marker in sorted(AI_MARKERS, key=len, reverse=True):
+            value, changed = re.subn(re.escape(marker.decode("ascii")), lambda m: " " * len(m[0]), value, flags=re.I)
+            edits += changed
+        result[start:end] = value.encode("utf-16-be")
+    return bytes(result), edits
+
+
+def selective_photoshop(payload: bytes, source: Path) -> tuple[bytes, int]:
+    result = bytearray(payload)
+    position = len(PHOTOSHOP_HEADER)
+    edits = 0
+    while position < len(payload):
+        if position + 7 > len(payload) or payload[position:position + 4] != b"8BIM":
+            raise ImageMetadataError(f"{source}: unsupported Photoshop resource header")
+        resource_id = struct.unpack(">H", payload[position + 4:position + 6])[0]
+        name_size = 1 + payload[position + 6]
+        size_at = position + 6 + name_size + (name_size & 1)
+        if size_at + 4 > len(payload):
+            raise ImageMetadataError(f"{source}: truncated Photoshop resource size")
+        size = struct.unpack(">I", payload[size_at:size_at + 4])[0]
+        start, end = size_at + 4, size_at + 4 + size
+        next_position = end + (size & 1)
+        if next_position > len(payload):
+            raise ImageMetadataError(f"{source}: truncated Photoshop resource data")
+        # Leave unmatched resources byte-identical. Matched unsupported layouts stop.
+        if resource_id == 0x041A and marker_in(payload[start:end]):
+            cleaned, changed = selective_slices(payload[start:end], source)
+            result[start:end] = cleaned
+            edits += changed
+        elif marker_in(payload[start:end]) and resource_id not in {0x040C, 0x0409, 0x040F}:
+            raise ImageMetadataError(f"{source}: matching text in unsupported Photoshop resource")
+        position = next_position
+    return bytes(result), edits
+
+
+def validate_jpeg_scan_tail(data: bytes, position: int, source: Path) -> None:
+    """Check marker framing through EOI, including progressive multi-scan JPEGs."""
+    in_scan = True
+    while position < len(data):
+        if in_scan:
+            position = data.find(b"\xff", position)
+            if position < 0:
+                break
+        elif data[position] != 0xFF:
+            raise ImageMetadataError(f"{source}: malformed JPEG scan boundary")
+        while position < len(data) and data[position] == 0xFF:
+            position += 1
+        if position >= len(data):
+            break
+        marker = data[position]
+        position += 1
+        if in_scan and (marker == 0 or 0xD0 <= marker <= 0xD7):
+            continue
+        if marker == 0xD9:
+            if position != len(data):
+                raise ImageMetadataError(f"{source}: trailing data after JPEG EOI")
+            return
+        # Refuse metadata after scan start, where this cleaner does not edit it.
+        if marker not in {0xDA, 0xC4, 0xCC, 0xDB, 0xDD, *JPEG_SOF}:
+            raise ImageMetadataError(f"{source}: unsupported marker after JPEG scan start")
+        if position + 2 > len(data):
+            break
+        length = struct.unpack(">H", data[position:position + 2])[0]
+        if length < 2 or position + length > len(data):
+            raise ImageMetadataError(f"{source}: truncated JPEG scan segment")
+        position += length
+        in_scan = marker == 0xDA
+    raise ImageMetadataError(f"{source}: JPEG scan missing EOI")
 
 
 def parse_jpeg(data: bytes, source: Path) -> list[dict]:
@@ -203,6 +414,7 @@ def parse_jpeg(data: bytes, source: Path) -> list[dict]:
         end = pos + length
         payload = data[pos + 2 : end]
         if marker == 0xDA:
+            validate_jpeg_scan_tail(data, end, source)
             segments.append({"marker": marker, "payload": payload, "raw": data[start:]})
             return segments
         segments.append({"marker": marker, "payload": payload, "raw": data[start:end]})
@@ -224,12 +436,19 @@ def jpeg_reason(segment: dict, strip_all: bool) -> str | None:
     if strip_all and marker in JPEG_ALL_METADATA:
         return "all-metadata mode"
     if marker == 0xEB and (payload.startswith(b"JP") or marker_in(payload) is not None):
-        return "C2PA/JUMBF APP11 provenance segment"
+        raise ImageMetadataError("Selective JPEG JUMBF editing requires a metadata-aware tool")
     if marker in {0xE1, 0xEC, 0xED, 0xFE}:
+        if marker == 0xE1 and payload.startswith(XMP_HEADER):
+            return None
+        if marker == 0xED and payload.startswith(PHOTOSHOP_HEADER):
+            return None
         found = marker_in(payload)
         if found is not None:
-            extra = "; whole EXIF segment removed" if marker == 0xE1 and payload.startswith(b"Exif\x00\x00") else ""
-            return f"AI metadata marker: {found.decode('ascii', errors='replace')}{extra}"
+            if marker == 0xE1 and payload.startswith(b"Exif\x00\x00"):
+                raise ImageMetadataError(f"{segment['marker']}: selective EXIF editing requires a metadata-aware tool")
+            if marker != 0xFE:
+                raise ImageMetadataError("Matching data in an unsupported JPEG metadata structure")
+            return f"AI metadata marker: {found.decode('ascii', errors='replace')}"
     return None
 
 
@@ -251,6 +470,23 @@ def clean_jpeg(data: bytes, source: Path, strip_all: bool) -> CleanResult:
     kept = []
     removals = []
     for segment in segments:
+        payload = segment["payload"]
+        if not strip_all and segment["marker"] == 0xE1 and payload.startswith(XMP_EXTENDED):
+            raise ImageMetadataError(f"{source}: extended XMP requires a metadata-aware tool")
+        handler = None
+        if not strip_all and segment["marker"] == 0xE1 and payload.startswith(XMP_HEADER):
+            handler = selective_xmp
+        if not strip_all and segment["marker"] == 0xED and payload.startswith(PHOTOSHOP_HEADER):
+            handler = selective_photoshop
+        if handler:
+            cleaned_payload, edits = handler(payload, source)
+            if edits:
+                updated = dict(segment)
+                updated["payload"] = cleaned_payload
+                updated["raw"] = jpeg_segment(segment["marker"], cleaned_payload)
+                kept.append(updated)
+                removals.append((jpeg_label(segment["marker"]), len(payload), f"selective AI metadata cleanup; fields changed={edits}"))
+                continue
         reason = jpeg_reason(segment, strip_all)
         if reason:
             removals.append((jpeg_label(segment["marker"]), len(segment["payload"]), reason))
@@ -301,14 +537,18 @@ def webp_reason(chunk: dict, strip_all: bool) -> str | None:
         return "C2PA RIFF provenance chunk"
     if strip_all and kind in WEBP_METADATA:
         return "all-metadata mode"
+    if kind == b"XMP ":
+        return None
     if kind in {b"EXIF", b"XMP "}:
         found = marker_in(chunk["payload"])
         if found is not None:
+            if kind == b"EXIF":
+                raise ImageMetadataError("Selective WebP EXIF editing requires a metadata-aware tool")
             return f"AI metadata marker: {found.decode('ascii', errors='replace')}"
     if kind not in WEBP_FUNCTIONAL and kind != b"VP8X":
         found = marker_in(chunk["payload"])
         if found is not None:
-            return f"AI metadata marker in ancillary chunk: {found.decode('ascii', errors='replace')}"
+            raise ImageMetadataError("Matching data in an unsupported WebP ancillary structure")
     return None
 
 
@@ -340,6 +580,15 @@ def clean_webp(data: bytes, source: Path, strip_all: bool) -> CleanResult:
     kept = []
     removals = []
     for chunk in chunks:
+        if not strip_all and chunk["type"] == b"XMP ":
+            payload, edits = selective_xmp(XMP_HEADER + chunk["payload"], source)
+            if edits:
+                updated = dict(chunk)
+                updated["payload"] = payload[len(XMP_HEADER):]
+                updated["raw"] = riff_chunk(b"XMP ", updated["payload"])
+                kept.append(updated)
+                removals.append(("XMP", len(chunk["payload"]), f"selective AI metadata cleanup; fields changed={edits}"))
+                continue
         reason = webp_reason(chunk, strip_all)
         if reason:
             removals.append((chunk["type"].decode("latin-1"), len(chunk["payload"]), reason))
@@ -431,9 +680,11 @@ def gif_reason(block: dict, strip_all: bool) -> str | None:
     is_xmp = label == 0xFF and payload.startswith(b"XMP DataXMP")
     if is_c2pa:
         return "C2PA GIF application extension"
-    if strip_all and (label in {0x01, 0xFE} or is_xmp):
+    if strip_all and (label == 0xFE or is_xmp):
         return "all-metadata mode"
-    if label != 0xF9:
+    if is_xmp and marker_in(payload):
+        raise ImageMetadataError("Selective GIF XMP editing requires a metadata-aware tool")
+    if label == 0xFE:
         found = marker_in(payload)
         if found is not None:
             return f"AI metadata marker: {found.decode('ascii', errors='replace')}"
@@ -593,6 +844,14 @@ def main() -> int:
     backup_dir = args.backup_dir.resolve() if args.backup_dir is not None else None
     try:
         files = collect_images(args.inputs, args.recursive)
+        planned = [source if args.in_place else (output_dir / source.name if output_dir else None) for source in files]
+        destinations = [destination.resolve() for destination in planned if destination is not None]
+        if len(destinations) != len(set(destinations)):
+            raise ValueError("Multiple inputs map to the same output; no files changed")
+        if not args.in_place and any(destination == source for source, destination in zip(files, planned)):
+            raise ValueError("Output aliases an original; use --in-place explicitly")
+        if backup_dir and len({source.name.lower() for source in files}) != len(files):
+            raise ValueError("Multiple inputs map to the same backup; no files changed")
         print(f"Supported image files in scope: {len(files)}")
         seen_destinations = set()
         files_with_matches = 0

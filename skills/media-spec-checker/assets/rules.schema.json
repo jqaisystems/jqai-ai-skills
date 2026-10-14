@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Media rules version 1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version"],
+  "anyOf": [{"required": ["image"]}, {"required": ["video"]}],
+  "properties": {
+    "schema_version": {"const": 1},
+    "image": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": false,
+      "properties": {
+        "formats": {"$ref": "#/$defs/names"},
+        "width": {"$ref": "#/$defs/bounds"},
+        "height": {"$ref": "#/$defs/bounds"},
+        "aspect_ratio": {"$ref": "#/$defs/bounds"},
+        "duration": {"$ref": "#/$defs/bounds"},
+        "max_bytes": {"type": "integer", "minimum": 1},
+        "filename_pattern": {"type": "string", "maxLength": 256},
+        "animated": {"type": "boolean"}
+      }
+    },
+    "video": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": false,
+      "properties": {
+        "formats": {"$ref": "#/$defs/names"},
+        "width": {"$ref": "#/$defs/bounds"},
+        "height": {"$ref": "#/$defs/bounds"},
+        "aspect_ratio": {"$ref": "#/$defs/bounds"},
+        "duration": {"$ref": "#/$defs/bounds"},
+        "max_bytes": {"type": "integer", "minimum": 1},
+        "filename_pattern": {"type": "string", "maxLength": 256},
+        "codecs": {"$ref": "#/$defs/names"}
+      }
+    }
+  },
+  "$defs": {
+    "names": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+    "bounds": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": false,
+      "properties": {
+        "min": {"type": "number", "minimum": 0},
+        "max": {"type": "number", "minimum": 0}
+      }
+    }
+  }
+}

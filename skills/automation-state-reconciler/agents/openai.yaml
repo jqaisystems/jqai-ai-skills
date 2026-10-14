@@ -1,0 +1,4 @@
+interface:
+  display_name: "Automation State Reconciler"
+  short_description: "Compare offline snapshots and plan safe repairs"
+  default_prompt: "Use $automation-state-reconciler to compare these offline snapshots and prepare a reviewable repair plan without changing records."

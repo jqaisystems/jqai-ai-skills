@@ -1,0 +1,4 @@
+interface:
+  display_name: "Windows Reinstall Planner"
+  short_description: "Inventory software and plan a private reinstall"
+  default_prompt: "Use $windows-reinstall-planner to prepare a private metadata-only software inventory and reinstall checklist without changing installed software."

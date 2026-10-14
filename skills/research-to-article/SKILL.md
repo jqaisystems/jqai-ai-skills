@@ -11,6 +11,7 @@ Build a finished article from current evidence while keeping facts, analysis, re
 
 - Confirm the topic, audience, practical purpose, time window, desired length, publication type, and required point of view.
 - Identify the intended output: editorial package, full draft, revision, or verification pass.
+- For video-led articles, identify the primary embed separately from supplemental sources and confirm the editorial date policy.
 - Use `research-brief-curator` instead when the user wants only a digest, reading queue, or research brief.
 - Preserve an approved angle unless new evidence makes it inaccurate or misleading.
 
@@ -27,6 +28,7 @@ Build a finished article from current evidence while keeping facts, analysis, re
 
 - Use [assets/article-package-template.md](assets/article-package-template.md).
 - Define the title, practical angle, slug, meta description, audience need, outline, internal-link opportunities, call to action, source credits, and Link Map.
+- For embeds or visual assets, read [media and date handling](references/media-and-dates.md). Record creator credit, source URL, verified source date, purpose, and permission or usage uncertainty.
 - Include only sections supported by the source map or clearly labeled as analysis.
 - Ask for a material editorial decision only when the evidence supports multiple incompatible directions.
 
@@ -42,6 +44,8 @@ Build a finished article from current evidence while keeping facts, analysis, re
 ## 5. Verify the article package
 
 - Recheck names, dates, links, numerical claims, quotations, credits, title, slug, meta description, and Link Map.
+- Keep article publication and editorial update dates separate from source/event/video dates. Never backdate to a video date unless an explicit editorial policy requires that treatment, and flag misleading date labels.
+- Check that explanatory images add information; avoid repeating a video's player thumbnail while retaining separate social-preview assets.
 - Mark claims that remain `qualified`, `inference`, `unsupported`, or `stale` and revise or hold them.
 - Confirm the final draft distinguishes fact, analysis, and recommendation.
 - Report the evidence cutoff date and any source that could not be accessed.

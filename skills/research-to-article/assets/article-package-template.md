@@ -12,6 +12,9 @@ Target length: `<range>`
 - Slug: `<slug>`
 - Meta description: `<description>`
 - Summary: `<two or three sentences>`
+- Article publication date: `<verified or planned date, or unknown>`
+- Article editorial update date: `<actual revision date, or not applicable>`
+- Date policy: `<article-led default or explicitly approved alternative>`
 - Call to action: `<action or none>`
 
 ## Claim Map
@@ -34,6 +37,14 @@ Target length: `<range>`
 |---|---|---|
 | `<descriptive text>` | `<public URL>` | `<claim support, credit, or useful next step>` |
 
+## Embeds and Visual Assets
+
+| Role | Source / creator credit | Source date and evidence | Purpose | Usage status |
+|---|---|---|---|---|
+| `<primary embed, supplemental embed, explanatory image, or social preview>` | `<URL and creator>` | `<verified date, precision, or unavailable>` | `<why this is needed>` | `<approved, needs review, or omit>` |
+
+Do not substitute a source date for an unknown article date. Keep date-only evidence at its stated precision. A social-preview image is independent of an in-article video thumbnail.
+
 ## Verification
 
 - Material claims checked: `<count>`
@@ -41,4 +52,5 @@ Target length: `<range>`
 - Conflicts or held claims: `<list or none>`
 - Names, dates, numbers, quotes, and links checked: `Yes | No`
 - Publication action taken: `None`
+- Article dates, source dates, credits, and distinct visual roles checked: `Yes | No`
 - Next action: `<review, revise, or authorized handoff>`

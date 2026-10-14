@@ -6,8 +6,17 @@ If you are new to the repo, start with [`START_HERE.md`](../START_HERE.md). For 
 
 ## At A Glance
 
+Inventory: 46 skills in the v0.12.0 candidate. Four August additions were already on main; their implementations are unchanged by this candidate.
+
 | Area | Skill | Best for | Install |
 |---|---|---|---|
+| Local media | [`media-spec-checker`](../skills/media-spec-checker/SKILL.md) | Dimensions, display ratio, duration, format, codec, size, and naming against local rules. | `.\install.ps1 media-spec-checker` |
+| Offline operations | [`automation-state-reconciler`](../skills/automation-state-reconciler/SKILL.md) | Snapshot and receipt drift review with history preservation, no live actions. | `.\install.ps1 automation-state-reconciler` |
+| Recovery planning | [`windows-reinstall-planner`](../skills/windows-reinstall-planner/SKILL.md) | Metadata-only inventory and private reinstall checklist. | `.\install.ps1 windows-reinstall-planner` |
+| Image workflow | [`ai-image-run-pacing`](../skills/ai-image-run-pacing/SKILL.md) | Plan image-generation sessions within provider limits. | `.\install.ps1 ai-image-run-pacing` |
+| Public demos | [`local-app-public-demo`](../skills/local-app-public-demo/SKILL.md) | Prepare static, read-only public demonstrations of local tools. | `.\install.ps1 local-app-public-demo` |
+| Thumbnail design | [`thumbnail-set-designer`](../skills/thumbnail-set-designer/SKILL.md) | Develop genuinely distinct thumbnail concepts. | `.\install.ps1 thumbnail-set-designer` |
+| Thumbnail review | [`thumbnail-legibility-check`](../skills/thumbnail-legibility-check/SKILL.md) | Compare candidates at their intended viewing size. | `.\install.ps1 thumbnail-legibility-check` |
 | Safety and publishing | [`github-safe-publisher`](../skills/github-safe-publisher/SKILL.md) | Preparing public GitHub artifacts without leaking private details. | `.\install.ps1 github-safe-publisher` |
 | Safety and review | [`skill-reviewer`](../skills/skill-reviewer/SKILL.md) | Auditing downloaded or newly written skills before installing them. | `.\install.ps1 skill-reviewer` |
 | Public proof | [`case-study-writer`](../skills/case-study-writer/SKILL.md) | Turning private project work into public-safe case studies. | `.\install.ps1 case-study-writer` |

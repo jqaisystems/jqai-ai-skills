@@ -2,6 +2,8 @@
 
 Reusable AI skills by JQ AI SYSTEMS.
 
+This working tree contains the **v0.12.0 candidate: 46 skills**. The published release badge below remains v0.11.0 until publication is approved. See the [draft announcement](docs/announcements/v0.12.0.md).
+
 These skills are small, portable instruction folders for Claude/Codex-style workflows. They are published under the MIT License so you can adapt them for your own local setup.
 
 [![Website](https://img.shields.io/badge/Website-ai.joaoqueiros.com-111827?style=for-the-badge)](https://www.ai.joaoqueiros.com)
@@ -195,10 +197,18 @@ For a field-by-field walkthrough, use [`docs/guides/skill-anatomy.md`](docs/guid
 
 | Skill | File | Use |
 |---|---|---|
+| Media Spec Checker | [`skills/media-spec-checker/SKILL.md`](skills/media-spec-checker/SKILL.md) | Read-only local image/video checks against supplied, versioned rules; unknown measurements never pass. |
 | Remove AI Image Metadata | [`skills/remove-ai-image-metadata/SKILL.md`](skills/remove-ai-image-metadata/SKILL.md) | Inspect and remove explicit AI-generator or provenance metadata from authorized image files while preserving encoded picture data when the format permits. |
 | AI Image Run Pacing | [`skills/ai-image-run-pacing/SKILL.md`](skills/ai-image-run-pacing/SKILL.md) | Run a batch of AI image generations without getting rate limited, losing subject likeness, or storing credentials. |
 | Thumbnail Set Designer | [`skills/thumbnail-set-designer/SKILL.md`](skills/thumbnail-set-designer/SKILL.md) | Turn a title and hook into a set of genuinely different on-brand thumbnail prompts, with the traps that ruin AI thumbnails built in. |
 | Thumbnail Legibility Check | [`skills/thumbnail-legibility-check/SKILL.md`](skills/thumbnail-legibility-check/SKILL.md) | Judge thumbnail candidates at the size viewers actually see them, then rank them through pairwise duels. |
+
+### Local Workflow Utilities
+
+| Skill | File | Use |
+|---|---|---|
+| Automation State Reconciler | [`automation-state-reconciler`](skills/automation-state-reconciler/SKILL.md) | Compare offline snapshots and receipts; preserve history and draft a human-reviewed repair plan without executing it. |
+| Windows Reinstall Planner | [`windows-reinstall-planner`](skills/windows-reinstall-planner/SKILL.md) | Collect software registration metadata and prepare a private reinstall checklist, without installing or removing software. |
 
 ### Notes & Productivity
 

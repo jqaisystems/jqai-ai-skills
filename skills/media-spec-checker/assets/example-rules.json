@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "image": {
+    "formats": [
+      "png",
+      "jpeg",
+      "webp"
+    ],
+    "width": {
+      "min": 600,
+      "max": 2400
+    },
+    "height": {
+      "min": 600,
+      "max": 2400
+    },
+    "aspect_ratio": {
+      "min": 0.99,
+      "max": 1.01
+    },
+    "max_bytes": 5000000,
+    "animated": false
+  },
+  "video": {
+    "formats": [
+      "mp4",
+      "mov",
+      "webm"
+    ],
+    "codecs": [
+      "h264",
+      "vp9"
+    ],
+    "width": {
+      "min": 720,
+      "max": 1920
+    },
+    "height": {
+      "min": 720,
+      "max": 1920
+    },
+    "duration": {
+      "min": 1,
+      "max": 60
+    },
+    "max_bytes": 50000000
+  }
+}
