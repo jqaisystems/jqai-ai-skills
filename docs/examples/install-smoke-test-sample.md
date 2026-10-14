@@ -38,21 +38,21 @@ web-scraper
 Install one skill into a disposable target:
 
 ```powershell
-.\install.ps1 github-safe-publisher -Target ".tmp\skill-install-smoke"
+.\install.ps1 github-safe-publisher -Target "$env:TEMP\jqai-skill-install-smoke"
 ```
 
 Expected result:
 
 ```text
-Installed github-safe-publisher -> .tmp\skill-install-smoke\github-safe-publisher
-Restart Codex or reload your AI coding tool so the skill list refreshes.
+install: github-safe-publisher
+Retain any backup folders. Reload your tool and verify skill discovery.
 ```
 
 Confirm the copied folder:
 
 ```powershell
-Test-Path ".tmp\skill-install-smoke\github-safe-publisher\SKILL.md"
-Get-ChildItem ".tmp\skill-install-smoke\github-safe-publisher"
+Test-Path "$env:TEMP\jqai-skill-install-smoke\github-safe-publisher\SKILL.md"
+Get-ChildItem "$env:TEMP\jqai-skill-install-smoke\github-safe-publisher"
 ```
 
 Expected result:
@@ -86,21 +86,21 @@ web-scraper
 Install one skill into a disposable target:
 
 ```bash
-./install.sh --target .tmp/skill-install-smoke github-safe-publisher
+./install.sh --target "${TMPDIR:-/tmp}/jqai-skill-install-smoke" github-safe-publisher
 ```
 
 Expected result:
 
 ```text
-Installed github-safe-publisher -> .tmp/skill-install-smoke/github-safe-publisher
-Restart Codex or reload your AI coding tool so the skill list refreshes.
+install: github-safe-publisher
+Retain any backup folders. Reload your tool and verify skill discovery.
 ```
 
 Confirm the copied folder:
 
 ```bash
-test -f .tmp/skill-install-smoke/github-safe-publisher/SKILL.md
-ls .tmp/skill-install-smoke/github-safe-publisher
+test -f "${TMPDIR:-/tmp}/jqai-skill-install-smoke/github-safe-publisher/SKILL.md"
+ls "${TMPDIR:-/tmp}/jqai-skill-install-smoke/github-safe-publisher"
 ```
 
 Expected result:
@@ -142,13 +142,7 @@ For a fuller first-run output shape, compare with [`first-run-github-safe-publis
 
 Only remove the disposable target:
 
-```powershell
-Remove-Item -Recurse -Force ".tmp\skill-install-smoke"
-```
-
-```bash
-rm -rf .tmp/skill-install-smoke
-```
+Before a separately reviewed cleanup, verify the exact temporary target, its ownership, contents, and link status. Keep retained backups until verification is complete.
 
 Do not remove your real skills folder unless you know exactly what else is installed there.
 

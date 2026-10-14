@@ -181,7 +181,7 @@ Next safe step:
 If the library looks `READY`, install one skill into a temporary target first:
 
 ```powershell
-.\install.ps1 github-safe-publisher -Target ".tmp\skill-library-check"
+.\install.ps1 github-safe-publisher -Target "$env:TEMP\jqai-skill-library-check"
 ```
 
 If the library needs `REVIEW`, inspect the unclear file or guide before installing.

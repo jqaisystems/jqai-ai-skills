@@ -4,6 +4,12 @@ Use this page when you want the shortest command and link map for JQ AI Skills.
 
 For the guided path, start with [`START_HERE.md`](START_HERE.md). For full install details, use [`INSTALL.md`](INSTALL.md). For install questions, use [`docs/guides/install-faq.md`](docs/guides/install-faq.md).
 
+## v0.13.0
+
+Use `$backup-readiness-auditor` to evaluate an approved evidence pack without opening backups or changing files. [Example](docs/examples/backup-readiness-auditor-sample.md).
+
+Preview installation with `.\install.ps1 backup-readiness-auditor -DryRun` or `./install.sh --dry-run backup-readiness-auditor`. Python 3.11+ is required. See [safe installation](docs/guides/safe-installation.md) before updating an existing copy.
+
 ## First Choice
 
 | Need | Use |
@@ -54,11 +60,11 @@ Install the recommended first skill:
 Test an install target first:
 
 ```powershell
-.\install.ps1 github-safe-publisher -Target ".tmp\skill-install-smoke"
+.\install.ps1 github-safe-publisher -Target "$env:TEMP\jqai-skill-install-smoke"
 ```
 
 ```bash
-./install.sh --target .tmp/skill-install-smoke github-safe-publisher
+./install.sh --target "${TMPDIR:-/tmp}/jqai-skill-install-smoke" github-safe-publisher
 ```
 
 Install all skills only after review:

@@ -65,11 +65,21 @@ jobs:
         if: runner.os == 'Windows'
         shell: powershell
         run: ./tests/test_windows_collector.ps1
+      - name: Test installer with Windows PowerShell 5.1
+        if: runner.os == 'Windows'
+        shell: powershell
+        run: |
+          $target = Join-Path $env:RUNNER_TEMP ("installer-51-" + [guid]::NewGuid())
+          ./install.ps1 backup-readiness-auditor -Target $target -DryRun
+          if (Test-Path $target) { throw "Dry run wrote files" }
+          ./install.ps1 backup-readiness-auditor -Target $target
+          ./install.ps1 backup-readiness-auditor -Target $target
+          if (-not (Test-Path (Join-Path $target "backup-readiness-auditor/.jqai-install.json"))) { throw "Missing receipt" }
       - name: Smoke-test changed skill installs in a new temporary target
         shell: pwsh
         run: |
           $target = Join-Path $env:RUNNER_TEMP ("skills-smoke-" + [guid]::NewGuid())
-          $names = @("media-spec-checker", "automation-state-reconciler", "windows-reinstall-planner", "research-to-article", "remove-ai-image-metadata")
+          $names = @("backup-readiness-auditor", "github-safe-publisher", "skill-builder", "agents-md-writer", "media-spec-checker", "automation-state-reconciler", "windows-reinstall-planner", "research-to-article", "remove-ai-image-metadata")
           foreach ($name in $names) {
             ./install.ps1 $name -Target $target
             if (-not (Test-Path (Join-Path $target "$name/SKILL.md"))) { throw "Missing installed skill: $name" }

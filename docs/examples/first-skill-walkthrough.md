@@ -59,15 +59,15 @@ Use a disposable target before installing into your normal skills folder.
 Windows PowerShell:
 
 ```powershell
-.\install.ps1 github-safe-publisher -Target ".tmp\first-skill-test"
-Test-Path ".tmp\first-skill-test\github-safe-publisher\SKILL.md"
+.\install.ps1 github-safe-publisher -Target "$env:TEMP\jqai-first-skill-test"
+Test-Path "$env:TEMP\jqai-first-skill-test\github-safe-publisher\SKILL.md"
 ```
 
 macOS/Linux:
 
 ```bash
-./install.sh --target .tmp/first-skill-test github-safe-publisher
-test -f .tmp/first-skill-test/github-safe-publisher/SKILL.md && echo "installed"
+./install.sh --target "${TMPDIR:-/tmp}/jqai-first-skill-test" github-safe-publisher
+test -f "${TMPDIR:-/tmp}/jqai-first-skill-test/github-safe-publisher/SKILL.md" && echo "installed"
 ```
 
 Expected result: the copied folder contains `SKILL.md`, `agents/openai.yaml`, `references/`, and `scripts/`.

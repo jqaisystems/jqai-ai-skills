@@ -57,15 +57,15 @@ Use a disposable target before installing into your normal tool folder.
 Windows PowerShell:
 
 ```powershell
-.\install.ps1 github-safe-publisher -Target ".tmp\skill-install-smoke"
-Test-Path ".tmp\skill-install-smoke\github-safe-publisher\SKILL.md"
+.\install.ps1 github-safe-publisher -Target "$env:TEMP\jqai-skill-install-smoke"
+Test-Path "$env:TEMP\jqai-skill-install-smoke\github-safe-publisher\SKILL.md"
 ```
 
 macOS/Linux:
 
 ```bash
-./install.sh --target .tmp/skill-install-smoke github-safe-publisher
-test -f .tmp/skill-install-smoke/github-safe-publisher/SKILL.md && echo "installed"
+./install.sh --target "${TMPDIR:-/tmp}/jqai-skill-install-smoke" github-safe-publisher
+test -f "${TMPDIR:-/tmp}/jqai-skill-install-smoke/github-safe-publisher/SKILL.md" && echo "installed"
 ```
 
 Expected result: the skill folder is copied and `SKILL.md` exists in the temporary target.
@@ -119,17 +119,7 @@ Use these examples to understand what a healthy result looks like:
 
 Remove only the temporary install target after you no longer need it.
 
-Windows PowerShell:
-
-```powershell
-Remove-Item -Recurse -Force ".tmp\skill-install-smoke"
-```
-
-macOS/Linux:
-
-```bash
-rm -rf .tmp/skill-install-smoke
-```
+Inspect the exact absolute temporary target, confirm it is outside the repository and contains only this test, and check for links before a separately reviewed cleanup. No automatic removal is required.
 
 ## What This Teaches
 

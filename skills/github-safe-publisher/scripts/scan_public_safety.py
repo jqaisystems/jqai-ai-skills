@@ -6,9 +6,11 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
 import re
+import stat
 import sys
-from dataclasses import asdict, dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 
 
@@ -78,6 +80,7 @@ class Finding:
     line: int | None
     kind: str
     detail: str
+    _fingerprint: str = field(default="", repr=False)
 
 
 def normalized_path(path: str) -> str:
@@ -85,6 +88,8 @@ def normalized_path(path: str) -> str:
 
 
 def finding_fingerprint(finding: Finding) -> str:
+    if finding._fingerprint:
+        return finding._fingerprint
     payload = {
         "severity": finding.severity,
         "path": normalized_path(finding.path),
@@ -97,31 +102,61 @@ def finding_fingerprint(finding: Finding) -> str:
 
 def is_probably_binary(path: Path) -> bool:
     try:
-        chunk = path.read_bytes()[:4096]
+        with path.open("rb") as handle:
+            chunk = handle.read(4096)
     except OSError:
         return False
     return b"\0" in chunk
 
 
+def is_link(path: Path) -> bool:
+    info = path.lstat()
+    return stat.S_ISLNK(info.st_mode) or bool(getattr(info, "st_file_attributes", 0) & 0x400)
+
+
+def check_baseline_path(path: Path) -> None:
+    for component in (Path(os.path.abspath(path)), *Path(os.path.abspath(path)).parents):
+        if os.path.lexists(component) and is_link(component):
+            raise OSError("Linked baseline path")
+
+
 def iter_files(root: Path):
-    if root.is_file():
+    if not root.is_dir() or is_link(root):
         yield root
         return
-
-    for path in root.rglob("*"):
-        if any(part in SKIP_DIRS for part in path.parts):
-            continue
-        if path.name == BASELINE_FILENAME:
-            continue
-        if path.is_file():
-            yield path
+    def failed(_error):
+        raise OSError("Enumeration failed")
+    for parent, dirs, files in os.walk(root, followlinks=False, onerror=failed):
+        for name in list(dirs):
+            path = Path(parent) / name
+            if name in SKIP_DIRS:
+                dirs.remove(name)
+            elif is_link(path):
+                dirs.remove(name)
+                yield path
+        for name in files:
+            yield Path(parent) / name
 
 
 def relative(path: Path, root: Path) -> str:
+    if path == root:
+        return "<input>"
     try:
         return str(path.relative_to(root))
     except ValueError:
-        return str(path)
+        return "<outside-scope>"
+
+
+def safe_location(value: str) -> str:
+    for _, pattern, severity in CONTENT_PATTERNS:
+        if severity == "block":
+            value = pattern.sub("[redacted]", value)
+    return "".join(char if char.isprintable() else "?" for char in value)
+
+
+def public_finding(finding: Finding) -> dict:
+    return {"severity": finding.severity, "path": safe_location(finding.path),
+            "line": finding.line, "kind": finding.kind, "detail": finding.detail}
 
 
 def scan_file(path: Path, root: Path) -> list[Finding]:
@@ -129,9 +164,13 @@ def scan_file(path: Path, root: Path) -> list[Finding]:
     rel = relative(path, root)
     lower_name = path.name.lower()
     suffixes = {suffix.lower() for suffix in path.suffixes}
+    if is_link(path):
+        return [Finding("block", rel, None, "linked input", "Target was not read.")]
+    if not stat.S_ISREG(path.lstat().st_mode):
+        return [Finding("block", rel, None, "unsupported input", "Input was not read.")]
 
     if lower_name in RISKY_FILENAMES:
-        findings.append(Finding("block", rel, None, "risky filename", path.name))
+        findings.append(Finding("block", rel, None, "risky filename", "Restricted file name."))
 
     risky_suffixes = sorted(suffixes & RISKY_EXTENSIONS)
     for suffix in risky_suffixes:
@@ -146,11 +185,11 @@ def scan_file(path: Path, root: Path) -> list[Finding]:
     except UnicodeDecodeError:
         try:
             text = path.read_text(encoding="utf-8", errors="replace")
-        except OSError as exc:
-            findings.append(Finding("review", rel, None, "read error", str(exc)))
+        except OSError:
+            findings.append(Finding("block", rel, None, "read error", "Content could not be checked."))
             return findings
-    except OSError as exc:
-        findings.append(Finding("review", rel, None, "read error", str(exc)))
+    except OSError:
+        findings.append(Finding("block", rel, None, "read error", "Content could not be checked."))
         return findings
 
     for line_number, line in enumerate(text.splitlines(), start=1):
@@ -159,14 +198,20 @@ def scan_file(path: Path, root: Path) -> list[Finding]:
                 snippet = line.strip()
                 if len(snippet) > 140:
                     snippet = snippet[:137] + "..."
-                findings.append(Finding(severity, rel, line_number, label, snippet))
+                legacy = Finding(severity, rel, line_number, label, snippet)
+                findings.append(Finding(severity, rel, line_number, label,
+                                        "Matched content withheld.",
+                                        finding_fingerprint(legacy)))
 
     return findings
 
 
 def scan(root: Path) -> list[Finding]:
-    resolved = root.resolve()
-    return [finding for path in iter_files(resolved) for finding in scan_file(path, resolved)]
+    root = Path(os.path.abspath(root))
+    for component in (root, *root.parents):
+        if is_link(component):
+            return [Finding("block", "<input>", None, "linked input", "Target was not read.")]
+    return [finding for path in iter_files(root) for finding in scan_file(path, root)]
 
 
 def default_baseline_path(target: Path) -> Path | None:
@@ -176,21 +221,29 @@ def default_baseline_path(target: Path) -> Path | None:
 
 
 def load_baseline(path: Path | None) -> set[str]:
-    if path is None or not path.exists():
+    if path is None:
+        return set()
+    check_baseline_path(path)
+    if not path.exists():
         return set()
     try:
+        if not stat.S_ISREG(path.stat().st_mode) or path.stat().st_size > 2097152:
+            raise OSError("Unsupported baseline input")
         data = json.loads(path.read_text(encoding="utf-8"))
-    except (OSError, json.JSONDecodeError) as exc:
-        raise SystemExit(f"Could not read baseline {path}: {exc}") from exc
+    except (OSError, UnicodeError, json.JSONDecodeError, RecursionError):
+        raise SystemExit("Could not read the baseline; its content and location are withheld.") from None
+    if not isinstance(data, dict) or not isinstance(data.get("findings", []), list):
+        raise SystemExit("Invalid baseline structure.")
     findings = data.get("findings", [])
-    return {entry["hash"] for entry in findings if isinstance(entry, dict) and "hash" in entry}
+    return {entry["hash"] for entry in findings if isinstance(entry, dict)
+            and entry.get("severity") == "review" and isinstance(entry.get("hash"), str)}
 
 
 def apply_baseline(findings: list[Finding], baseline_hashes: set[str]) -> tuple[list[Finding], int]:
     active: list[Finding] = []
     suppressed = 0
     for finding in findings:
-        if finding_fingerprint(finding) in baseline_hashes:
+        if finding.severity == "review" and finding_fingerprint(finding) in baseline_hashes:
             suppressed += 1
         else:
             active.append(finding)
@@ -206,7 +259,7 @@ def write_baseline(path: Path, findings: list[Finding]) -> None:
         {
             "hash": finding_fingerprint(finding),
             "severity": finding.severity,
-            "path": normalized_path(finding.path),
+            "path": safe_location(normalized_path(finding.path)),
             "kind": finding.kind,
             "reason": "Known intentional finding for this public repo.",
         }
@@ -222,11 +275,11 @@ def write_baseline(path: Path, findings: list[Finding]) -> None:
 
 
 def print_text(findings: list[Finding], target: Path, suppressed: int = 0, baseline_path: Path | None = None) -> None:
-    print(f"Public safety scan: {target}")
+    print("Public safety scan (locations are relative; reports remain private).")
     if not findings:
         print("READY: no unbaselined common safety risks found.")
         if suppressed:
-            print(f"Baseline: suppressed {suppressed} known finding(s) from {baseline_path}.")
+            print(f"Baseline: suppressed {suppressed} known review finding(s).")
         return
 
     block_count = sum(1 for finding in findings if finding.severity == "block")
@@ -234,10 +287,10 @@ def print_text(findings: list[Finding], target: Path, suppressed: int = 0, basel
     verdict = "BLOCK" if block_count else "REVIEW"
     print(f"{verdict}: {block_count} blocking finding(s), {review_count} review finding(s).")
     if suppressed:
-        print(f"Baseline: suppressed {suppressed} known finding(s) from {baseline_path}.")
+        print(f"Baseline: suppressed {suppressed} known review finding(s).")
 
     for finding in findings:
-        location = finding.path if finding.line is None else f"{finding.path}:{finding.line}"
+        location = safe_location(finding.path) if finding.line is None else f"{safe_location(finding.path)}:{finding.line}"
         detail = finding.detail.encode("ascii", errors="backslashreplace").decode("ascii")
         print(f"- [{finding.severity}] {location} - {finding.kind}: {detail}")
 
@@ -253,25 +306,39 @@ def main(argv: list[str] | None = None) -> int:
 
     target = Path(args.target)
     if not target.exists():
-        print(f"Target does not exist: {target}", file=sys.stderr)
+        print("Target is unavailable; location withheld.", file=sys.stderr)
         return 2
 
-    findings = scan(target)
-    baseline_path = Path(args.baseline) if args.baseline else default_baseline_path(target)
+    try:
+        findings = scan(target)
+    except OSError:
+        print("Scan incomplete: a filesystem operation failed; details withheld.", file=sys.stderr)
+        return 2
+    protected_root = any(f.kind == "linked input" and f.path == "<input>" for f in findings)
+    baseline_path = None if protected_root else (Path(args.baseline) if args.baseline else default_baseline_path(target))
 
     if args.write_baseline:
         if baseline_path is None:
             print("A baseline path is required when scanning a single file.", file=sys.stderr)
             return 2
-        write_baseline(baseline_path, findings)
-        print(f"Wrote baseline with {len(findings)} finding(s): {baseline_path}")
+        try:
+            check_baseline_path(baseline_path)
+            write_baseline(baseline_path, findings)
+        except OSError:
+            print("Baseline write failed; details withheld.", file=sys.stderr)
+            return 2
+        print(f"Wrote baseline with {len(findings)} review finding(s).")
         return 0
 
-    baseline_hashes = set() if args.no_baseline else load_baseline(baseline_path)
+    try:
+        baseline_hashes = set() if args.no_baseline else load_baseline(baseline_path)
+    except OSError:
+        print("Baseline could not be checked safely; details withheld.", file=sys.stderr)
+        return 2
     active_findings, suppressed = apply_baseline(findings, baseline_hashes)
 
     if args.json:
-        print(json.dumps([asdict(finding) for finding in active_findings], indent=2))
+        print(json.dumps([public_finding(finding) for finding in active_findings], indent=2))
     else:
         print_text(active_findings, target, suppressed, baseline_path)
 

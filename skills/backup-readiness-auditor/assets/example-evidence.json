@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "scope_complete": true,
+  "required_ids": ["sample-project"],
+  "destination": {
+    "independent": true,
+    "free_bytes": 5000,
+    "remaining_bytes": 1000,
+    "reserve_bytes": 1000
+  },
+  "records": [{
+    "id": "sample-project",
+    "captured_at": "2026-10-13T12:00:00Z",
+    "expected_files": 12,
+    "verified_files": 12,
+    "hash_mismatches": 0,
+    "read_errors": 0,
+    "cloud_only_files": 0,
+    "unresolved_links": 0,
+    "snapshot_consistent": true,
+    "restore_test": "passed"
+  }]
+}

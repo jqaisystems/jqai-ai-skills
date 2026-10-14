@@ -72,6 +72,8 @@ Good stopping point: after five minutes, a visitor should know what the repo con
 
 ## Skill Output Samples
 
+v0.13.0 adds [backup readiness](backup-readiness-auditor-sample.md) and [safer skill maintenance proof](safer-skills-recovery-sample.md). These are fictional local verification examples; see the release page for remote CI evidence.
+
 v0.12.0 adds [media checking](media-spec-checker-sample.md), [offline reconciliation](automation-state-reconciler-sample.md), and [reinstall planning](windows-reinstall-planner-sample.md). The [verification notes](v0.12.0-verification.md) distinguish local tests from the remote CI evidence linked on the release page.
 
 The corrected [catalog](../catalog.md) also accounts for four existing August additions without changing their implementations or claiming new workflow tests for them.

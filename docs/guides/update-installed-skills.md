@@ -1,134 +1,40 @@
 # Update Installed Skills
 
-Use this guide when you already installed one or more JQ AI Skills and want to refresh them from the latest repo version.
+Use this guide for reviewed upgrades, not forced replacement. Both entrypoints require Python 3.11+; no dependencies are installed automatically.
 
-For a full public-safe proof trail after a new release, use [`../examples/update-after-release-proof.md`](../examples/update-after-release-proof.md).
+## Review before changing anything
 
-The short version:
+1. Check `git status --short` and preserve local work.
+2. Update the repository only when requested; `git pull --ff-only` stops on divergent history.
+3. Read the changelog, inspect the selected skill, and test it in a fresh disposable target outside the repository.
+4. Identify the tool's actual discovery directory using [safe installation](safe-installation.md). Inspect existing copies and links before choosing a target.
 
-1. Update your local repo.
-2. Test the skill copy in a temporary target.
-3. Reinstall the selected skill or the reviewed set of skills.
-4. Restart or reload your AI coding tool.
-5. Confirm the copied folder still contains the expected files.
+## Preview and upgrade one managed copy
 
-## Before You Update
-
-Work from the repo root:
+These examples explicitly select the current Codex user scope. Change the target only after verifying your tool and installation.
 
 ```powershell
-git pull --ff-only
-.\install.ps1 -List
+.\install.ps1 github-safe-publisher -Target "$HOME/.agents/skills" -Replace -DryRun
+.\install.ps1 github-safe-publisher -Target "$HOME/.agents/skills" -Replace
 ```
 
 ```bash
-git pull --ff-only
-chmod +x ./install.sh
-./install.sh --list
+./install.sh --target "$HOME/.agents/skills" --replace --dry-run github-safe-publisher
+./install.sh --target "$HOME/.agents/skills" --replace github-safe-publisher
 ```
 
-If `git pull --ff-only` stops, inspect the local repo state before continuing. Resolve or save local edits first.
+Run the second command only after reviewing the first. An identical managed copy is unchanged. A changed source replaces only an installed copy that still matches its receipt; the old folder is retained as a unique sibling backup. No files are deleted.
 
-## Update One Skill
+For a reviewed full-library upgrade, use `-All -Replace -DryRun` or `--all --replace --dry-run` first. Preflight checks the whole selection. A later I/O failure can still leave earlier skills installed and staging retained.
 
-Recommended pattern: test the copy into a temporary target first.
+## Legacy copies, edits, and shared links
 
-Windows PowerShell:
+An installation from an older release has no receipt and is refused, even with Replace. Edited copies, junctions, symlinks, dangling links, and overlapping targets are also refused.
 
-```powershell
-.\install.ps1 github-safe-publisher -Target ".tmp\skill-update-check"
-Test-Path ".tmp\skill-update-check\github-safe-publisher\SKILL.md"
-```
+Preserve the original and use a fresh target for comparison, or request a separate manual migration with exact source/destination checks. Do not manufacture receipts or force-copy around a refusal. The installer is not a link-repair or deletion tool.
 
-macOS/Linux:
+## Verify and retain evidence
 
-```bash
-./install.sh --target .tmp/skill-update-check github-safe-publisher
-test -f .tmp/skill-update-check/github-safe-publisher/SKILL.md && echo "installed"
-```
+Reload or refresh the tool, confirm actual discovery, and run a fictional prompt. Keep backups until the new version is verified and a separate cleanup has been reviewed. Before removing any disposable test directory, resolve its exact absolute path, confirm containment and ownership, and inspect it for links and unexpected files.
 
-If the temporary target looks right, reinstall into your normal target:
-
-```powershell
-.\install.ps1 github-safe-publisher
-```
-
-```bash
-./install.sh github-safe-publisher
-```
-
-Restart or reload your AI coding tool after reinstalling.
-
-## Update All Skills
-
-Use the all-skills command only after reviewing what each skill does.
-
-Windows PowerShell:
-
-```powershell
-.\install.ps1 -All
-```
-
-macOS/Linux:
-
-```bash
-./install.sh --all
-```
-
-Restart or reload your tool after the update.
-
-## If You Edited A Local Skill
-
-The install scripts copy from this repo into your target folder. If you changed a skill inside your local target, reinstalling can replace that local version.
-
-Before updating:
-
-1. Open the installed skill folder in your target directory.
-2. Decide whether your local edits are still needed.
-3. Save your local version somewhere outside the target folder if you want to compare it later.
-4. Reinstall from the repo only after the local version is safe to replace.
-
-Prefer keeping reusable improvements in the repo copy, then reinstalling from there.
-
-## Confirm The Update
-
-Check the copied folder:
-
-```powershell
-Test-Path "$env:USERPROFILE\.codex\skills\github-safe-publisher\SKILL.md"
-```
-
-```bash
-test -f ~/.codex/skills/github-safe-publisher/SKILL.md && echo "installed"
-```
-
-Then run a small first prompt:
-
-```text
-Use $github-safe-publisher to review this README and docs folder before public release.
-```
-
-Expected result: the tool recognizes the skill and returns a structured review shape.
-
-## Clean Up Temporary Checks
-
-Windows PowerShell:
-
-```powershell
-Remove-Item -Recurse -Force ".tmp\skill-update-check"
-```
-
-macOS/Linux:
-
-```bash
-rm -rf .tmp/skill-update-check
-```
-
-## Related Links
-
-- [`../../INSTALL.md`](../../INSTALL.md)
-- [`install-faq.md`](install-faq.md)
-- [`install-verification.md`](install-verification.md)
-- [`../examples/update-after-release-proof.md`](../examples/update-after-release-proof.md)
-- [`../examples/install-smoke-test-sample.md`](../examples/install-smoke-test-sample.md)
-- [`../../TROUBLESHOOTING.md`](../../TROUBLESHOOTING.md)
+See [install verification](install-verification.md), [synthetic safety proof](../examples/safer-skills-recovery-sample.md), and [troubleshooting](../../TROUBLESHOOTING.md).

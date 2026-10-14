@@ -6,7 +6,11 @@ If you are new to the repo, start with [`START_HERE.md`](../START_HERE.md). For 
 
 ## At A Glance
 
-Inventory: 46 skills in v0.12.0. Four August additions were already on main; their implementations are unchanged by this release.
+Inventory: 47 skills in v0.13.0, up from 46 in v0.12.0.
+
+### Backup readiness
+
+[backup-readiness-auditor](../skills/backup-readiness-auditor/SKILL.md) evaluates supplied verification metadata, not backup contents. It reports coverage, freshness, capacity, integrity, and recovery-test gaps without copying, restoring, or authorizing source retirement. See the [fictional sample](examples/backup-readiness-auditor-sample.md).
 
 | Area | Skill | Best for | Install |
 |---|---|---|---|
@@ -33,7 +37,7 @@ Inventory: 46 skills in v0.12.0. Four August additions were already on main; the
 | Client work | [`implement-client-feedback`](../skills/implement-client-feedback/SKILL.md) | Turning revision notes into traceable, verified implementation decisions. | `.\install.ps1 implement-client-feedback` |
 | Client work | [`client-delivery-auditor`](../skills/client-delivery-auditor/SKILL.md) | Auditing a final package against promised deliverables and preparing an unsent handoff. | `.\install.ps1 client-delivery-auditor` |
 | Development | [`website-change-verifier`](../skills/website-change-verifier/SKILL.md) | Verifying website changes across source, build, routes, content, and browser behavior. | `.\install.ps1 website-change-verifier` |
-| Agent workflow | [`skill-builder`](../skills/skill-builder/SKILL.md) | Authoring a new skill with the right storage tier, template, and registration. | `.\install.ps1 skill-builder` |
+| Agent workflow | [`skill-builder`](../skills/skill-builder/SKILL.md) | Authoring a scoped skill with current discovery guidance and safe installation checks. | `.\install.ps1 skill-builder` |
 | Agent workflow | [`session-handoff`](../skills/session-handoff/SKILL.md) | Freezing session state into a start-here doc for instant resume. | `.\install.ps1 session-handoff` |
 | Agent workflow | [`agents-md-writer`](../skills/agents-md-writer/SKILL.md) | Generating the AGENTS.md plus CLAUDE.md contract that shares skills across agents. | `.\install.ps1 agents-md-writer` |
 | Agent workflow | [`ops-status-report`](../skills/ops-status-report/SKILL.md) | Compiling a workspace status snapshot with an Attention Needed section. | `.\install.ps1 ops-status-report` |
@@ -689,11 +693,11 @@ Typical output:
 
 ### `skill-builder`
 
-**Use it for:** turning a workflow into a new skill: naming, trigger-matching description, storage tier choice, cross-workspace linking, and registration for agents that do not auto-load skills.
+**Use it for:** turning a repeated workflow into a scoped skill with a clear trigger, reusable resources, fictional tests, and current discovery guidance.
 
 **Who it helps:** anyone who has repeated the same instructions to their AI tool three times and wants the fourth time to be one command.
 
-**Typical output:** a working skill folder in the right tier, linked with junctions or symlinks where shared, registered in AGENTS.md where needed, verified with a dry run.
+**Typical output:** a validated skill candidate, explicit installation plan, and fictional first-run evidence. Linking or installation requires a separate requested step.
 
 **Install:**
 
@@ -717,11 +721,11 @@ Typical output:
 
 ### `agents-md-writer`
 
-**Use it for:** generating the dual-agent workspace contract: an AGENTS.md that registers your skills as required reading, plus a short CLAUDE.md pointer.
+**Use it for:** writing a concise repository contract with scoped rules, commands, safety boundaries, and a compatible CLAUDE.md pointer when needed.
 
 **Who it helps:** people running both Claude Code and Codex (or any AGENTS.md-reading agent) on the same workspace who want one skill set serving both.
 
-**Typical output:** an AGENTS.md with grouped skill registry and usage rules, a CLAUDE.md pointer, and a verification step that the target agent can actually recite the contract.
+**Typical output:** a focused AGENTS.md, preserved existing instructions, optional CLAUDE.md pointer, and verification of applicable scope. Skill discovery is kept separate from repository policy.
 
 **Install:**
 

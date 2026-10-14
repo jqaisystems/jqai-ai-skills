@@ -13,7 +13,7 @@ git clone https://github.com/jqaisystems/jqai-ai-skills.git
 cd jqai-ai-skills
 ```
 
-You also need a Codex or Claude-style tool that can load local skill folders.
+You also need Python 3.11+ and a tool that loads local skills. No dependencies are installed automatically. Read [safe installation and discovery](docs/guides/safe-installation.md) first: new Codex setups should explicitly target `~/.agents/skills`; Claude Code uses `~/.claude/skills`.
 
 ## List Available Skills
 
@@ -74,7 +74,7 @@ macOS or Linux:
 
 ## Custom Install Target
 
-The default target is your local Codex skills folder:
+The legacy default is retained for compatibility, not as a universal discovery rule:
 
 ```text
 ~/.codex/skills
@@ -83,11 +83,11 @@ The default target is your local Codex skills folder:
 Use a custom target when testing:
 
 ```powershell
-.\install.ps1 github-safe-publisher -Target ".tmp\skill-install-smoke"
+.\install.ps1 github-safe-publisher -Target "$env:TEMP\jqai-skill-install-smoke"
 ```
 
 ```bash
-./install.sh --target .tmp/skill-install-smoke github-safe-publisher
+./install.sh --target "${TMPDIR:-/tmp}/jqai-skill-install-smoke" github-safe-publisher
 ```
 
 ## Reload Your Tool
@@ -110,25 +110,13 @@ If the skill does not appear after reload, use [`TROUBLESHOOTING.md`](TROUBLESHO
 
 ## Manual Install
 
-If you do not want to use the scripts, copy the whole skill folder into your local skills folder.
-
-Windows PowerShell:
-
-```powershell
-New-Item -ItemType Directory -Force "$env:USERPROFILE\.codex\skills" | Out-Null
-Copy-Item -Recurse -Force ".\skills\github-safe-publisher" "$env:USERPROFILE\.codex\skills\github-safe-publisher"
-```
-
-macOS or Linux:
-
-```bash
-mkdir -p ~/.codex/skills
-cp -R ./skills/github-safe-publisher ~/.codex/skills/github-safe-publisher
-```
+Copy only into a verified absent destination, after inspecting every ancestor for links and confirming ownership. Never merge into an existing skill or overwrite a private variant. Manual and older installations have no managed receipt and are intentionally not upgraded by the new installer. Prefer a fresh target and the [reviewed migration guidance](docs/guides/safe-installation.md).
 
 ## Safe Install Defaults
 
-- Start with one skill.
+- Start with one skill and `-DryRun` or `--dry-run`.
+- Existing identical managed copies are unchanged. Reviewed managed upgrades require `-Replace` or `--replace` and retain a backup.
+- Unmanaged folders, edited copies, links, and source/target overlap are refused.
 - Read the skill's `SKILL.md` before using it on real work.
 - Use [`docs/guides/skill-review-checklist.md`](docs/guides/skill-review-checklist.md) before installing unfamiliar or modified skill folders.
 - Use a test folder for the first run.

@@ -30,8 +30,9 @@ def main() -> int:
 
     print(f"Public safety scanner: {len(blocking)} blocking, {len(review)} review finding(s).")
     for finding in blocking:
-        location = finding.path if finding.line is None else f"{finding.path}:{finding.line}"
-        print(f"BLOCK {location}: {finding.kind} - {finding.detail}")
+        safe = scanner.public_finding(finding)
+        location = safe["path"] if safe["line"] is None else f"{safe['path']}:{safe['line']}"
+        print(f"BLOCK {location}: {safe['kind']} - {safe['detail']}")
 
     if review:
         print("Review findings are allowed in CI but should be intentional.")

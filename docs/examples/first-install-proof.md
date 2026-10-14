@@ -80,18 +80,18 @@ Use a disposable target first. This proves the installer copies the whole folder
 Windows PowerShell:
 
 ```powershell
-.\install.ps1 github-safe-publisher -Target ".tmp\skill-install-smoke"
-Test-Path ".tmp\skill-install-smoke\github-safe-publisher\SKILL.md"
-Get-ChildItem ".tmp\skill-install-smoke\github-safe-publisher"
+.\install.ps1 github-safe-publisher -Target "$env:TEMP\jqai-skill-install-smoke"
+Test-Path "$env:TEMP\jqai-skill-install-smoke\github-safe-publisher\SKILL.md"
+Get-ChildItem "$env:TEMP\jqai-skill-install-smoke\github-safe-publisher"
 ```
 
 macOS/Linux:
 
 ```bash
 chmod +x ./install.sh
-./install.sh --target .tmp/skill-install-smoke github-safe-publisher
-test -f .tmp/skill-install-smoke/github-safe-publisher/SKILL.md
-ls .tmp/skill-install-smoke/github-safe-publisher
+./install.sh --target "${TMPDIR:-/tmp}/jqai-skill-install-smoke" github-safe-publisher
+test -f "${TMPDIR:-/tmp}/jqai-skill-install-smoke/github-safe-publisher/SKILL.md"
+ls "${TMPDIR:-/tmp}/jqai-skill-install-smoke/github-safe-publisher"
 ```
 
 Expected folder contents for this skill:
@@ -170,17 +170,7 @@ The exact wording can differ, but a good result should include:
 
 Only remove the disposable target:
 
-Windows PowerShell:
-
-```powershell
-Remove-Item -Recurse -Force ".tmp\skill-install-smoke"
-```
-
-macOS/Linux:
-
-```bash
-rm -rf .tmp/skill-install-smoke
-```
+Inspect the exact absolute temporary target, confirm it is outside the repository and contains only this test, and check for links before a separately reviewed cleanup. No automatic removal is required.
 
 Do not remove your normal skills directory unless you know what else is installed there.
 

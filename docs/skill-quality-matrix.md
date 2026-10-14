@@ -1,6 +1,15 @@
 # Skill Quality Matrix
 
-Current as of v0.12.0: 46 skills. Local checks and remote CI provide different evidence; see the release page for the tested release commit.
+Current as of v0.13.0: 47 skills. Local checks and remote CI provide different evidence; the release page identifies the tested release commit.
+
+## v0.13.0
+
+| Component | Evidence | Boundary |
+|---|---|---|
+| [Backup readiness auditor](../skills/backup-readiness-auditor/SKILL.md) | Synthetic schema/decision tests and [fictional proof](examples/backup-readiness-auditor-sample.md) | Supplied evidence only; never authorizes destructive work. |
+| Safety scanner | Redaction, baseline, read-error, and junction regressions | Reports stay private; detection is not a complete privacy guarantee. |
+| Installers | Copy/receipt, conflict, dry-run, backup, rollback, and shell tests | No link repair or unmanaged replacement; Python 3.11+ required. |
+| Setup guidance | Current official sources and reviewed synthetic setup cases | Discovery must be verified in the actual tool; no private installations changed. |
 
 Use this matrix to compare the public skills by maturity, visible proof, safety sensitivity, and install notes. It is a practical adoption guide, not a certification. For the browsable examples index, use [`docs/examples/README.md`](examples/README.md). For the folder contract behind every skill, use [`docs/guides/skill-anatomy.md`](guides/skill-anatomy.md). For the complete first-install trust path, use [`docs/examples/first-install-proof.md`](examples/first-install-proof.md). For the post-release refresh path, use [`docs/examples/update-after-release-proof.md`](examples/update-after-release-proof.md). For smaller utility skill examples, use [`docs/examples/utility-skill-proof-pack.md`](examples/utility-skill-proof-pack.md). For responsive demo output proof, use [`docs/examples/demo-animation-v2-walkthrough-sample.md`](examples/demo-animation-v2-walkthrough-sample.md). For release-to-showcase handoff proof, use [`docs/examples/release-showcase-handoff-sample.md`](examples/release-showcase-handoff-sample.md).
 

@@ -1,79 +1,41 @@
 ---
 name: agents-md-writer
-description: Generate the dual-agent workspace contract, an AGENTS.md skill registry plus a CLAUDE.md pointer, so one set of skills serves both Claude Code (which auto-discovers them) and agents like Codex (which need required-reading instructions). Use when the user says "set up AGENTS.md", "make my skills work in Codex too", "dual agent setup", or "workspace contract".
+description: Create or update project-level AGENTS.md and CLAUDE.md guidance that maps real skills to project tasks without replacing native skill discovery. Use for cross-tool workspace instructions, scoped routing, and preserving existing project rules.
 ---
 
-# AGENTS.md Writer
+# Workspace Guidance Writer
 
-Claude Code auto-discovers `.claude/skills/`. Codex and most other agents do not. Without a contract, half your tooling is invisible to half your agents. This skill writes that contract: one AGENTS.md that turns your skill folder into required reading for any agent, plus a CLAUDE.md pointer that keeps a single source of truth.
+Keep project instructions accurate without forcing every skill to load for every task.
 
-## Step 1: Inventory the workspace
+1. Read existing guidance at the workspace and relevant parent/subproject levels. Preserve unrelated rules and user edits.
+2. Inventory relevant skill locations, real folders, shared targets, missing entries, and name collisions. Do not read account settings or access files.
+3. Distinguish discovery from project routing:
+   - Codex discovers repository/user `.agents/skills` folders and supports linked skill folders. [Official guidance](https://learn.chatgpt.com/docs/build-skills#where-codex-loads-local-skills), checked 2026-10-14.
+   - Claude Code discovers project/personal `.claude/skills` folders. [Official guidance](https://code.claude.com/docs/en/skills), checked 2026-10-14.
+   - Inspect compatibility locations already in use; do not move or duplicate skills automatically.
+4. Propose a small task-specific map using verified workspace-relative references. Avoid blanket claims that a tool cannot discover skills.
+5. Show the intended diff before replacing substantive instructions. Update only requested files. A short CLAUDE.md pointer can be useful if it preserves existing load order, but is not mandatory.
+6. Verify referenced files exist and confirm routing/discovery with the target tool after its supported refresh. File existence alone is not integration success.
 
-1. List `.claude/skills/` at the workspace root: every folder with a SKILL.md, and its `name` and `description` frontmatter.
-2. Note which are real folders and which are links into a shared library (both work; the contract references the workspace-relative path either way).
-3. Read any existing AGENTS.md or CLAUDE.md so you extend rather than clobber. Per-project files deeper in the tree stay untouched.
-
-## Step 2: Group the skills
-
-Group by task domain, not alphabetically, so an agent can find the right skill from the task in front of it. Typical groups: Design, Writing, Business, Development, Workflow. Two or three groups beat seven.
-
-## Step 3: Write AGENTS.md
-
-Structure, proven in real dual-agent workspaces:
+## Example structure
 
 ```markdown
-# AGENTS.md
+# Project guidance
 
-Workspace-level guidance for all projects under <root>. Applies to any agent that reads AGENTS.md.
+## Scope
 
-## Local skills
+These rules apply to this project. Preserve more specific subproject instructions.
 
-Skills live in `.claude/skills/`. Claude Code auto-discovers them.
-Other agents should treat the files referenced below as required reading,
-because they do not auto-load skills from this folder.
+## Skill routing
 
-## <Group> skills
+- For release preparation, use the installed safety-review skill when available.
+- For a local-only reference, read the verified relative path listed here.
 
-When a task involves <domain>, read the relevant skill file first and apply its guidance.
+## Project constraints
 
-- **<skill-name>** (`.claude/skills/<skill-name>/SKILL.md`)
-  One line: what it covers and when it is required.
-
-How to use them:
-- <task shape>: read **<skill-a>** first, then **<skill-b>**.
-- These are reference guidance, not code. Read the SKILL.md, then apply.
-
-## <Hard rules>
-
-Any non-negotiable workspace rules an agent must follow in every output.
+Record actual project requirements and authorization boundaries.
 ```
 
-The per-skill line answers "when is reading this mandatory", not just "what is this".
+Do not paste private profiles, inventories, source registries, or access configuration into public instructions. Do not replace, relink, or install skills as a side effect of writing guidance.
 
-## Step 4: Write the CLAUDE.md pointer
-
-CLAUDE.md stays short and defers to AGENTS.md, so there is one source of truth:
-
-```markdown
-# CLAUDE.md
-
-Use `AGENTS.md` as the workspace guidance for <root>.
-Claude Code should use `.claude/skills/` as the local skill source at this root.
-
-For <task shape>, load `<skill-a>` first, then `<skill-b>`.
-```
-
-## Step 5: Verify
-
-Ask the target agent (in a fresh session) to describe the workspace rules. If it cannot name the skills and when to read them, the contract failed; tighten the wording.
-
-## Rules
-
-- Extend existing files, never overwrite silently. Show a diff of what changes.
-- Register only skills that exist on disk. A contract pointing at missing files is worse than none.
-- Keep AGENTS.md under two screens. It is a map, not documentation.
-- No em dashes in any output.
-
-## Output
-
-An AGENTS.md skill registry and a CLAUDE.md pointer at the workspace root, extending whatever already existed.
+Return the diff, unresolved references/conflicts, and discovery checks performed or pending.

@@ -65,7 +65,7 @@ If two skills have the same score:
 Use a temporary target first:
 
 ```powershell
-.\install.ps1 github-safe-publisher -Target ".tmp\first-skill-test"
+.\install.ps1 github-safe-publisher -Target "$env:TEMP\jqai-first-skill-test"
 ```
 
 Replace `github-safe-publisher` with the winning skill name.

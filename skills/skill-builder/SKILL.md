@@ -1,84 +1,34 @@
 ---
 name: skill-builder
-description: Author a new Claude Code skill the right way, from choosing the storage tier (project, shared library, or user-global) to scaffolding the SKILL.md, linking it across workspaces, and registering it for agents that do not auto-load skills, like Codex. Use when the user says "create a skill", "turn this workflow into a skill", "make this repeatable", or "new skill for".
+description: Turn a repeated workflow into a portable skill with precise triggers, useful resources, safe storage, and verified discovery. Use when creating a skill or preparing a shared skill library, not for silently replacing existing installations.
 ---
 
 # Skill Builder
 
-The difference between a skill that fires reliably and one that never triggers is craft: a description written as a trigger matcher, absolute paths, explicit guardrails. This skill builds skills that work, and puts them where they belong.
+Build one reusable capability and verify it with realistic input.
 
-## Step 1: Mine the workflow
+## Define and author
 
-The best skills come from a workflow that just happened. If the user is converting something they did this session, extract from THIS conversation: the exact steps, the paths touched, the mistakes made and corrected. Those corrections become the new skill's Rules section.
+- Extract reusable decisions, inputs, outputs, and boundaries. Do not copy private session transcripts, personal operating procedures, or installed third-party bundles.
+- Check for overlap and prefer improving an existing skill when the workflow is only a variation.
+- Use a lowercase hyphenated folder name and a precise trigger description. Include name and description frontmatter, preserving supported optional metadata when updating.
+- Keep instructions concise. Add references for contracts, assets for templates, and scripts when deterministic behavior improves reliability.
+- Use relative paths inside the skill. Keep user-specific values in explicitly approved private configuration, not distributed examples.
+- Keep agents/openai.yaml consistent with the skill and include its invocation name in the example prompt.
 
-Pin down:
+## Storage and discovery
 
-- **Name**: kebab-case, short, specific (`follow-up-radar`, not `helper-tool`). Check for collisions against every skill already installed in any tier.
-- **Triggers**: the literal phrases the user would say. These go in the description, quoted.
-- **Job**: one job. If the skill needs an "and also" clause, that is two skills.
+Read [installation safety](references/installation-safety.md) before copying or linking.
 
-## Step 2: Choose the storage tier
+Current documentation checked 2026-10-14:
 
-| The skill... | Tier | Location |
-|---|---|---|
-| Only makes sense in this project or workspace | Project | `<project>/.claude/skills/<name>/SKILL.md` |
-| Useful across several workspaces | Shared library | One real folder in a central location, linked into each workspace's `.claude/skills/` |
-| Generic personal utility, any folder | User-global | `~/.claude/skills/<name>/SKILL.md` |
+- Codex discovers repository/user skills under `.agents/skills` and supports symlinked skill folders. Inspect compatibility locations already in use before proposing migration. [Codex documentation](https://learn.chatgpt.com/docs/build-skills#where-codex-loads-local-skills).
+- Claude Code uses project `.claude/skills` and personal `~/.claude/skills` locations. [Claude Code documentation](https://code.claude.com/docs/en/skills).
+- A shared source can be linked into applicable discovery locations after verifying ownership and targets. Do not create duplicate registrations merely because multiple paths exist.
+- AGENTS.md and CLAUDE.md provide project routing and constraints. They do not replace native discovery or prove a skill loaded.
 
-For the shared library tier, create the real folder once and link it in per workspace:
+## Validate and hand off
 
-- Windows (no admin rights needed): `New-Item -ItemType Junction -Path "<workspace>\.claude\skills\<name>" -Target "<library>\<name>"`
-- macOS/Linux: `ln -s <library>/<name> <workspace>/.claude/skills/<name>`
+Run an available structural validator, exercise scripts on disposable fixtures, and forward-test a realistic request. Verify detection in the actual tool after its supported refresh. Distinguish files existing from successful discovery and use.
 
-An edit to the library folder then propagates to every workspace that links it.
-
-## Step 3: Scaffold the SKILL.md
-
-Always a folder with a `SKILL.md`, never a loose file. Frontmatter has exactly two keys:
-
-```markdown
----
-name: <name>
-description: <What it does in one sentence. Then the trigger phrases, quoted, so the skill actually fires.>
----
-
-# <Title>
-
-One line: the outcome this skill produces.
-
-## Step 1: ...
-## Step 2: ...
-
-## Rules
-- The explicit never-do list: what it must not overwrite, delete, send, or invent.
-
-## Output
-What the user receives: files, report, chat summary.
-```
-
-Craft rules that matter:
-
-- The description is the trigger matcher. Vague descriptions produce skills that never activate.
-- Absolute paths for anything outside the current project, so the skill works regardless of where it runs.
-- Personal data (emails, prices, client names) goes in an ask-once config file the skill loads at Step 0, never hardcoded, especially if the skill might ever be shared.
-- Guardrails are explicit: "never overwrite", "report before acting", "drafts only, never send".
-
-## Step 4: Register for agents that do not auto-load
-
-Claude Code discovers `.claude/skills/` automatically. Codex and similar agents do not. If the workspace serves both, register the skill in the workspace's `AGENTS.md` as required reading: bold name, path, one line saying when it applies. Keep a short pointer in `CLAUDE.md` for load order. The `agents-md-writer` skill generates this contract if the workspace lacks one.
-
-## Step 5: Verify
-
-1. Confirm the skill appears in the available-skills list (fresh sessions pick it up on start).
-2. Dry-run it once on throwaway input and delete the test output.
-3. Review it with the `skill-reviewer` skill if it will be shared or installed elsewhere.
-
-## Rules
-
-- Never edit installed third-party skill bundles. New work goes in the three tiers above.
-- Update rather than duplicate: if an existing skill has overlapping triggers, extend it.
-- No em dashes in the skill file or its outputs.
-
-## Output
-
-A working skill folder in the right tier, linked and registered where needed, verified with a dry run.
+Report files, behavior checks, discovery status, and conflicts left untouched. Separately review provenance, safety, and the exact release manifest before public sharing. Authoring does not authorize installation elsewhere or publication.

@@ -4,6 +4,16 @@ Public release history for JQ AI Skills.
 
 The social preview image is intentionally stable for 2026 and is not updated for every release.
 
+## [v0.13.0](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.13.0) - 2026-10-14
+
+Library: 47 skills. Publication is gated on passing CI for the exact release commit.
+
+- Add backup-readiness-auditor: metadata-only evidence review with explicit incomplete, stale, and failed states.
+- Withhold matched text in safety reports, protect linked baseline paths, scan baseline contents, and prevent blocking findings from being suppressed.
+- Share a standard-library installer across PowerShell and Bash. Add dry-run preflight and explicit managed upgrades with retained backups; refuse unmanaged copies, local edits, links, and unsafe targets.
+- Require Python 3.11+ for both installer entrypoints, without automatic dependency installation. Keep the legacy default destination for compatibility; document explicit current discovery targets.
+- Refresh skill-builder and agents-md-writer guidance and add synthetic regressions, fictional proof, and release-manifest gates.
+
 ## [v0.12.0](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.12.0) - 2026-10-14
 
 Library: 46 skills (43 previously on main plus three new utilities).

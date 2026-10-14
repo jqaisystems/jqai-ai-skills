@@ -117,13 +117,13 @@ Install into a temporary target before your real skills folder when you are unsu
 Windows PowerShell:
 
 ```powershell
-.\install.ps1 skill-reviewer -Target ".tmp\skill-review-smoke"
+.\install.ps1 skill-reviewer -Target "$env:TEMP\jqai-skill-review-smoke"
 ```
 
 macOS or Linux:
 
 ```bash
-./install.sh --target .tmp/skill-review-smoke skill-reviewer
+./install.sh --target "${TMPDIR:-/tmp}/jqai-skill-review-smoke" skill-reviewer
 ```
 
 Then inspect what was copied.

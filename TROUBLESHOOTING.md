@@ -48,7 +48,7 @@ For a complete install check, use [`docs/guides/install-verification.md`](docs/g
 
 ## Wrong Install Target
 
-The install scripts default to:
+The scripts retain this legacy default for compatibility. For new setups, see [current discovery locations](docs/guides/safe-installation.md):
 
 ```text
 ~/.codex/skills
@@ -67,11 +67,11 @@ If your tool uses a different skill folder, pass a custom target:
 Use a temporary target when testing:
 
 ```powershell
-.\install.ps1 github-safe-publisher -Target ".tmp\skill-install-smoke"
+.\install.ps1 github-safe-publisher -Target "$env:TEMP\jqai-skill-install-smoke"
 ```
 
 ```bash
-./install.sh --target .tmp/skill-install-smoke github-safe-publisher
+./install.sh --target "${TMPDIR:-/tmp}/jqai-skill-install-smoke" github-safe-publisher
 ```
 
 ## Command Was Run From The Wrong Folder
@@ -92,12 +92,13 @@ If the list command works, the installer can see the skill folders.
 
 ## PowerShell Issues
 
-If PowerShell blocks script execution, run the installer with the current-process policy:
+If local policy blocks PowerShell scripts, do not change execution policy merely to install. Use an already permitted Python 3.11+ runtime to run the same reviewed helper:
 
 ```powershell
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-.\install.ps1 github-safe-publisher
+python -B tools/install_skills.py github-safe-publisher --target "$HOME/.agents/skills" --dry-run
 ```
+
+Review the plan before rerunning without `--dry-run`.
 
 If a skill name is misspelled, list the available skills:
 
@@ -124,49 +125,11 @@ If the script still cannot find the skill, list the available skills:
 
 ## Reinstall A Skill
 
-The install scripts replace the existing destination folder for the selected skill.
-
-Windows PowerShell:
-
-```powershell
-.\install.ps1 github-safe-publisher
-```
-
-macOS or Linux:
-
-```bash
-./install.sh github-safe-publisher
-```
-
-Reinstalling is useful after pulling a new release:
-
-```powershell
-git pull
-.\install.ps1 github-safe-publisher
-```
-
-```bash
-git pull
-./install.sh github-safe-publisher
-```
+The installer no longer overwrites existing folders. An identical managed copy is unchanged. A reviewed upgrade requires `-Replace` or `--replace`, verifies the receipt, and retains the old folder. Unmanaged legacy copies, edited files, and links are refused. Follow [update guidance](docs/guides/update-installed-skills.md); use a fresh target rather than bypassing refusal.
 
 ## Remove A Skill
 
-Remove only the skill folder you installed. Do not remove the entire skills directory unless you know what else is inside it.
-
-Windows PowerShell:
-
-```powershell
-Remove-Item -Recurse -Force "$env:USERPROFILE\.codex\skills\github-safe-publisher"
-```
-
-macOS or Linux:
-
-```bash
-rm -rf ~/.codex/skills/github-safe-publisher
-```
-
-Restart or reload your AI tool after removing a skill.
+Removal is a separate reviewed operation, not an installer feature. Confirm the exact target, ownership, link status, and contents first. Preserve shared sources, private variants, retained backups, and the rest of the discovery directory. Do not recursively delete an uninspected path.
 
 ## Skill Runs But Output Looks Wrong
 

@@ -4,6 +4,14 @@ Use these bundles when one skill is useful, but the job naturally needs a small 
 
 Each bundle below is public-safe and uses generic examples. Adapt the prompts to your own workspace after reviewing what each skill does.
 
+## Safe Recovery and Skill Maintenance
+
+1. Use backup-readiness-auditor on an approved metadata evidence pack. Resolve missing checks without accessing application data.
+2. Use skill-builder or agents-md-writer only for the requested authoring/setup task. Preserve shared links and private variants.
+3. Use github-safe-publisher on the rewritten public candidate, review every finding, and maintain an exact private file manifest.
+
+No step grants permission to restore, delete, install, commit, or publish as a side effect. See [safe installation](../guides/safe-installation.md) and the [fictional proof](safer-skills-recovery-sample.md).
+
 ## Bundle 1: Public GitHub Publishing
 
 Use this bundle when you are turning private project work into public-safe GitHub proof.

@@ -61,18 +61,18 @@ Use a disposable target first.
 Windows PowerShell:
 
 ```powershell
-.\install.ps1 github-safe-publisher -Target ".tmp\skill-update-check"
-Test-Path ".tmp\skill-update-check\github-safe-publisher\SKILL.md"
-Get-ChildItem ".tmp\skill-update-check\github-safe-publisher"
+.\install.ps1 github-safe-publisher -Target "$env:TEMP\jqai-skill-update-check"
+Test-Path "$env:TEMP\jqai-skill-update-check\github-safe-publisher\SKILL.md"
+Get-ChildItem "$env:TEMP\jqai-skill-update-check\github-safe-publisher"
 ```
 
 macOS/Linux:
 
 ```bash
 chmod +x ./install.sh
-./install.sh --target .tmp/skill-update-check github-safe-publisher
-test -f .tmp/skill-update-check/github-safe-publisher/SKILL.md
-ls .tmp/skill-update-check/github-safe-publisher
+./install.sh --target "${TMPDIR:-/tmp}/jqai-skill-update-check" github-safe-publisher
+test -f "${TMPDIR:-/tmp}/jqai-skill-update-check/github-safe-publisher/SKILL.md"
+ls "${TMPDIR:-/tmp}/jqai-skill-update-check/github-safe-publisher"
 ```
 
 Expected folder contents for this skill:
@@ -89,31 +89,9 @@ Compare with:
 - [`install-smoke-test-sample.md`](install-smoke-test-sample.md)
 - [`../guides/install-verification.md`](../guides/install-verification.md)
 
-## 4. Reinstall The Selected Skill
+## 4. Upgrade The Selected Managed Copy
 
-After the temporary copy looks right, reinstall the selected skill into your normal target.
-
-Windows PowerShell:
-
-```powershell
-.\install.ps1 github-safe-publisher
-```
-
-macOS/Linux:
-
-```bash
-./install.sh github-safe-publisher
-```
-
-Install all skills only after reviewing what each skill does:
-
-```powershell
-.\install.ps1 -All
-```
-
-```bash
-./install.sh --all
-```
+Follow the [current upgrade guide](../guides/update-installed-skills.md). Preview the explicit target with `-Replace -DryRun` or `--replace --dry-run`; remove the dry-run flag only after review. Identical copies are unchanged and old managed copies are retained as backups. Legacy copies, local edits, and shared links require a separate migration, not forced replacement.
 
 ## 5. Reload And Run A Fake Check
 
@@ -144,17 +122,7 @@ The first post-update check should use only the fake `Example Review Queue` cand
 
 Only remove the disposable target:
 
-Windows PowerShell:
-
-```powershell
-Remove-Item -Recurse -Force ".tmp\skill-update-check"
-```
-
-macOS/Linux:
-
-```bash
-rm -rf .tmp/skill-update-check
-```
+Inspect the exact absolute temporary target, confirm it is outside the repository and contains only this test, and check for links before a separately reviewed cleanup. No automatic removal is required.
 
 Do not remove your normal skills directory unless you know what else is installed there.
 

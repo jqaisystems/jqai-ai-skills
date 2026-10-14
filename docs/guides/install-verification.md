@@ -57,13 +57,13 @@ Use a temporary target first if you want to confirm what the installer copies be
 Windows PowerShell:
 
 ```powershell
-.\install.ps1 github-safe-publisher -Target ".tmp\skill-install-smoke"
+.\install.ps1 github-safe-publisher -Target "$env:TEMP\jqai-skill-install-smoke"
 ```
 
 macOS or Linux:
 
 ```bash
-./install.sh --target .tmp/skill-install-smoke github-safe-publisher
+./install.sh --target "${TMPDIR:-/tmp}/jqai-skill-install-smoke" github-safe-publisher
 ```
 
 ## 4. Confirm The Copied Folder
@@ -71,15 +71,15 @@ macOS or Linux:
 Windows PowerShell:
 
 ```powershell
-Test-Path ".tmp\skill-install-smoke\github-safe-publisher\SKILL.md"
-Get-ChildItem ".tmp\skill-install-smoke\github-safe-publisher"
+Test-Path "$env:TEMP\jqai-skill-install-smoke\github-safe-publisher\SKILL.md"
+Get-ChildItem "$env:TEMP\jqai-skill-install-smoke\github-safe-publisher"
 ```
 
 macOS or Linux:
 
 ```bash
-test -f .tmp/skill-install-smoke/github-safe-publisher/SKILL.md
-ls .tmp/skill-install-smoke/github-safe-publisher
+test -f "${TMPDIR:-/tmp}/jqai-skill-install-smoke/github-safe-publisher/SKILL.md"
+ls "${TMPDIR:-/tmp}/jqai-skill-install-smoke/github-safe-publisher"
 ```
 
 You should see the whole skill folder. For `github-safe-publisher`, that includes `SKILL.md`, `agents/`, `references/`, and `scripts/`.
@@ -142,17 +142,7 @@ For a sample terminal pass through the temporary target check, see [`docs/exampl
 
 Only remove the temporary smoke-test folder. Do not remove your real skills directory.
 
-Windows PowerShell:
-
-```powershell
-Remove-Item -Recurse -Force ".tmp\skill-install-smoke"
-```
-
-macOS or Linux:
-
-```bash
-rm -rf .tmp/skill-install-smoke
-```
+Inspect the exact absolute temporary target, confirm it is outside the repository and contains only this test, and check for links before a separately reviewed cleanup. No automatic removal is required.
 
 ## If Something Fails
 

@@ -1,4 +1,4 @@
 interface:
-  display_name: "AGENTS.md Writer"
-  short_description: "Generate the AGENTS.md + CLAUDE.md contract that shares skills across agents"
-  default_prompt: "Use $agents-md-writer to register my local skills for both Claude Code and Codex."
+  display_name: "Workspace Guidance Writer"
+  short_description: "Map project rules to verified skill locations"
+  default_prompt: "Use $agents-md-writer to update my project guidance while preserving existing rules and native skill discovery."

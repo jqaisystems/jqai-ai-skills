@@ -11,9 +11,9 @@ For commands, use [`INSTALL.md`](../../INSTALL.md). For a full verification pass
 | Which skill should I install first? | Start with `github-safe-publisher` if you are unsure. |
 | Should I install all skills? | Only after you have reviewed what each skill does. |
 | Do I copy only `SKILL.md`? | No. Copy the whole skill folder. |
-| Where do skills install by default? | The scripts default to `~/.codex/skills`. |
-| Can I test without touching my real skills folder? | Yes. Use a temporary target such as `.tmp\skill-install-smoke`. |
-| How do I update later? | Pull the repo, test a temporary target, reinstall, then reload your tool. |
+| Where do skills install by default? | The legacy default is `~/.codex/skills`; choose current targets explicitly using [safe installation](safe-installation.md). |
+| Can I test without touching my real skills folder? | Yes. Use a fresh temporary target outside the repository, or preview with DryRun. |
+| How do I update later? | Review changes, dry-run an explicit managed upgrade, retain the backup, and reload. |
 | Why does the skill not appear? | Usually reload, wrong target, partial copy, misspelled skill name, or wrong repo folder. |
 | What should I use for the first prompt? | Use fake files, public docs, or a small test folder first. |
 
@@ -72,7 +72,7 @@ github-safe-publisher/
   scripts/
 ```
 
-If the destination only contains `SKILL.md`, reinstall the whole folder.
+If the destination only contains `SKILL.md`, preserve it and test the complete skill in a fresh target; do not merge or overwrite it.
 
 ## Where Does It Install?
 
@@ -85,11 +85,11 @@ The default target is:
 Use a custom target when testing or when your tool reads a different skills folder:
 
 ```powershell
-.\install.ps1 github-safe-publisher -Target ".tmp\skill-install-smoke"
+.\install.ps1 github-safe-publisher -Target "$env:TEMP\jqai-skill-install-smoke"
 ```
 
 ```bash
-./install.sh --target .tmp/skill-install-smoke github-safe-publisher
+./install.sh --target "${TMPDIR:-/tmp}/jqai-skill-install-smoke" github-safe-publisher
 ```
 
 ## How Do I Know The Install Worked?
@@ -150,37 +150,11 @@ Use fake files or public docs until the install and output shape are clear.
 
 ## How Do I Update A Skill?
 
-Use [`update-installed-skills.md`](update-installed-skills.md) for the full update path.
-
-Short version: pull the latest repo changes, test a temporary target, reinstall the selected skill, then reload your tool.
-
-```powershell
-git pull --ff-only
-.\install.ps1 github-safe-publisher
-```
-
-```bash
-git pull --ff-only
-./install.sh github-safe-publisher
-```
+Use [update-installed-skills.md](update-installed-skills.md). Preview with `-Replace -DryRun` or `--replace --dry-run`; after review, remove only the dry-run flag. Managed upgrades retain the previous folder. Identical managed copies are unchanged; unmanaged copies, local edits, and links stop the operation.
 
 ## How Do I Remove A Skill?
 
-Remove only the selected skill folder from your local skills target. Do not remove the whole skills directory unless you know what else is inside it.
-
-Windows PowerShell:
-
-```powershell
-Remove-Item -Recurse -Force "$env:USERPROFILE\.codex\skills\github-safe-publisher"
-```
-
-macOS or Linux:
-
-```bash
-rm -rf ~/.codex/skills/github-safe-publisher
-```
-
-Restart or reload your tool after removing a skill.
+Removal is separate from installation. Verify the exact target, ownership, contents, and whether it is a link before acting. Preserve shared sources and private variants. Do not recursively remove an uninspected discovery directory. Reload the tool after a separately approved removal.
 
 ## When Should I Use `skill-reviewer`?
 

@@ -18,7 +18,7 @@ Use this skill to turn private project material into public-safe GitHub artifact
 5. Run the scanner on the proposed public folder:
 
 ```bash
-python scripts/scan_public_safety.py path/to/public-candidate
+python scripts/scan_public_safety.py path/to/public-candidate --no-baseline
 ```
 
 6. Read `references/release-workflow.md` before staging changes.
@@ -50,13 +50,17 @@ Recommended commands:
 
 ```bash
 python scripts/scan_public_safety.py path/to/candidate
-python scripts/scan_public_safety.py path/to/candidate --json
+python scripts/scan_public_safety.py path/to/candidate --no-baseline --json
 python scripts/scan_public_safety.py path/to/candidate --no-baseline
 ```
 
 The scanner checks risky filenames, file extensions, binary-like artifacts, local path patterns, credential terms, token formats, private-key blocks, and private/client wording. Folder scans use `.public-safety-baseline.json` when present to suppress known review findings; use `--no-baseline` to see the raw scan. A clean scan still requires human diff review.
 
 ## Git Safety
+
+Scanner reports withhold matched text and absolute input locations. Relative filenames may still identify private work, so keep reports private. Linked inputs are refused; unreadable content and incomplete enumeration prevent readiness. Excluded build/dependency folders and binary content are not a complete content audit.
+
+The baseline file itself is scanned. Existing review fingerprints remain compatible for unchanged content, but blocking findings are never suppressed. Inspect matches privately at their locations rather than copying sensitive lines into chat or logs. Review the exact proposed release file list separately.
 
 - Never run broad staging commands such as `git add .` unless the user has already reviewed the whole repo state.
 - Prefer staging named files only after inspecting them.

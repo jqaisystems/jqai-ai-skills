@@ -1,0 +1,4 @@
+interface:
+  display_name: "Backup Readiness Auditor"
+  short_description: "Review backup evidence without changing files"
+  default_prompt: "Use $backup-readiness-auditor to assess this approved evidence pack and identify what remains unverified."

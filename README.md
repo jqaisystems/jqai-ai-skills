@@ -2,13 +2,15 @@
 
 Reusable AI skills by JQ AI SYSTEMS.
 
-**v0.12.0 contains 46 skills**, including local media checks, offline automation reconciliation, and Windows reinstall planning. See the [release notes](docs/announcements/v0.12.0.md).
+**v0.13.0 contains 47 skills**, including backup-evidence review, safer installation, and updated skill setup guidance. See the [release notes](docs/announcements/v0.13.0.md).
+
+New: [backup-readiness-auditor](skills/backup-readiness-auditor/SKILL.md), which evaluates supplied evidence without operating on backups. Installation now requires Python 3.11+ and protects existing copies and links; see [safe installation](docs/guides/safe-installation.md).
 
 These skills are small, portable instruction folders for Claude/Codex-style workflows. They are published under the MIT License so you can adapt them for your own local setup.
 
 [![Website](https://img.shields.io/badge/Website-ai.joaoqueiros.com-111827?style=for-the-badge)](https://www.ai.joaoqueiros.com)
 [![License](https://img.shields.io/badge/License-MIT-059669?style=for-the-badge)](LICENSE)
-[![Release](https://img.shields.io/badge/Release-v0.12.0-2563eb?style=for-the-badge)](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.12.0)
+[![Release](https://img.shields.io/badge/Release-v0.13.0-2563eb?style=for-the-badge)](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.13.0)
 [![Validate skills](https://github.com/jqaisystems/jqai-ai-skills/actions/workflows/validate.yml/badge.svg)](https://github.com/jqaisystems/jqai-ai-skills/actions/workflows/validate.yml)
 
 ## Start Here
@@ -222,7 +224,7 @@ For a field-by-field walkthrough, use [`docs/guides/skill-anatomy.md`](docs/guid
 
 | Skill | File | Use |
 |---|---|---|
-| Skill Builder | [`skills/skill-builder/SKILL.md`](skills/skill-builder/SKILL.md) | Author a new skill with the right storage tier, template, and registration. |
+| Skill Builder | [`skills/skill-builder/SKILL.md`](skills/skill-builder/SKILL.md) | Author a scoped skill with current discovery guidance, safe installation boundaries, and fictional tests. |
 | Session Handoff | [`skills/session-handoff/SKILL.md`](skills/session-handoff/SKILL.md) | Freeze session state into a start-here doc for instant resume. |
 | AGENTS.md Writer | [`skills/agents-md-writer/SKILL.md`](skills/agents-md-writer/SKILL.md) | Generate the AGENTS.md and CLAUDE.md contract that shares skills across agents. |
 
@@ -336,21 +338,7 @@ List available skills:
 ./install.sh --list
 ```
 
-Manual install:
-
-Windows PowerShell:
-
-```powershell
-New-Item -ItemType Directory -Force "$env:USERPROFILE\.codex\skills" | Out-Null
-Copy-Item -Recurse -Force ".\skills\web-scraper" "$env:USERPROFILE\.codex\skills\web-scraper"
-```
-
-macOS/Linux:
-
-```bash
-mkdir -p ~/.codex/skills
-cp -R ./skills/web-scraper ~/.codex/skills/web-scraper
-```
+For current discovery locations, dry-run installation, managed upgrades, and private/shared-link protection, use [safe installation](docs/guides/safe-installation.md). Do not force-copy over an existing skill. The legacy default is retained for compatibility; select your tool's current target explicitly.
 
 Then invoke it by name:
 

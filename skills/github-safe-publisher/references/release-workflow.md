@@ -30,7 +30,7 @@ Good draft habits:
 Run:
 
 ```bash
-python scripts/scan_public_safety.py path/to/sanitized-draft
+python scripts/scan_public_safety.py path/to/sanitized-draft --no-baseline
 ```
 
 If findings appear, fix them before moving into a public repo. Use `--json` when another tool needs structured results.
@@ -66,9 +66,15 @@ git diff --cached
 
 Do not commit until every staged line is intentional and public-safe.
 
+Maintain a private release manifest containing exact relative paths, hashes, reviewed findings, and test results. Recheck after every edit, including whitespace corrections. Compare the staged file list to that allowlist: a clean unstaged diff does not check untracked files or prove the index matches review. Inspect author/committer identity, release notes, and attachment lists separately. Keep private reports and validation environments outside the public repository.
+
 ## 6. Commit And Push Only After Approval
 
 The skill may recommend commands, but it must not auto-commit or auto-push. A human should approve the final diff and explicitly request publication.
+
+For candidate-only work, leave changes unstaged and unpublished. Remote CI remains pending until a separately authorized push.
+
+After publication approval, verify the remote destination and exact reviewed commit. Push with normal fast-forward protection. Wait for all required CI jobs on that commit, not merely the latest green run. Only then tag the tested commit and publish reviewed notes. Verify tag target, release state, links, and attachments. Authentication failures never justify copying access values into project files or changing accounts without approval.
 
 ## Stop Conditions
 

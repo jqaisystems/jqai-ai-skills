@@ -4,6 +4,11 @@ Public-safe examples for JQ AI Skills.
 
 Use this page when you want to inspect expected output before installing a skill. All examples use fictional, public, or generalized material. They do not include live customer records, private exports, account setup, deployment details, or sensitive implementation notes.
 
+## v0.13.0 examples
+
+- [Backup readiness](backup-readiness-auditor-sample.md): complete evidence, gaps, and refusal to authorize source retirement.
+- [Safe installation and redacted review](safer-skills-recovery-sample.md): preserved local edits and links, explicit upgrades, and metadata-only scan findings.
+
 ## Start Here
 
 | Need | Example |
