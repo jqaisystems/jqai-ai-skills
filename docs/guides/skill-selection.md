@@ -1,5 +1,7 @@
 # Skill Selection Guide
 
+**Install commands:** Python 3.11+ is required. User-target examples below preview changes for Codex at `~/.agents/skills`. For Claude Code, use `~/.claude/skills`. Review the plan, then remove the dry-run flag to apply. Explicit temporary targets are disposable checks. See [installation and verification](../../INSTALL.md).
+
 Use this guide when you want to install one useful skill first instead of browsing every folder.
 
 For the fastest guided install, see [`docs/guides/one-minute-install.md`](one-minute-install.md). If two or three skills look useful and you need to choose one first, use [`first-skill-scorecard.md`](first-skill-scorecard.md). After choosing one, use [`../examples/first-skill-walkthrough.md`](../examples/first-skill-walkthrough.md), the ready [`first-skill candidate pack`](../examples/first-skill-candidate/README.md), and its [`expected review`](../examples/first-skill-candidate/expected-review.md) to run it with fake input. For the complete skill list with recommended bundles and safe install defaults, see [`docs/catalog.md`](../catalog.md).
@@ -30,9 +32,9 @@ For practical multi-skill examples, see [`docs/examples/workflow-bundles.md`](..
 Install:
 
 ```powershell
-.\install.ps1 github-safe-publisher
-.\install.ps1 case-study-writer
-.\install.ps1 release-announcement-writer
+.\install.ps1 github-safe-publisher -Target "$HOME/.agents/skills" -DryRun
+.\install.ps1 case-study-writer -Target "$HOME/.agents/skills" -DryRun
+.\install.ps1 release-announcement-writer -Target "$HOME/.agents/skills" -DryRun
 ```
 
 Use this set when your main workflow is turning private work into public-safe GitHub proof.
@@ -42,9 +44,9 @@ Use this set when your main workflow is turning private work into public-safe Gi
 Install:
 
 ```powershell
-.\install.ps1 research-brief-curator
-.\install.ps1 web-scraper
-.\install.ps1 em-dash-remover
+.\install.ps1 research-brief-curator -Target "$HOME/.agents/skills" -DryRun
+.\install.ps1 web-scraper -Target "$HOME/.agents/skills" -DryRun
+.\install.ps1 em-dash-remover -Target "$HOME/.agents/skills" -DryRun
 ```
 
 Use this set when you work with public sources, saved links, copy cleanup, and structured notes.
@@ -54,8 +56,8 @@ Use this set when you work with public sources, saved links, copy cleanup, and s
 Install:
 
 ```powershell
-.\install.ps1 demo-animation-v2
-.\install.ps1 release-announcement-writer
+.\install.ps1 demo-animation-v2 -Target "$HOME/.agents/skills" -DryRun
+.\install.ps1 release-announcement-writer -Target "$HOME/.agents/skills" -DryRun
 ```
 
 Use this set when you need to show a workflow and then announce it clearly.
@@ -76,7 +78,7 @@ Use this set when you need to show a workflow and then announce it clearly.
 One-minute install path:
 
 ```powershell
-.\install.ps1 github-safe-publisher
+.\install.ps1 github-safe-publisher -Target "$HOME/.agents/skills" -DryRun
 ```
 
 List available skills:
@@ -88,5 +90,5 @@ List available skills:
 Install all skills only after you have reviewed what they do:
 
 ```powershell
-.\install.ps1 -All
+.\install.ps1 -All -Target "$HOME/.agents/skills" -DryRun
 ```

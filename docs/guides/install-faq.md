@@ -1,5 +1,7 @@
 # Skill Install FAQ
 
+**Install commands:** Python 3.11+ is required. User-target examples below preview changes for Codex at `~/.agents/skills`. For Claude Code, use `~/.claude/skills`. Review the plan, then remove the dry-run flag to apply. Explicit temporary targets are disposable checks. See [installation and verification](../../INSTALL.md).
+
 Use this FAQ when you are installing a JQ AI Skill for the first time, updating a skill after a pull, or checking why a skill did not appear after reload.
 
 For commands, use [`INSTALL.md`](../../INSTALL.md). For a full verification pass, use [`install-verification.md`](install-verification.md). For update steps, use [`update-installed-skills.md`](update-installed-skills.md). For a sample temporary-target check, use [`install-smoke-test-sample.md`](../examples/install-smoke-test-sample.md). For install issues, use [`TROUBLESHOOTING.md`](../../TROUBLESHOOTING.md).
@@ -51,11 +53,11 @@ Install all skills only when:
 Use the all-skills command only after that review:
 
 ```powershell
-.\install.ps1 -All
+.\install.ps1 -All -Target "$HOME/.agents/skills" -DryRun
 ```
 
 ```bash
-./install.sh --all
+./install.sh --target "$HOME/.agents/skills" --dry-run --all
 ```
 
 ## What Exactly Gets Copied?
@@ -76,11 +78,13 @@ If the destination only contains `SKILL.md`, preserve it and test the complete s
 
 ## Where Does It Install?
 
-The default target is:
+The installer retains this **legacy default** for compatibility:
 
 ```text
 ~/.codex/skills
 ```
+
+For new Codex user installs, explicitly select `~/.agents/skills`; for Claude Code, select `~/.claude/skills`. Use the same target for the dry run, application and verification. See [the current install commands](../../INSTALL.md).
 
 Use a custom target when testing or when your tool reads a different skills folder:
 

@@ -1,5 +1,7 @@
 # Quick Reference
 
+**Install commands:** Python 3.11+ is required. User-target examples below preview changes for Codex at `~/.agents/skills`. For Claude Code, use `~/.claude/skills`. Review the plan, then remove the dry-run flag to apply. Explicit temporary targets are disposable checks. See [installation and verification](INSTALL.md).
+
 Use this page when you want the shortest command and link map for JQ AI Skills.
 
 For the guided path, start with [`START_HERE.md`](START_HERE.md). For full install details, use [`INSTALL.md`](INSTALL.md). For install questions, use [`docs/guides/install-faq.md`](docs/guides/install-faq.md).
@@ -8,7 +10,7 @@ For the guided path, start with [`START_HERE.md`](START_HERE.md). For full insta
 
 Use `$backup-readiness-auditor` to evaluate an approved evidence pack without opening backups or changing files. [Example](docs/examples/backup-readiness-auditor-sample.md).
 
-Preview installation with `.\install.ps1 backup-readiness-auditor -DryRun` or `./install.sh --dry-run backup-readiness-auditor`. Python 3.11+ is required. See [safe installation](docs/guides/safe-installation.md) before updating an existing copy.
+Preview installation with `.\install.ps1 backup-readiness-auditor -Target "$HOME/.agents/skills" -DryRun` or `./install.sh --target "$HOME/.agents/skills" --dry-run backup-readiness-auditor`. Python 3.11+ is required. See [safe installation](docs/guides/safe-installation.md) before updating an existing copy.
 
 ## First Choice
 
@@ -47,14 +49,14 @@ chmod +x ./install.sh
 ./install.sh --list
 ```
 
-Install the recommended first skill:
+Preview the recommended first skill, then remove the dry-run flag to apply:
 
 ```powershell
-.\install.ps1 github-safe-publisher
+.\install.ps1 github-safe-publisher -Target "$HOME/.agents/skills" -DryRun
 ```
 
 ```bash
-./install.sh github-safe-publisher
+./install.sh --target "$HOME/.agents/skills" --dry-run github-safe-publisher
 ```
 
 Test an install target first:
@@ -67,14 +69,14 @@ Test an install target first:
 ./install.sh --target "${TMPDIR:-/tmp}/jqai-skill-install-smoke" github-safe-publisher
 ```
 
-Install all skills only after review:
+Preview all skills; apply only after reviewing the plan:
 
 ```powershell
-.\install.ps1 -All
+.\install.ps1 -All -Target "$HOME/.agents/skills" -DryRun
 ```
 
 ```bash
-./install.sh --all
+./install.sh --target "$HOME/.agents/skills" --dry-run --all
 ```
 
 ## After Install

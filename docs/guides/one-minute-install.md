@@ -1,106 +1,50 @@
-# One-Minute Install
+# One-minute install
 
-Use this guide when you want to try one JQ AI Skill quickly instead of browsing the full catalog first.
+Start with one skill. Preview the destination before writing files.
 
-For the full visitor path, start with [`START_HERE.md`](../../START_HERE.md). For the short command reference, use [`INSTALL.md`](../../INSTALL.md). For common install questions, use [`install-faq.md`](install-faq.md). If the skill does not appear after install, use [`TROUBLESHOOTING.md`](../../TROUBLESHOOTING.md).
+## Before you start
 
-The safest first install is `github-safe-publisher` because it teaches the review habit this library is built around: inspect the public artifact, scan for common risks, review the diff, then publish only when the result is safe.
+You need Python 3.11+, Git, PowerShell on Windows or Bash on macOS/Linux, and a tool that loads local skills. The installer does not install dependencies automatically.
 
-## Before You Start
-
-You need:
-
-- A local copy of this repo.
-- PowerShell on Windows, or a shell on macOS/Linux.
-- A Codex or Claude-style tool that can load local skill folders.
-
-If you do not have the repo locally yet:
-
-```powershell
+```bash
 git clone https://github.com/jqaisystems/jqai-ai-skills.git
 cd jqai-ai-skills
 ```
 
+Read [github-safe-publisher](../../skills/github-safe-publisher/SKILL.md). The commands below target Codex's user skills folder. For Claude Code, replace `.agents/skills` with `.claude/skills` in both commands. For another scope, [choose its target first](../../INSTALL.md#choose-the-discovery-target).
+
 ## Windows PowerShell
 
-List available skills:
+Preview, inspect the plan, then apply:
 
 ```powershell
-.\install.ps1 -List
+.\install.ps1 github-safe-publisher -Target "$HOME/.agents/skills" -DryRun
+.\install.ps1 github-safe-publisher -Target "$HOME/.agents/skills"
 ```
 
-Install one skill:
-
-```powershell
-.\install.ps1 github-safe-publisher
-```
-
-Expected result:
-
-```text
-Installed github-safe-publisher -> <your-local-skills-folder>\github-safe-publisher
-Restart Codex or reload your AI coding tool so the skill list refreshes.
-```
-
-## macOS Or Linux
-
-List available skills:
+## macOS or Linux
 
 ```bash
-chmod +x ./install.sh
-./install.sh --list
+bash ./install.sh --target "$HOME/.agents/skills" --dry-run github-safe-publisher
+bash ./install.sh --target "$HOME/.agents/skills" github-safe-publisher
 ```
 
-Install one skill:
+The dry run must not create the target. After applying, the chosen folder contains `github-safe-publisher/SKILL.md` and `.jqai-install.json`. If the installer refuses an existing copy, follow the [update and migration guide](update-installed-skills.md); do not force-copy over it.
 
-```bash
-./install.sh github-safe-publisher
-```
+<a id="reload-and-run-a-first-prompt"></a>
+<a id="verify-the-skill-folder"></a>
 
-Expected result:
+## Reload and try it
 
-```text
-Installed github-safe-publisher -> <your-local-skills-folder>/github-safe-publisher
-Restart Codex or reload your AI coding tool so the skill list refreshes.
-```
-
-## Reload And Run A First Prompt
-
-Restart or reload your AI coding tool so it can see the new skill.
-
-Then try this prompt in a test repo or draft folder:
+Reload your coding tool and check that it lists the skill. In a test folder:
 
 ```text
 Use $github-safe-publisher to review this README and docs folder before public release.
 ```
 
-For a fake first-run output shape, see [`docs/examples/first-run-github-safe-publisher.md`](../examples/first-run-github-safe-publisher.md).
+Compare the result with the [fictional first-run example](../examples/first-run-github-safe-publisher.md). For more detail, use the [installation guide](../../INSTALL.md), [verification checklist](install-verification.md), [catalogue](../catalog.md) or [troubleshooting](../../TROUBLESHOOTING.md).
 
-For a content or release workflow, install a different first skill:
-
-```powershell
-.\install.ps1 release-announcement-writer
-```
-
-Then run:
-
-```text
-Use $release-announcement-writer to turn this changelog into GitHub release notes and a short launch post.
-```
-
-## Verify The Skill Folder
-
-After installation, the copied folder should contain:
-
-```text
-github-safe-publisher/
-  SKILL.md
-  agents/
-  references/
-  scripts/
-```
-
-Open `SKILL.md` before using the skill on sensitive work. These files are public instructions, but your local project data may still be private.
+The legacy installer default is retained for compatibility. These examples deliberately select the target.
 
 ## Safe First-Run Rules
 

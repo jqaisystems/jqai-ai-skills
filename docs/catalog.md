@@ -4,6 +4,18 @@ This catalog gives a public, client-readable view of the skills in this repo: wh
 
 If you are new to the repo, start with [`START_HERE.md`](../START_HERE.md). For visitor routes, use [`docs/examples/visitor-paths.md`](examples/visitor-paths.md). For one page of public proof assets, use [`docs/examples/public-proof-index.md`](examples/public-proof-index.md). For one end-to-end first install proof, use [`docs/examples/first-install-proof.md`](examples/first-install-proof.md). For one post-release update proof, use [`docs/examples/update-after-release-proof.md`](examples/update-after-release-proof.md). For utility skill output proof, use [`docs/examples/utility-skill-proof-pack.md`](examples/utility-skill-proof-pack.md). For a responsive demo output shape, use [`docs/examples/demo-animation-v2-walkthrough-sample.md`](examples/demo-animation-v2-walkthrough-sample.md). For release-to-showcase handoff proof, use [`docs/examples/release-showcase-handoff-sample.md`](examples/release-showcase-handoff-sample.md). To evaluate trust and install readiness, use [`docs/guides/evaluate-skill-library.md`](guides/evaluate-skill-library.md). To score one safe first install, use [`docs/guides/first-skill-scorecard.md`](guides/first-skill-scorecard.md). To run the selected skill with fake input, use [`docs/examples/first-skill-walkthrough.md`](examples/first-skill-walkthrough.md), [`docs/examples/first-skill-candidate/README.md`](examples/first-skill-candidate/README.md), and [`docs/examples/first-skill-candidate/expected-review.md`](examples/first-skill-candidate/expected-review.md). For install commands, use [`INSTALL.md`](../INSTALL.md). To review a skill before install, use [`docs/guides/skill-review-checklist.md`](guides/skill-review-checklist.md). To confirm a copied folder, reload, and first prompt, use [`docs/guides/install-verification.md`](guides/install-verification.md). To refresh an installed skill, use [`docs/guides/update-installed-skills.md`](guides/update-installed-skills.md). For install or reload issues, use [`TROUBLESHOOTING.md`](../TROUBLESHOOTING.md). For a guided first install, use [`docs/guides/one-minute-install.md`](guides/one-minute-install.md). For a clone-to-first-prompt route, use [`docs/examples/quick-reference-walkthrough.md`](examples/quick-reference-walkthrough.md). For a shorter first-choice guide, use [`docs/guides/skill-selection.md`](guides/skill-selection.md). To understand the folder contract, use [`docs/guides/skill-anatomy.md`](guides/skill-anatomy.md). For current maturity, visible proof, install notes, and safety sensitivity, use [`docs/skill-quality-matrix.md`](skill-quality-matrix.md). For public-safe output examples, including a safe skill request shape, use [`docs/examples/README.md`](examples/README.md).
 
+## Preview an installation
+
+Requires Python 3.11+ and a local clone. Choose the target before using any command below. In PowerShell:
+
+```powershell
+$skillTarget = Join-Path $HOME ".agents/skills"   # Codex user skills
+# For Claude Code instead:
+# $skillTarget = Join-Path $HOME ".claude/skills"
+```
+
+Every install command in this catalogue includes `-DryRun` and the chosen target. It previews changes without writing. Inspect the plan, then repeat the selected command without `-DryRun` to apply. For Bash commands, repository targets and verification, use the [installation guide](../INSTALL.md).
+
 ## At A Glance
 
 Inventory: 47 skills in v0.13.0, up from 46 in v0.12.0.
@@ -12,54 +24,54 @@ Inventory: 47 skills in v0.13.0, up from 46 in v0.12.0.
 
 [backup-readiness-auditor](../skills/backup-readiness-auditor/SKILL.md) evaluates supplied verification metadata, not backup contents. It reports coverage, freshness, capacity, integrity, and recovery-test gaps without copying, restoring, or authorizing source retirement. See the [fictional sample](examples/backup-readiness-auditor-sample.md).
 
-| Area | Skill | Best for | Install |
+| Area | Skill | Best for | Preview install (PowerShell) |
 |---|---|---|---|
-| Local media | [`media-spec-checker`](../skills/media-spec-checker/SKILL.md) | Dimensions, display ratio, duration, format, codec, size, and naming against local rules. | `.\install.ps1 media-spec-checker` |
-| Offline operations | [`automation-state-reconciler`](../skills/automation-state-reconciler/SKILL.md) | Snapshot and receipt drift review with history preservation, no live actions. | `.\install.ps1 automation-state-reconciler` |
-| Recovery planning | [`windows-reinstall-planner`](../skills/windows-reinstall-planner/SKILL.md) | Metadata-only inventory and private reinstall checklist. | `.\install.ps1 windows-reinstall-planner` |
-| Image workflow | [`ai-image-run-pacing`](../skills/ai-image-run-pacing/SKILL.md) | Plan image-generation sessions within provider limits. | `.\install.ps1 ai-image-run-pacing` |
-| Public demos | [`local-app-public-demo`](../skills/local-app-public-demo/SKILL.md) | Prepare static, read-only public demonstrations of local tools. | `.\install.ps1 local-app-public-demo` |
-| Thumbnail design | [`thumbnail-set-designer`](../skills/thumbnail-set-designer/SKILL.md) | Develop genuinely distinct thumbnail concepts. | `.\install.ps1 thumbnail-set-designer` |
-| Thumbnail review | [`thumbnail-legibility-check`](../skills/thumbnail-legibility-check/SKILL.md) | Compare candidates at their intended viewing size. | `.\install.ps1 thumbnail-legibility-check` |
-| Safety and publishing | [`github-safe-publisher`](../skills/github-safe-publisher/SKILL.md) | Preparing public GitHub artifacts without leaking private details. | `.\install.ps1 github-safe-publisher` |
-| Safety and review | [`skill-reviewer`](../skills/skill-reviewer/SKILL.md) | Auditing downloaded or newly written skills before installing them. | `.\install.ps1 skill-reviewer` |
-| Public proof | [`case-study-writer`](../skills/case-study-writer/SKILL.md) | Turning private project work into public-safe case studies. | `.\install.ps1 case-study-writer` |
-| Public proof | [`release-announcement-writer`](../skills/release-announcement-writer/SKILL.md) | Turning shipped changes into release notes and launch copy. | `.\install.ps1 release-announcement-writer` |
-| Public proof | [`github-profile-proof-updater`](../skills/github-profile-proof-updater/SKILL.md) | Refreshing GitHub profile visuals, live checks, and proof trails. | `.\install.ps1 github-profile-proof-updater` |
-| Public proof | [`social-campaign-proof-tracker`](../skills/social-campaign-proof-tracker/SKILL.md) | Planning LinkedIn/X proof campaigns, links, alt text, and follow-ups. | `.\install.ps1 social-campaign-proof-tracker` |
-| Growth and outreach | [`outreach-pipeline-designer`](../skills/outreach-pipeline-designer/SKILL.md) | Designing review-first prospecting and lead workflows. | `.\install.ps1 outreach-pipeline-designer` |
-| Growth and outreach | [`cold-outreach-writer`](../skills/cold-outreach-writer/SKILL.md) | Drafting one personalised cold email, subject lines, LinkedIn note, and follow-up. | `.\install.ps1 cold-outreach-writer` |
-| Growth and outreach | [`lead-scorer`](../skills/lead-scorer/SKILL.md) | Ranking a lead list into hot, warm, and cold tiers against your own rubric. | `.\install.ps1 lead-scorer` |
-| Growth and outreach | [`follow-up-radar`](../skills/follow-up-radar/SKILL.md) | Finding overdue outreach follow-ups and drafting them, oldest first. | `.\install.ps1 follow-up-radar` |
-| Client work | [`client-workspace-scaffolder`](../skills/client-workspace-scaffolder/SKILL.md) | Scaffolding a client project folder from your reusable structure template. | `.\install.ps1 client-workspace-scaffolder` |
-| Client work | [`discovery-brief`](../skills/discovery-brief/SKILL.md) | Running a discovery interview and writing the brief plus a strategy starter. | `.\install.ps1 discovery-brief` |
-| Client work | [`proposal-writer`](../skills/proposal-writer/SKILL.md) | Drafting a client proposal from your own service tiers and terms. | `.\install.ps1 proposal-writer` |
-| Client work | [`implement-client-feedback`](../skills/implement-client-feedback/SKILL.md) | Turning revision notes into traceable, verified implementation decisions. | `.\install.ps1 implement-client-feedback` |
-| Client work | [`client-delivery-auditor`](../skills/client-delivery-auditor/SKILL.md) | Auditing a final package against promised deliverables and preparing an unsent handoff. | `.\install.ps1 client-delivery-auditor` |
-| Development | [`website-change-verifier`](../skills/website-change-verifier/SKILL.md) | Verifying website changes across source, build, routes, content, and browser behavior. | `.\install.ps1 website-change-verifier` |
-| Agent workflow | [`skill-builder`](../skills/skill-builder/SKILL.md) | Authoring a scoped skill with current discovery guidance and safe installation checks. | `.\install.ps1 skill-builder` |
-| Agent workflow | [`session-handoff`](../skills/session-handoff/SKILL.md) | Freezing session state into a start-here doc for instant resume. | `.\install.ps1 session-handoff` |
-| Agent workflow | [`agents-md-writer`](../skills/agents-md-writer/SKILL.md) | Generating the AGENTS.md plus CLAUDE.md contract that shares skills across agents. | `.\install.ps1 agents-md-writer` |
-| Agent workflow | [`ops-status-report`](../skills/ops-status-report/SKILL.md) | Compiling a workspace status snapshot with an Attention Needed section. | `.\install.ps1 ops-status-report` |
-| Demo and presentation | [`screen-recorder`](../skills/screen-recorder/SKILL.md) | Recording a drag-selected region of the Windows desktop to a clean MP4. | `.\install.ps1 screen-recorder` |
-| Growth and marketplace | [`etsy-listing-optimizer`](../skills/etsy-listing-optimizer/SKILL.md) | Improving marketplace listing copy and keyword fit safely. | `.\install.ps1 etsy-listing-optimizer` |
-| Content and research | [`research-brief-curator`](../skills/research-brief-curator/SKILL.md) | Turning public links and approved notes into research briefs. | `.\install.ps1 research-brief-curator` |
-| Content and evidence | [`verify-public-claims`](../skills/verify-public-claims/SKILL.md) | Checking public claims against current evidence and producing defensible rewrites. | `.\install.ps1 verify-public-claims` |
-| Content and research | [`research-to-article`](../skills/research-to-article/SKILL.md) | Turning verified sources into a finished article package with a visible claim map. | `.\install.ps1 research-to-article` |
-| Professional writing | [`write-evidence-backed-profile`](../skills/write-evidence-backed-profile/SKILL.md) | Drafting bios, applications, and profile copy from approved evidence. | `.\install.ps1 write-evidence-backed-profile` |
-| Content and AI search | [`llms-txt-generator`](../skills/llms-txt-generator/SKILL.md) | Generating a spec-compliant llms.txt map of a website for AI assistants. | `.\install.ps1 llms-txt-generator` |
-| Content and extraction | [`web-scraper`](../skills/web-scraper/SKILL.md) | Generating browser console scripts for public or authorized paginated extraction. | `.\install.ps1 web-scraper` |
-| Media and provenance | [`remove-ai-image-metadata`](../skills/remove-ai-image-metadata/SKILL.md) | Inspecting and removing explicit AI provenance metadata from owned or authorized images without re-encoding supported picture data. | `.\install.ps1 remove-ai-image-metadata` |
-| Content cleanup | [`em-dash-remover`](../skills/em-dash-remover/SKILL.md) | Cleaning em dashes from copy without changing meaning. | `.\install.ps1 em-dash-remover` |
-| Content cleanup | [`brand-voice-linter`](../skills/brand-voice-linter/SKILL.md) | Linting copy against a brand voice guide with suggested rewrites. | `.\install.ps1 brand-voice-linter` |
-| Development | [`code-deduplicator`](../skills/code-deduplicator/SKILL.md) | Consolidating repeated code patterns safely. | `.\install.ps1 code-deduplicator` |
-| Development | [`php-form-mailer`](../skills/php-form-mailer/SKILL.md) | Wiring any HTML form to a two-email PHP handler with no form SaaS. | `.\install.ps1 php-form-mailer` |
-| Development | [`client-intake-builder`](../skills/client-intake-builder/SKILL.md) | Generating a branded single-file client intake questionnaire. | `.\install.ps1 client-intake-builder` |
-| Development | [`vault-janitor`](../skills/vault-janitor/SKILL.md) | Finding folder junk and reporting it with sizes before any cleanup. | `.\install.ps1 vault-janitor` |
-| Notes and productivity | [`obsidian-daily-note`](../skills/obsidian-daily-note/SKILL.md) | Appending to today's Obsidian daily note from the terminal. | `.\install.ps1 obsidian-daily-note` |
-| Notes and productivity | [`idea-inbox`](../skills/idea-inbox/SKILL.md) | Capturing raw ideas as dated, tagged, indexed markdown files. | `.\install.ps1 idea-inbox` |
-| Demo and presentation | [`demo-animation-v2`](../skills/demo-animation-v2/SKILL.md) | Building responsive product walkthrough demos. | `.\install.ps1 demo-animation-v2` |
-| Demo and presentation | [`demo-animation`](../skills/demo-animation/SKILL.md) | Building the older desktop-oriented demo style. | `.\install.ps1 demo-animation` |
+| Local media | [`media-spec-checker`](../skills/media-spec-checker/SKILL.md) | Dimensions, display ratio, duration, format, codec, size, and naming against local rules. | `.\install.ps1 media-spec-checker -Target "$skillTarget" -DryRun` |
+| Offline operations | [`automation-state-reconciler`](../skills/automation-state-reconciler/SKILL.md) | Snapshot and receipt drift review with history preservation, no live actions. | `.\install.ps1 automation-state-reconciler -Target "$skillTarget" -DryRun` |
+| Recovery planning | [`windows-reinstall-planner`](../skills/windows-reinstall-planner/SKILL.md) | Metadata-only inventory and private reinstall checklist. | `.\install.ps1 windows-reinstall-planner -Target "$skillTarget" -DryRun` |
+| Image workflow | [`ai-image-run-pacing`](../skills/ai-image-run-pacing/SKILL.md) | Plan image-generation sessions within provider limits. | `.\install.ps1 ai-image-run-pacing -Target "$skillTarget" -DryRun` |
+| Public demos | [`local-app-public-demo`](../skills/local-app-public-demo/SKILL.md) | Prepare static, read-only public demonstrations of local tools. | `.\install.ps1 local-app-public-demo -Target "$skillTarget" -DryRun` |
+| Thumbnail design | [`thumbnail-set-designer`](../skills/thumbnail-set-designer/SKILL.md) | Develop genuinely distinct thumbnail concepts. | `.\install.ps1 thumbnail-set-designer -Target "$skillTarget" -DryRun` |
+| Thumbnail review | [`thumbnail-legibility-check`](../skills/thumbnail-legibility-check/SKILL.md) | Compare candidates at their intended viewing size. | `.\install.ps1 thumbnail-legibility-check -Target "$skillTarget" -DryRun` |
+| Safety and publishing | [`github-safe-publisher`](../skills/github-safe-publisher/SKILL.md) | Preparing public GitHub artifacts without leaking private details. | `.\install.ps1 github-safe-publisher -Target "$skillTarget" -DryRun` |
+| Safety and review | [`skill-reviewer`](../skills/skill-reviewer/SKILL.md) | Auditing downloaded or newly written skills before installing them. | `.\install.ps1 skill-reviewer -Target "$skillTarget" -DryRun` |
+| Public proof | [`case-study-writer`](../skills/case-study-writer/SKILL.md) | Turning private project work into public-safe case studies. | `.\install.ps1 case-study-writer -Target "$skillTarget" -DryRun` |
+| Public proof | [`release-announcement-writer`](../skills/release-announcement-writer/SKILL.md) | Turning shipped changes into release notes and launch copy. | `.\install.ps1 release-announcement-writer -Target "$skillTarget" -DryRun` |
+| Public proof | [`github-profile-proof-updater`](../skills/github-profile-proof-updater/SKILL.md) | Refreshing GitHub profile visuals, live checks, and proof trails. | `.\install.ps1 github-profile-proof-updater -Target "$skillTarget" -DryRun` |
+| Public proof | [`social-campaign-proof-tracker`](../skills/social-campaign-proof-tracker/SKILL.md) | Planning LinkedIn/X proof campaigns, links, alt text, and follow-ups. | `.\install.ps1 social-campaign-proof-tracker -Target "$skillTarget" -DryRun` |
+| Growth and outreach | [`outreach-pipeline-designer`](../skills/outreach-pipeline-designer/SKILL.md) | Designing review-first prospecting and lead workflows. | `.\install.ps1 outreach-pipeline-designer -Target "$skillTarget" -DryRun` |
+| Growth and outreach | [`cold-outreach-writer`](../skills/cold-outreach-writer/SKILL.md) | Drafting one personalised cold email, subject lines, LinkedIn note, and follow-up. | `.\install.ps1 cold-outreach-writer -Target "$skillTarget" -DryRun` |
+| Growth and outreach | [`lead-scorer`](../skills/lead-scorer/SKILL.md) | Ranking a lead list into hot, warm, and cold tiers against your own rubric. | `.\install.ps1 lead-scorer -Target "$skillTarget" -DryRun` |
+| Growth and outreach | [`follow-up-radar`](../skills/follow-up-radar/SKILL.md) | Finding overdue outreach follow-ups and drafting them, oldest first. | `.\install.ps1 follow-up-radar -Target "$skillTarget" -DryRun` |
+| Client work | [`client-workspace-scaffolder`](../skills/client-workspace-scaffolder/SKILL.md) | Scaffolding a client project folder from your reusable structure template. | `.\install.ps1 client-workspace-scaffolder -Target "$skillTarget" -DryRun` |
+| Client work | [`discovery-brief`](../skills/discovery-brief/SKILL.md) | Running a discovery interview and writing the brief plus a strategy starter. | `.\install.ps1 discovery-brief -Target "$skillTarget" -DryRun` |
+| Client work | [`proposal-writer`](../skills/proposal-writer/SKILL.md) | Drafting a client proposal from your own service tiers and terms. | `.\install.ps1 proposal-writer -Target "$skillTarget" -DryRun` |
+| Client work | [`implement-client-feedback`](../skills/implement-client-feedback/SKILL.md) | Turning revision notes into traceable, verified implementation decisions. | `.\install.ps1 implement-client-feedback -Target "$skillTarget" -DryRun` |
+| Client work | [`client-delivery-auditor`](../skills/client-delivery-auditor/SKILL.md) | Auditing a final package against promised deliverables and preparing an unsent handoff. | `.\install.ps1 client-delivery-auditor -Target "$skillTarget" -DryRun` |
+| Development | [`website-change-verifier`](../skills/website-change-verifier/SKILL.md) | Verifying website changes across source, build, routes, content, and browser behavior. | `.\install.ps1 website-change-verifier -Target "$skillTarget" -DryRun` |
+| Agent workflow | [`skill-builder`](../skills/skill-builder/SKILL.md) | Authoring a scoped skill with current discovery guidance and safe installation checks. | `.\install.ps1 skill-builder -Target "$skillTarget" -DryRun` |
+| Agent workflow | [`session-handoff`](../skills/session-handoff/SKILL.md) | Freezing session state into a start-here doc for instant resume. | `.\install.ps1 session-handoff -Target "$skillTarget" -DryRun` |
+| Agent workflow | [`agents-md-writer`](../skills/agents-md-writer/SKILL.md) | Generating the AGENTS.md plus CLAUDE.md contract that shares skills across agents. | `.\install.ps1 agents-md-writer -Target "$skillTarget" -DryRun` |
+| Agent workflow | [`ops-status-report`](../skills/ops-status-report/SKILL.md) | Compiling a workspace status snapshot with an Attention Needed section. | `.\install.ps1 ops-status-report -Target "$skillTarget" -DryRun` |
+| Demo and presentation | [`screen-recorder`](../skills/screen-recorder/SKILL.md) | Recording a drag-selected region of the Windows desktop to a clean MP4. | `.\install.ps1 screen-recorder -Target "$skillTarget" -DryRun` |
+| Growth and marketplace | [`etsy-listing-optimizer`](../skills/etsy-listing-optimizer/SKILL.md) | Improving marketplace listing copy and keyword fit safely. | `.\install.ps1 etsy-listing-optimizer -Target "$skillTarget" -DryRun` |
+| Content and research | [`research-brief-curator`](../skills/research-brief-curator/SKILL.md) | Turning public links and approved notes into research briefs. | `.\install.ps1 research-brief-curator -Target "$skillTarget" -DryRun` |
+| Content and evidence | [`verify-public-claims`](../skills/verify-public-claims/SKILL.md) | Checking public claims against current evidence and producing defensible rewrites. | `.\install.ps1 verify-public-claims -Target "$skillTarget" -DryRun` |
+| Content and research | [`research-to-article`](../skills/research-to-article/SKILL.md) | Turning verified sources into a finished article package with a visible claim map. | `.\install.ps1 research-to-article -Target "$skillTarget" -DryRun` |
+| Professional writing | [`write-evidence-backed-profile`](../skills/write-evidence-backed-profile/SKILL.md) | Drafting bios, applications, and profile copy from approved evidence. | `.\install.ps1 write-evidence-backed-profile -Target "$skillTarget" -DryRun` |
+| Content and AI search | [`llms-txt-generator`](../skills/llms-txt-generator/SKILL.md) | Generating a spec-compliant llms.txt map of a website for AI assistants. | `.\install.ps1 llms-txt-generator -Target "$skillTarget" -DryRun` |
+| Content and extraction | [`web-scraper`](../skills/web-scraper/SKILL.md) | Generating browser console scripts for public or authorized paginated extraction. | `.\install.ps1 web-scraper -Target "$skillTarget" -DryRun` |
+| Media and provenance | [`remove-ai-image-metadata`](../skills/remove-ai-image-metadata/SKILL.md) | Inspecting and removing explicit AI provenance metadata from owned or authorized images without re-encoding supported picture data. | `.\install.ps1 remove-ai-image-metadata -Target "$skillTarget" -DryRun` |
+| Content cleanup | [`em-dash-remover`](../skills/em-dash-remover/SKILL.md) | Cleaning em dashes from copy without changing meaning. | `.\install.ps1 em-dash-remover -Target "$skillTarget" -DryRun` |
+| Content cleanup | [`brand-voice-linter`](../skills/brand-voice-linter/SKILL.md) | Linting copy against a brand voice guide with suggested rewrites. | `.\install.ps1 brand-voice-linter -Target "$skillTarget" -DryRun` |
+| Development | [`code-deduplicator`](../skills/code-deduplicator/SKILL.md) | Consolidating repeated code patterns safely. | `.\install.ps1 code-deduplicator -Target "$skillTarget" -DryRun` |
+| Development | [`php-form-mailer`](../skills/php-form-mailer/SKILL.md) | Wiring any HTML form to a two-email PHP handler with no form SaaS. | `.\install.ps1 php-form-mailer -Target "$skillTarget" -DryRun` |
+| Development | [`client-intake-builder`](../skills/client-intake-builder/SKILL.md) | Generating a branded single-file client intake questionnaire. | `.\install.ps1 client-intake-builder -Target "$skillTarget" -DryRun` |
+| Development | [`vault-janitor`](../skills/vault-janitor/SKILL.md) | Finding folder junk and reporting it with sizes before any cleanup. | `.\install.ps1 vault-janitor -Target "$skillTarget" -DryRun` |
+| Notes and productivity | [`obsidian-daily-note`](../skills/obsidian-daily-note/SKILL.md) | Appending to today's Obsidian daily note from the terminal. | `.\install.ps1 obsidian-daily-note -Target "$skillTarget" -DryRun` |
+| Notes and productivity | [`idea-inbox`](../skills/idea-inbox/SKILL.md) | Capturing raw ideas as dated, tagged, indexed markdown files. | `.\install.ps1 idea-inbox -Target "$skillTarget" -DryRun` |
+| Demo and presentation | [`demo-animation-v2`](../skills/demo-animation-v2/SKILL.md) | Building responsive product walkthrough demos. | `.\install.ps1 demo-animation-v2 -Target "$skillTarget" -DryRun` |
+| Demo and presentation | [`demo-animation`](../skills/demo-animation/SKILL.md) | Building the older desktop-oriented demo style. | `.\install.ps1 demo-animation -Target "$skillTarget" -DryRun` |
 
 ## Recommended Bundles
 
@@ -70,9 +82,9 @@ For a fuller walkthrough of how these bundles work in practice, see [`docs/examp
 Use this bundle when your main job is turning private work into public-safe proof.
 
 ```powershell
-.\install.ps1 github-safe-publisher
-.\install.ps1 case-study-writer
-.\install.ps1 release-announcement-writer
+.\install.ps1 github-safe-publisher -Target "$skillTarget" -DryRun
+.\install.ps1 case-study-writer -Target "$skillTarget" -DryRun
+.\install.ps1 release-announcement-writer -Target "$skillTarget" -DryRun
 ```
 
 Typical output:
@@ -86,9 +98,9 @@ Typical output:
 Use this bundle when shipped work needs a profile update, public proof trail, and LinkedIn/X campaign follow-up.
 
 ```powershell
-.\install.ps1 github-profile-proof-updater
-.\install.ps1 social-campaign-proof-tracker
-.\install.ps1 release-announcement-writer
+.\install.ps1 github-profile-proof-updater -Target "$skillTarget" -DryRun
+.\install.ps1 social-campaign-proof-tracker -Target "$skillTarget" -DryRun
+.\install.ps1 release-announcement-writer -Target "$skillTarget" -DryRun
 ```
 
 Typical output:
@@ -102,9 +114,9 @@ Typical output:
 Use this bundle when you work with public sources, saved links, notes, and copy cleanup.
 
 ```powershell
-.\install.ps1 research-brief-curator
-.\install.ps1 web-scraper
-.\install.ps1 em-dash-remover
+.\install.ps1 research-brief-curator -Target "$skillTarget" -DryRun
+.\install.ps1 web-scraper -Target "$skillTarget" -DryRun
+.\install.ps1 em-dash-remover -Target "$skillTarget" -DryRun
 ```
 
 Typical output:
@@ -118,9 +130,9 @@ Typical output:
 Use this bundle when public copy must be researched, defensible, and tailored without invented claims.
 
 ```powershell
-.\install.ps1 verify-public-claims
-.\install.ps1 research-to-article
-.\install.ps1 write-evidence-backed-profile
+.\install.ps1 verify-public-claims -Target "$skillTarget" -DryRun
+.\install.ps1 research-to-article -Target "$skillTarget" -DryRun
+.\install.ps1 write-evidence-backed-profile -Target "$skillTarget" -DryRun
 ```
 
 Typical output:
@@ -134,13 +146,13 @@ Typical output:
 Use this bundle when you run client work end to end: onboard, discover, propose, implement revisions, verify the website, audit delivery, and chase follow-ups.
 
 ```powershell
-.\install.ps1 client-workspace-scaffolder
-.\install.ps1 discovery-brief
-.\install.ps1 proposal-writer
-.\install.ps1 implement-client-feedback
-.\install.ps1 website-change-verifier
-.\install.ps1 client-delivery-auditor
-.\install.ps1 follow-up-radar
+.\install.ps1 client-workspace-scaffolder -Target "$skillTarget" -DryRun
+.\install.ps1 discovery-brief -Target "$skillTarget" -DryRun
+.\install.ps1 proposal-writer -Target "$skillTarget" -DryRun
+.\install.ps1 implement-client-feedback -Target "$skillTarget" -DryRun
+.\install.ps1 website-change-verifier -Target "$skillTarget" -DryRun
+.\install.ps1 client-delivery-auditor -Target "$skillTarget" -DryRun
+.\install.ps1 follow-up-radar -Target "$skillTarget" -DryRun
 ```
 
 Typical output:
@@ -158,9 +170,9 @@ Typical output:
 Use this bundle when you want your AI-assisted work itself to be repeatable across sessions, workspaces, and agents.
 
 ```powershell
-.\install.ps1 skill-builder
-.\install.ps1 session-handoff
-.\install.ps1 agents-md-writer
+.\install.ps1 skill-builder -Target "$skillTarget" -DryRun
+.\install.ps1 session-handoff -Target "$skillTarget" -DryRun
+.\install.ps1 agents-md-writer -Target "$skillTarget" -DryRun
 ```
 
 Typical output:
@@ -174,8 +186,8 @@ Typical output:
 Use this bundle when you need to show a workflow and then announce it.
 
 ```powershell
-.\install.ps1 demo-animation-v2
-.\install.ps1 release-announcement-writer
+.\install.ps1 demo-animation-v2 -Target "$skillTarget" -DryRun
+.\install.ps1 release-announcement-writer -Target "$skillTarget" -DryRun
 ```
 
 Typical output:
@@ -204,7 +216,7 @@ Typical output:
 **Install:**
 
 ```powershell
-.\install.ps1 github-safe-publisher
+.\install.ps1 github-safe-publisher -Target "$skillTarget" -DryRun
 ```
 
 ### `skill-reviewer`
@@ -222,7 +234,7 @@ Typical output:
 **Install:**
 
 ```powershell
-.\install.ps1 skill-reviewer
+.\install.ps1 skill-reviewer -Target "$skillTarget" -DryRun
 ```
 
 ### `case-study-writer`
@@ -236,7 +248,7 @@ Typical output:
 **Install:**
 
 ```powershell
-.\install.ps1 case-study-writer
+.\install.ps1 case-study-writer -Target "$skillTarget" -DryRun
 ```
 
 ### `release-announcement-writer`
@@ -254,7 +266,7 @@ Typical output:
 **Install:**
 
 ```powershell
-.\install.ps1 release-announcement-writer
+.\install.ps1 release-announcement-writer -Target "$skillTarget" -DryRun
 ```
 
 ### `github-profile-proof-updater`
@@ -270,7 +282,7 @@ Typical output:
 **Install:**
 
 ```powershell
-.\install.ps1 github-profile-proof-updater
+.\install.ps1 github-profile-proof-updater -Target "$skillTarget" -DryRun
 ```
 
 ### `social-campaign-proof-tracker`
@@ -286,7 +298,7 @@ Typical output:
 **Install:**
 
 ```powershell
-.\install.ps1 social-campaign-proof-tracker
+.\install.ps1 social-campaign-proof-tracker -Target "$skillTarget" -DryRun
 ```
 
 ### `outreach-pipeline-designer`
@@ -302,7 +314,7 @@ Typical output:
 **Install:**
 
 ```powershell
-.\install.ps1 outreach-pipeline-designer
+.\install.ps1 outreach-pipeline-designer -Target "$skillTarget" -DryRun
 ```
 
 ### `etsy-listing-optimizer`
@@ -318,7 +330,7 @@ Typical output:
 **Install:**
 
 ```powershell
-.\install.ps1 etsy-listing-optimizer
+.\install.ps1 etsy-listing-optimizer -Target "$skillTarget" -DryRun
 ```
 
 ### `research-brief-curator`
@@ -332,7 +344,7 @@ Typical output:
 **Install:**
 
 ```powershell
-.\install.ps1 research-brief-curator
+.\install.ps1 research-brief-curator -Target "$skillTarget" -DryRun
 ```
 
 ### `verify-public-claims`
@@ -348,7 +360,7 @@ Typical output:
 **Install:**
 
 ```powershell
-.\install.ps1 verify-public-claims
+.\install.ps1 verify-public-claims -Target "$skillTarget" -DryRun
 ```
 
 ### `research-to-article`
@@ -364,7 +376,7 @@ Typical output:
 **Install:**
 
 ```powershell
-.\install.ps1 research-to-article
+.\install.ps1 research-to-article -Target "$skillTarget" -DryRun
 ```
 
 ### `write-evidence-backed-profile`
@@ -380,7 +392,7 @@ Typical output:
 **Install:**
 
 ```powershell
-.\install.ps1 write-evidence-backed-profile
+.\install.ps1 write-evidence-backed-profile -Target "$skillTarget" -DryRun
 ```
 
 ### `web-scraper`
@@ -396,7 +408,7 @@ Typical output:
 **Install:**
 
 ```powershell
-.\install.ps1 web-scraper
+.\install.ps1 web-scraper -Target "$skillTarget" -DryRun
 ```
 
 ### `em-dash-remover`
@@ -412,7 +424,7 @@ Typical output:
 **Install:**
 
 ```powershell
-.\install.ps1 em-dash-remover
+.\install.ps1 em-dash-remover -Target "$skillTarget" -DryRun
 ```
 
 ### `code-deduplicator`
@@ -428,7 +440,7 @@ Typical output:
 **Install:**
 
 ```powershell
-.\install.ps1 code-deduplicator
+.\install.ps1 code-deduplicator -Target "$skillTarget" -DryRun
 ```
 
 ### `demo-animation-v2`
@@ -444,7 +456,7 @@ Typical output:
 **Install:**
 
 ```powershell
-.\install.ps1 demo-animation-v2
+.\install.ps1 demo-animation-v2 -Target "$skillTarget" -DryRun
 ```
 
 ### `demo-animation`
@@ -458,7 +470,7 @@ Typical output:
 **Install:**
 
 ```powershell
-.\install.ps1 demo-animation
+.\install.ps1 demo-animation -Target "$skillTarget" -DryRun
 ```
 
 ### `php-form-mailer`
@@ -472,7 +484,7 @@ Typical output:
 **Install:**
 
 ```powershell
-.\install.ps1 php-form-mailer
+.\install.ps1 php-form-mailer -Target "$skillTarget" -DryRun
 ```
 
 ### `client-intake-builder`
@@ -486,7 +498,7 @@ Typical output:
 **Install:**
 
 ```powershell
-.\install.ps1 client-intake-builder
+.\install.ps1 client-intake-builder -Target "$skillTarget" -DryRun
 ```
 
 ### `cold-outreach-writer`
@@ -500,7 +512,7 @@ Typical output:
 **Install:**
 
 ```powershell
-.\install.ps1 cold-outreach-writer
+.\install.ps1 cold-outreach-writer -Target "$skillTarget" -DryRun
 ```
 
 ### `lead-scorer`
@@ -514,7 +526,7 @@ Typical output:
 **Install:**
 
 ```powershell
-.\install.ps1 lead-scorer
+.\install.ps1 lead-scorer -Target "$skillTarget" -DryRun
 ```
 
 ### `brand-voice-linter`
@@ -528,7 +540,7 @@ Typical output:
 **Install:**
 
 ```powershell
-.\install.ps1 brand-voice-linter
+.\install.ps1 brand-voice-linter -Target "$skillTarget" -DryRun
 ```
 
 ### `obsidian-daily-note`
@@ -542,7 +554,7 @@ Typical output:
 **Install:**
 
 ```powershell
-.\install.ps1 obsidian-daily-note
+.\install.ps1 obsidian-daily-note -Target "$skillTarget" -DryRun
 ```
 
 ### `idea-inbox`
@@ -556,7 +568,7 @@ Typical output:
 **Install:**
 
 ```powershell
-.\install.ps1 idea-inbox
+.\install.ps1 idea-inbox -Target "$skillTarget" -DryRun
 ```
 
 ### `llms-txt-generator`
@@ -570,7 +582,7 @@ Typical output:
 **Install:**
 
 ```powershell
-.\install.ps1 llms-txt-generator
+.\install.ps1 llms-txt-generator -Target "$skillTarget" -DryRun
 ```
 
 ### `vault-janitor`
@@ -584,7 +596,7 @@ Typical output:
 **Install:**
 
 ```powershell
-.\install.ps1 vault-janitor
+.\install.ps1 vault-janitor -Target "$skillTarget" -DryRun
 ```
 
 ### `proposal-writer`
@@ -598,7 +610,7 @@ Typical output:
 **Install:**
 
 ```powershell
-.\install.ps1 proposal-writer
+.\install.ps1 proposal-writer -Target "$skillTarget" -DryRun
 ```
 
 ### `follow-up-radar`
@@ -612,7 +624,7 @@ Typical output:
 **Install:**
 
 ```powershell
-.\install.ps1 follow-up-radar
+.\install.ps1 follow-up-radar -Target "$skillTarget" -DryRun
 ```
 
 ### `client-workspace-scaffolder`
@@ -626,7 +638,7 @@ Typical output:
 **Install:**
 
 ```powershell
-.\install.ps1 client-workspace-scaffolder
+.\install.ps1 client-workspace-scaffolder -Target "$skillTarget" -DryRun
 ```
 
 ### `discovery-brief`
@@ -640,7 +652,7 @@ Typical output:
 **Install:**
 
 ```powershell
-.\install.ps1 discovery-brief
+.\install.ps1 discovery-brief -Target "$skillTarget" -DryRun
 ```
 
 ### `implement-client-feedback`
@@ -656,7 +668,7 @@ Typical output:
 **Install:**
 
 ```powershell
-.\install.ps1 implement-client-feedback
+.\install.ps1 implement-client-feedback -Target "$skillTarget" -DryRun
 ```
 
 ### `client-delivery-auditor`
@@ -672,7 +684,7 @@ Typical output:
 **Install:**
 
 ```powershell
-.\install.ps1 client-delivery-auditor
+.\install.ps1 client-delivery-auditor -Target "$skillTarget" -DryRun
 ```
 
 ### `website-change-verifier`
@@ -688,7 +700,7 @@ Typical output:
 **Install:**
 
 ```powershell
-.\install.ps1 website-change-verifier
+.\install.ps1 website-change-verifier -Target "$skillTarget" -DryRun
 ```
 
 ### `skill-builder`
@@ -702,7 +714,7 @@ Typical output:
 **Install:**
 
 ```powershell
-.\install.ps1 skill-builder
+.\install.ps1 skill-builder -Target "$skillTarget" -DryRun
 ```
 
 ### `session-handoff`
@@ -716,7 +728,7 @@ Typical output:
 **Install:**
 
 ```powershell
-.\install.ps1 session-handoff
+.\install.ps1 session-handoff -Target "$skillTarget" -DryRun
 ```
 
 ### `agents-md-writer`
@@ -730,7 +742,7 @@ Typical output:
 **Install:**
 
 ```powershell
-.\install.ps1 agents-md-writer
+.\install.ps1 agents-md-writer -Target "$skillTarget" -DryRun
 ```
 
 ### `ops-status-report`
@@ -744,7 +756,7 @@ Typical output:
 **Install:**
 
 ```powershell
-.\install.ps1 ops-status-report
+.\install.ps1 ops-status-report -Target "$skillTarget" -DryRun
 ```
 
 ### `screen-recorder`
@@ -758,7 +770,7 @@ Typical output:
 **Install:**
 
 ```powershell
-.\install.ps1 screen-recorder
+.\install.ps1 screen-recorder -Target "$skillTarget" -DryRun
 ```
 
 ### `remove-ai-image-metadata`
@@ -774,7 +786,7 @@ Typical output:
 **Install:**
 
 ```powershell
-.\install.ps1 remove-ai-image-metadata
+.\install.ps1 remove-ai-image-metadata -Target "$skillTarget" -DryRun
 ```
 
 ## Safe Install Defaults
@@ -818,5 +830,5 @@ List available skills:
 Install all skills:
 
 ```powershell
-.\install.ps1 -All
+.\install.ps1 -All -Target "$skillTarget" -DryRun
 ```

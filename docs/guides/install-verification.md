@@ -1,5 +1,7 @@
 # Install Verification
 
+**Install commands:** Python 3.11+ is required. User-target examples below preview changes for Codex at `~/.agents/skills`. For Claude Code, use `~/.claude/skills`. Review the plan, then remove the dry-run flag to apply. Explicit temporary targets are disposable checks. See [installation and verification](../../INSTALL.md).
+
 Use this guide after installation to confirm that a skill copied correctly, your tool reloaded it, and the first prompt produces the expected kind of output.
 
 This guide uses `github-safe-publisher` because it is the safest first skill for public-release work. You can replace that folder name with any skill from [`docs/catalog.md`](../catalog.md).
@@ -28,7 +30,7 @@ macOS or Linux:
 
 ```bash
 test -f ./install.sh
-test -f ./skills/github-safe-publisher/SKILL.md
+--target "$HOME/.agents/skills" --dry-run test -f ./skills/github-safe-publisher/SKILL.md
 ```
 
 Both checks should return success. If not, move to the folder where you cloned `jqai-ai-skills`.
@@ -86,35 +88,39 @@ You should see the whole skill folder. For `github-safe-publisher`, that include
 
 ## 5. Install To Your Local Tool Target
 
-After the smoke test looks right, install the skill normally.
+After the smoke test looks right, preview the chosen user target, review the plan, then apply it. These examples use Codex; substitute `.claude/skills` for Claude Code.
 
 Windows PowerShell:
 
 ```powershell
-.\install.ps1 github-safe-publisher
+.\install.ps1 github-safe-publisher -Target "$HOME/.agents/skills" -DryRun
+.\install.ps1 github-safe-publisher -Target "$HOME/.agents/skills"
 ```
 
 macOS or Linux:
 
 ```bash
-./install.sh github-safe-publisher
+./install.sh --target "$HOME/.agents/skills" --dry-run github-safe-publisher
+./install.sh --target "$HOME/.agents/skills" github-safe-publisher
 ```
 
-## 6. Confirm The Default Target
+<a id="6-confirm-the-default-target"></a>
+
+## 6. Confirm The Chosen Target
 
 Windows PowerShell:
 
 ```powershell
-Get-ChildItem "$env:USERPROFILE\.codex\skills\github-safe-publisher"
+Get-ChildItem "$HOME/.agents/skills/github-safe-publisher"
 ```
 
 macOS or Linux:
 
 ```bash
-ls ~/.codex/skills/github-safe-publisher
+ls "$HOME/.agents/skills/github-safe-publisher"
 ```
 
-If your tool uses a different skills directory, pass that directory with `-Target` or `--target`.
+For Claude Code or a custom target, inspect the exact folder selected in your preview and apply commands. The installer's legacy default is separate from the explicit target used here.
 
 ## 7. Reload And Run A First Prompt
 

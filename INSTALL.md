@@ -1,112 +1,136 @@
 # Install JQ AI Skills
 
-Use this page when you already know which skill you want to install and need the commands.
+Choose one skill, inspect it, preview the installation, then apply the same command without the preview flag.
 
-New to the repo? Start with [`START_HERE.md`](START_HERE.md). Need the short command map? Use [`QUICK_REFERENCE.md`](QUICK_REFERENCE.md). Want a guided first run? Use [`docs/guides/one-minute-install.md`](docs/guides/one-minute-install.md). Have install questions? Use [`docs/guides/install-faq.md`](docs/guides/install-faq.md). Reviewing an unfamiliar skill? Use [`docs/guides/skill-review-checklist.md`](docs/guides/skill-review-checklist.md). Want to confirm the install worked? Use [`docs/guides/install-verification.md`](docs/guides/install-verification.md). Updating an installed skill? Use [`docs/guides/update-installed-skills.md`](docs/guides/update-installed-skills.md). If a skill does not appear after install, use [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md).
+<a id="before-you-start"></a>
 
-## Before You Start
+## Requirements
 
-You need a local copy of this repo:
+- Python 3.11 or newer, available as `python` or `python3`.
+- Git and PowerShell on Windows, or Bash on macOS/Linux.
+- A tool that loads local skills. No Python dependencies are installed automatically.
 
-```powershell
+```bash
 git clone https://github.com/jqaisystems/jqai-ai-skills.git
 cd jqai-ai-skills
 ```
 
-You also need Python 3.11+ and a tool that loads local skills. No dependencies are installed automatically. Read [safe installation and discovery](docs/guides/safe-installation.md) first: new Codex setups should explicitly target `~/.agents/skills`; Claude Code uses `~/.claude/skills`.
+Read [safe installation and discovery](docs/guides/safe-installation.md) before copying into an existing target. For a shorter walkthrough, use [One-minute install](docs/guides/one-minute-install.md).
 
-## List Available Skills
+## Choose the discovery target
 
-Windows PowerShell:
+| Tool / scope | Target |
+|---|---|
+| Codex, your user account | `~/.agents/skills` |
+| Codex, one repository | `<your-repository>/.agents/skills` |
+| Claude Code, your user account | `~/.claude/skills` |
+
+Codex's locations are documented in [official OpenAI guidance](https://learn.chatgpt.com/docs/build-skills#where-codex-loads-local-skills). Check your tool's discovery settings before choosing a different target. The examples below use the user target; the installer accepts a repository or temporary target too.
+
+## List available skills
+
+PowerShell:
 
 ```powershell
 .\install.ps1 -List
 ```
 
-macOS or Linux:
+Bash:
 
 ```bash
-chmod +x ./install.sh
-./install.sh --list
+bash ./install.sh --list
 ```
 
-## Install One Skill
+<a id="install-one-skill"></a>
 
-Recommended first skill:
+## Install one skill for Codex
+
+Read [github-safe-publisher](skills/github-safe-publisher/SKILL.md) first. From the repository root, preview the write without creating a target:
 
 ```powershell
-.\install.ps1 github-safe-publisher
+.\install.ps1 github-safe-publisher -Target "$HOME/.agents/skills" -DryRun
 ```
 
 ```bash
-./install.sh github-safe-publisher
+bash ./install.sh --target "$HOME/.agents/skills" --dry-run github-safe-publisher
 ```
 
-Other examples:
+Review the planned destination. If it is correct, apply the installation:
 
 ```powershell
-.\install.ps1 case-study-writer
-.\install.ps1 release-announcement-writer
-.\install.ps1 research-brief-curator
+.\install.ps1 github-safe-publisher -Target "$HOME/.agents/skills"
 ```
 
 ```bash
-./install.sh case-study-writer
-./install.sh release-announcement-writer
-./install.sh research-brief-curator
+bash ./install.sh --target "$HOME/.agents/skills" github-safe-publisher
 ```
 
-## Install All Skills
+An existing managed copy is not silently overwritten. Stop if the installer reports an unmanaged copy or local edits, then follow [managed updates and migration](docs/guides/update-installed-skills.md).
 
-Install all public skill folders only after you have reviewed what they do.
+## Install one skill for Claude Code
 
-Windows PowerShell:
+Use the same workflow with Claude Code's target. Preview first, then apply:
 
 ```powershell
-.\install.ps1 -All
+.\install.ps1 github-safe-publisher -Target "$HOME/.claude/skills" -DryRun
+.\install.ps1 github-safe-publisher -Target "$HOME/.claude/skills"
 ```
-
-macOS or Linux:
 
 ```bash
-./install.sh --all
+bash ./install.sh --target "$HOME/.claude/skills" --dry-run github-safe-publisher
+bash ./install.sh --target "$HOME/.claude/skills" github-safe-publisher
 ```
 
-## Custom Install Target
+<a id="install-all-skills"></a>
 
-The legacy default is retained for compatibility, not as a universal discovery rule:
+## Install another skill or a bundle
 
-```text
-~/.codex/skills
-```
+Replace `github-safe-publisher` with a reviewed folder name from the [catalogue](docs/catalog.md). Keep the chosen target and preview flag. Catalogue commands are previews; apply only the workflows you have inspected.
 
-Use a custom target when testing:
+To preview all public skills after reviewing the library:
 
 ```powershell
-.\install.ps1 github-safe-publisher -Target "$env:TEMP\jqai-skill-install-smoke"
+.\install.ps1 -All -Target "$HOME/.agents/skills" -DryRun
 ```
 
 ```bash
-./install.sh --target "${TMPDIR:-/tmp}/jqai-skill-install-smoke" github-safe-publisher
+bash ./install.sh --target "$HOME/.agents/skills" --dry-run --all
 ```
 
-## Reload Your Tool
+Remove the dry-run flag only after reviewing that plan. For Claude Code, substitute its target in both the preview and apply commands.
 
-After installing, restart Codex or reload your AI coding tool so the skill list refreshes.
+<a id="reload-your-tool"></a>
 
-For a step-by-step verification pass, use [`docs/guides/install-verification.md`](docs/guides/install-verification.md).
-For a sample temporary-target check, use [`docs/examples/install-smoke-test-sample.md`](docs/examples/install-smoke-test-sample.md).
-For future updates, use [`docs/guides/update-installed-skills.md`](docs/guides/update-installed-skills.md).
+## Verify discovery
 
-Then run a first prompt:
+1. Confirm `<chosen-target>/github-safe-publisher/SKILL.md` and `.jqai-install.json` exist after applying.
+2. Reload or restart your coding tool.
+3. Open a test folder and ask it to list the available skills, then try:
 
 ```text
 Use $github-safe-publisher to review this README and docs folder before public release.
 ```
 
-Compare the expected output shape with [`docs/examples/first-run-github-safe-publisher.md`](docs/examples/first-run-github-safe-publisher.md).
+Compare with the [fictional first-run sample](docs/examples/first-run-github-safe-publisher.md). See [installation verification](docs/guides/install-verification.md) or [troubleshooting](TROUBLESHOOTING.md) if discovery fails. Installing a folder is not evidence that a tool has loaded it.
 
-If the skill does not appear after reload, use [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md).
+<a id="custom-install-target"></a>
+
+<details>
+<summary>Legacy default and temporary targets</summary>
+
+The installer retains `~/.codex/skills` as its legacy default for compatibility. A bare command still uses that default; it is not the recommended example for a new Codex or Claude Code setup. The installer behaviour has not changed.
+
+For a disposable test, choose a new empty target explicitly:
+
+```powershell
+.\install.ps1 github-safe-publisher -Target "$env:TEMP/jqai-skill-install-smoke" -DryRun
+```
+
+```bash
+bash ./install.sh --target "${TMPDIR:-/tmp}/jqai-skill-install-smoke" --dry-run github-safe-publisher
+```
+
+</details>
 
 ## Manual Install
 
