@@ -18,6 +18,8 @@ Installation requires Python 3.11+. New Codex setups should explicitly choose th
 
 This animation explains the workflow. Use the install guide for current commands and prerequisites.
 
+[Requirements and installation](INSTALL.md) · [Support](SUPPORT.md) · [Contributing](CONTRIBUTING.md)
+
 ## Pick your route
 
 | You want to… | Start with |
