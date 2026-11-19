@@ -12,7 +12,7 @@ The [v0.13.0 release](docs/announcements/v0.13.0.md), published on 14 October 20
 
 Installation requires Python 3.11+. New Codex setups should explicitly choose the supported discovery target; read [safe installation and discovery](docs/guides/safe-installation.md) before copying or upgrading skills.
 
-The working tree contains the [v0.14.0 candidate](docs/announcements/v0.14.0.md): 49 skills, including local static-site handoffs and cover adaptation, plus campaign-approval and metadata-verification upgrades. Candidate status is not a published release or remote CI result.
+The [v0.15.0 candidate](docs/announcements/v0.15.0.md) builds on the 49-skill v0.14.0 candidate. It adds [logo-delivery-preflight](skills/logo-delivery-preflight/SKILL.md) and exact-placement screenshot review in [github-safe-publisher](skills/github-safe-publisher/SKILL.md), bringing the combined candidate to 50 skills. Neither candidate status nor local checks establish publication.
 
 <a href="START_HERE.md"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/jq-ai-skills-launch-poster.png"><img src="assets/jq-ai-skills-launch-preview.gif" alt="JQ AI Skills: choose a workflow, inspect instructions, install into your chosen target, and use the skill"></picture></a>
 

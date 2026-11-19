@@ -1,0 +1,4 @@
+interface:
+  display_name: "Logo Delivery Preflight"
+  short_description: "Check exported logo variants against the brief"
+  default_prompt: "Use $logo-delivery-preflight to check these logo exports against the approved master and delivery brief."

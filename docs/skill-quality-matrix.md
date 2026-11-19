@@ -1,6 +1,11 @@
 # Skill Quality Matrix
 
-Current candidate: v0.14.0, 49 skills. Local checks and remote CI provide different evidence; remote CI remains pending for this candidate.
+Combined v0.15.0 candidate: 50 skills. Remote CI and publication remain separate.
+
+| Component | Tested evidence | Limitation |
+|---|---|---|
+| [Logo delivery preflight](../skills/logo-delivery-preflight/SKILL.md) | Fictional missing, invisible, wrong-sized and structurally suspect variants | No automated visual, native or print approval |
+| [GitHub safe publisher](../skills/github-safe-publisher/SKILL.md) | Fictional placed screenshots, changed bytes, skipped and recoverable states | Receipt matching does not inspect pixels or authenticate a reviewer |
 
 ## v0.14.0 candidate
 

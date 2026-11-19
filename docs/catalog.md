@@ -18,7 +18,10 @@ Every install command in this catalogue includes `-DryRun` and the chosen target
 
 ## At A Glance
 
-Inventory: 49 skills in the v0.14.0 candidate. The latest published release at preparation time is v0.13.0 with 47 skills.
+Inventory: 50 skills in the combined v0.15.0 candidate.
+
+- [Logo delivery preflight](../skills/logo-delivery-preflight/SKILL.md): check the files actually delivered against the approved logo brief. Visual and print approval remain separate.
+- [GitHub safe publisher](../skills/github-safe-publisher/SKILL.md): review the exact image, placement and final artifact, including recoverable underlying material.
 
 ### Safe Publishing Handoffs
 

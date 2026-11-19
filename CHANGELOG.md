@@ -2,6 +2,10 @@
 
 Public release history for JQ AI Skills.
 
+## v0.15.0 candidate - Unreleased
+
+Add logo delivery preflight and screenshot review for the exact public artifact. See the [fictional proof](docs/examples/visual-delivery-preflight.md). No release or publication is implied.
+
 ## v0.14.0 candidate - Unreleased
 
 Library candidate: 49 skills. Publication approval and remote CI remain pending.

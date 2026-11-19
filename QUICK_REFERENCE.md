@@ -6,6 +6,10 @@ Use this page when you want the shortest command and link map for JQ AI Skills.
 
 For the guided path, start with [`START_HERE.md`](START_HERE.md). For full install details, use [`INSTALL.md`](INSTALL.md). For install questions, use [`docs/guides/install-faq.md`](docs/guides/install-faq.md).
 
+## v0.15.0: Visual delivery preflight
+
+Use [logo-delivery-preflight](skills/logo-delivery-preflight/SKILL.md) to check promised variants and backgrounds. Use [github-safe-publisher](skills/github-safe-publisher/SKILL.md) to review screenshots and their final placements. [Worked example](docs/examples/visual-delivery-preflight.md).
+
 ## v0.14.0 candidate: Safe Publishing Handoffs
 
 - Use $static-site-handoff to prepare a local package from an already completed static build. [Sample](docs/examples/static-site-handoff-sample.md).

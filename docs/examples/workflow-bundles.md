@@ -1,5 +1,9 @@
 # Workflow Bundles
 
+## Visual delivery preflight
+
+Check the approved logo variants with [logo-delivery-preflight](../../skills/logo-delivery-preflight/SKILL.md), then inspect any screenshots of the assets using [github-safe-publisher](../../skills/github-safe-publisher/SKILL.md). Either skill also works independently. [Fictional handoff](visual-delivery-preflight.md).
+
 Use these bundles when one skill is useful, but the job naturally needs a small sequence of repeatable workflows.
 
 Each bundle below is public-safe and uses generic examples. Adapt the prompts to your own workspace after reviewing what each skill does.

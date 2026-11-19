@@ -1,6 +1,6 @@
 ---
 name: github-safe-publisher
-description: Prepare private work for safe public GitHub publishing. Use when the user asks to publish safely, turn private project work into a GitHub-safe artifact, sanitize a project, make a public case study, prepare material for GitHub, review a repo before pushing, or check whether files contain secrets, client data, raw prompts, logs, local paths, private source, or other sensitive material.
+description: Prepare private work for safe public GitHub publishing. Review proposed files, screenshots and their exact final placements before sharing a repository, case study or release. Check for exposed or recoverable private content alongside the text scan and manual diff.
 ---
 
 # GitHub Safe Publisher
@@ -21,8 +21,9 @@ Use this skill to turn private project material into public-safe GitHub artifact
 python scripts/scan_public_safety.py path/to/public-candidate --no-baseline
 ```
 
-6. Read `references/release-workflow.md` before staging changes.
-7. Require manual review of `git status --short`, the unstaged diff, and the staged diff before any commit or push.
+6. Follow the [screenshot review](references/screenshot-review.md) for every image placement. Inspect the exact final artifact and underlying assets. A skipped image, changed placement or incomplete inspection prevents readiness; a recoverable exposure blocks release.
+7. Read `references/release-workflow.md` before staging changes.
+8. Require manual review of `git status --short`, the unstaged diff, and the staged diff before any commit or push.
 
 ## Verdicts
 
@@ -30,7 +31,7 @@ Return one of these verdicts in every review:
 
 - `BLOCK`: Real secrets, credentials, raw private data, client-identifying material, local machine paths, databases, exports, logs, or unintended source files are present.
 - `REVIEW`: The artifact is probably publishable after specific human checks or rewrites.
-- `READY`: The artifact uses public-safe examples, passes the scanner, and has a clean manual diff review.
+- `READY`: The artifact uses public-safe examples, passes the scanner, has a clean manual diff review, and all screenshot placements are accounted for and cleared on the exact final artifact (or none are present). This is not publication approval.
 
 If blocked, explain the minimum fix. Do not rewrite blocked material into a public repo until the sensitive source is removed or generalized.
 
@@ -40,7 +41,7 @@ If blocked, explain the minimum fix. Do not rewrite blocked material into a publ
 - Replace credentials with placeholders such as `YOUR_API_KEY_HERE`.
 - Convert raw private notes into public explanations; do not copy memory files, chat logs, prompts, or operational strategy verbatim.
 - Publish patterns, workflows, and lessons. Keep implementation source, deployment details, private data, and system-of-record content private unless the user explicitly confirms they are public-safe.
-- For screenshots, crop or recreate them with fake data. Do not publish account menus, browser tabs, analytics, emails, invoices, API dashboards, or file paths.
+- For screenshots, prefer recreating them with fictional data. A crop is not a redaction if the original ships or the hidden portion can be recovered. Inspect the final render and downloadable assets.
 
 ## Scanner
 

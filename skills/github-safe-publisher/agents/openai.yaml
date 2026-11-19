@@ -1,4 +1,4 @@
 interface:
   display_name: "GitHub Safe Publisher"
-  short_description: "Prepare public GitHub releases safely"
-  default_prompt: "Use $github-safe-publisher to prepare this project for a public GitHub release safely."
+  short_description: "Review public release files and screenshot placements"
+  default_prompt: "Use $github-safe-publisher to review this candidate and its screenshot placements without publishing it."

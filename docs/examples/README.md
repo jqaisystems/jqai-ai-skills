@@ -2,6 +2,8 @@
 
 Public-safe examples for JQ AI Skills.
 
+[Visual delivery preflight](visual-delivery-preflight.md): a reverse mark, a missing variant and a removable screenshot overlay.
+
 Use this page when you want to inspect expected output before installing a skill. All examples use fictional, public, or generalized material. They do not include live customer records, private exports, account setup, deployment details, or sensitive implementation notes.
 
 ## v0.14.0 candidate examples
