@@ -1,5 +1,9 @@
 # Workflow Bundles
 
+## Check the handoff, then the announcement
+
+Use [brand-kit-consistency-auditor](../../skills/brand-kit-consistency-auditor/SKILL.md) when recipients need to know which asset to use. After publication, use the [post-release check](../../skills/release-announcement-writer/references/post-release-check.md) to verify what readers are told. Neither check requires the other.
+
 ## Visual delivery preflight
 
 Check the approved logo variants with [logo-delivery-preflight](../../skills/logo-delivery-preflight/SKILL.md), then inspect any screenshots of the assets using [github-safe-publisher](../../skills/github-safe-publisher/SKILL.md). Either skill also works independently. [Fictional handoff](visual-delivery-preflight.md).

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Brand Kit Consistency Auditor"
+  short_description: "Check whether a brand kit agrees with its guide"
+  default_prompt: "Use $brand-kit-consistency-auditor to compare the approved guide, export inventory and handoff sheet, and flag conflicting or unverified assignments."

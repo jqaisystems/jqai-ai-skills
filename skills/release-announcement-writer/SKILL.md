@@ -1,6 +1,6 @@
 ---
 name: release-announcement-writer
-description: Write release notes, GitHub release copy, website update blurbs, and short launch posts from changelogs, git diffs, README changes, shipped feature lists, or product/system updates. Use when the user asks to announce a release, summarize what changed, prepare public launch copy, write a changelog, turn implementation notes into marketing-safe copy, or create LinkedIn/GitHub/X posts for a new version.
+description: Draft release notes and launch copy from shipped changes, or audit selected public documentation after release for stale versions, publication claims, counts and links.
 ---
 
 # Release Announcement Writer
@@ -8,6 +8,8 @@ description: Write release notes, GitHub release copy, website update blurbs, an
 ## Overview
 
 Use this skill to turn a shipped change into clear public release communication. The output should be accurate, concrete, and safe to publish: what changed, why it matters, who it helps, where to try it, and what to do next.
+
+For a post-release audit, use the [consistency check](references/post-release-check.md) and return its findings. For drafting, use the workflow below.
 
 ## Workflow
 

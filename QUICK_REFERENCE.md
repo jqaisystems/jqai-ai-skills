@@ -6,6 +6,10 @@ Use this page when you want the shortest command and link map for JQ AI Skills.
 
 For the guided path, start with [`START_HERE.md`](START_HERE.md). For full install details, use [`INSTALL.md`](INSTALL.md). For install questions, use [`docs/guides/install-faq.md`](docs/guides/install-faq.md).
 
+## v0.16.0: Consistency checks
+
+Use [brand-kit-consistency-auditor](skills/brand-kit-consistency-auditor/SKILL.md) for cross-file visual rules; use [release-announcement-writer](skills/release-announcement-writer/SKILL.md) for public claims about a shipped version.
+
 ## v0.15.0: Visual delivery preflight
 
 Use [logo-delivery-preflight](skills/logo-delivery-preflight/SKILL.md) to check promised variants and backgrounds. Use [github-safe-publisher](skills/github-safe-publisher/SKILL.md) to review screenshots and their final placements. [Worked example](docs/examples/visual-delivery-preflight.md).

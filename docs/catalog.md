@@ -18,7 +18,10 @@ Every install command in this catalogue includes `-DryRun` and the chosen target
 
 ## At A Glance
 
-Inventory: 50 skills in the combined v0.15.0 candidate.
+Inventory: 51 skills in the v0.16.0 tree.
+
+- [Brand kit consistency auditor](../skills/brand-kit-consistency-auditor/SKILL.md): reconcile approved guide rules, export IDs and recipient instructions, including unresolved rights claims.
+- [Release announcement writer](../skills/release-announcement-writer/SKILL.md): draft copy or check current claims against the published record without rewriting accurate history.
 
 - [Logo delivery preflight](../skills/logo-delivery-preflight/SKILL.md): check the files actually delivered against the approved logo brief. Visual and print approval remain separate.
 - [GitHub safe publisher](../skills/github-safe-publisher/SKILL.md): review the exact image, placement and final artifact, including recoverable underlying material.

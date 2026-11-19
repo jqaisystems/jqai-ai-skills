@@ -2,6 +2,9 @@
 
 Public-safe examples for JQ AI Skills.
 
+- [Brand kit audit](brand-kit-consistency-auditor-sample.md): the file exists but the handoff selects the wrong variant.
+- [Release consistency audit](release-consistency-sample.md): a published release, stale current copy and a valid historical note.
+
 [Visual delivery preflight](visual-delivery-preflight.md): a reverse mark, a missing variant and a removable screenshot overlay.
 
 Use this page when you want to inspect expected output before installing a skill. All examples use fictional, public, or generalized material. They do not include live customer records, private exports, account setup, deployment details, or sensitive implementation notes.

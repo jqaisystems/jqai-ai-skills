@@ -1,6 +1,8 @@
 # Skill Quality Matrix
 
-Combined v0.15.0 candidate: 50 skills. Remote CI and publication remain separate.
+v0.16.0 scope: 51 skills. See the [brand kit proof](examples/brand-kit-consistency-auditor-sample.md) for guide-to-handoff comparisons and the [release proof](examples/release-consistency-sample.md) for exact-release and historical-context checks. Both are evidence reviews, not approval to change the underlying material.
+
+## Visual delivery preflight (v0.15.0)
 
 | Component | Tested evidence | Limitation |
 |---|---|---|
