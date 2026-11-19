@@ -18,7 +18,18 @@ Every install command in this catalogue includes `-DryRun` and the chosen target
 
 ## At A Glance
 
-Inventory: 47 skills in v0.13.0, up from 46 in v0.12.0.
+Inventory: 49 skills in the v0.14.0 candidate. The latest published release at preparation time is v0.13.0 with 47 skills.
+
+### Safe Publishing Handoffs
+
+| Skill | Useful result | Boundary |
+|---|---|---|
+| [static-site-handoff](../skills/static-site-handoff/SKILL.md) | Hash-based local upload package and acknowledgement baseline. | No build execution, hosting access, upload or remote deletion. |
+| [article-cover-adapter](../skills/article-cover-adapter/SKILL.md) | Approved artwork adapted to a supplied cover profile. | Preserve exact text and credits; local and actual platform previews are different evidence. |
+| [social-campaign-proof-tracker](../skills/social-campaign-proof-tracker/SKILL.md) | Exact-package fingerprint and approval/receipt review. | Matching records do not authenticate human consent or authorize retries. |
+| [remove-ai-image-metadata](../skills/remove-ai-image-metadata/SKILL.md) | Selective cleanup plus independent decoded-image checks. | Missing dependencies and unsupported structures remain unverified. |
+
+See the [bundle](examples/workflow-bundles.md#safe-publishing-handoffs) and [candidate notes](announcements/v0.14.0.md). Each skill remains independently usable.
 
 ### Backup readiness
 

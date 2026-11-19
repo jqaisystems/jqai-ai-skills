@@ -1,6 +1,15 @@
 # Skill Quality Matrix
 
-Current as of v0.13.0: 47 skills. Local checks and remote CI provide different evidence; the release page identifies the tested release commit.
+Current candidate: v0.14.0, 49 skills. Local checks and remote CI provide different evidence; remote CI remains pending for this candidate.
+
+## v0.14.0 candidate
+
+| Component | Evidence | Boundary |
+|---|---|---|
+| [Static site handoff](../skills/static-site-handoff/SKILL.md) | Synthetic package, baseline, tampering, failure and link tests; [sample](examples/static-site-handoff-sample.md) | Local package verification is not live deployment proof. |
+| [Article cover adapter](../skills/article-cover-adapter/SKILL.md) | Fictional wide/tall adaptations, source preservation, dimensions, margins and local visual review; [sample](examples/article-cover-adapter-sample.md) | Actual platform preview remains pending; fitting text is not a performance guarantee. |
+| [Campaign proof tracker](../skills/social-campaign-proof-tracker/SKILL.md) | Fingerprint mutation, approval and conflicting-receipt tests; [sample](examples/social-campaign-proof-tracker-sample.md) | No external actions or consent authentication. |
+| [Metadata verification](../skills/remove-ai-image-metadata/SKILL.md) | PNG/APNG, JPEG, WebP, GIF, decoder, preservation and refusal tests; [sample](examples/remove-ai-image-metadata-sample.md) | Supported default-cleaner pairs only; no new removal capability. |
 
 ## v0.13.0
 

@@ -4,6 +4,13 @@ Public-safe examples for JQ AI Skills.
 
 Use this page when you want to inspect expected output before installing a skill. All examples use fictional, public, or generalized material. They do not include live customer records, private exports, account setup, deployment details, or sensitive implementation notes.
 
+## v0.14.0 candidate examples
+
+- [Static site handoff](static-site-handoff-sample.md): full/incremental packaging, stale confirmations, tampering and preserved baselines.
+- [Article cover adaptation](article-cover-adapter-sample.md): fictional wide/tall artwork with protected wording and credits.
+- [Campaign approval and receipts](social-campaign-proof-tracker-sample.md): exact-package changes and uncertain delivery.
+- [Read-only metadata verification](remove-ai-image-metadata-sample.md): supported cleanup evidence and explicit unverified states.
+
 ## v0.13.0 examples
 
 - [Backup readiness](backup-readiness-auditor-sample.md): complete evidence, gaps, and refusal to authorize source retirement.

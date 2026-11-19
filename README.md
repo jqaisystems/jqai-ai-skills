@@ -12,6 +12,8 @@ The [v0.13.0 release](docs/announcements/v0.13.0.md), published on 14 October 20
 
 Installation requires Python 3.11+. New Codex setups should explicitly choose the supported discovery target; read [safe installation and discovery](docs/guides/safe-installation.md) before copying or upgrading skills.
 
+The working tree contains the [v0.14.0 candidate](docs/announcements/v0.14.0.md): 49 skills, including local static-site handoffs and cover adaptation, plus campaign-approval and metadata-verification upgrades. Candidate status is not a published release or remote CI result.
+
 <a href="START_HERE.md"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/jq-ai-skills-launch-poster.png"><img src="assets/jq-ai-skills-launch-preview.gif" alt="JQ AI Skills: choose a workflow, inspect instructions, install into your chosen target, and use the skill"></picture></a>
 
 [Static preview](assets/jq-ai-skills-launch-poster.png) · [Watch the 16-second silent overview](assets/jq-ai-skills-launch-video-with-music.mp4)
@@ -128,6 +130,7 @@ Every skill ships with public-safe proof: fake-data samples, guides, and checkli
 | GitHub Safe Publisher | [`skills/github-safe-publisher/SKILL.md`](skills/github-safe-publisher/SKILL.md) | Prepare private work for public GitHub releases safely. |
 | Skill Reviewer | [`skills/skill-reviewer/SKILL.md`](skills/skill-reviewer/SKILL.md) | Review AI skill files or folders for dangerous behavior. |
 | Local App to Public Demo | [`skills/local-app-public-demo/SKILL.md`](skills/local-app-public-demo/SKILL.md) | Freeze a local app into a static read-only public demo from the same codebase, with machine paths and private data verified gone. |
+| Static Site Handoff | [static-site-handoff](skills/static-site-handoff/SKILL.md) | Prepare and verify local upload packages without uploading or deleting remotely. |
 
 ### Public Proof
 
@@ -186,6 +189,7 @@ Every skill ships with public-safe proof: fake-data samples, guides, and checkli
 | Skill | File | Use |
 |---|---|---|
 | Media Spec Checker | [`skills/media-spec-checker/SKILL.md`](skills/media-spec-checker/SKILL.md) | Read-only local image/video checks against supplied, versioned rules; unknown measurements never pass. |
+| Article Cover Adapter | [article-cover-adapter](skills/article-cover-adapter/SKILL.md) | Adapt approved artwork while preserving exact text, credits and protected content. |
 | Remove AI Image Metadata | [`skills/remove-ai-image-metadata/SKILL.md`](skills/remove-ai-image-metadata/SKILL.md) | Inspect and remove explicit AI-generator or provenance metadata from authorized image files while preserving encoded picture data when the format permits. |
 | AI Image Run Pacing | [`skills/ai-image-run-pacing/SKILL.md`](skills/ai-image-run-pacing/SKILL.md) | Run a batch of AI image generations without getting rate limited, losing subject likeness, or storing credentials. |
 | Thumbnail Set Designer | [`skills/thumbnail-set-designer/SKILL.md`](skills/thumbnail-set-designer/SKILL.md) | Turn a title and hook into a set of genuinely different on-brand thumbnail prompts, with the traps that ruin AI thumbnails built in. |

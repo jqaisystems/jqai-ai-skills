@@ -6,6 +6,15 @@ The goal is quick evaluation: what can a visitor inspect without reading the ent
 
 All linked examples use fictional, public, or generalized material. They do not include customer records, private exports, account setup, deployment details, local machine paths, raw prompts, logs, credentials, or sensitive implementation notes.
 
+## Safe Publishing Handoffs candidate
+
+- [Static handoff proof](static-site-handoff-sample.md)
+- [Cover adaptation proof](article-cover-adapter-sample.md)
+- [Campaign evidence proof](social-campaign-proof-tracker-sample.md)
+- [Metadata verification proof](remove-ai-image-metadata-sample.md)
+
+These are fictional local checks, not publication receipts or remote CI results.
+
 ## Fast Review Path
 
 | Question | Open |

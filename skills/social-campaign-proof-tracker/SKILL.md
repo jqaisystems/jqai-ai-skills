@@ -49,6 +49,14 @@ This skill organizes and drafts. It must not post, upload, comment, message, or 
    - useful replies
 7. After publishing, record only public results unless the user explicitly provides private metrics for private analysis.
 
+## Exact-package approval and receipts
+
+Before an external action, freeze the exact copy, titles, ordered media, roles, alt text, destination, provider, and scheduled time using [the approval package template](assets/approval-package-template.md). Read [publication states and the evidence contract](references/publication-state.md) when auditing approval or delivery.
+
+    python scripts/audit_campaign_package.py --package package.json --approval approval.json --receipts receipts.json --json
+
+The optional approval and receipt records are supplied evidence. The local helper reads files and emits a fingerprint and findings; it never writes approvals, authenticates human consent, schedules, publishes, cancels, or retries. Any material package change invalidates matching approval. Preserve conflicting receipts and provider identities. Reconcile uncertain publication before retrying; missing queue evidence does not prove cancellation. Never convert an old scheduled time into a request to post now.
+
 ## Public Safety Rules
 
 - Do not include private analytics exports, cookies, account IDs, unpublished client data, raw messages, private prompts, local paths, or credential-adjacent details.

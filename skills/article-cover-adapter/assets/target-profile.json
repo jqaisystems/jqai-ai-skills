@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "name": "fictional-article-cover",
+  "width": 1920,
+  "height": 1080,
+  "aspect_ratio": "16:9",
+  "format": "PNG",
+  "safe_margin_px": 96,
+  "requirements_source": "fictional editorial brief, not a platform guarantee",
+  "platform_preview": "pending"
+}

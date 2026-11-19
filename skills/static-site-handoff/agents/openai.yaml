@@ -1,0 +1,4 @@
+interface:
+  display_name: "Static Site Handoff"
+  short_description: "Prepare verified local static-site upload packages"
+  default_prompt: "Use $static-site-handoff to prepare a local upload package from this completed static build."

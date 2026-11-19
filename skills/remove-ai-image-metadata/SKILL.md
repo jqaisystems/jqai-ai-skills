@@ -30,7 +30,11 @@ Remove explicit embedded AI provenance or generator metadata using a format-awar
    - Add `--all-metadata` only when the user asks to remove all removable non-rendering metadata. Preserve color profiles and functional animation data.
 
 5. Confirm every changed file reports `PASS`. The cleaner reparses the written container and confirms that encoded PNG, JPEG, WebP, or GIF image payloads are unchanged.
-6. Inspect the cleaned output again when extra verification is appropriate.
+6. Compare the preserved pre-clean file and cleaned output with the read-only verifier:
+
+       python scripts/verify_image_cleanup.py before.png after.png --json
+
+   Read [verification scope and limits](references/verification.md). Full verification requires every check to pass, including Pillow-based decoding. Missing dependencies or unsupported structures remain unverified. Inspect the rendered output as well. The cleaner's PASS only establishes its existing container/payload checks.
 7. Report the number of files processed, exact output path, formats handled, and metadata removed.
 
 ## Format Routing

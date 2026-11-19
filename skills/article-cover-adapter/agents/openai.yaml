@@ -1,0 +1,4 @@
+interface:
+  display_name: "Article Cover Adapter"
+  short_description: "Adapt approved cover art without losing its message"
+  default_prompt: "Use $article-cover-adapter to adapt this approved artwork to the supplied cover profile."

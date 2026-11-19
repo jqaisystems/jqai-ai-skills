@@ -61,6 +61,21 @@ Follow-up:
 | Next day | Add public links to the proof trail. | Planned |
 | One week | Review what can become a case study or skill update. | Planned |
 
+## Exact-package evidence
+
+Synthetic tests use Example Studio, one example provider, fictional media bytes and minimal receipt records.
+
+| Change or evidence | Observed result |
+|---|---|
+| No approval supplied | Prepared, not authorized. |
+| Matching approval record | Approved evidence, but human consent not independently authenticated. |
+| Changed copy, title, alt text, role, provider, destination, time, media bytes, path or order | Fingerprint changes; old approval no longer matches. |
+| Scheduled, published and verified observations for one delivery | Preserved progression; verification remains supplied evidence. |
+| Different provider, destination, fingerprint or delivery identity | Uncertain; reconcile before retrying. |
+| Failed result, missing queue evidence or old scheduled time | No automatic retry, cancellation or post-now instruction. |
+
+The tests preserve input files and make no network calls. Reports do not echo raw copy or account data. See [the evidence contract](../../skills/social-campaign-proof-tracker/references/publication-state.md).
+
 ## Safety Notes
 
 - Do not store private analytics exports.

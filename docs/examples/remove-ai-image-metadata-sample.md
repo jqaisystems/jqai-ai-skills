@@ -4,28 +4,27 @@ This fictional example shows the expected report shape for owned or authorized s
 
 ## Inspection
 
-```text
-Supported image files in scope: 4
-[INSPECT] sample.png [PNG 1200x1200]
-  remove tEXt (29 bytes): AI metadata marker: openai
-[INSPECT] sample.jpg [JPEG 1600x1067]
-  remove APP11 (884 bytes): C2PA/JUMBF APP11 provenance segment
-[INSPECT] sample.webp [WebP 1080x1350]
-  remove XMP  (142 bytes): AI metadata marker: content credentials
-[INSPECT] sample.gif [GIF 900x900]
-  remove EXT-0xFE (35 bytes): AI metadata marker: generative ai
-SUMMARY: inspection PASS; files=4; formats=GIF,JPEG,PNG,WebP; files_with_matches=4; matching_items=4
-```
+| Fictional input | Expected handling |
+|---|---|
+| PNG text containing a known generator marker | Propose removal of that supported text record. |
+| JPEG standard XMP with generator and rights properties | Propose selective field editing; preserve rights. |
+| JPEG JUMBF | Refuse automatic cleanup; require a metadata-aware editor. |
+| WebP mixed XMP | Edit supported targeted fields, not the whole mixed parent. |
+| GIF supported generator comment | Propose removal of that comment; preserve animation. |
 
 The inspection writes nothing. A human reviews the proposed removals before choosing a write mode.
 
 ## Verified Copies
 
-```text
-SUMMARY: cleaning PASS; files=4; formats=GIF,JPEG,PNG,WebP; files_with_matches=4; removed_items=4
-```
+The cleaner's PASS establishes its existing container and encoded-payload checks. It is not a full decoded-rendering result. The separate read-only verifier compares a preserved pre-clean copy with the cleaned derivative.
 
-Each changed file reports `PASS` only after the helper reparses the cleaned container, confirms matching metadata is gone, and confirms that the encoded image payload hash is unchanged.
+## v0.14.0 verification proof
+
+Synthetic PNG/APNG, JPEG, WebP and GIF pairs exercised supported marker absence, selective-only changes, encoded data, dimensions, orientation, colour information, decoded frames, alpha, timing and looping. Unchanged pairs passed. Modified pixels, dimensions, rights, orientation, colour profiles, timing or loop settings did not receive a full pass.
+
+Missing Pillow, malformed data, unsupported TIFF/JUMBF, and configured decoding limits produced unverified checks rather than a false pass. Reports omitted raw metadata and local paths. Both input files remained unchanged.
+
+Run `python scripts/verify_image_cleanup.py before.png after.png --json` from the skill folder. See [verification scope](../../skills/remove-ai-image-metadata/references/verification.md). Overall pass requires every check to pass; it is limited to supported default-selective cleanup, not authenticity or platform-label detection.
 
 ## Safety Boundary
 

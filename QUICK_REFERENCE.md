@@ -6,7 +6,16 @@ Use this page when you want the shortest command and link map for JQ AI Skills.
 
 For the guided path, start with [`START_HERE.md`](START_HERE.md). For full install details, use [`INSTALL.md`](INSTALL.md). For install questions, use [`docs/guides/install-faq.md`](docs/guides/install-faq.md).
 
-## v0.13.0
+## v0.14.0 candidate: Safe Publishing Handoffs
+
+- Use $static-site-handoff to prepare a local package from an already completed static build. [Sample](docs/examples/static-site-handoff-sample.md).
+- Use $article-cover-adapter to adapt approved artwork to a supplied target profile. [Sample](docs/examples/article-cover-adapter-sample.md).
+- Use $social-campaign-proof-tracker to audit the exact package, approval record and delivery receipts. [Sample](docs/examples/social-campaign-proof-tracker-sample.md).
+- Use $remove-ai-image-metadata to inspect and selectively clean supported files, then compare before/after evidence with the separate verifier. [Sample](docs/examples/remove-ai-image-metadata-sample.md).
+
+This candidate contains 49 skills. Local checks do not establish publication or remote CI success.
+
+## v0.13.0 recovery and maintenance
 
 Use `$backup-readiness-auditor` to evaluate an approved evidence pack without opening backups or changing files. [Example](docs/examples/backup-readiness-auditor-sample.md).
 

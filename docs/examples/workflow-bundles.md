@@ -4,6 +4,17 @@ Use these bundles when one skill is useful, but the job naturally needs a small 
 
 Each bundle below is public-safe and uses generic examples. Adapt the prompts to your own workspace after reviewing what each skill does.
 
+## Safe Publishing Handoffs
+
+Use only the steps relevant to the requested output:
+
+1. Adapt approved cover artwork with article-cover-adapter. Preserve the source, exact wording and visible credits.
+2. Where metadata cleanup is requested, use remove-ai-image-metadata and its before/after verifier. Missing checks remain unverified.
+3. For a static site, use static-site-handoff on the completed export. Separately authorize any upload; acknowledge only a complete exact-package upload.
+4. For a campaign, use social-campaign-proof-tracker to freeze the package and compare approval/receipt evidence. Reconcile uncertainty before any retry.
+
+Each skill works independently. This bundle does not authorize uploads, scheduling or publication. See the [static](static-site-handoff-sample.md), [cover](article-cover-adapter-sample.md), [campaign](social-campaign-proof-tracker-sample.md) and [metadata](remove-ai-image-metadata-sample.md) samples.
+
 ## Safe Recovery and Skill Maintenance
 
 1. Use backup-readiness-auditor on an approved metadata evidence pack. Resolve missing checks without accessing application data.

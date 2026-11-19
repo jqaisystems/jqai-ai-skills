@@ -59,7 +59,7 @@ jobs:
           sudo apt-get install -y ffmpeg
           ffmpeg -version
           ffprobe -version
-      - name: Run offline synthetic regressions
+      - name: Run offline synthetic regressions including publishing handoffs
         run: python -X utf8 -B -m unittest discover -s tests -p "test_*.py" -v
       - name: Test collector with mocked sources only
         if: runner.os == 'Windows'
@@ -79,7 +79,7 @@ jobs:
         shell: pwsh
         run: |
           $target = Join-Path $env:RUNNER_TEMP ("skills-smoke-" + [guid]::NewGuid())
-          $names = @("backup-readiness-auditor", "github-safe-publisher", "skill-builder", "agents-md-writer", "media-spec-checker", "automation-state-reconciler", "windows-reinstall-planner", "research-to-article", "remove-ai-image-metadata")
+          $names = @("backup-readiness-auditor", "github-safe-publisher", "skill-builder", "agents-md-writer", "media-spec-checker", "automation-state-reconciler", "windows-reinstall-planner", "research-to-article", "remove-ai-image-metadata", "static-site-handoff", "article-cover-adapter", "social-campaign-proof-tracker")
           foreach ($name in $names) {
             ./install.ps1 $name -Target $target
             if (-not (Test-Path (Join-Path $target "$name/SKILL.md"))) { throw "Missing installed skill: $name" }

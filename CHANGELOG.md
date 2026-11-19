@@ -2,6 +2,16 @@
 
 Public release history for JQ AI Skills.
 
+## v0.14.0 candidate - Unreleased
+
+Library candidate: 49 skills. Publication approval and remote CI remain pending.
+
+- Add static-site-handoff for local hash-based packages, tamper checks and explicit upload-acknowledgement baselines.
+- Add article-cover-adapter for faithful local derivatives with configurable target profiles and honest preview status.
+- Extend social-campaign-proof-tracker with a read-only exact-package auditor and approval/receipt contracts.
+- Add a separate read-only image-cleanup verifier without changing existing cleaner flags or removal boundaries.
+- Add synthetic regressions, fictional proof samples and Linux/Windows CI coverage.
+
 The social preview image is intentionally stable for 2026 and is not updated for every release.
 
 ## [v0.13.0](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.13.0) - 2026-10-14
