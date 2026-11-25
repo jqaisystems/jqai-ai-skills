@@ -1,5 +1,7 @@
 # Quick Reference
 
+**Where did this work go?** Use [publication-ledger](skills/publication-ledger/SKILL.md) with an inventory and observations. [Example report](docs/examples/publication-ledger-sample.md).
+
 **Checking responsive behavior?** Use the [interaction results table](skills/website-change-verifier/assets/responsive-results.md) for each required route and viewport. See the [worked example](docs/examples/responsive-website-verification.md).
 
 **Install commands:** Python 3.11+ is required. User-target examples below preview changes for Codex at `~/.agents/skills`. For Claude Code, use `~/.claude/skills`. Review the plan, then remove the dry-run flag to apply. Explicit temporary targets are disposable checks. See [installation and verification](INSTALL.md).

@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "inventory": [
+    {
+      "work_id": "atlas-note",
+      "edition": "first",
+      "destination": "website",
+      "title": "Field Notes",
+      "project": "sample-atlas"
+    },
+    {
+      "work_id": "atlas-note",
+      "edition": "first",
+      "destination": "newsletter",
+      "title": "Field Notes",
+      "project": "sample-atlas"
+    },
+    {
+      "work_id": "atlas-note",
+      "edition": "first",
+      "destination": "social",
+      "title": "Field Notes",
+      "project": "sample-atlas"
+    },
+    {
+      "work_id": "garden-note",
+      "edition": "first",
+      "destination": "website",
+      "title": "Field Notes",
+      "project": "sample-garden"
+    }
+  ],
+  "observations": [
+    {
+      "work_id": "atlas-note",
+      "edition": "first",
+      "destination": "website",
+      "at": "2025-03-04T11:00:00Z",
+      "kind": "verified",
+      "ref": "web-check-a"
+    },
+    {
+      "work_id": "atlas-note",
+      "edition": "first",
+      "destination": "newsletter",
+      "at": "2025-03-04T10:00:00Z",
+      "kind": "scheduled",
+      "ref": "queue-note-b"
+    },
+    {
+      "work_id": "atlas-note",
+      "edition": "first",
+      "destination": "social",
+      "at": "2025-03-04T12:00:00Z",
+      "kind": "reported published",
+      "ref": "post-note-c"
+    },
+    {
+      "work_id": "atlas-note",
+      "edition": "first",
+      "destination": "social",
+      "at": "2025-03-04T13:00:00Z",
+      "kind": "disputed",
+      "ref": "review-note-d"
+    }
+  ]
+}

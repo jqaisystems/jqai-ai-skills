@@ -2,6 +2,8 @@
 
 Public-safe examples for JQ AI Skills.
 
+- [Publication ledger](publication-ledger-sample.md): two works share a title; only one destination has a verification record.
+
 - [Responsive website verification](responsive-website-verification.md): both pages return 200, but one narrow-screen button fails until the dismissed menu stops intercepting clicks.
 
 - [Brand kit audit](brand-kit-consistency-auditor-sample.md): the file exists but the handoff selects the wrong variant.

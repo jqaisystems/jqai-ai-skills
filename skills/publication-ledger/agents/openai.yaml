@@ -1,0 +1,4 @@
+interface:
+  display_name: "Publication Ledger"
+  short_description: "Track publication evidence across projects"
+  default_prompt: "Use $publication-ledger to build a publication history and review queue from my selected inventory and evidence."

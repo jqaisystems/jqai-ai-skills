@@ -18,7 +18,9 @@ Every install command in this catalogue includes `-DryRun` and the chosen target
 
 ## At A Glance
 
-Inventory: 51 skills in the v0.16.0 tree.
+Inventory: 52 skills in the v0.18.0 candidate.
+
+- [Publication ledger](../skills/publication-ledger/SKILL.md): read a cross-project history and review queue from selected observations, without connecting to a provider.
 
 - [Brand kit consistency auditor](../skills/brand-kit-consistency-auditor/SKILL.md): reconcile approved guide rules, export IDs and recipient instructions, including unresolved rights claims.
 - [Release announcement writer](../skills/release-announcement-writer/SKILL.md): draft copy or check current claims against the published record without rewriting accurate history.

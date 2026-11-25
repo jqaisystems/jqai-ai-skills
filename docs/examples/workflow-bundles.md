@@ -1,5 +1,9 @@
 # Workflow Bundles
 
+## Campaign evidence and publication history
+
+Use [social-campaign-proof-tracker](../../skills/social-campaign-proof-tracker/SKILL.md) for one campaign package. For a cross-project view, map only relevant observations to exact inventory rows in [publication-ledger](../../skills/publication-ledger/SKILL.md). An approval record alone is not delivery evidence. Either skill works independently.
+
 ## Check the handoff, then the announcement
 
 Use [brand-kit-consistency-auditor](../../skills/brand-kit-consistency-auditor/SKILL.md) when recipients need to know which asset to use. After publication, use the [post-release check](../../skills/release-announcement-writer/references/post-release-check.md) to verify what readers are told. Neither check requires the other.

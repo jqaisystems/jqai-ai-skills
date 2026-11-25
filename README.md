@@ -12,7 +12,7 @@ The [v0.13.0 release](docs/announcements/v0.13.0.md), published on 14 October 20
 
 Installation requires Python 3.11+. New Codex setups should explicitly choose the supported discovery target; read [safe installation and discovery](docs/guides/safe-installation.md) before copying or upgrading skills.
 
-[v0.15.0](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.15.0) shipped 50 skills, including [logo delivery preflight](skills/logo-delivery-preflight/SKILL.md) and screenshot placement review in [GitHub safe publisher](skills/github-safe-publisher/SKILL.md). The [v0.16.0 scope](docs/announcements/v0.16.0.md) adds [brand-kit-consistency-auditor](skills/brand-kit-consistency-auditor/SKILL.md) and post-release checks in [release-announcement-writer](skills/release-announcement-writer/SKILL.md), bringing this tree to 51 skills.
+[v0.15.0](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.15.0) shipped 50 skills, including [logo delivery preflight](skills/logo-delivery-preflight/SKILL.md) and screenshot placement review in [GitHub safe publisher](skills/github-safe-publisher/SKILL.md). The [v0.16.0 scope](docs/announcements/v0.16.0.md) added [brand-kit-consistency-auditor](skills/brand-kit-consistency-auditor/SKILL.md) and post-release checks in [release-announcement-writer](skills/release-announcement-writer/SKILL.md). The [v0.18.0 candidate](docs/announcements/v0.18.0.md) contains 52 skills.
 
 <a href="START_HERE.md"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/jq-ai-skills-launch-poster.png"><img src="assets/jq-ai-skills-launch-preview.gif" alt="JQ AI Skills: choose a workflow, inspect instructions, install into your chosen target, and use the skill"></picture></a>
 
@@ -140,6 +140,7 @@ Every skill ships with public-safe proof: fake-data samples, guides, and checkli
 | Release Announcement Writer | [`skills/release-announcement-writer/SKILL.md`](skills/release-announcement-writer/SKILL.md) | Turn changelogs and shipped changes into release notes, website blurbs, and launch posts. |
 | GitHub Profile Proof Updater | [`skills/github-profile-proof-updater/SKILL.md`](skills/github-profile-proof-updater/SKILL.md) | Refresh GitHub profile visuals, preserve README paths, verify live rendering, and document proof trails. |
 | Social Campaign Proof Tracker | [`skills/social-campaign-proof-tracker/SKILL.md`](skills/social-campaign-proof-tracker/SKILL.md) | Plan LinkedIn/X proof campaigns, alt text, published links, reply banks, and follow-up windows. |
+| Publication Ledger | [publication-ledger](skills/publication-ledger/SKILL.md) | Review where each edition went and which destinations still need evidence. |
 
 ### Growth & Outreach
 

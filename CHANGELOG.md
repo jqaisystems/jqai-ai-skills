@@ -2,6 +2,10 @@
 
 Public release history for JQ AI Skills.
 
+## v0.18.0 scope
+
+Add an offline [publication ledger](skills/publication-ledger/SKILL.md) for evidence tracking across projects, editions and destinations. See the [worked example](docs/examples/publication-ledger-sample.md).
+
 ## v0.17.0 scope
 
 Record responsive checks per page, environment, viewport and interaction. See the [scope and fictional browser test](docs/announcements/v0.17.0.md). The library remains at 51 skills.
