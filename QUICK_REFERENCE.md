@@ -1,5 +1,7 @@
 # Quick Reference
 
+**Checking responsive behavior?** Use the [interaction results table](skills/website-change-verifier/assets/responsive-results.md) for each required route and viewport. See the [worked example](docs/examples/responsive-website-verification.md).
+
 **Install commands:** Python 3.11+ is required. User-target examples below preview changes for Codex at `~/.agents/skills`. For Claude Code, use `~/.claude/skills`. Review the plan, then remove the dry-run flag to apply. Explicit temporary targets are disposable checks. See [installation and verification](INSTALL.md).
 
 Use this page when you want the shortest command and link map for JQ AI Skills.

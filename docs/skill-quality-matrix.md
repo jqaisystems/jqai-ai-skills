@@ -1,5 +1,7 @@
 # Skill Quality Matrix
 
+**v0.17.0 scope:** [Website change verifier](../skills/website-change-verifier/SKILL.md) records actual interaction outcomes. The [local two-page test](examples/responsive-website-verification.md) covers two widths and a fixture retest, not physical devices or live production.
+
 v0.16.0 scope: 51 skills. See the [brand kit proof](examples/brand-kit-consistency-auditor-sample.md) for guide-to-handoff comparisons and the [release proof](examples/release-consistency-sample.md) for exact-release and historical-context checks. Both are evidence reviews, not approval to change the underlying material.
 
 ## Visual delivery preflight (v0.15.0)

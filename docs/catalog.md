@@ -712,7 +712,7 @@ Typical output:
 
 **Typical output:** a verification matrix with pass, fail, blocked, and not-run states. The included route checker supports status, required-text, forbidden-text, timeout, and JSON checks against user-specified HTTP or HTTPS URLs.
 
-**Sample:** [`docs/examples/website-change-verifier-sample.md`](examples/website-change-verifier-sample.md)
+**Samples:** [Copy and route checks](examples/website-change-verifier-sample.md) and [responsive interactions](examples/responsive-website-verification.md).
 
 **Install:**
 

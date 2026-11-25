@@ -34,7 +34,7 @@ For hidden content, distinguish navigation removal from direct access, sitemap p
 - Run syntax, type, lint, test, or production-build checks supported by the project.
 - Confirm the correct listener and make a real request to each affected route.
 - Use `scripts/verify_routes.py` for deterministic status and response-text checks.
-- Inspect rendered desktop and mobile behavior when layout, interaction, forms, or media changed.
+- For layout or interaction changes, fill in the [responsive results table](assets/responsive-results.md) per required page, environment, viewport width and action. Keep HTTP results separate: a 200 does not show that a visitor can use a control.
 - Confirm required text is present and replaced text is absent.
 - Check discovery surfaces only when the content is intended to appear there.
 
@@ -61,8 +61,10 @@ Use `--expect-status "URL::404"` for an intentionally missing route and `--json`
 Use one of these states:
 
 - `implemented`: source changes exist but user-visible verification is incomplete
-- `verified locally`: build and local route or browser checks pass
+- `verified locally`: all required local checks for the stated scope pass, including applicable browser interactions
 - `deployed`: an authorized deployment completed but live verification remains
 - `verified live`: the production URL and intended behavior were checked after deployment
 
-Return the checked routes, expected and observed results, build or syntax results, browser coverage, discovery-surface status, highest completion state, and exact remaining blocker.
+A required local interaction marked `fail` or `not checked` rules out an overall `verified locally` verdict for that scope. Report the implementation and the blocker; keep other passing rows. Never carry a desktop result to mobile, a local result to production, or a pass from an earlier revision to a retest.
+
+Return the checked routes, expected and observed results, build or syntax results, browser coverage, discovery-surface status, highest completion state, and exact remaining blocker. Report untested live behavior as `not checked`, even when local checks pass.

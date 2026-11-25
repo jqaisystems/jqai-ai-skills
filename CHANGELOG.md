@@ -2,6 +2,10 @@
 
 Public release history for JQ AI Skills.
 
+## v0.17.0 scope
+
+Record responsive checks per page, environment, viewport and interaction. See the [scope and fictional browser test](docs/announcements/v0.17.0.md). The library remains at 51 skills.
+
 ## v0.16.0 scope
 
 Add brand-kit consistency auditing and a read-only post-release check. See the [scope and examples](docs/announcements/v0.16.0.md); use the GitHub Releases page for publication status.

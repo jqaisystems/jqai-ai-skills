@@ -32,3 +32,5 @@ PASS 404 http://127.0.0.1:8766/old-preview
 - Deployment: not requested
 
 Highest supported state: `verified locally`.
+
+This is a copy and route example. For a changed control, record an attempted interaction and its visible result at each required width. See [the responsive interaction example](responsive-website-verification.md).

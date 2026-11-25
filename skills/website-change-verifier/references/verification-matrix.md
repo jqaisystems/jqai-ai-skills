@@ -31,3 +31,9 @@ Select the rows that match the actual change. A passing file edit is not suffici
 - Exercise changed controls, menus, media, forms, and anchor links.
 - Check the console and failed network requests when JavaScript behavior changed.
 - Capture proof only after the final route state is loaded.
+
+For responsive changes, start with the [results table](../assets/responsive-results.md). Use widths from the brief or the actual breakpoints; record the measured viewport in CSS pixels, not the device name or outer window width. Mark a narrow desktop-browser test as emulation, not physical-device proof.
+
+Reproduce the visitor's starting state (for example, open and then dismiss a menu). Click or tap normally and observe the intended effect: a visible confirmation, a new view, or another specified result. Do not force a click through an overlay or invoke the handler directly. A screenshot can support a visual observation; it cannot stand in for an untried interaction.
+
+Keep separate before-fix and retest rows. Repeat the affected interaction and its passing controls on the revised fixture. If the browser, requested width, or live environment is unavailable, record the missing check without inferring its result.
