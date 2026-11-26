@@ -1,6 +1,6 @@
 # JQ AI Skills
 
-Portable instruction folders for repeatable work with Codex and Claude Code. Read the instructions, inspect the examples, and start with one workflow.
+52 skills for repeatable work with Codex and Claude Code. Each skill is a portable folder of instructions you can inspect before installing.
 
 [Start here](START_HERE.md) · [Browse the catalog](docs/catalog.md) · [Install safely](INSTALL.md) · [Inspect the proof](docs/examples/public-proof-index.md)
 
@@ -8,11 +8,13 @@ Portable instruction folders for repeatable work with Codex and Claude Code. Rea
 [![MIT licence](https://img.shields.io/badge/licence-MIT-267b91)](LICENSE)
 [![Validate skills](https://github.com/jqaisystems/jqai-ai-skills/actions/workflows/validate.yml/badge.svg)](https://github.com/jqaisystems/jqai-ai-skills/actions/workflows/validate.yml)
 
-The [v0.13.0 release](docs/announcements/v0.13.0.md), published on 14 October 2026, contains 47 skills. It adds [backup-readiness-auditor](skills/backup-readiness-auditor/SKILL.md), safer installation and updated setup guidance. Check the [latest release](https://github.com/jqaisystems/jqai-ai-skills/releases/latest) for subsequent changes.
+**What actually got published?** In the [Publication Ledger example](docs/examples/publication-ledger-sample.md), two works share a title. One has a verified website publication, a scheduled newsletter, and conflicting social receipts. The other has no evidence yet. See how the ledger keeps the works separate and identifies what to check next.
+
+**Did the button work on mobile?** In the [responsive website example](docs/examples/responsive-website-verification.md), both pages loaded, but at 390 px a dismissed menu still blocked the main button. Follow the failed click and retest, or use the [blank results table](skills/website-change-verifier/assets/responsive-results.md) on your own site.
 
 Installation requires Python 3.11+. New Codex setups should explicitly choose the supported discovery target; read [safe installation and discovery](docs/guides/safe-installation.md) before copying or upgrading skills.
 
-[v0.15.0](https://github.com/jqaisystems/jqai-ai-skills/releases/tag/v0.15.0) shipped 50 skills, including [logo delivery preflight](skills/logo-delivery-preflight/SKILL.md) and screenshot placement review in [GitHub safe publisher](skills/github-safe-publisher/SKILL.md). The [v0.16.0 scope](docs/announcements/v0.16.0.md) added [brand-kit-consistency-auditor](skills/brand-kit-consistency-auditor/SKILL.md) and post-release checks in [release-announcement-writer](skills/release-announcement-writer/SKILL.md). The [v0.18.0 candidate](docs/announcements/v0.18.0.md) contains 52 skills.
+See the [latest GitHub release](https://github.com/jqaisystems/jqai-ai-skills/releases/latest) for what shipped and the [changelog](CHANGELOG.md) for earlier versions.
 
 <a href="START_HERE.md"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/jq-ai-skills-launch-poster.png"><img src="assets/jq-ai-skills-launch-preview.gif" alt="JQ AI Skills: choose a workflow, inspect instructions, install into your chosen target, and use the skill"></picture></a>
 
@@ -190,6 +192,8 @@ Every skill ships with public-safe proof: fake-data samples, guides, and checkli
 | Skill | File | Use |
 |---|---|---|
 | Media Spec Checker | [`skills/media-spec-checker/SKILL.md`](skills/media-spec-checker/SKILL.md) | Read-only local image/video checks against supplied, versioned rules; unknown measurements never pass. |
+| Logo Delivery Preflight | [logo-delivery-preflight](skills/logo-delivery-preflight/SKILL.md) | Check exported logo variants against the brief and intended backgrounds. |
+| Brand Kit Consistency Auditor | [brand-kit-consistency-auditor](skills/brand-kit-consistency-auditor/SKILL.md) | Compare the approved guide with the asset inventory and handoff instructions. |
 | Article Cover Adapter | [article-cover-adapter](skills/article-cover-adapter/SKILL.md) | Adapt approved artwork while preserving exact text, credits and protected content. |
 | Remove AI Image Metadata | [`skills/remove-ai-image-metadata/SKILL.md`](skills/remove-ai-image-metadata/SKILL.md) | Inspect and remove explicit AI-generator or provenance metadata from authorized image files while preserving encoded picture data when the format permits. |
 | AI Image Run Pacing | [`skills/ai-image-run-pacing/SKILL.md`](skills/ai-image-run-pacing/SKILL.md) | Run a batch of AI image generations without getting rate limited, losing subject likeness, or storing credentials. |
@@ -202,6 +206,7 @@ Every skill ships with public-safe proof: fake-data samples, guides, and checkli
 |---|---|---|
 | Automation State Reconciler | [`automation-state-reconciler`](skills/automation-state-reconciler/SKILL.md) | Compare offline snapshots and receipts; preserve history and draft a human-reviewed repair plan without executing it. |
 | Windows Reinstall Planner | [`windows-reinstall-planner`](skills/windows-reinstall-planner/SKILL.md) | Collect software registration metadata and prepare a private reinstall checklist, without installing or removing software. |
+| Backup Readiness Auditor | [backup-readiness-auditor](skills/backup-readiness-auditor/SKILL.md) | Review supplied evidence for gaps in backup and recovery readiness. |
 
 ### Notes & Productivity
 
