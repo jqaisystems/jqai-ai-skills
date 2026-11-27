@@ -2,6 +2,10 @@
 
 Public release history for JQ AI Skills.
 
+## v0.19.0 scope
+
+Add [video-cut-reviewer](skills/video-cut-reviewer/SKILL.md) for editorial review of an existing export. Its [fictional example](docs/examples/video-cut-sample.md) shows which findings survive when only sampled frames are available.
+
 ## v0.18.0 scope
 
 Add an offline [publication ledger](skills/publication-ledger/SKILL.md) for evidence tracking across projects, editions and destinations. See the [worked example](docs/examples/publication-ledger-sample.md).

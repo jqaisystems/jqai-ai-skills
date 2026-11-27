@@ -1,5 +1,7 @@
 # Skill Quality Matrix
 
+**v0.19.0 scope:** [Video cut reviewer](../skills/video-cut-reviewer/SKILL.md) distinguishes a confirmed editorial discrepancy from missing evidence. Compare [the full-cut and grid-only findings](examples/video-cut-sample.md).
+
 **v0.18.0 scope:** [Publication ledger](../skills/publication-ledger/SKILL.md) separates same-title works and keeps contradictory observations visible. The [fictional report](examples/publication-ledger-sample.md) demonstrates evidence classification, not live verification.
 
 **v0.17.0 scope:** [Website change verifier](../skills/website-change-verifier/SKILL.md) records actual interaction outcomes. The [local two-page test](examples/responsive-website-verification.md) covers two widths and a fixture retest, not physical devices or live production.

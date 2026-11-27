@@ -1,0 +1,4 @@
+interface:
+  display_name: "Video Cut Reviewer"
+  short_description: "Compare a finished cut with its approved shot list"
+  default_prompt: "Use $video-cut-reviewer to compare this cut or frame grid with the approved brief and flag discrepancies and checks the evidence cannot support."

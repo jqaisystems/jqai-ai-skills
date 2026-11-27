@@ -2,6 +2,8 @@
 
 Public-safe examples for JQ AI Skills.
 
+- [One cut, two reviews](video-cut-sample.md): the same editorial brief checked against a full cut and an untimed frame grid.
+
 - [Publication ledger](publication-ledger-sample.md): two works share a title; only one destination has a verification record.
 
 - [Responsive website verification](responsive-website-verification.md): both pages return 200, but one narrow-screen button fails until the dismissed menu stops intercepting clicks.

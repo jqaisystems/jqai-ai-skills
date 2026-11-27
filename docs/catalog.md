@@ -18,7 +18,9 @@ Every install command in this catalogue includes `-DryRun` and the chosen target
 
 ## At A Glance
 
-Inventory: 52 skills in the v0.18.0 candidate.
+Inventory: 53 skills in the v0.19.0 candidate.
+
+- [Video cut reviewer](../skills/video-cut-reviewer/SKILL.md): review a finished cut or an ordered frame grid against the approved shot list. See [one brief reviewed two ways](examples/video-cut-sample.md).
 
 - [Publication ledger](../skills/publication-ledger/SKILL.md): read a cross-project history and review queue from selected observations, without connecting to a provider.
 

@@ -1,5 +1,9 @@
 # Workflow Bundles
 
+## Review an exported video
+
+Use [media-spec-checker](../../skills/media-spec-checker/SKILL.md) for technical delivery rules and [video-cut-reviewer](../../skills/video-cut-reviewer/SKILL.md) for the shot list, wording, credits and sound. Record the two verdicts separately; neither is publication approval.
+
 ## Campaign evidence and publication history
 
 Use [social-campaign-proof-tracker](../../skills/social-campaign-proof-tracker/SKILL.md) for one campaign package. For a cross-project view, map only relevant observations to exact inventory rows in [publication-ledger](../../skills/publication-ledger/SKILL.md). An approval record alone is not delivery evidence. Either skill works independently.

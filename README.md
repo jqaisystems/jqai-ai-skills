@@ -1,6 +1,6 @@
 # JQ AI Skills
 
-52 skills for repeatable work with Codex and Claude Code. Each skill is a portable folder of instructions you can inspect before installing.
+53 skills for repeatable work with Codex and Claude Code. Each skill is a portable folder of instructions you can inspect before installing.
 
 [Start here](START_HERE.md) · [Browse the catalog](docs/catalog.md) · [Install safely](INSTALL.md) · [Inspect the proof](docs/examples/public-proof-index.md)
 
@@ -191,6 +191,7 @@ Every skill ships with public-safe proof: fake-data samples, guides, and checkli
 
 | Skill | File | Use |
 |---|---|---|
+| Video Cut Reviewer | [video-cut-reviewer](skills/video-cut-reviewer/SKILL.md) | Compare shot order, wording, credits and audio cues with the approved brief. [Clip and grid example](docs/examples/video-cut-sample.md). |
 | Media Spec Checker | [`skills/media-spec-checker/SKILL.md`](skills/media-spec-checker/SKILL.md) | Read-only local image/video checks against supplied, versioned rules; unknown measurements never pass. |
 | Logo Delivery Preflight | [logo-delivery-preflight](skills/logo-delivery-preflight/SKILL.md) | Check exported logo variants against the brief and intended backgrounds. |
 | Brand Kit Consistency Auditor | [brand-kit-consistency-auditor](skills/brand-kit-consistency-auditor/SKILL.md) | Compare the approved guide with the asset inventory and handoff instructions. |

@@ -1,5 +1,7 @@
 # Quick Reference
 
+**Does the finished cut match the brief?** Use [video-cut-reviewer](skills/video-cut-reviewer/SKILL.md). With only stills, report sampled visuals and leave audio and exact timing not checked.
+
 **Where did this work go?** Use [publication-ledger](skills/publication-ledger/SKILL.md) with an inventory and observations. [Example report](docs/examples/publication-ledger-sample.md).
 
 **Checking responsive behavior?** Use the [interaction results table](skills/website-change-verifier/assets/responsive-results.md) for each required route and viewport. See the [worked example](docs/examples/responsive-website-verification.md).

@@ -6,6 +6,10 @@ The goal is quick evaluation: what can a visitor inspect without reading the ent
 
 All linked examples use fictional, public, or generalized material. They do not include customer records, private exports, account setup, deployment details, local machine paths, raw prompts, logs, credentials, or sensitive implementation notes.
 
+## Editorial video review
+
+[One cut, two reviews](video-cut-sample.md) includes the fictional brief, a reproducible fixture and the limits of a frame-grid review.
+
 ## Safe Publishing Handoffs candidate
 
 - [Static handoff proof](static-site-handoff-sample.md)
